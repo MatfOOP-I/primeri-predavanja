@@ -10,7 +10,7 @@ class StudentPokretanje {
 
         Student drugi;
         drugi = new Student();
-        drugi.ime = "�?на Сарић";
+        drugi.ime = "Ђина Сарић";
         drugi.brojIndeksa = 25;
         drugi.naBudzetu = true;
 

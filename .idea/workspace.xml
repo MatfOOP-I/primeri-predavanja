@@ -1,7 +1,335 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92ac9e2f-7f04-4d92-a2a2-fc1dd8b4a4dc" name="Changes" comment="" />
+    <list default="true" id="92ac9e2f-7f04-4d92-a2a2-fc1dd8b4a4dc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g02/p01/klaseObjekti/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g02/p01/klaseObjekti/StudentPokretanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g02/p02/nasledjivanje/Poslediplomac.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g02/p02/nasledjivanje/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g02/p02/nasledjivanje/StudentPoslediplomacPokretanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g02/p03/ucaurivanje/Crtez.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g02/p03/ucaurivanje/CrtezPokretanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g02/p03/ucaurivanje/Krug.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g02/p04/objektnoNzdNzs/CeoBroj.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g02/p04/objektnoNzdNzs/ObjektnoNzdNzsPokretanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g03/p01/imperativnaParadigma/ImperativnoNzd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g03/p02/strukturnaParadigma/StrukturnoNzd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g03/p03/modularnaParadigma/ModulNzd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g03/p03/modularnaParadigma/ModulNzdNzsPokretanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g03/p03/modularnaParadigma/ModulNzdPokretanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g03/p03/modularnaParadigma/ModulNzs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g03/p04/logickaParadigma/LogickoNzd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g03/p05/funkcionalnaParadigma/FunkcionalnoNzd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g03/p06/objektnaParadigma/ObjektnoNzd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p01/blokovi/TestBlok.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p02/znakBroja/Sgn1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p02/znakBroja/Sgn2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p03/minimumDvaBroja/Min2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p04/uredjenjeTriBroja/Uredjenje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p05/daniUMesecu/BrojDanaUMesecu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p06/ispisBrojeva/IspisBrojeva.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p07/sumaNiza/Suma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p08/brojeviDoUslova/GenerisiDoUslova.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p09/duzinaBroja/DuzinaBroja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p10/prebrojavanjeReci/PrebrojavanjeReci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p11/forBrojackiIspis/BrojackiIspis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p12/faktorijelBroja/FaktorijelBroja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p13/sumaAritmetickaUnazad/SumirajAritmetickiNizUnazad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p14/beskonacniFor/BeskonacniFor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p15/forKaoWhile/StepenovanjeBroja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p16/funkcijaKorenaNaIntervalu/KorenNaIntervalu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p17/indeksiSporedneDijagonale/IspisIndeksaSporedneDijagonale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p18/unosBrojevaBreak/UnosBrojevaBreak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p19/unosBrojevaContinue/UnosBrojevaContinue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g05/p20/trazenjePodniske/TraziPodnisku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p01/standardniIspis/RazlicitiIspisi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p02/merenjeVremena/IzmeriVreme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p03/pozivanjeSakupljacaOtpadaka/PozoviGC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p04/izlazIzAplikacije/IzadjiIzAplikacije.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p05/obrtanjeReci/ObrniReciURecenici.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p06/ponoviNisku/PonoviNisku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p07/ponoviNiskuStringBuilder/PonoviNiskuStringBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p08/prosledjivanjeOmotacTipa/MutabilniFloat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p09/parsiranjeNiske/ParsirajAutoInformacije.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p10/parsiranjeStandardniUlaz/ProsekUnetihBrojeva.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p11/matematickeFunkcije/MonteKarloIntegracija.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p12/grafickiPrikazMeseca/PrikaziMesec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p13/filtrirajVremena/FiltrirajVremena.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p14/testirajNormalnu/TestirajPseudoNormalneBrojeve.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g06/p15/generisiPredlogeSifara/GenerisiPredlogeSifara.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p01/nzdNizaBrojeva/PokreniNzdNiza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p02/nzdNizaBrojevaKolekcijskiFor/PokreniNzdNizaKolekcijskiFor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p03/radSaNizomDinamickaDimenzija/RadSaNizom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p04/frekvencijeBrojeva/FrekvencijeBrojevaMonolitno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p04/frekvencijeBrojeva/FrekvencijeBrojevaRazdvojeno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p04/frekvencijeBrojeva/FrekvencijeBrojevaRazdvojenoGlobalniPodaci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p05/stekPrekoNiza/RadSaStekom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p06/sumaArgumenataKomandneLinije/SumirajArgumente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p07/odabirOperacijeArgumentiKomandneLinije/OdaberiOperaciju.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p08/radSaMatricama/RadSaMatricama.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p09/pojavljivanjaKaraktera/PrebrojKaraktere.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p10/sortiranjePretragaReci/SortirajPaTraziRec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g07/p11/promenljiviBrojArgumenata/IspisiArgumente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p01/kreiranjeReferenci/KreiranjeReferenci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p01/kreiranjeReferenci/Zaposleni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p02/kreiranjeObjekata/KreiranjeObjekata.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p02/kreiranjeObjekata/Zaposleni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p03/kreiranjeObjekataObject/TestirajObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p04/kreiranjeObjekataIspis/Kutija.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p05/poredjenjeOperatoromJednako/Kutija.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p05/poredjenjeOperatoromJednako/UporediPromenljive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p06/pripadnostKlasi/IspitajPripadnostKlasi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p06/pripadnostKlasi/Kutija.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p07/uvozKlase/IspisiPseudoslucajneCele.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p08/pristupPoljima/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p08/pristupPoljima/Ucenik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p09/pristupStatickimPoljima/Ucenik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p10/pozivanjeMetoda/TestirajUcenik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p10/pozivanjeMetoda/Ucenik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p11/preopterecivanjeMetoda/Pravougaonik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p11/preopterecivanjeMetoda/Tacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p12/nasledjivanje/Srednjoskolac.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p12/nasledjivanje/Ucenik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p13/prevazilazenje/Duz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p13/prevazilazenje/Tacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p14/konstruktori/Duz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p14/konstruktori/Tacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p15/kopirajuciKonstruktor/Crtez.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p15/kopirajuciKonstruktor/Poligon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p15/kopirajuciKonstruktor/Tacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p16/konstruktorNadklase/OznacenaTacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p16/konstruktorNadklase/Tacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p17/publicModifikator/podpaket1/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p17/publicModifikator/podpaket1/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p17/publicModifikator/podpaket2/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p18/packageModifikator/podpaket1/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p18/packageModifikator/podpaket1/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p18/packageModifikator/podpaket2/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p19/protectedModifikator/podpaket1/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p19/protectedModifikator/podpaket1/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p19/protectedModifikator/podpaket2/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p20/privateModifikator/podpaket1/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p20/privateModifikator/podpaket1/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p20/privateModifikator/podpaket2/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p21/zastitaPolja/KrugJavni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p21/zastitaPolja/KrugZasticeni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g08/p21/zastitaPolja/TestirajKrugove.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p01/apstraktnKlasaa/GeometrijskiObjekat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p02/apstraktnaTackaDuzPrava/Duz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p02/apstraktnaTackaDuzPrava/GeometrijskiObjekat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p02/apstraktnaTackaDuzPrava/Prava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p02/apstraktnaTackaDuzPrava/Tacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p03/apstraktnaKrugTrougaoCervorougao/Cetvorougao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p03/apstraktnaKrugTrougaoCervorougao/Duz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p03/apstraktnaKrugTrougaoCervorougao/GeometrijskiObjekat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p03/apstraktnaKrugTrougaoCervorougao/Krug.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p03/apstraktnaKrugTrougaoCervorougao/Prava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p03/apstraktnaKrugTrougaoCervorougao/Tacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p03/apstraktnaKrugTrougaoCervorougao/Trougao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p04/apstraktnaGeometrija/Cetvorougao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p04/apstraktnaGeometrija/Duz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p04/apstraktnaGeometrija/GeometrijskiObjekat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p04/apstraktnaGeometrija/GeometrijskiObjekti.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p04/apstraktnaGeometrija/Krug.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p04/apstraktnaGeometrija/Prava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p04/apstraktnaGeometrija/Tacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p04/apstraktnaGeometrija/Trougao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p05/interfejs/Radoznao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p06/interfejsImplementacija/Pitanja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p06/interfejsImplementacija/Radoznao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p06/interfejsImplementacija/Strucnjak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p07/interfejsVise/Naucnik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p07/interfejsVise/PitanjaRazmisljanja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p07/interfejsVise/Radoznao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p07/interfejsVise/Razuman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p08/interfejsProsirenje/Eksperimentator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p08/interfejsProsirenje/Eksperimenti.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p08/interfejsProsirenje/Istrazivac.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p08/interfejsProsirenje/Naucnik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p08/interfejsProsirenje/Radoznao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p08/interfejsProsirenje/Razuman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p09/interfejsGeometrija/Cetvorougao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p09/interfejsGeometrija/Duz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p09/interfejsGeometrija/GeometrijskiObjekat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p09/interfejsGeometrija/Krug.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p09/interfejsGeometrija/Mera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p09/interfejsGeometrija/MeraOblikSadrzavanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p09/interfejsGeometrija/MereObliciSadrzavanja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p09/interfejsGeometrija/Oblik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p09/interfejsGeometrija/Prava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p09/interfejsGeometrija/Sadrzavanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p09/interfejsGeometrija/Tacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p09/interfejsGeometrija/Trougao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p10/interfejsGeometrija/Cetvorougao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p10/interfejsGeometrija/Duz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p10/interfejsGeometrija/GeometrijskiObjekat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p10/interfejsGeometrija/Krug.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p10/interfejsGeometrija/Mera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p10/interfejsGeometrija/MeraOblikSadrzavanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p10/interfejsGeometrija/MereObliciSadrzavanja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p10/interfejsGeometrija/Oblik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p10/interfejsGeometrija/Prava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p10/interfejsGeometrija/Sadrzavanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p10/interfejsGeometrija/Tacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p10/interfejsGeometrija/Trougao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p11/uredjenjePredefinisani/UredjenjePredefinisani.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p12/uredjenjeTacaka/GeometrijskiObjekat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p12/uredjenjeTacaka/Tacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p12/uredjenjeTacaka/UredjenjeTacaka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p13/visekkriterijumaTacke/GeometrijskiObjekat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p13/visekkriterijumaTacke/Tacka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p13/visekkriterijumaTacke/TackaOznakaComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p13/visekkriterijumaTacke/TackaPozicijaComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p13/visekkriterijumaTacke/UredjenjeTacaka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p14/viseKriterijumaPredefinisani/BrojSamoglasnikaComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p14/viseKriterijumaPredefinisani/ParNeparComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p14/viseKriterijumaPredefinisani/VisekriterijumskoSortiranje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p15/kloniranje/Kloniranje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p15/kloniranje/Zaposleni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p16/kloniranjeMutabilnaPoljaProblem/Generalije.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p16/kloniranjeMutabilnaPoljaProblem/Kloniranje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p16/kloniranjeMutabilnaPoljaProblem/RadniOdnos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p16/kloniranjeMutabilnaPoljaProblem/Zaposleni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p17/kloniranjeMutabilnaPoljaResenje/Generalije.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p17/kloniranjeMutabilnaPoljaResenje/Kloniranje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p17/kloniranjeMutabilnaPoljaResenje/RadniOdnos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p17/kloniranjeMutabilnaPoljaResenje/Zaposleni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p18/losPrincipS/LosPrincipS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p18/losPrincipS/Zaposleni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p19/dobarPrincipS/DobarPrincipS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p19/dobarPrincipS/Zaposleni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p19/dobarPrincipS/ZaposleniBazaPodataka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p20/losPrincipO/Krug.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p20/losPrincipO/LosPrincipO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p20/losPrincipO/Pravougaonik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p21/dobarPrincipO/DobarPrincipO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p21/dobarPrincipO/Krug.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p21/dobarPrincipO/Mera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p21/dobarPrincipO/Pravougaonik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p22/losPrincipL/Kvadrat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p22/losPrincipL/LosPrincipL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p22/losPrincipL/Pravougaonik.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p23/losPrincipI/LicnoDosaoKlijent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p23/losPrincipI/LicnoDosaoKlijentOpsluzivanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p23/losPrincipI/LosPrincipI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p23/losPrincipI/OnLajnKlijent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p23/losPrincipI/OnLajnKlijentOpsluzivanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p23/losPrincipI/Restoran.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p23/losPrincipI/TelefonskiKlijent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p23/losPrincipI/TelefonskiKlijentOpsluzivanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p24/dobarPrincipI/DobarPrincipI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p24/dobarPrincipI/LicnoDosaoKlijent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p24/dobarPrincipI/LicnoNapravljenaPorudzbina.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p24/dobarPrincipI/LicnoPlacanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p24/dobarPrincipI/OnLajnKlijent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p24/dobarPrincipI/OnLajnPlacanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p24/dobarPrincipI/OnLajnPorudzbina.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p24/dobarPrincipI/Placanje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p24/dobarPrincipI/Porudzbina.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p24/dobarPrincipI/TelefonskaPorudzbina.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p24/dobarPrincipI/TelefonskiKlijent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p25/losPrincipD/KlijentA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p25/losPrincipD/LosPrincipD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p25/losPrincipD/ServisB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p26/dobarPrincipDKonstruktor/DobarPrincipDKonstruktor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p26/dobarPrincipDKonstruktor/Klijent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p26/dobarPrincipDKonstruktor/KlijentA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p26/dobarPrincipDKonstruktor/Servis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p26/dobarPrincipDKonstruktor/ServisB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p26/dobarPrincipDKonstruktor/ServisC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p26/dobarPrincipDKonstruktor/ServisD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p27/dobarPrincipDMetodPostavi/DobarPrincipDMetodPostavi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p27/dobarPrincipDMetodPostavi/Klijent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p27/dobarPrincipDMetodPostavi/KlijentA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p27/dobarPrincipDMetodPostavi/Servis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p27/dobarPrincipDMetodPostavi/ServisB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p27/dobarPrincipDMetodPostavi/ServisC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p27/dobarPrincipDMetodPostavi/ServisD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p28/losOdnosJeste/LosOdnosJeste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p28/losOdnosJeste/RadnikPrekoStudentskeZadruge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g09/p28/losOdnosJeste/Zaposleni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g10/p01/nestatickaUgnjezdenaObracunPlate/ObracunPlata.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g10/p01/nestatickaUgnjezdenaObracunPlate/ObracunPlataTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g10/p02/unutrasnjaKlasaPovezanaLista/PovezanaLista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g10/p02/unutrasnjaKlasaPovezanaLista/PovezanaListaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g10/p03/lokalneUnutrasnjeValidacijaBrojaMobilnog/ValidacijaBrojaMobilnog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g10/p04/anonimneKlasePoredjenjePriSortiranju/SortirajNiske.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g11/p01/izuzeciIndeksVanGranica/IndeksVanGranica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g11/p02/izuzeciPrekoracenjeStekMemorije/FaktorijelBezUslovaIzlaska.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g11/p03/izuzeciSprecavanjeIndeksaVanGranica/SprecavanjeIndeksaVanGranica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g11/p04/izuzeciKonverzijaUPogresanObjektniTip/KonverzijaUPogresanObjektniTip.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g11/p05/izuzeciParsiranjeDatuma/ParsiranjeDatuma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g11/p06/izuzeciPropagiranje/ParsiranjeDatumaPropagiranjeIzuzetka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g11/p07/izuzeciKorisnickiDefinisan/Niz2DIzuzetak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g11/p08/tvrdnjeNenegativanBroj/NenegativanBrojTvrdnja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g11/p09/tvrdnjeSaPorukomNenegativanBroj/NenegativanBrojTvrdnjaSaPorukom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g11/p10/tvrdnjeSortiranjePostuslov/SortiranjeSaPostuslovom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g12/p01/enumiDaniUNedelji/DanUNedelji.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g12/p02/enumiBrojDanaUMesecu/MesecKalendarski.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g12/p03/enumiPlaneteSuncevogSistema/PlanetaSuncevogSistema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g12/p04/enumiAritmetickeOperacije/AritmetickaOperacija.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g12/p05/enumiDaniUNedeljiKlasa/DanUNedeljiKlasa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g13/p01/genericiKutijaSirova/KutijaSirova.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g13/p02/genericiKutijaGenericka/KutijaGenericka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g13/p03/genericiUredjeniPar/UredjeniPar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g13/p04/generickiStek/StekInterfejs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g13/p04/generickiStek/StekPrekoNiza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g13/p05/genericiPretragaNiza/PretragaNiza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g13/p06/genericiMinimalniElementNiza/MinimalniElementNiza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g13/p06/genericiMinimalniElementNiza/UredjeniParUporediv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g13/p07/genericiUredjeniParUporedivSirov/MinimalniElementNizaSirov.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g13/p07/genericiUredjeniParUporedivSirov/UredjeniParUporedivSirov.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g13/p08/genericiKutijaGenerickaObojena/KutijaGenerickaObojena.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p01/kolekcijeRed/Red.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p01/kolekcijeRed/RedPrekoKruznogNiza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p01/kolekcijeRed/RedPrekoPovezaneListe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p02/iteratorLista/IteratorPovezanaLista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p03/povezanaLista/RadSaPovezanomListom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p04/nizovnaLista/RadSaNizovnomListom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p05/implementacijaNizovneListe/NizovnaLista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p06/hesKod/UredjeniPar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p06/hesKod/UredjeniParUporediv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p07/hesSkup/RadSaHesSkupom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p08/drvoSkup/RadSaDrvoSkupom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p09/povezaniHesSkup/RadSaPovezanimHesSkupom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p10/bitovskiSkup/RadSaBitovskimSkupom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p11/enumerisaniSkup/RadSaEnumerisanimSkupom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p12/nizovniDvostrukiRed/RadSaNizovnimDvostrukimRedom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p13/prioritetniRed/Proces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p13/prioritetniRed/RadSaPrioritetnimRedom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p14/hesKatalog/Osoba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p14/hesKatalog/RadSaHesKatalogom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p15/drvoKatalog/RadSaDrvoKatalogom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p16/dzokerTipGornjeGranice/SumaBrojeva.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p17/dzokerTipDonjeGranice/OsobaUporediva.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p17/dzokerTipDonjeGranice/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p18/stekKolekcijaListaNiz/SamorastuciNiz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p18/stekKolekcijaListaNiz/Stek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p18/stekKolekcijaListaNiz/StekPrekoListe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p18/stekKolekcijaListaNiz/StekPrekoNiza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g14/p18/stekKolekcijaListaNiz/StekoviKolekcije.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g15/p01/ulazniTokDatoteka/ProcitajDatoteku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g15/p02/ispisPodataka/IspisiPodatkeDatoteka.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g15/p02/ispisPodataka/IspisiPodatkeKonzola.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g15/p03/citacNiske/CitajReci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g15/p04/ispisPodatakaKarakteri/IspisNiskiUDatoteku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g15/p05/ulancavanjeTokova/ProcitajDatotekuKaraktera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g15/p06/obilazakSistemaDatoteka/RekurzivniObilazak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/rs/math/oop/g15/p07/ucitavanjeIzDatotekeSkener/UcitajStudente.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +342,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FlqNvdiNv3F68TfPE8MSeJjMIk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,6 +350,27 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="StudentPokretanje" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rs.math.oop.g02.p01.klaseObjekti.StudentPokretanje" />
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rs.math.oop.g02.p01.klaseObjekti.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StudentPokretanje" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -32,5 +382,10 @@
       <updated>1665076986602</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
   </component>
 </project>
