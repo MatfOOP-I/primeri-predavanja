@@ -6,6 +6,6 @@ class Student {
     boolean naBudzetu;
     void stampajPodatke() {
         System.out.println("Име студента је: " + ime
-             + ", број индекса је: " + brojIndeksa + "/ На буџету: " + naBudzetu + ".");
+            + ", број индекса је: " + brojIndeksa + "/ На буџету: " + naBudzetu + ".");
     }
 }
