@@ -8,6 +8,7 @@ class CeoBroj {
     CeoBroj(int vrednostBroja) {
         vrednost = vrednostBroja;
     }
+
     // метод за приказ целог броја
     void prikazi() {
         System.out.print(vrednost);
@@ -30,9 +31,10 @@ class CeoBroj {
                 drugaVrednost %= prvaVrednost;
             }
     }
+
     // одређивање НЗС датог броја и другог целог броја
     CeoBroj NZS(CeoBroj drugi) {
-        CeoBroj nzd = this.NZD(drugi);
+        CeoBroj nzd = NZD(drugi);
         int nzs = (vrednost * drugi.vrednost) / nzd.vrednost;
         return new CeoBroj(nzs);
     }

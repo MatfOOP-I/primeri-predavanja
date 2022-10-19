@@ -21,7 +21,7 @@ class FunkcionalnoNzd {
         System.out.println("Други број је " + drugiBroj);
         System.out.println("Трећи број је " + treciBroj);
         // одређивање НЗД за ова три броја
-        int nzd = nzd2.apply( prviBroj, nzd2.apply(drugiBroj, treciBroj) );
+        int nzd = nzd2.apply(nzd2.apply( prviBroj, drugiBroj), treciBroj);
         // приказ резултата
         System.out.println("НЗД ова три броја је " + nzd);
     }

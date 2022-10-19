@@ -2,13 +2,13 @@ package rs.math.oop.g02.p02.nasledjivanje;
 
 class Poslediplomac extends Student {
 	boolean zaposlen;
-	private int brojIspita;
+	int brojIspita;
 
-	public void postavibrojIspita(int b) {
+	public void postaviBrojIspita(int b) {
 		brojIspita = b;
 	}
 
-	public int uzmibrojIspita() {
+	public int uzmiBrojIspita() {
 		return brojIspita;
 	}
 }

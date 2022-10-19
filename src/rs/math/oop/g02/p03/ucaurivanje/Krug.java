@@ -5,10 +5,10 @@ class Krug {
 	int cx, cy;
 	int r;
 
-	Krug(int cx, int cy, int r) {
-		this.cx = cx;
-		this.cy = cy;
-		this.r = r;
+	Krug(int centarX, int centarY, int poluprecnik) {
+		cx = centarX;
+		cy = centarY;
+		r = poluprecnik;
 	}
 
 	// круг има одговорност да манипулише својим стањем
@@ -21,4 +21,6 @@ class Krug {
 	void prikazi() {
 		System.out.println("Круг C = (" + cx + ", " + cy + ") и r = " + r);
 	}
+
+
 }
