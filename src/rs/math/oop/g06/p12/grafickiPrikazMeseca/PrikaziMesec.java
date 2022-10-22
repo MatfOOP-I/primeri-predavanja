@@ -20,10 +20,10 @@ public class PrikaziMesec {
         // а getValue() само његов редни број 1-7
         int danUNedeljiRbr = dan.getDayOfWeek().getValue();
         for (int i = 1; i < danUNedeljiRbr; i++)
-            System.out.print("\t");
+            System.out.print("\t\t");
         // главна петља
         do {
-            System.out.print(dan.getDayOfMonth() + "\t");
+            System.out.print(dan.getDayOfMonth() + "\t\t");
             danUNedeljiRbr++;
             // прелазимо на наредни дан
             dan = dan.plusDays(1);

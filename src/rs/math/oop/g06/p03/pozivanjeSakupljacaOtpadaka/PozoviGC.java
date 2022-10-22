@@ -9,8 +9,8 @@ public class PozoviGC {
 	}
 
 	public static void main(String[] args) {
-		int n = 10000000;
-		int nIspis = 200000;
+		int n = 10_000_000;
+		int nIspis = 200_000;
 		String s;
 		long pocBezGC = System.nanoTime();
 		System.out.println(

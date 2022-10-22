@@ -6,7 +6,7 @@ public class BeskonacniFor {
 		long n=0;
 		for(;;)
 			n++;
-		//System.out.println(n); 
+		//System.out.println(n);
 		// наредба исписа изнад се неће никад десити 
 		// па и компајлер указује на грешку, 
 		// стога је наредба коментарисана

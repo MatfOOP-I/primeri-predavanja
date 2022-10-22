@@ -10,7 +10,7 @@ public class IzmeriVreme {
 	}
 
 	public static void main(String args[]) {
-		for (int n = 10000000; n <= 1000000000; n *= 10) {
+		for (int n = 10_000_000; n <= 1_000_000_000; n *= 10) {
 			long pocetak1 = System.nanoTime();
 			long suma = sumiraj(n);
 			System.out.printf("Сума природних бројева до %d је %d%n", n, suma);
@@ -18,7 +18,7 @@ public class IzmeriVreme {
 			System.out.println("Време у ns употребом nanoTime(): " 
 					+ (kraj1 - pocetak1));
 			System.out.printf("Време у ms употребом nanoTime(): %.5g%s",
-					(kraj1 - pocetak1) / 1000000.0, System.lineSeparator());
+					(kraj1 - pocetak1) / 1_000_000.0, System.lineSeparator());
 
 			long pocetak2 = System.currentTimeMillis();
 			suma = sumiraj(n);
