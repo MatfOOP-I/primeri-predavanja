@@ -5,7 +5,6 @@ public class RadSaNizom {
 		java.util.Scanner skener = new java.util.Scanner(System.in);
 		System.out.println("Унесите димензију низа: ");
 		int n = skener.nextInt();
-		skener.close();
 		if (n <= 0) {
 			System.err.println("Некоректна димензија.");
 			System.exit(1);
@@ -13,7 +12,9 @@ public class RadSaNizom {
 		// сви низови у Јави су динамички алоцирани па није битно да ли је
 		// димензија низа била позната у фази компилације или тек приликом извршавања
 		double[] niz = new double[n];
-		double x = -23.34e1;
+		System.out.println("Унесите вредност елемента: ");
+		double x = skener.nextDouble();
+		skener.close();
 		for (int i = 0; i < niz.length; i++)
 			niz[i] = x;
 		for (double d : niz)

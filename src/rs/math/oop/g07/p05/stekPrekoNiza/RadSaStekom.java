@@ -12,7 +12,7 @@ public class RadSaStekom {
 
 	static void dodaj(double elem) {
 		if (vrhSteka == stek.length - 1) {
-			System.out.println("Грешка при додавању: стек је пун!");
+			System.err.println("Грешка при додавању: стек је пун!");
 			return;
 		}
 		stek[++vrhSteka] = elem;
@@ -20,7 +20,7 @@ public class RadSaStekom {
 
 	static double ukloni() {
 		if (vrhSteka == -1) {
-			System.out.println("Грешка при уклањању: стек је празан!");
+			System.err.println("Грешка при уклањању: стек је празан!");
 			return -1;
 		}
 		return stek[vrhSteka--];
@@ -32,7 +32,7 @@ public class RadSaStekom {
 
 	public static void main(String[] args) {
 		double[] niz = { 13.4, 7.4, 6.3, 3.2, 4, 51, 6.2, 4.7, 3, 14.5, -7.6, 0, 25 };
-		inicijalizujStek(100);
+		inicijalizujStek(10);
 		int i = 0;
 		while (i < niz.length) {
 			double x = niz[i];
@@ -40,6 +40,6 @@ public class RadSaStekom {
 			i++;
 		}
 		while (brojElemenata() > 0)
-			System.out.print(ukloni() + "\t");
+			System.out.printf("%8.3g ", ukloni());
 	}
 }
