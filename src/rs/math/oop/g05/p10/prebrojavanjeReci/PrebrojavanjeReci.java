@@ -19,7 +19,7 @@ public class PrebrojavanjeReci {
 			if (s.equals("физика"))
 				bf++;
 		} while (!s.equals("крај"));
-		System.out.println("Број учитаних речи " + n);
+		System.out.println("Број учитаних речи " + (n-1));
 		System.out.println("Број појава речи 'програмирање'  је: " + bp);
 		System.out.println("Број појава речи 'математика'  је: " + bm);
 		System.out.println("Број појава речи 'физика'  је: " + bf);

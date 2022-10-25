@@ -19,6 +19,7 @@ public class IzadjiIzAplikacije {
 		karakteristikeMonitora(1024, 1024);
 		karakteristikeMonitora(1920, 768);
 		karakteristikeMonitora(0, 230);
+		karakteristikeMonitora(2500, 800);
 		// није неопходно ставити на крају програма, али не смета
 		System.exit(0);
 	}
