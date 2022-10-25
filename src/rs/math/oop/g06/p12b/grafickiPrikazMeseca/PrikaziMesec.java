@@ -1,4 +1,4 @@
-package rs.math.oop.g06.p12.grafickiPrikazMeseca;
+package rs.math.oop.g06.p12b.grafickiPrikazMeseca;
 
 public class PrikaziMesec {
 
