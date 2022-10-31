@@ -31,6 +31,12 @@ public class RadSaMatricama {
 	static double[][] saberi(double[][] a, double[][] b) {
 		if (a.length != b.length)
 			return null;
+		for (int i = 1; i < a.length; i++)
+			if (a[0].length != a[i].length)
+				return null;
+		for (int i = 1; i < b.length; i++)
+			if (b[0].length != b[i].length)
+				return null;
 		for (int i = 0; i < a.length; i++)
 			if (a[i].length != b[i].length)
 				return null;
@@ -44,6 +50,12 @@ public class RadSaMatricama {
 	static double[][] oduzmi(double[][] a, double[][] b) {
 		if (a.length != b.length)
 			return null;
+		for (int i = 1; i < a.length; i++)
+			if (a[0].length != a[i].length)
+				return null;
+		for (int i = 1; i < b.length; i++)
+			if (b[0].length != b[i].length)
+				return null;
 		for (int i = 0; i < a.length; i++)
 			if (a[i].length != b[i].length)
 				return null;
@@ -59,6 +71,9 @@ public class RadSaMatricama {
 			return null;
 		for (int i = 1; i < a.length; i++)
 			if (a[0].length != a[i].length)
+				return null;
+		for (int i = 1; i < b.length; i++)
+			if (b[0].length != b[i].length)
 				return null;
 		double[][] c = new double[a.length][b[0].length];
 		for (int i = 0; i < c.length; i++)
@@ -105,8 +120,6 @@ public class RadSaMatricama {
 		double znak = 1;
 		for (int j = 0; j < n; j++) {
 			double[][] x = iskljuci(a, 0, j);
-//			System.out.println("---");
-//			prikazi(x);
 			det += znak * a[0][j] * determinanta(x);
 			znak = -znak;
 		}
@@ -119,7 +132,7 @@ public class RadSaMatricama {
 		prikazi(a);
 		double[][] b = { { 2, 3, 4 }, { 5, 6.6, 7 } };
 		System.out.println("B je: ");
-		prikazi(b);
+		prikazi2(b);
 		System.out.println("A+B je: ");
 		prikazi2(saberi(a, b));
 		System.out.println("A-B je: ");

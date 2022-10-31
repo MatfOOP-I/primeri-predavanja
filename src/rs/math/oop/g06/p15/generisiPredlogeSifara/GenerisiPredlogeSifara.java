@@ -3,7 +3,7 @@ package rs.math.oop.g06.p15.generisiPredlogeSifara;
 public class GenerisiPredlogeSifara {
 
 	public static void main(String[] args) {
-		java.util.Random gen = new java.util.Random(42121);
+		java.util.Random gen = new java.util.Random();
 		for (int i = 0; i < 10; i++) {
 			StringBuilder sbSifra = new StringBuilder();
 			int duzina = gen.nextInt(9) + 8; // 8-16

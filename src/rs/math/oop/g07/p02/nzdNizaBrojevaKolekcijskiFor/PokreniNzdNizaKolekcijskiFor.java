@@ -5,7 +5,7 @@ import rs.math.oop.g03.p02.strukturnaParadigma.StrukturnoNzd;
 public class PokreniNzdNizaKolekcijskiFor {
 	public static void main(String[] argumenti) {
 		// низ чији се НЗД тражи
-		int[] niz = { 24, 48, 96, 192, 36, 72, 144 };
+		int[] niz = { 24, 48, 96, 192, 36, 72, 144, 1212 };
 		// приказ низа
 		System.out.print("Низ: ");
 		for (int elemenat : niz)

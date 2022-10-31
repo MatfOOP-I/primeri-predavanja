@@ -5,15 +5,14 @@ import java.time.format.DateTimeFormatter;
 class PokretanjeDatumVremeLocalDate {
       public static void main(String[] args) {
             java.time.LocalDate datum1 = java.time.LocalDate.now();
-            java.time.LocalDate datum2 = java.time.LocalDate.parse("2019-02-03");
-            java.time.LocalDate datum3 = java.time.LocalDate.of(2019, 2, 3);
+            java.time.LocalDate datum2 = java.time.LocalDate.parse("2022-02-03");
+            java.time.LocalDate datum3 = java.time.LocalDate.of(2022, 2, 3);
 
             System.out.println("datum1: " + datum1);
             System.out.println("datum2: " + datum2);
             System.out.println("datum3: " + datum3);
 
-            DateTimeFormatter formater =
-                  DateTimeFormatter.ofPattern("|dd.MM.YYYY.|");
+            DateTimeFormatter formater = DateTimeFormatter.ofPattern("|dd.MM.YYYY.|");
             System.out.printf("%ndatum1 (custom format): %s%n", datum1.format(formater));
             System.out.printf("datum2 (custom format): %s%n", datum2.format(formater));
             System.out.printf("datum3 (custom format): %s%n%n", datum3.format(formater));

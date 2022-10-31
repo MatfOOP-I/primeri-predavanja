@@ -11,7 +11,7 @@ public class ProsekUnetihBrojeva2 {
 			n++;
 			suma += b;
 		}
-		System.out.println(String.format("Просек унетих бројева је: %.2f", suma / n));
+		System.out.printf("Просек унетих бројева је: %.2f", suma / n);
 		skener.close();
 	}
 }

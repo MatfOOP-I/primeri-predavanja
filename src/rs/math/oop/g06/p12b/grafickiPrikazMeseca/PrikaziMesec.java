@@ -24,7 +24,6 @@ public class PrikaziMesec {
         // главна петља
         do {
             System.out.print(dan.getDayOfMonth() + "\t\t");
-            danUNedeljiRbr++;
             // прелазимо на наредни дан
             dan = dan.plusDays(1);
             danUNedeljiRbr = dan.getDayOfWeek().getValue();
