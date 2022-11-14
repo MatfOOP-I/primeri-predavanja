@@ -8,9 +8,10 @@ public class IspisiArgumente {
 			System.out.println(a);
 	}
 
-	public static void main(String[] args) {
+	public static void main(String... args) {
 		ispisiSve(20);
 		ispisiSve(11, 22, 34, -1);
 		ispisiSve();
+		ispisiSve(2* 34, Integer.valueOf("22")+2);
 	}
 }

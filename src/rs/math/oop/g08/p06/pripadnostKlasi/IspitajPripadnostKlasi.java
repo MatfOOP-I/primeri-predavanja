@@ -3,7 +3,7 @@ package rs.math.oop.g08.p06.pripadnostKlasi;
 public class IspitajPripadnostKlasi {
 
 	public static void main(String[] args) {
-		Object o=new Object();
+		Object o = new Object();
 		Kutija k = new Kutija();
 		k.dubina=10;
 		k.visina=2;

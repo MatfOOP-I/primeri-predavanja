@@ -35,10 +35,11 @@ public class SortirajPaTraziRec {
         	// у супротном ће понашање претраге бити недефинисано, 
         	// можда се пронађе реч, а можда и не
         	int pozicija = java.util.Arrays.binarySearch(reci, rec);
-        	if(pozicija>0)
-        		System.out.println("Пронађена реч на позицији "+pozicija);
+        	if(pozicija >= 0)
+        		System.out.println("Пронађена реч на позицији "  + pozicija + ".");
         	else
-        		System.out.println("Није пронађена реч");
+        		System.out.println("Није пронађена реч. Враћена је вредност "
+						+ pozicija + ".");
         }
         skener.close();
 	}

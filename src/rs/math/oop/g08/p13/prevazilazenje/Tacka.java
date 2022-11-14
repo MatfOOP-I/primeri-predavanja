@@ -23,7 +23,7 @@ public class Tacka {
 		int h = x;
 		h = 31 * h + y;
 		return h;
-		// return Objects.hash(x, y); 
+		//return java.util.Objects.hash(x, y); 
 		// алтернативно постоји и услужни метод hash() у класи Objects
 	}
 }

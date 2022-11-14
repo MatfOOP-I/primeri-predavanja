@@ -1,0 +1,1211 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Duz",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p14.konstruktori2.Duz",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "rs.math.oop.Main",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch StudentPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g02.p01.klaseObjekti.StudentPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch StudentPoslediplomacPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g02.p02.nasledjivanje.StudentPoslediplomacPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch CrtezPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g02.p03.ucaurivanje.CrtezPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjektnoNzdNzsPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g02.p04.objektnoNzdNzs.ObjektnoNzdNzsPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ImperativnoNzd",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g03.p01.imperativnaParadigma.ImperativnoNzd",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch StrukturnoNzd",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g03.p02.strukturnaParadigma.StrukturnoNzd",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ModulNzdNzsPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g03.p03.modularnaParadigma.ModulNzdNzsPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ModulNzdPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g03.p03.modularnaParadigma.ModulNzdPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch LogickoNzd",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g03.p04.logickaParadigma.LogickoNzd",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch FunkcionalnoNzd",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g03.p05.funkcionalnaParadigma.FunkcionalnoNzd",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObjektnoNzd",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g03.p06.objektnaParadigma.ObjektnoNzd",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestBlok",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p01.blokovi.TestBlok",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sgn1",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p02.znakBroja.Sgn1",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sgn2",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p02.znakBroja.Sgn2",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Min2",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p03.minimumDvaBroja.Min2",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Uredjenje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p04.uredjenjeTriBroja.Uredjenje",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch BrojDanaUMesecu",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p05.daniUMesecu.BrojDanaUMesecu",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch IspisBrojeva",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p06.ispisBrojeva.IspisBrojeva",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Suma",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p07.sumaNiza.Suma",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch GenerisiDoUslova",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p08.brojeviDoUslova.GenerisiDoUslova",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch DuzinaBroja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p09.duzinaBroja.DuzinaBroja",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrebrojavanjeReci",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p10.prebrojavanjeReci.PrebrojavanjeReci",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch BrojackiIspis",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p11.forBrojackiIspis.BrojackiIspis",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch FaktorijelBroja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p12.faktorijelBroja.FaktorijelBroja",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumirajAritmetickiNizUnazad",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p13.sumaAritmetickaUnazad.SumirajAritmetickiNizUnazad",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch BeskonacniFor",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p14.beskonacniFor.BeskonacniFor",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch StepenovanjeBroja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p15.forKaoWhile.StepenovanjeBroja",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch KorenNaIntervalu",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p16.funkcijaKorenaNaIntervalu.KorenNaIntervalu",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch IspisIndeksaSporedneDijagonale",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p17.indeksiSporedneDijagonale.IspisIndeksaSporedneDijagonale",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch UnosBrojevaBreak",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p18.unosBrojevaBreak.UnosBrojevaBreak",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch UnosBrojevaContinue",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p19.unosBrojevaContinue.UnosBrojevaContinue",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch TraziPodnisku",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p20.trazenjePodniske.TraziPodnisku",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RazlicitiIspisi",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p01.standardniIspis.RazlicitiIspisi",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch IzmeriVreme",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p02.merenjeVremena.IzmeriVreme",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch PozoviGC",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p03.pozivanjeSakupljacaOtpadaka.PozoviGC",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch IzadjiIzAplikacije",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p04.izlazIzAplikacije.IzadjiIzAplikacije",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObrniReciURecenici",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p05.obrtanjeReci.ObrniReciURecenici",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch PonoviNisku",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p06.ponoviNisku.PonoviNisku",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch PonoviNiskuStringBuilder",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p07.ponoviNiskuStringBuilder.PonoviNiskuStringBuilder",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch MutabilniFloat",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p08.prosledjivanjeOmotacTipa.MutabilniFloat",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ParsirajAutoInformacije",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p09.parsiranjeNiske.ParsirajAutoInformacije",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProsekUnetihBrojeva",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p10.parsiranjeStandardniUlaz.ProsekUnetihBrojeva",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch MonteKarloIntegracija",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p11.matematickeFunkcije.MonteKarloIntegracija",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch FiltrirajVremena",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p13.filtrirajVremena.FiltrirajVremena",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestirajPseudoNormalneBrojeve",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p14.testirajNormalnu.TestirajPseudoNormalneBrojeve",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch GenerisiPredlogeSifara",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p15.generisiPredlogeSifara.GenerisiPredlogeSifara",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokreniNzdNiza",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p01.nzdNizaBrojeva.PokreniNzdNiza",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch PokreniNzdNizaKolekcijskiFor",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p02.nzdNizaBrojevaKolekcijskiFor.PokreniNzdNizaKolekcijskiFor",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaNizom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p03.radSaNizomDinamickaDimenzija.RadSaNizom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch FrekvencijeBrojevaMonolitno",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p04.frekvencijeBrojeva.FrekvencijeBrojevaMonolitno",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch FrekvencijeBrojevaRazdvojeno",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p04.frekvencijeBrojeva.FrekvencijeBrojevaRazdvojeno",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch FrekvencijeBrojevaRazdvojenoGlobalniPodaci",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p04.frekvencijeBrojeva.FrekvencijeBrojevaRazdvojenoGlobalniPodaci",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaStekom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p05.stekPrekoNiza.RadSaStekom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumirajArgumente",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p06.sumaArgumenataKomandneLinije.SumirajArgumente",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch OdaberiOperaciju",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p07.odabirOperacijeArgumentiKomandneLinije.OdaberiOperaciju",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaMatricama",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p08.radSaMatricama.RadSaMatricama",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrebrojKaraktere",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p09.pojavljivanjaKaraktera.PrebrojKaraktere",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortirajPaTraziRec",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p10.sortiranjePretragaReci.SortirajPaTraziRec",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch IspisiArgumente",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p11.promenljiviBrojArgumenata.IspisiArgumente",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch KreiranjeReferenci",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p01.kreiranjeReferenci.KreiranjeReferenci",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch KreiranjeObjekata",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p02.kreiranjeObjekata.KreiranjeObjekata",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestirajObject",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p03.kreiranjeObjekataObject.TestirajObject",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Kutija",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p04.kreiranjeObjekataIspis.Kutija",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Kutija(1)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p05.poredjenjeOperatoromJednako.Kutija",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch UporediPromenljive",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p05.poredjenjeOperatoromJednako.UporediPromenljive",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch IspitajPripadnostKlasi",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p06.pripadnostKlasi.IspitajPripadnostKlasi",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch IspisiPseudoslucajneCele",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p07.uvozKlase.IspisiPseudoslucajneCele",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p08.pristupPoljima.Test",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ucenik",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p08.pristupPoljima.Ucenik",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ucenik(1)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p09.pristupStatickimPoljima.Ucenik",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestirajUcenik",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p10.pozivanjeMetoda.TestirajUcenik",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pravougaonik",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p11.preopterecivanjeMetoda.Pravougaonik",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Srednjoskolac",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p12.nasledjivanje.Srednjoskolac",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Duz",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p13.prevazilazenje.Duz",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Duz(1)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p14.konstruktori.Duz",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Crtez",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p15.kopirajuciKonstruktor.Crtez",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch OznacenaTacka",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p16.konstruktorNadklase.OznacenaTacka",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch A",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p17.publicModifikator.podpaket1.A",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch B",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p17.publicModifikator.podpaket1.B",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch C",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p17.publicModifikator.podpaket2.C",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch A(1)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p18.packageModifikator.podpaket1.A",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch B(1)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p18.packageModifikator.podpaket1.B",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch C(1)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p18.packageModifikator.podpaket2.C",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch A(2)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p19.protectedModifikator.podpaket1.A",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch B(2)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p19.protectedModifikator.podpaket1.B",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch C(2)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p19.protectedModifikator.podpaket2.C",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch A(3)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p20.privateModifikator.podpaket1.A",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch B(3)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p20.privateModifikator.podpaket1.B",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch C(3)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p20.privateModifikator.podpaket2.C",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestirajKrugove",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p21.zastitaPolja.TestirajKrugove",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch GeometrijskiObjekti",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p04.apstraktnaGeometrija.GeometrijskiObjekti",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pitanja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p06.interfejsImplementacija.Pitanja",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch PitanjaRazmisljanja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p07.interfejsVise.PitanjaRazmisljanja",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Eksperimenti",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p08.interfejsProsirenje.Eksperimenti",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch MereObliciSadrzavanja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p09.interfejsGeometrija.MereObliciSadrzavanja",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch MereObliciSadrzavanja(1)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p10.interfejsGeometrija.MereObliciSadrzavanja",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch UredjenjePredefinisani",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p11.uredjenjePredefinisani.UredjenjePredefinisani",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch UredjenjeTacaka",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p12.uredjenjeTacaka.UredjenjeTacaka",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch UredjenjeTacaka(1)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p13.visekkriterijumaTacke.UredjenjeTacaka",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch VisekriterijumskoSortiranje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p14.viseKriterijumaPredefinisani.VisekriterijumskoSortiranje",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Kloniranje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p15.kloniranje.Kloniranje",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Kloniranje(1)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p16.kloniranjeMutabilnaPoljaProblem.Kloniranje",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Kloniranje(2)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p17.kloniranjeMutabilnaPoljaResenje.Kloniranje",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch LosPrincipS",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p18.losPrincipS.LosPrincipS",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch DobarPrincipS",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p19.dobarPrincipS.DobarPrincipS",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch LosPrincipO",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p20.losPrincipO.LosPrincipO",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch DobarPrincipO",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p21.dobarPrincipO.DobarPrincipO",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch LosPrincipL",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p22.losPrincipL.LosPrincipL",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch LosPrincipI",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p23.losPrincipI.LosPrincipI",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch DobarPrincipI",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p24.dobarPrincipI.DobarPrincipI",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch LosPrincipD",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p25.losPrincipD.LosPrincipD",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch DobarPrincipDKonstruktor",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p26.dobarPrincipDKonstruktor.DobarPrincipDKonstruktor",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch DobarPrincipDMetodPostavi",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p27.dobarPrincipDMetodPostavi.DobarPrincipDMetodPostavi",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch LosOdnosJeste",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p28.losOdnosJeste.LosOdnosJeste",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ObracunPlataTest",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g10.p01.nestatickaUgnjezdenaObracunPlate.ObracunPlataTest",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch PovezanaListaTest",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g10.p02.unutrasnjaKlasaPovezanaLista.PovezanaListaTest",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ValidacijaBrojaMobilnog",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g10.p03.lokalneUnutrasnjeValidacijaBrojaMobilnog.ValidacijaBrojaMobilnog",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortirajNiske",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g10.p04.anonimneKlasePoredjenjePriSortiranju.SortirajNiske",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch IndeksVanGranica",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g11.p01.izuzeciIndeksVanGranica.IndeksVanGranica",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch FaktorijelBezUslovaIzlaska",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g11.p02.izuzeciPrekoracenjeStekMemorije.FaktorijelBezUslovaIzlaska",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch SprecavanjeIndeksaVanGranica",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g11.p03.izuzeciSprecavanjeIndeksaVanGranica.SprecavanjeIndeksaVanGranica",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch KonverzijaUPogresanObjektniTip",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g11.p04.izuzeciKonverzijaUPogresanObjektniTip.KonverzijaUPogresanObjektniTip",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ParsiranjeDatuma",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g11.p05.izuzeciParsiranjeDatuma.ParsiranjeDatuma",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ParsiranjeDatumaPropagiranjeIzuzetka",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g11.p06.izuzeciPropagiranje.ParsiranjeDatumaPropagiranjeIzuzetka",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Niz2DIzuzetak",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g11.p07.izuzeciKorisnickiDefinisan.Niz2DIzuzetak",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch NenegativanBrojTvrdnja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g11.p08.tvrdnjeNenegativanBroj.NenegativanBrojTvrdnja",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch NenegativanBrojTvrdnjaSaPorukom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g11.p09.tvrdnjeSaPorukomNenegativanBroj.NenegativanBrojTvrdnjaSaPorukom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortiranjeSaPostuslovom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g11.p10.tvrdnjeSortiranjePostuslov.SortiranjeSaPostuslovom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch DanUNedelji",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g12.p01.enumiDaniUNedelji.DanUNedelji",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch MesecKalendarski",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g12.p02.enumiBrojDanaUMesecu.MesecKalendarski",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch PlanetaSuncevogSistema",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g12.p03.enumiPlaneteSuncevogSistema.PlanetaSuncevogSistema",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch AritmetickaOperacija",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g12.p04.enumiAritmetickeOperacije.AritmetickaOperacija",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch DanUNedeljiKlasa",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g12.p05.enumiDaniUNedeljiKlasa.DanUNedeljiKlasa",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch KutijaSirova",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g13.p01.genericiKutijaSirova.KutijaSirova",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch KutijaGenericka",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g13.p02.genericiKutijaGenericka.KutijaGenericka",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch UredjeniPar",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g13.p03.genericiUredjeniPar.UredjeniPar",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch StekPrekoNiza",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g13.p04.generickiStek.StekPrekoNiza",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch PretragaNiza",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g13.p05.genericiPretragaNiza.PretragaNiza",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinimalniElementNiza",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g13.p06.genericiMinimalniElementNiza.MinimalniElementNiza",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinimalniElementNizaSirov",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g13.p07.genericiUredjeniParUporedivSirov.MinimalniElementNizaSirov",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch KutijaGenerickaObojena",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g13.p08.genericiKutijaGenerickaObojena.KutijaGenerickaObojena",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RedPrekoKruznogNiza",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p01.kolekcijeRed.RedPrekoKruznogNiza",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RedPrekoPovezaneListe",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p01.kolekcijeRed.RedPrekoPovezaneListe",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch IteratorPovezanaLista",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p02.iteratorLista.IteratorPovezanaLista",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaPovezanomListom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p03.povezanaLista.RadSaPovezanomListom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaNizovnomListom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p04.nizovnaLista.RadSaNizovnomListom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch NizovnaLista",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p05.implementacijaNizovneListe.NizovnaLista",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch UredjeniPar(1)",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p06.hesKod.UredjeniPar",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch UredjeniParUporediv",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p06.hesKod.UredjeniParUporediv",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaHesSkupom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p07.hesSkup.RadSaHesSkupom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaDrvoSkupom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p08.drvoSkup.RadSaDrvoSkupom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaPovezanimHesSkupom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p09.povezaniHesSkup.RadSaPovezanimHesSkupom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaBitovskimSkupom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p10.bitovskiSkup.RadSaBitovskimSkupom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaEnumerisanimSkupom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p11.enumerisaniSkup.RadSaEnumerisanimSkupom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaNizovnimDvostrukimRedom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p12.nizovniDvostrukiRed.RadSaNizovnimDvostrukimRedom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaPrioritetnimRedom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p13.prioritetniRed.RadSaPrioritetnimRedom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaHesKatalogom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p14.hesKatalog.RadSaHesKatalogom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RadSaDrvoKatalogom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p15.drvoKatalog.RadSaDrvoKatalogom",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumaBrojeva",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p16.dzokerTipGornjeGranice.SumaBrojeva",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch Student",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p17.dzokerTipDonjeGranice.Student",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch StekoviKolekcije",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g14.p18.stekKolekcijaListaNiz.StekoviKolekcije",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProcitajDatoteku",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g15.p01.ulazniTokDatoteka.ProcitajDatoteku",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch IspisiPodatkeDatoteka",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g15.p02.ispisPodataka.IspisiPodatkeDatoteka",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch IspisiPodatkeKonzola",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g15.p02.ispisPodataka.IspisiPodatkeKonzola",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch CitajReci",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g15.p03.citacNiske.CitajReci",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch IspisNiskiUDatoteku",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g15.p04.ispisPodatakaKarakteri.IspisNiskiUDatoteku",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProcitajDatotekuKaraktera",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g15.p05.ulancavanjeTokova.ProcitajDatotekuKaraktera",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch RekurzivniObilazak",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g15.p06.obilazakSistemaDatoteka.RekurzivniObilazak",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        },
+        {
+            "type": "java",
+            "name": "Launch UcitajStudente",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g15.p07.ucitavanjeIzDatotekeSkener.UcitajStudente",
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+        }
+    ]
+}

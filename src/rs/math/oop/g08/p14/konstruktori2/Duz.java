@@ -1,4 +1,4 @@
-package rs.math.oop.g08.p14.konstruktori;
+package rs.math.oop.g08.p14.konstruktori2;
 
 public class Duz {
 	Tacka a, b;
@@ -9,8 +9,8 @@ public class Duz {
 	}
 
 	public Duz(Tacka a, Tacka b) {
-		this.a = a; // као и код метода, this разрешава именских конфликт
-		this.b = b;
+		this.a = new Tacka(a);
+		this.b = new Tacka(b);
 	}
 
 	public Duz(int ax, int ay, int bx, int by) {
