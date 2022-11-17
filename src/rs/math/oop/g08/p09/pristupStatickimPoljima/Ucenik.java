@@ -14,6 +14,6 @@ public class Ucenik {
         drugi.imePrezime="Милан Микић";
         drugi.razred=6;
         Ucenik.brojUcenika++; // али је преко назива класе природније
-        System.out.println(prvi.brojUcenika);
+        System.out.println(drugi.brojUcenika);
 	}
 }

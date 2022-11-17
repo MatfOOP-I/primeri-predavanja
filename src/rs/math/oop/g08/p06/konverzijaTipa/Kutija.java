@@ -1,4 +1,4 @@
-package rs.math.oop.g08.p05.poredjenjeOperatoromJednako;
+package rs.math.oop.g08.p06.konverzijaTipa;
 
 public class Kutija {
 	int visina;

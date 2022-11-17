@@ -12,6 +12,6 @@ public class IspisiArgumente {
 		ispisiSve(20);
 		ispisiSve(11, 22, 34, -1);
 		ispisiSve();
-		ispisiSve(2* 34, Integer.valueOf("22")+2);
+		ispisiSve(2*34, Integer.valueOf("22")+2);
 	}
 }

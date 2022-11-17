@@ -26,9 +26,13 @@ public class PrebrojKaraktere {
 					karakteri[i][j][k] = rec.charAt(k);
 			}
 		}
+		prikazi2(karakteri);
+	}
+
+	private static void prikazi(char[][][] karakteri) {
 		// исписујемо све карактере (једино је изгубљена информација о зарезима)
 		for (int i = 0; i < karakteri.length; i++) {
-			System.out.println("--------------------" 
+			System.out.println("--------------------"
 					+ System.lineSeparator() + "Реченица " + (i + 1)
 					+ System.lineSeparator() + "--------------------");
 			for (int j = 0; j < karakteri[i].length; j++) {
@@ -38,4 +42,20 @@ public class PrebrojKaraktere {
 			}
 		}
 	}
+
+	private static void prikazi2(char[][][] karakteri) {
+		// исписујемо све карактере (једино је изгубљена информација о зарезима)
+		int i = 1;
+		for (char[][] recenica : karakteri) {
+			System.out.println("--------------------"
+					+ System.lineSeparator() + "Реченица " + (i++)
+					+ System.lineSeparator() + "--------------------");
+			for (char[] rec: recenica) {
+				for (char slovo: rec)
+					System.out.print(slovo);
+				System.out.println();
+			}
+		}
+	}
+
 }

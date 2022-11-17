@@ -7,6 +7,9 @@ public class Kutija {
 	int sirina;
 	int dubina;
 
+	public String toString(){
+		return "" + dubina + ":" + sirina + ":" + visina;
+	}
 	public static void main(String[] args) {
 		// декларацијација са иницијализацијом
 		Kutija kutija1 = new Kutija();

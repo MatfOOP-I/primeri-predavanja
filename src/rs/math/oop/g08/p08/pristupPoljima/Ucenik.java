@@ -14,10 +14,4 @@ public class Ucenik {
 		System.out.println(prvi.razred);
 		System.out.println(drugi.imePrezime);
 	}
-	
-	@Override
-	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
-		return super.equals(obj);
-	}
 }
