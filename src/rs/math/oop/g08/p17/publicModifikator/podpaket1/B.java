@@ -5,6 +5,7 @@ public class B {
 	void testirajA() {
 		A a = new A();
 		a.polje = 20;
+		a.testiraj();
 		a.metod();
 	}
 	

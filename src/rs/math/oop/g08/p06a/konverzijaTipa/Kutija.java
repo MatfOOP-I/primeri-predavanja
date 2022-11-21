@@ -1,4 +1,4 @@
-package rs.math.oop.g08.p06.konverzijaTipa;
+package rs.math.oop.g08.p06a.konverzijaTipa;
 
 public class Kutija {
 	int visina;

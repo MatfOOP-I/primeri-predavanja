@@ -3,8 +3,8 @@ package rs.math.oop.g08.p15.kopirajuciKonstruktor;
 public class Poligon {
 	Tacka[] tacke = new Tacka[10];
 	
-	public Poligon(Tacka...tacke) {
-		if(tacke.length>this.tacke.length) {
+	public Poligon(Tacka... tacke) {
+		if(tacke.length > this.tacke.length) {
 			System.err.println("Полигон има више од 10 тачака.");
 			System.exit(1);
 		}

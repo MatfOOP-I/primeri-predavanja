@@ -3,7 +3,7 @@ package rs.math.oop.g07.p10.sortiranjePretragaReci;
 public class SortirajPaTraziRec {
 
 	public static void main(String[] args) {
-		String tekst = "Као што се може видети, низ brojPojava чува вредности "
+		String tekst = "Као што се може видети, један низ brojPojava чува вредности "
                 + "броја појава за сваки од бројева из интервала. "
                 + "Стога је тип компоненте низа целобројни тип, "
                 + "а број елемената низа је иницијално датом одређен "

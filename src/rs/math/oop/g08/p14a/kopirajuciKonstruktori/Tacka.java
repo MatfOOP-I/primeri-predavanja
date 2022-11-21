@@ -1,4 +1,4 @@
-package rs.math.oop.g08.p14.konstruktori2;
+package rs.math.oop.g08.p14a.kopirajuciKonstruktori;
 
 public class Tacka {
 	int x, y;

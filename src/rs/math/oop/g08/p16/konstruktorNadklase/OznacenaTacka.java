@@ -16,7 +16,7 @@ public class OznacenaTacka extends Tacka{
 	
 	@Override
 	public String toString() {
-		return oznaka+super.toString();
+		return oznaka + super.toString();
 	}
 	
 	public static void main(String[] args) {

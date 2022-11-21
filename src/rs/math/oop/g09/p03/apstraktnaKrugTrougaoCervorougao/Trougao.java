@@ -2,7 +2,6 @@ package rs.math.oop.g09.p03.apstraktnaKrugTrougaoCervorougao;
 
 import java.util.Objects;
 
-import static java.lang.Math.sqrt;
 
 public class Trougao extends GeometrijskiObjekat {
    private Tacka a;
@@ -95,7 +94,7 @@ public class Trougao extends GeometrijskiObjekat {
       double bc = b.rastojanje(c);
       double ca = c.rastojanje(a);
       double s = (ab + bc + ca) / 2;
-      return sqrt(s * (s - ab) * (s - bc) * (s - ca));
+      return Math.sqrt(s * (s - ab) * (s - bc) * (s - ca));
    }
 
 }

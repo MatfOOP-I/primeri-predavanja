@@ -11,17 +11,21 @@ public class Trougao extends GeometrijskiObjekat {
 
    public Trougao(String oznaka, Tacka a, Tacka b, Tacka c) {
       super(oznaka);
-      Tacka o = new Tacka(0,0);
       Tacka[] temena = {a, b, c};
-      int ind = 0;
-      for(int i=1; i< temena.length; i++)
-         if( temena[ind].rastojanje(o) > temena[i].rastojanje(o)
-           || (temena[ind].rastojanje(o) == temena[i].rastojanje(o)
-              && temena[ind].uzmiX()>temena[i].uzmiX()))
-                  ind = i;
+      int ind = indeksNajblizeg(temena);
       this.a = new Tacka(temena[ind]);
       this.b = new Tacka(temena[(ind+1) % temena.length]);
       this.c = new Tacka(temena[(ind+2) % temena.length]);
+   }
+
+   private static int indeksNajblizeg(Tacka[] temena) {
+      int ind = 0;
+      for(int i = 1; i< temena.length; i++)
+         if( temena[ind].rastojanje(Tacka.KOORDINATNI_POCETAK) > temena[i].rastojanje(Tacka.KOORDINATNI_POCETAK)
+           || (temena[ind].rastojanje(Tacka.KOORDINATNI_POCETAK) == temena[i].rastojanje(Tacka.KOORDINATNI_POCETAK)
+              && temena[ind].uzmiX()> temena[i].uzmiX()))
+                  ind = i;
+      return ind;
    }
 
    public Trougao(Tacka a, Tacka b, Tacka c) {

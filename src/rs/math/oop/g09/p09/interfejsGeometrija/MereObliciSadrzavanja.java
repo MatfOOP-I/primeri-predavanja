@@ -47,7 +47,7 @@ public class MereObliciSadrzavanja {
          }
          else
             System.out.println(" не подржава облике");
-         if( go instanceof Mera){
+         if(go instanceof Mera){
             Mera m = (Mera) go;
             System.out.print(" обим: " + m.obim());
             System.out.println(" површина: " + m.povrsina() + "|");

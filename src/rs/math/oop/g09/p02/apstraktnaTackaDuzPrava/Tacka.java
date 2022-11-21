@@ -2,9 +2,6 @@ package rs.math.oop.g09.p02.apstraktnaTackaDuzPrava;
 
 import java.util.Objects;
 
-import static java.lang.Math.pow;
-import static java.lang.Math.sqrt;
-
 public class Tacka extends GeometrijskiObjekat {
 
    private double x;
@@ -49,8 +46,8 @@ public class Tacka extends GeometrijskiObjekat {
    }
 
    public double rastojanje(Tacka t) {
-
-      return sqrt(pow(t.x - x, 2) + pow(t.y - y, 2));
+      return Math.sqrt(Math.pow(t.uzmiX() - uzmiX(), 2)
+              + Math.pow(t.uzmiY() - uzmiY(), 2));
    }
 
    @Override
@@ -71,7 +68,7 @@ public class Tacka extends GeometrijskiObjekat {
 
    @Override
    public String toString() {
-      return uzmiOznaku() + "(" + x + "," + y + ")";
+      return uzmiOznaku() + "(" + uzmiX() + "," + uzmiY() + ")";
    }
 
    @Override
