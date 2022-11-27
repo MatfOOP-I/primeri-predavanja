@@ -12,6 +12,11 @@ public class TestirajUcenik {
 		// позив преко тачка-нотације из метода main
 		// који не припада класи Ucenik
 		prvi.prikaziInformacije();
-		drugi.prikaziInformacije();
+//		drugi.prikaziInformacije();
+//		Ucenik[] svi = {prvi, drugi};
+//		for( Ucenik u : svi)
+//			u.prikaziInformacije();
+		for(int i =1; i<=8; i++)
+			System.out.println(prvi.jeUStarijemRazredu(i));
 	}
 }

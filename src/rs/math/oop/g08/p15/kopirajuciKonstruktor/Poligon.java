@@ -5,7 +5,7 @@ public class Poligon {
 	
 	public Poligon(Tacka... tacke) {
 		if(tacke.length > this.tacke.length) {
-			System.err.println("Полигон има више од 10 тачака.");
+			System.err.println("Ппослеђено је више од" + this.tacke.length + " тачака.");
 			System.exit(1);
 		}
 		for(int i=0; i<tacke.length; i++)

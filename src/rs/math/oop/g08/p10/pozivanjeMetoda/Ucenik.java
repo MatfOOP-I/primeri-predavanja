@@ -11,6 +11,12 @@ public class Ucenik {
 				+ " " + jeStarijaSmena()); // могло је и this.jeStarijaSmena()
 	}
 
+	boolean jeUStarijemRazredu(int razred){
+		if(this.razred > razred)
+			return true;
+		return false;
+	}
+
 	boolean jeStarijaSmena() {
 		return razred > 4;
 	}

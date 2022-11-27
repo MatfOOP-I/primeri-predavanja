@@ -6,7 +6,7 @@ public class Ucenik {
 	static int brojUcenika = 0;
 	
 	public static void main(String[] args) {
-		Ucenik prvi = new Ucenik();
+        Ucenik prvi = new Ucenik();
         prvi.imePrezime="Петар Перић";
         prvi.razred=3;
         prvi.brojUcenika++; // може се приступити преко инстанцне референце

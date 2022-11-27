@@ -5,7 +5,7 @@ import rs.math.oop.g08.p19.protectedModifikator.podpaket1.A;
 public class C extends A{
 	
 	void testirajA() {
-		// A a = new A();
+		//A a = new A();
 		// a.polje = 20;
 		// a.metod();	
 		polje = 20;
