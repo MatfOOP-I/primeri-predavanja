@@ -3,7 +3,7 @@ package rs.math.oop.g07.p09a.sortiranjaNiza;
 public class Sortiraj {
     public static void main(String[] argumenti){
         int x = 7;
-        int[] niz1 = {2,-3, -(x-4), new Integer(x+3), 11, -5, 7 };
+        int[] niz1 = {2,-3, -(x-4), x+3, 11, -5, 7 };
         prikazi(niz1);
         java.util.Arrays.sort(niz1);
         prikazi(niz1);
