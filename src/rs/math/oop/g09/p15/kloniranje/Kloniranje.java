@@ -4,7 +4,7 @@ package rs.math.oop.g09.p15.kloniranje;
 public class Kloniranje {
 
    public static void main(String[] args) throws CloneNotSupportedException{
-         Zaposleni original = new Zaposleni("Јован", "Петровић", "припрравник", 30_000);
+         Zaposleni original = new Zaposleni("Јован", "Петровић", "приправник", 30_000);
          Zaposleni klon = original.clone();
          System.out.println("После клонирања, пре промена:");
          System.out.println("оригинал = " + original);

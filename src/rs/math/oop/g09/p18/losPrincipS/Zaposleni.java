@@ -56,7 +56,7 @@ public class Zaposleni{
 
    public int sacuvajBazaPodataka(){
       System.out.println("Реализује чување информација о примерку класе '"
-              + this.getClass().getSimpleName() + "' у бази података.");
+               + this.getClass().getSimpleName() + "' у бази података.");
       System.out.println("Чувају се следећи подаци: " + this);
       // овде треба да буду наредбе за чување објекта у базу
       return 0;

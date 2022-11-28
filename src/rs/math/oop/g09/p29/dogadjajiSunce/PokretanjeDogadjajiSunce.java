@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class PokretanjeDogadjajiSunce {
 
    private static void koriscenje() {
-      System.out.println("Naredbe: p-<ime> = pretplati <ime> na događaje ");
-      System.out.println("         r-<ime> = raskini pretplatu <ime> na događaje ");
+
       System.out.println("         i       = emituj događaj izlazak sunca ");
       System.out.println("         z       = emituj događaj zalazak sunca ");
       System.out.println("         k       = kraj ");

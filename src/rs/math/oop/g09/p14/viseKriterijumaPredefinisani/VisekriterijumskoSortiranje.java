@@ -19,15 +19,15 @@ public class VisekriterijumskoSortiranje
 
 	public static void main( String[] args )
 	{
-		Integer[] celiBrojevi = {-3, 24, -2, 1, 2, 0, 3, 4, -40};
-		System.out.println("Пре сортирања:");
-		prikazi(celiBrojevi);
-		Arrays.sort(celiBrojevi);
-		System.out.println("После подразуменваног сортирања (по вредности):");
-		prikazi(celiBrojevi);
-		Arrays.sort(celiBrojevi, new ParNeparComparator());
-		System.out.println("После пар-непар сортирања:");
-		prikazi(celiBrojevi);
+//		Integer[] celiBrojevi = {-3, 24, -2, 1, 2, 0, 3, 4, -40};
+//		System.out.println("Пре сортирања:");
+//		prikazi(celiBrojevi);
+//		Arrays.sort(celiBrojevi);
+//		System.out.println("После подразуменваног сортирања (по вредности):");
+//		prikazi(celiBrojevi);
+//		Arrays.sort(celiBrojevi, new ParNeparComparator());
+//		System.out.println("После пар-непар сортирања:");
+//		prikazi(celiBrojevi);
 
 		String[] niske = { "Паја", "Мики", "Шиља", "Аладин", "Снежана",
 				"Херкулес",	"Ариел", "Мандрак", "Банана-Мен" };

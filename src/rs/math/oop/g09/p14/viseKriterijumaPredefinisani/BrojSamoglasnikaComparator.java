@@ -20,6 +20,9 @@ public class BrojSamoglasnikaComparator implements Comparator {
 		int razlika = brojSamoglasnika((String) o2) - brojSamoglasnika((String) o1);
 		if (razlika != 0)
 			return razlika;
-		return ((String) o1).length() - ((String) o2).length();
+		razlika = ((String) o1).length() - ((String) o2).length();
+		if (razlika != 0)
+			return razlika;
+		return ((String) o1).compareTo((String) o2);
 	}
 }

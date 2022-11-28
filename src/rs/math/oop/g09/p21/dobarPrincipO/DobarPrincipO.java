@@ -19,7 +19,9 @@ public class DobarPrincipO {
       oblici[1] = new Pravougaonik(a,b);
       sc.close();
       for(Mera o: oblici){
-         out.printf("Површина oblika '%s': %f\n", o.getClass().getSimpleName(), o.povrsina());
+         out.printf("Површина oblika '%s': %f\n", 
+               o.getClass().getSimpleName(), 
+               o.povrsina());
       }
    }
 }
