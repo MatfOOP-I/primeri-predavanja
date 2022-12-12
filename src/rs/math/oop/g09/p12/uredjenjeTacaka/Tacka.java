@@ -73,17 +73,32 @@ public class Tacka extends GeometrijskiObjekat implements Comparable{
       return uzmiOznaku() + "(" + x + "," + y + ")";
    }
 
+   private int porediPoPoziciji(Object obj) {
+      if(obj == null)
+         return -1;
+      if (!(obj instanceof Tacka))
+         return -1;
+      Tacka t = (Tacka) obj;
+      Tacka koordPocetak = new Tacka(0, 0);
+      double razlika = rastojanje(koordPocetak) - t.rastojanje(koordPocetak);
+      if (razlika < 0) return -1;
+      if (razlika > 0) return 1;
+      return (int) (y - t.y);
+   }
+
+   private int porediPoOznaci(Object obj) {
+      if(obj == null)
+         return -1;
+      if (!(obj instanceof Tacka))
+         return -1;
+      Tacka t = (Tacka) obj;
+      return t.uzmiOznaku().compareTo(uzmiOznaku());
+   }
+
    @Override
    public int compareTo(Object obj) {
-        if(obj == null)
-           return -1;
-        if (!(obj instanceof Tacka))
-            return -1; // Tacka je uvek ispred neceg sto nije tacka
-        Tacka t = (Tacka) obj;
-        Tacka koordPocetak = new Tacka(0, 0);
-        double razlika = rastojanje(koordPocetak) - t.rastojanje(koordPocetak);
-        if (razlika < 0) return -1;
-        if (razlika > 0) return 1;
-        return (int)(y - t.y);
+      //return porediPoPoziciji(obj);
+      return porediPoOznaci(obj);
    }
+
 }

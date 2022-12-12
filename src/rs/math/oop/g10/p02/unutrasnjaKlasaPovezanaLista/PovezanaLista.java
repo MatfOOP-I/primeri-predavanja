@@ -28,7 +28,7 @@ public class PovezanaLista {
 		return sb.toString().trim()+"]";
 	}
 	
-	public class Element{
+	private class Element{
 		private Object podatak;
 		private Element sledeci;
 		

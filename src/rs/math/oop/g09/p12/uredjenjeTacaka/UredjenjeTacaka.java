@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class UredjenjeTacaka {
 
-   private static void prikaziTacke(Tacka[] sve) {
-      for (Tacka t: sve)
-         System.out.printf("%s ", t);
+   private static void prikazi(Tacka[] niz) {
+      for (Tacka x: niz)
+         System.out.print(x + " ");
       System.out.println();
    }
 
@@ -18,12 +18,12 @@ public class UredjenjeTacaka {
       Tacka e = new Tacka("E", 25, 25.5);
       Tacka f = new Tacka("F", 25.5, 25);
 
-      Tacka[] sve = {a, b, c, d, e, f};
+      Tacka[] sve = {a, b, f, d, e, c};
       System.out.println("Пре сортирања");
-      prikaziTacke(sve);
+      prikazi(sve);
       Arrays.sort(sve);
       System.out.println("Пoсле сортирања");
-      prikaziTacke(sve);
+      prikazi(sve);
     }
 
 }

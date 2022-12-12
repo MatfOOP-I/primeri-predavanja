@@ -1,5 +1,6 @@
 package rs.math.oop.g11.p06.izuzeciPropagiranje;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -10,12 +11,12 @@ public class ParsiranjeDatumaPropagiranjeIzuzetka {
 	final static DateTimeFormatter datumFormat = 
 			DateTimeFormatter.ofPattern("dd.MM.yyyy");
 	
-	static LocalDate parsirajDatum(String datumString) throws DateTimeParseException{
+	static LocalDate parsirajDatum(String datumString) throws DateTimeParseException {
 		LocalDate datum = LocalDate.parse(datumString, datumFormat);
 		return datum;
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 		LocalDate datum = null;
 		Scanner skener = null;
 	

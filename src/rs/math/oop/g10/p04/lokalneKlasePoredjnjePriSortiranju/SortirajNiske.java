@@ -1,4 +1,4 @@
-package rs.math.oop.g10.p04.anonimneKlasePoredjenjePriSortiranju;
+package rs.math.oop.g10.p04.lokalneKlasePoredjnjePriSortiranju;
 
 import java.util.Arrays;
 import java.util.Comparator;

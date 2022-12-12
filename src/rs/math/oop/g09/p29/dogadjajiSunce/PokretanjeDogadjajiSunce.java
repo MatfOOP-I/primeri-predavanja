@@ -8,6 +8,8 @@ public class PokretanjeDogadjajiSunce {
 
       System.out.println("         i       = emituj događaj izlazak sunca ");
       System.out.println("         z       = emituj događaj zalazak sunca ");
+      System.out.println("         p-<obj> = pretplati objekat <obj> da osluškuje događaje sunca  ");
+      System.out.println("         r-<obj> = raskini pretplatu objekta <obj> da osluškuje događaje sunca  ");
       System.out.println("         k       = kraj ");
    }
 
@@ -66,6 +68,8 @@ public class PokretanjeDogadjajiSunce {
             case 'r': {
                String ime = ulaz.substring(2);
                System.out.println("Raskida se pretplata '" + ime + "' na dogadjaje kretanja sunca");
+               if (ime.equals("suncokret"))
+                  sunceKretanjeEmiter.ukloniOsluskivac(suncokret);
                if (ime.equals("nocnafrajla"))
                   sunceKretanjeEmiter.ukloniOsluskivac(nocnaFrajla);
                if (ime.equals("petar"))

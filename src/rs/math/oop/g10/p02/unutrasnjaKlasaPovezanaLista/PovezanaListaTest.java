@@ -10,6 +10,9 @@ public class PovezanaListaTest {
 		lista2.dodajElement(23);
 		lista2.dodajElement(true);
 		lista.dodajElement(lista2);
+		lista.dodajElement(7.3f);
+		for(int i=0; i<1_000; i++)
+			lista.dodajElement(i);
 		System.out.println(lista);
 		// да конструктор није приватан било би могући позвати га и одавде
 		// PovezanaLista.Element element=lista.new Element();

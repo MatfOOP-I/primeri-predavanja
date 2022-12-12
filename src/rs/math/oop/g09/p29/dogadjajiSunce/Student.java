@@ -26,15 +26,15 @@ public class Student extends Covek implements SunceKretanjeDogadjajOsluskivac {
 
    @Override
    public void sunceSePomerilo(SunceKretanjeDogadjaj e) {
-      LocalDateTime datumVreme = e.getDatumVreme();
+      LocalDateTime datumVreme = e.uzmiDatumVreme();
       DateTimeFormatter formatDatum = DateTimeFormatter.ofPattern("dd.MM.YYYY.");
       DateTimeFormatter formatVreme = DateTimeFormatter.ofPattern("HH:mm:ss");
       System.out.printf("%s kaže: Sunce je dana %s %s u vreme %s. ",
             this, datumVreme.format(formatDatum),
-            e.isIzaslo() ? "izaslo" : "zaslo",
+            e.jeIzaslo() ? "izaslo" : "zaslo",
             datumVreme.format(formatVreme));
       if (naRaspustu) {
-         if (e.isIzaslo()) {
+         if (e.jeIzaslo()) {
             setStatus( Status.SPAVANJE);
             System.out.printf("Zavrsen provod, idem na spavanje. Moj novi status: %s\n",
                   Status.opis(getStatus()));
@@ -44,7 +44,7 @@ public class Student extends Covek implements SunceKretanjeDogadjajOsluskivac {
                   Status.opis(getStatus()));
          }
       } else {
-         if (e.isIzaslo()) {
+         if (e.jeIzaslo()) {
             setStatus( Status.UCENJE);
             System.out.printf("Pocinje novi dan, moram da ucim. Moj novi status: %s.\n",
                   Status.opis(getStatus()));

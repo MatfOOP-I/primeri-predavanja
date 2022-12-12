@@ -7,7 +7,7 @@ public class Naucnik implements Radoznao, Razuman {
       this.ime = ime;
    }
 
-   public String getIme() {
+   public String uzmiIme() {
       return ime;
    }
 

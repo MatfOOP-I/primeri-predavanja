@@ -22,5 +22,5 @@ public abstract class GeometrijskiObjekat {
    public abstract double obim();
 
    public abstract double povrsina();
-
+   public abstract boolean sadrzi(Tacka t);
 }

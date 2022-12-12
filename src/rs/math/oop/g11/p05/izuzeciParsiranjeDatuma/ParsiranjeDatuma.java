@@ -25,9 +25,9 @@ public class ParsiranjeDatuma {
                     System.out.println("Погрешан формат датума!");
                 }
             }
-
 		} finally {
-			skener.close();
+			if(skener != null)
+				skener.close();
 		}
 	}
 }

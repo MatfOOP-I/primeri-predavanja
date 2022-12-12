@@ -21,7 +21,7 @@ public class ObracunPlata {
 	public double izracunajPlatu(int brojSati) {
 		if(brojSati<minimalnoSati) {
 			System.err.println("Није јасна рачуница кад је број сати испод норме!");
-			System.exit(1);
+			System.exit(2);
 		}
 		double plata = minimalnoSati*cenaSata;
 		if(brojSati>minimalnoSati) {

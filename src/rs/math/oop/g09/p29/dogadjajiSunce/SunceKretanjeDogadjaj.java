@@ -17,17 +17,17 @@ public class SunceKretanjeDogadjaj extends EventObject {
   }
 
   /** vrace nisku koja predstavlja datum i vreme */
-  public LocalDateTime getDatumVreme() {
+  public LocalDateTime uzmiDatumVreme() {
     return datumVreme;
   }
 
   /** vrace da li je sunce izaslo ili zaslo */
-  public boolean isIzaslo() {
+  public boolean jeIzaslo() {
     return izaslo;
   }
 
   /** vrace da li je sunce zaslo ili izaslo */
-  public boolean isZaslo() {
+  public boolean jeZaslo() {
     return ! izaslo;
   }
 

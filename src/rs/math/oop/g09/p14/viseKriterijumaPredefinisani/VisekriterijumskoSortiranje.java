@@ -13,7 +13,7 @@ public class VisekriterijumskoSortiranje
 
 	private static void prikazi(String[] niz) {
 		for (String x: niz)
-			System.out.printf("%s ", x );
+			System.out.print(x + " ");
 		System.out.println();
 	}
 

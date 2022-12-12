@@ -13,6 +13,8 @@
 package rs.math.oop.g09.p09.interfejsGeometrija;
 
 import java.util.Scanner;
+import static java.lang.System.in;
+import static java.lang.System.out;
 
 public class MereObliciSadrzavanja {
 
@@ -30,46 +32,46 @@ public class MereObliciSadrzavanja {
 
       double ukupanObim = 0;
       double ukupnaPovrsina = 0;
-      System.out.println("\nГеометријски објекти:");
+      out.println("\nГеометријски објекти:");
       GeometrijskiObjekat[] svi = {a, b, c, d, e, ab, p, bcd, bcde, k1};
       for (GeometrijskiObjekat go : svi) {
-         System.out.printf("| %s", go);
+         out.printf("| %s", go);
          if (go instanceof Oblik) {
             Oblik obl = (Oblik) go;
             if (obl.jeKonveksan())
-               System.out.print(" конвексан ");
+               out.print(" конвексан ");
             else
-               System.out.print(" неконвексан ");
+               out.print(" неконвексан ");
             if (obl.jeOgranicen())
-               System.out.println(" ограничен ");
+               out.println(" ограничен ");
             else
-               System.out.println(" неограничен");
+               out.println(" неограничен");
          }
          else
-            System.out.println(" не подржава облике");
+            out.println(" не подржава облике");
          if(go instanceof Mera){
             Mera m = (Mera) go;
-            System.out.print(" обим: " + m.obim());
-            System.out.println(" површина: " + m.povrsina() + "|");
+            out.print(" обим: " + m.obim());
+            out.println(" површина: " + m.povrsina() + "|");
             ukupanObim += m.obim();
             ukupnaPovrsina += m.povrsina();
          }
          else
-            System.out.println(" не подржава мерење |");
+            out.println(" не подржава мерење |");
       }
-      System.out.println("Укупан обим:     " + ukupanObim);
-      System.out.println("Укупна површина: " + ukupnaPovrsina);
+      out.println("Укупан обим:     " + ukupanObim);
+      out.println("Укупна површина: " + ukupnaPovrsina);
 
-      Scanner sc = new Scanner(System.in);
-      System.out.print("Unesite koordinate tacke X: ");
+      Scanner sc = new Scanner(in);
+      out.print("Unesite koordinate tacke X: ");
       Tacka x = new Tacka("X", sc.nextDouble(), sc.nextDouble());
       sc.close();
 
       Sadrzavanje[] sviSd = {ab, p, bcd, bcde, k1};
-      System.out.println("Oбјекти који садрже дату тачку " + x + " су: " );
+      out.println("Oбјекти који садрже дату тачку " + x + " су: " );
       for (Sadrzavanje sd : sviSd)
          if( sd.sadrzi(x))
-            System.out.printf("%s ", sd);
+            out.printf("%s ", sd);
     }
 
 }

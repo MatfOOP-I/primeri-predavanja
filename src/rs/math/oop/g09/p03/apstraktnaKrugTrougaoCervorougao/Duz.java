@@ -24,6 +24,7 @@ public class Duz extends GeometrijskiObjekat {
       return a.rastojanje(b);
    }
 
+   @Override
    public boolean sadrzi(Tacka t) {
       boolean kolinearne = ((t.uzmiY() - a.uzmiY())
                * (b.uzmiX() - a.uzmiX()) == (b.uzmiY()
@@ -92,5 +93,7 @@ public class Duz extends GeometrijskiObjekat {
    public double povrsina() {
       return 0;
    }
+
+
 
 }
