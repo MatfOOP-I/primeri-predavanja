@@ -61,9 +61,8 @@ public class PokretanjeSaberiOduzmi {
          throw new DvodimenzionalniNizNijeMatricaException(b);
       if (a.length != b.length)
          throw new NekompatibilneDimenzijeMatriceException(a.length, b.length);
-      for (int i = 0; i < a.length; i++)
-         if (a[i].length != b[i].length)
-            throw new NekompatibilneDimenzijeMatriceException(a[i].length, b[i].length);
+      if (a[0].length != b[0].length)
+            throw new NekompatibilneDimenzijeMatriceException(a[0].length, b[0].length);
       double[][] c = new double[a.length][a[0].length];
       for (int i = 0; i < c.length; i++)
          for (int j = 0; j < c[i].length; j++)
@@ -96,7 +95,7 @@ public class PokretanjeSaberiOduzmi {
    public static void main(String[] args) {
       try {
          double[][] a = { { 1, 2, 3 }, { 3, 4 } };
-         // a = ucitaj();
+         a = ucitaj();
          System.out.println("A je: ");
          prikazi(a);
          double[][] b = { { 1, 2, 3.5 }, { 3, 4, 5 } };
@@ -107,7 +106,7 @@ public class PokretanjeSaberiOduzmi {
          prikazi(saberi(a, b));
          System.out.println("Razlika je: ");
          prikazi(oduzmi(a, b));
-      } catch ( // NegativnaDimenzijaMatriceException |
+      } catch ( NegativnaDimenzijaMatriceException |
             NekompatibilneDimenzijeMatriceException | MatricaNePostojiException
             | DvodimenzionalniNizNijeMatricaException e) {
          System.out.println("Doslo je do greske " + e);

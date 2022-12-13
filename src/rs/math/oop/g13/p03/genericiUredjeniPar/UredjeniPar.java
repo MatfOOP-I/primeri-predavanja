@@ -1,33 +1,32 @@
 package rs.math.oop.g13.p03.genericiUredjeniPar;
 
 public class UredjeniPar<T, S>{
-    private T vrednost1;
-    private S vrednost2;
+    private T komponenta1;
+    private S komponenta2;
 
-    public UredjeniPar(T vrednost1, S vrednost2) {
-        this.vrednost1 = vrednost1;
-        this.vrednost2 = vrednost2;
+    public UredjeniPar(T komponenta1, S komponenta2) {
+        this.komponenta1 = komponenta1;
+        this.komponenta2 = komponenta2;
     }
     
-    public T uzmiVrednost1() {
-        return vrednost1;
+    public T prvaKomponenta() {
+        return komponenta1;
     }
     
-    public S uzmiVrednost2() {
-        return vrednost2;
+    public S drugaKomponenta() {
+        return komponenta2;
     }
     
     @Override
     public String toString() {
-        return "("+vrednost1+", "+vrednost2+")";
+        return "("+ komponenta1 +", "+ komponenta2 +")";
     }
     
     public static void main(String[] args) {
-        UredjeniPar<Integer, Integer> par1 = 
-                new UredjeniPar<Integer, Integer>(10, 20);
+        UredjeniPar<Integer, Integer> par1 = new UredjeniPar<Integer, Integer>(10, 20);
         UredjeniPar<Integer, String> par2 = new UredjeniPar<>(30, "Пример текст");
         // не пролази компилацију због неслагања очекиваног и прослеђеног тип
-        //UredjeniPar<Integer, Integer> par3 = new UredjeniPar<>(30, 14.0);
+        //UredjeniPar<Double, Double> par3 = new UredjeniPar<>(30, 14.0);
         System.out.println(par1);
         System.out.println(par2);
     }

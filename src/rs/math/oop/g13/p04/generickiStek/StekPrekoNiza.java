@@ -1,6 +1,6 @@
 package rs.math.oop.g13.p04.generickiStek;
 
-public class StekPrekoNiza<T> implements StekInterfejs<T> {
+public class StekPrekoNiza<T> implements Stek<T> {
     private T[] stekNiz;
     private int stekIndeks; // показује на врх стека
     private int kapacitet;
@@ -38,7 +38,7 @@ public class StekPrekoNiza<T> implements StekInterfejs<T> {
     }
 
     @Override
-    public void dodaj(T element) {
+    public void push(T element) {
         System.out.println("Додајем "+element);
         if (stekIndeks + 1 == kapacitet) {
             // нема више места па дуплирамо капацитет
@@ -54,7 +54,7 @@ public class StekPrekoNiza<T> implements StekInterfejs<T> {
 
 
    @Override
-   public T vrh() {
+   public T top() {
         if(!jePrazan())
             return stekNiz[stekIndeks];
         else {
@@ -66,7 +66,7 @@ public class StekPrekoNiza<T> implements StekInterfejs<T> {
     }
 
     @Override
-    public void ukloni() {
+    public void pop() {
         if(!jePrazan()) {
             System.out.println("Уклањам "+stekNiz[stekIndeks]);
             // бришемо референцу да би GC могао да почисти меморију
@@ -80,26 +80,26 @@ public class StekPrekoNiza<T> implements StekInterfejs<T> {
     }
 
     public static void main(String[] args) {
-        StekPrekoNiza<Integer> stek = new StekPrekoNiza<>();
-        System.out.println("Врх: "+stek.vrh());
-        stek.dodaj(34);
-        stek.dodaj(23);
-        stek.dodaj(11);
-        System.out.println("Врх: "+stek.vrh());
-        stek.ukloni();
-        System.out.println("Врх: "+stek.vrh());
-        stek.dodaj(112);
-        stek.dodaj(-134);
-        stek.dodaj(111);
-        stek.dodaj(345);
+        Stek<Integer> stek = new StekPrekoNiza<>();
+        System.out.println("Врх: "+stek.top());
+        stek.push(34);
+        stek.push(23);
+        stek.push(11);
+        System.out.println("Врх: "+stek.top());
+        stek.pop();
+        System.out.println("Врх: "+stek.top());
+        stek.push(112);
+        stek.push(-134);
+        stek.push(111);
+        stek.push(345);
         System.out.println("Величина: "+stek.velicina());
-        stek.ukloni();
-        stek.ukloni();
-        stek.ukloni();
-        stek.ukloni();
-        stek.ukloni();
-        stek.ukloni();
-        stek.ukloni();
+        stek.pop();
+        stek.pop();
+        stek.pop();
+        stek.pop();
+        stek.pop();
+        stek.pop();
+        stek.pop();
     }
 }
 

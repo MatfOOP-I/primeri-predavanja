@@ -38,8 +38,8 @@ public class SortiranjeSaPostuslovom {
 			}
 			x[j] = a;
 		}
-//		int temp = x[x.length-1];
-//		x[x.length-1] = x[0];
-//		x[0] = temp;
+		int temp = x[x.length-1];
+		x[x.length-1] = x[0];
+		x[0] = temp;
 	}
 }

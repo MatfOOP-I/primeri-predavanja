@@ -30,10 +30,10 @@ public class RadSaDrvoSkupom {
 					@Override
 					public int compare(UredjeniPar<String, Integer> o1, UredjeniPar<String, Integer> o2) {
 						// примарно по другом растуће
-						if (o2.uzmiVrednost2().compareTo(o1.uzmiVrednost2()) != 0)
-							return o2.uzmiVrednost2().compareTo(o1.uzmiVrednost2());
+						if (o2.drugaKomponenta().compareTo(o1.drugaKomponenta()) != 0)
+							return o2.drugaKomponenta().compareTo(o1.drugaKomponenta());
 						else // секундарно по првом растуће
-							return o1.uzmiVrednost1().compareTo(o2.uzmiVrednost1());
+							return o1.prvaKomponenta().compareTo(o2.prvaKomponenta());
 					}
 				});
 		uDrvoSkup.add(new UredjeniPar<String, Integer>("Новак", 26));

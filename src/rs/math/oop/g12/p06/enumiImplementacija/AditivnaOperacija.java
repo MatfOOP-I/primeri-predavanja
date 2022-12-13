@@ -1,5 +1,7 @@
 package rs.math.oop.g12.p06.enumiImplementacija;
 
+import static java.lang.System.out;
+
 public enum AditivnaOperacija implements Nesto {
     PLUS("+") {
         public double izracunaj(double x, double y) {
@@ -9,6 +11,7 @@ public enum AditivnaOperacija implements Nesto {
         @Override
         public void nekiMetod() {
             // druga implementacija
+            out.println("Druga");
         }
     },
     MINUS("-") {
@@ -35,5 +38,6 @@ public enum AditivnaOperacija implements Nesto {
     @Override
     public void nekiMetod() {
         // prva implementacija
+        out.println("Prva");
     }
 }

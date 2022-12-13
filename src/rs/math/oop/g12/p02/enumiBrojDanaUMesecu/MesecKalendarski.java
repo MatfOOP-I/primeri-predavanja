@@ -17,8 +17,7 @@ public enum MesecKalendarski {
         // производи изузетак ако унесемо нешто што се не налази 
         // у списку назива набројивих типова
         try {
-            MesecKalendarski mesec = 
-                    MesecKalendarski.valueOf(args[0].toUpperCase());
+            MesecKalendarski mesec = MesecKalendarski.valueOf(args[0].toUpperCase());
             int godina = Integer.valueOf(args[1]);
             int brojDana = 0;
             switch (mesec) {

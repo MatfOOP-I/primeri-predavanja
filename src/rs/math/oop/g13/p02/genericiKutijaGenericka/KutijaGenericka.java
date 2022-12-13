@@ -26,5 +26,8 @@ public class KutijaGenericka<T> {
 		// компајлер не допушта да у кутију убацимо нешто што није String
 		// па нам тиме помаже у провери семантичке коректности програма
 		//kutija1.postaviVrednost(42);
+		KutijaGenericka<Integer> kutija2 = new KutijaGenericka<>();
+		kutija2.postaviVrednost(42);
+		System.out.println(kutija2.uzmiVrednost());
 	}
 }
