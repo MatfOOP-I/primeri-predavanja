@@ -18,8 +18,8 @@ public enum PlanetaSuncevogSistema {
         this.precnik = precnik;
     }
     
-    double masa() { return masa; }
-    double precnik() { return precnik; }
+    double vratiMasu() { return masa; }
+    double vratiPrecnik() { return precnik; }
 
     // универзална гравитациона константа (m3 kg-1 s-2)
     public static final double G = 6.67300E-11;

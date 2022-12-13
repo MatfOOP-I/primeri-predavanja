@@ -9,11 +9,11 @@ public class UredjeniPar<T, S>{
         this.vrednost2 = vrednost2;
     }
     
-    public T getVrednost1() {
+    public T uzmiVrednost1() {
         return vrednost1;
     }
     
-    public S getVrednost2() {
+    public S uzmiVrednost2() {
         return vrednost2;
     }
     
@@ -26,8 +26,8 @@ public class UredjeniPar<T, S>{
         UredjeniPar<Integer, Integer> par1 = 
                 new UredjeniPar<Integer, Integer>(10, 20);
         UredjeniPar<Integer, String> par2 = new UredjeniPar<>(30, "Пример текст");
-        // не пролази компилацију због неслагања очекиваног и прослеђеног типа
-        //UredjeniPar<Integer, Integer> par3 = new UredjeniPar<>(30, 14.0); 
+        // не пролази компилацију због неслагања очекиваног и прослеђеног тип
+        //UredjeniPar<Integer, Integer> par3 = new UredjeniPar<>(30, 14.0);
         System.out.println(par1);
         System.out.println(par2);
     }

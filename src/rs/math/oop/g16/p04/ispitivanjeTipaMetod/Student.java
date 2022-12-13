@@ -1,7 +1,6 @@
 package rs.math.oop.g16.p04.ispitivanjeTipaMetod;
 
-import rs.math.oop1.z130601.genericiKloniranje.z02.kutijaMutabilnost.KloniraSe;
-
+/*
 public class Student implements KloniraSe<Student>
 {
 	private String ime;
@@ -45,3 +44,4 @@ public class Student implements KloniraSe<Student>
 		return (Student) super.clone();
 	}
 }
+*/

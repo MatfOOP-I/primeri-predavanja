@@ -2,6 +2,7 @@ package rs.math.oop.g16.p04.ispitivanjeTipaMetod;
 
 import java.lang.reflect.Method;
 
+/*
 public class PokretanjeRefleksija
 {
 	static void showMethods( Object o )
@@ -40,3 +41,4 @@ public class PokretanjeRefleksija
 	}
 	
 }
+*/

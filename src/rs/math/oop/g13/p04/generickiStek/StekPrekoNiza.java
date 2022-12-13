@@ -53,12 +53,12 @@ public class StekPrekoNiza<T> implements StekInterfejs<T> {
     }
 
 
-       @Override
-    public T vrh() {
+   @Override
+   public T vrh() {
         if(!jePrazan())
             return stekNiz[stekIndeks];
         else {
-            // овде ћемо уместо изузетка вратити null, 
+            // овде ћемо уместо изузетка вратити null,
             // али има смисла и да се избаци изузетак
             System.out.println("Стек је празан па нема смисла гледање врха.");
             return null;

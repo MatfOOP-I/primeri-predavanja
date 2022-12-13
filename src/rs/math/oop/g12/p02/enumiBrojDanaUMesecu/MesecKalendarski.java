@@ -4,6 +4,11 @@ public enum MesecKalendarski {
     JANUAR, FEBRUAR, MART, APRIL, MAJ, JUN, 
     JUL, AVGUST, SEPTEMBAR, OKTOBAR, NOVEMBAR, DECEMBAR;
 
+    private static boolean jePrestupna(int godina) {
+        return (godina % 4 == 0 && godina % 100 != 0)
+                || (godina % 400 == 0);
+    }
+
     public static void main(String[] args) {
         if (args.length != 2) {
             System.err.println("Употреба: java <назив месеца> <година>");
@@ -25,8 +30,7 @@ public enum MesecKalendarski {
                     brojDana=31;
                     break;
             case FEBRUAR:
-                if ((godina % 4 == 0 && godina % 100 != 0) 
-                        || (godina % 400 == 0))
+                if (jePrestupna(godina))
                     brojDana = 29;
                 else
                     brojDana = 28;
@@ -36,7 +40,7 @@ public enum MesecKalendarski {
                     mesec, godina, brojDana);
         } catch (IllegalArgumentException ex) {
             System.err.printf("Грешка при парсирању месеца са називом %s.", 
-                    args[1]);
+                    args[0]);
             System.err.println(ex.getMessage());
         }
     }
