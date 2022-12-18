@@ -13,12 +13,15 @@ public class IteratorPovezanaLista {
 		kolekcija.add("Марија");
 		kolekcija.add("Ивана");
 		kolekcija.add("Дарко");
+		kolekcija.add("Жарко");
+		kolekcija.add("Јанко");
 		// било шта што је колекција има могућност да врати итератор
 		Iterator<String> iterator = kolekcija.iterator();
 		while(iterator.hasNext()) {
 			String element = iterator.next();
 			System.out.println(element);
 		}
+		System.out.println("---");
 		// колекцијска наредба for је заправо синтаксна скраћеница за итератор
 		// она се замењује горњим кодом, дакле, враћањем итератор 
 		// и даљим позивањем метода hasNext и next

@@ -1,4 +1,4 @@
-package rs.math.oop.g13.p11.kloniranjeGenerickiBolje;
+package rs.math.oop.g13.p11.kloniranjeGenerickiResenje;
 
 public class Student implements KloniraSe<Student>, Cloneable
 {

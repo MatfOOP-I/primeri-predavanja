@@ -73,29 +73,5 @@ public class RedPrekoKruznogNiza<T> implements Red<T> {
 		return velicina;
 	}
 
-	public static void main(String[] args) {
-		Red<Integer> red = new RedPrekoKruznogNiza<>();
-		red.dodaj(34);
-		red.dodaj(23);
-		red.dodaj(11);
-		System.out.println("Величина: " + red.velicina());
-		red.ukloni();
-		System.out.println("Величина: " + red.velicina());
-		red.dodaj(112);
-		System.out.println("Величина: " + red.velicina());
-		red.dodaj(-134);
-		System.out.println("Величина: " + red.velicina());
-		red.dodaj(111);
-		System.out.println("Величина: " + red.velicina());
-		red.dodaj(345);
-		System.out.println("Величина: " + red.velicina());
-		red.ukloni();
-		red.ukloni();
-		red.ukloni();
-		red.ukloni();
-		red.ukloni();
-		red.ukloni();
-		red.ukloni();
-		System.out.println("Величина: " + red.velicina());
-	}
+
 }

@@ -1,4 +1,4 @@
-package rs.math.oop.g13.p10.kloniranjeGenerickiLose.z01.kutijaMutabilnost;
+package rs.math.oop.g13.p10.kloniranjeGenerickiProblem.z01.kutijaMutabilnost;
 
 public class Kutija<T>
 {
