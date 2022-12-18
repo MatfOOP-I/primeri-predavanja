@@ -10,8 +10,13 @@ public class KutijaGenerickaObojena<T> extends KutijaGenericka<T>{
         super();
         this.boja=boja;
     }
-    
-    public Color getBoja() {
+
+    @Override
+    public String toString(){
+        return "[" + uzmiBoja() + "|" +  uzmiVrednost() + "]";
+    }
+
+    public Color uzmiBoja() {
         return boja;
     }
 
@@ -19,8 +24,9 @@ public class KutijaGenerickaObojena<T> extends KutijaGenericka<T>{
         KutijaGenerickaObojena<String> kutijaObojena = 
                 new KutijaGenerickaObojena<String>(Color.red);
         kutijaObojena.postaviVrednost("Текст");
+        System.out.println(kutijaObojena);
         // имплицитна конверзија у општији тип
         KutijaGenericka<String> kutija = kutijaObojena;
-        System.out.println(kutija.uzmiVrednost());
+        System.out.println(kutija);
     }
 }

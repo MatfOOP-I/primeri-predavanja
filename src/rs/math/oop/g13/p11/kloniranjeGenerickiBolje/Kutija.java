@@ -1,4 +1,4 @@
-package rs.math.oop.g13.p11.kutijaMutabilnost;
+package rs.math.oop.g13.p11.kloniranjeGenerickiBolje;
 
 public class Kutija<T extends KloniraSe<T>>
 {

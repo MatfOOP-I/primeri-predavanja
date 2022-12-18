@@ -15,6 +15,11 @@ public class KutijaGenericka<T> {
 	public T uzmiVrednost() {
 		return this.vrednost;
 	}
+
+	@Override
+	public String toString(){
+		return "[" + uzmiVrednost() + "]";
+	}
 	
 	public static void main(String[] args) {
 		KutijaGenericka<String> kutija1 = new KutijaGenericka<String>();

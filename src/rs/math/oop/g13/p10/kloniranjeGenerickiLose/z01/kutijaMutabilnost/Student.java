@@ -1,6 +1,6 @@
-package rs.math.oop.g13.p10.genericiKloniranje.z02.kutijaMutabilnost;
+package rs.math.oop.g13.p10.kloniranjeGenerickiLose.z01.kutijaMutabilnost;
 
-public class Student implements KloniraSe<Student>, Cloneable
+public class Student
 {
 	private String ime;
 	private String prezime;
@@ -33,14 +33,7 @@ public class Student implements KloniraSe<Student>, Cloneable
 	
 	@Override
 	public String toString()
-	{ 
-		return "Student: " + ime + " " + prezime; 
-	}
-	
-	@Override
-	public Student clone() throws CloneNotSupportedException
 	{
-		Student s = (Student) super.clone();
-		return s;
+		return "Student: " + ime + " " + prezime; 
 	}
 }

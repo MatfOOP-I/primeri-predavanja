@@ -57,12 +57,10 @@ public class StekPrekoNiza<T> implements Stek<T> {
    public T top() {
         if(!jePrazan())
             return stekNiz[stekIndeks];
-        else {
-            // овде ћемо уместо изузетка вратити null,
-            // али има смисла и да се избаци изузетак
-            System.out.println("Стек је празан па нема смисла гледање врха.");
-            return null;
-        }
+        // овде ћемо уместо изузетка вратити null,
+        // али има смисла и да се избаци изузетак
+        System.out.println("Стек је празан па нема смисла гледање врха.");
+        return null;
     }
 
     @Override
@@ -70,7 +68,7 @@ public class StekPrekoNiza<T> implements Stek<T> {
         if(!jePrazan()) {
             System.out.println("Уклањам "+stekNiz[stekIndeks]);
             // бришемо референцу да би GC могао да почисти меморију
-            stekNiz[stekIndeks]=null;
+            stekNiz[stekIndeks] = null;
             stekIndeks--;
         }else {
             // овде нећемо ништа урадити, 
@@ -80,6 +78,13 @@ public class StekPrekoNiza<T> implements Stek<T> {
     }
 
     public static void main(String[] args) {
+        Stek<String> stekS = new StekPrekoNiza<>();
+        for(int i=0; i<500; i++)
+            stekS.push("Elem " + i);
+        while( !stekS.jePrazan() ) {
+            System.out.print(stekS.top() + " ");
+            stekS.pop();
+        }
         Stek<Integer> stek = new StekPrekoNiza<>();
         System.out.println("Врх: "+stek.top());
         stek.push(34);

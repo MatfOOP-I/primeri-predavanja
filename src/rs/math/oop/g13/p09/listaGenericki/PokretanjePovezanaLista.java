@@ -15,9 +15,27 @@ public class PokretanjePovezanaLista
 		ll2.addItem( i );
 		ll2.addItem(Integer.valueOf(3));
 
+		PovezanaLista<Integer> ll3 = new PovezanaLista<>();
+		ll3.addItem(-5);
+		ll3.addItem(-42);
+		ll3.addItem(-78);
+		ll3.addItem(-42);
+		ll3.addItem(-78);
+		ll3.addItem(-42);
+		ll3.addItem(-78);
+
 		System.out.println( ll2 );
 		System.out.println("---");
 		System.out.println( ll1 );
-		System.out.println("---");}
-	
+		System.out.println("---");
+		System.out.println( ll3 );
+		System.out.println("---");
+
+		PovezanaLista<PovezanaLista<Integer>> ll4 = new PovezanaLista<>();
+		ll4.addItem(ll2);
+		ll4.addItem(ll3);
+		System.out.println(ll4);
+	}
+
+
 }

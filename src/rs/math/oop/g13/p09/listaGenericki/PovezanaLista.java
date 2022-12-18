@@ -19,7 +19,6 @@ public class PovezanaLista<T>
 		{
 			return "Elemenat liste: " + item;
 		}
-		
 	}
 
 	private ElemenatListe start = null; // First ListIem in the list
@@ -82,14 +81,15 @@ public class PovezanaLista<T>
 	@Override
 	public String toString()
 	{
-		StringBuilder ret = new StringBuilder();
+		StringBuilder ret = new StringBuilder("[");
 		T t = getFirst();
 		while (t != null)
 		{
 			ret.append( t );
 			ret.append( " " );
 			t = getNext();
-		} 
+		}
+		ret.append("]");
 		return ret.toString();
 	}
 }
