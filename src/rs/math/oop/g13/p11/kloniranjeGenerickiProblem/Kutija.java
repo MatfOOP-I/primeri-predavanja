@@ -1,4 +1,4 @@
-package rs.math.oop.g13.p10.kloniranjeGenerickiProblem.z01.kutijaMutabilnost;
+package rs.math.oop.g13.p11.kloniranjeGenerickiProblem;
 
 public class Kutija<T>
 {
@@ -9,16 +9,16 @@ public class Kutija<T>
 		uKutiji = t;
 	}
 	
-	public void setUKutiji( T t )
+	public void postaviUKutiju(T t )
 	{
 		uKutiji = t;
 	}
 	
-	public T getUKutiji()
+	public T uzmiIzKutije()
 	{
 		return uKutiji;
 	}
-	
+	@Override
 	public String toString()
 	{
 		return "[" + uKutiji + "]";

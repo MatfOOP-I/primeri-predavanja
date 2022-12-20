@@ -1,4 +1,4 @@
-package rs.math.oop.g13.p10.kloniranjeGenerickiProblem.z01.kutijaMutabilnost;
+package rs.math.oop.g13.p11.kloniranjeGenerickiProblem;
 
 public class Student
 {
@@ -11,22 +11,22 @@ public class Student
 		this.prezime = prezime;
 	}
 	
-	public String getIme()
+	public String uzmiIme()
 	{
 		return ime;
 	}
 	
-	public void setIme( String ime )
+	public void postaviIme(String ime )
 	{
 		this.ime = ime;
 	}
 	
-	public String getPrezime()
+	public String uzmiPrezime()
 	{
 		return prezime;
 	}
 	
-	public void setPrezime( String prezime )
+	public void postaviPrezime(String prezime )
 	{
 		this.prezime = prezime;
 	}

@@ -42,10 +42,7 @@ public class RedPrekoPovezaneListe<T> implements Red<T>{
 	@Override
 	public T ukloni() {
 		if (velicina == 0) {
-			// овде ћемо уместо изузетка вратити null,
-			// али има смисла и да се избаци изузетак
-			System.out.println("Ред је празан па нема смисла уклањање.");
-			return null;
+			throw new RuntimeException("Ред је празан па нема смисла уклањање.");
 		}
 		T element = pocetak.element;
 		pocetak = pocetak.sledeci;

@@ -11,14 +11,15 @@ public class KutijaGenerickaObojena<T> extends KutijaGenericka<T>{
         this.boja=boja;
     }
 
+    public Color uzmiBoja() {
+        return boja;
+    }
+
     @Override
     public String toString(){
         return "[" + uzmiBoja() + "|" +  uzmiVrednost() + "]";
     }
 
-    public Color uzmiBoja() {
-        return boja;
-    }
 
     public static void main(String[] args) {
         KutijaGenerickaObojena<String> kutijaObojena = 
@@ -27,6 +28,7 @@ public class KutijaGenerickaObojena<T> extends KutijaGenericka<T>{
         System.out.println(kutijaObojena);
         // имплицитна конверзија у општији тип
         KutijaGenericka<String> kutija = kutijaObojena;
+        System.out.println(kutija.uzmiVrednost());
         System.out.println(kutija);
     }
 }

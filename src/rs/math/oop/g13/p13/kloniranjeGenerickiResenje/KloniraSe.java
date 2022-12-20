@@ -1,4 +1,4 @@
-package rs.math.oop.g13.p11.kloniranjeGenerickiResenje;
+package rs.math.oop.g13.p13.kloniranjeGenerickiResenje;
 
 public interface KloniraSe<T>
 {

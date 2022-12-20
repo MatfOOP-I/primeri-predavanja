@@ -10,6 +10,11 @@ public class KutijaSirova {
 		this.vrednost = vrednost;
 	}
 
+	@Override
+	public String toString(){
+		return "[" + uzmiVrednost() + "]";
+	}
+
 	// изгубили смо информацију о правој природи објектног типа
 	// тако да једино што можемо да вратимо је тип Object
 	Object uzmiVrednost() {

@@ -3,12 +3,14 @@ package rs.math.oop.g13.p06.genericiMinimalniElementNiza;
 public class NizPomoc {
 
     public static <T extends Comparable<T>> T odrediMinimum(T[] niz) throws Exception{
+        if(niz==null)
+            throw new NullPointerException("Низ је \"нула\" - минимум нема смисла.");
         if(niz.length==0)
             throw new Exception("Низ је празан - минимум нема смисла.");
         T minimum = niz[0];
-        for(T element: niz)
-            if(element.compareTo(minimum)<0)
-                minimum = element;
+        for(int i=1; i < niz.length; i++)
+            if(niz[i].compareTo(minimum)<0)
+                minimum = niz[i];
         return minimum;
     }
 

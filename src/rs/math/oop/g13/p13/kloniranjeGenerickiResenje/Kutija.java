@@ -1,4 +1,4 @@
-package rs.math.oop.g13.p11.kloniranjeGenerickiResenje;
+package rs.math.oop.g13.p13.kloniranjeGenerickiResenje;
 
 public class Kutija<T extends KloniraSe<T>>
 {
@@ -16,7 +16,7 @@ public class Kutija<T extends KloniraSe<T>>
 		}
 	}
 	
-	public void setUKutiji( T t )
+	public void postaviUKutiju( T t )
 	{
 		try
 		{
@@ -28,7 +28,7 @@ public class Kutija<T extends KloniraSe<T>>
 		}
 	}
 	
-	public T getUKutiji()
+	public T uzmiIzKutije()
 	{
 		return uKutiji;
 	}

@@ -2,8 +2,8 @@ package rs.math.oop.g14.p01.kolekcijeRed;
 
 public class PokretanjeRed {
     public static void main(String[] args) {
-        //Red<Integer> red = new RedPrekoKruznogNiza<>();
-        Red<Integer> red = new RedPrekoPovezaneListe<>();
+        Red<Integer> red = new RedPrekoKruznogNiza<>();
+        //Red<Integer> red = new RedPrekoPovezaneListe<>();
         red.dodaj(34);
         red.dodaj(23);
         red.dodaj(11);

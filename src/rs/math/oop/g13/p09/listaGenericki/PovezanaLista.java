@@ -37,19 +37,7 @@ public class PovezanaLista<T>
 		if (item != null)
 			current = end = start = new ElemenatListe( item ); // item is the start and end
 	}
-	
-	// Construct a linked list from an array of objects
-	public PovezanaLista( T[] items )
-	{
-		if (items != null)
-		{
-			// Add the items to the list
-			for (int i = 0; i < items.length; i++)
-				addItem( items[i] );
-			current = start;
-		}
-	}
-	
+
 	// Add an item object to the list
 	public void addItem( T item )
 	{
@@ -62,7 +50,19 @@ public class PovezanaLista<T>
 			end = newEnd; // Store new item as end
 		}
 	}
-	
+
+	// Construct a linked list from an array of objects
+	public PovezanaLista( T[] items )
+	{
+		if (items != null)
+		{
+			// Add the items to the list
+			for (int i = 0; i < items.length; i++)
+				addItem( items[i] );
+			current = start;
+		}
+	}
+
 	// Get the first object in the list
 	public T getFirst()
 	{
