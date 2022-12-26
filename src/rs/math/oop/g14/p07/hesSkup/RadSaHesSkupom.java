@@ -44,23 +44,23 @@ public class RadSaHesSkupom {
 		for (String s : sHesSkup)
 			System.out.println(String.format("%s\t%d", s, s.hashCode()));
 
-		HashSet<UredjeniPar<String, Integer>> u1HesSkup 
+		HashSet<UredjeniPar<String, Integer>> u1HesSkup
 			= new HashSet<UredjeniPar<String, Integer>>();
 		u1HesSkup.add(new UredjeniPar<String, Integer>("Новак", 26));
 		u1HesSkup.add(new UredjeniPar<String, Integer>("Рафаел", 23));
 		u1HesSkup.add(new UredjeniPar<String, Integer>("Роџер", 20));
 		// дупликат
-		u1HesSkup.add(new UredjeniPar<String, Integer>("Новак", 26)); 
+		u1HesSkup.add(new UredjeniPar<String, Integer>("Новак", 26));
 		System.out.println("Први скуп уређених парова:");
 		System.out.println(u1HesSkup); // дупликат није елиминисан
 
-		HashSet<UredjeniParUporediv<String, Integer>> u2HesSkup 
+		HashSet<UredjeniParUporediv<String, Integer>> u2HesSkup
 			= new HashSet<UredjeniParUporediv<String, Integer>>();
 		u2HesSkup.add(new UredjeniParUporediv<String, Integer>("Новак", 26));
 		u2HesSkup.add(new UredjeniParUporediv<String, Integer>("Рафаел", 23));
 		u2HesSkup.add(new UredjeniParUporediv<String, Integer>("Роџер", 20));
 		// дупликат
-		u2HesSkup.add(new UredjeniParUporediv<String, Integer>("Новак", 26)); 
+		u2HesSkup.add(new UredjeniParUporediv<String, Integer>("Новак", 26));
 		System.out.println("Други скуп уређених парова:");
 		System.out.println(u2HesSkup); // дупликат је елиминисан
 	}

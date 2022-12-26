@@ -9,17 +9,17 @@ public class UredjeniPar<T, S>{
         this.vrednost2 = vrednost2;
     }
     
-    public T getVrednost1() {
+    public T uzmiVrednost1() {
         return vrednost1;
     }
     
-    public S getVrednost2() {
+    public S uzmiVrednost2() {
         return vrednost2;
     }
     
     @Override
     public String toString() {
-        return "("+vrednost1+", "+vrednost2+")";
+        return "(" + vrednost1 + ", "+ vrednost2 +")";
     }
     
     public static void main(String[] args) {

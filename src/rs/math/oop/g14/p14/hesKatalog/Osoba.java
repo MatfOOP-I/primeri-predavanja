@@ -14,7 +14,7 @@ public class Osoba{
 		this.godinaRodjenja = godinaRodjenja;
 	}
 	
-	public String getJMBG() {
+	public String uzmiJMBG() {
 		return JMBG;
 	}
 	

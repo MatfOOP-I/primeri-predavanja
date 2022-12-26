@@ -32,6 +32,7 @@ public class IspisiPodatkeDatoteka {
 		try {
 			fTokUlaz = new FileInputStream("izlaz.txt");
 			tokUlaz = new DataInputStream(fTokUlaz);
+			// tokUlaz = new DataInputStream(new FileInputStream("izlaz.txt"));
 			int bajt = tokUlaz.read();
 			System.out.println(bajt); // 65
 			double broj = tokUlaz.readDouble();

@@ -1,5 +1,6 @@
 package rs.math.oop.g14.p15.drvoKatalog;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -24,8 +25,10 @@ public class RadSaDrvoKatalogom {
 				+ "да се етаблирају и мотори с горивим ћелијама, "
 				+ "на синтетичка горива.";
 		char[] interpunkcija = new char[] { '.', ',', ';', ':', '?', '!' };
-		for (char c : interpunkcija)
-			tekst = tekst.replace(c, ' ');
+		for (char c : interpunkcija) {
+			char[] arr= {c};
+			tekst = tekst.replace(new String(arr), "");
+		}
 		String[] reciNeprecisceno = tekst.toLowerCase().split(" ");
 		Map<String, Integer> reciPojavljivanja = new TreeMap<>();
 		for (String r : reciNeprecisceno)

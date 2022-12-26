@@ -2,7 +2,8 @@ package rs.math.oop.g14.p06.hesKod;
 
 public class UredjeniParUporediv<T, S> extends UredjeniPar<T, S>{
 
-	public UredjeniParUporediv(T vrednost1, S vrednost2) {
+	public UredjeniParUporediv(T vrednost1, S vrednost2)
+	{
 		super(vrednost1, vrednost2);
 	}
 	
@@ -15,20 +16,19 @@ public class UredjeniParUporediv<T, S> extends UredjeniPar<T, S>{
 		// ако аргумент није уређени пар онда сигурно нису исти
 		if(!(obj instanceof UredjeniParUporediv))
 			return false;
-		UredjeniParUporediv par = 
-				(UredjeniParUporediv)obj;
+		UredjeniParUporediv par = (UredjeniParUporediv) obj;
 		// исти су само ако им је и свака координата иста
-		return getVrednost1().equals(par.getVrednost1()) &&
-				getVrednost2().equals(par.getVrednost2());
+		return uzmiVrednost1().equals(par.uzmiVrednost1()) &&
+				uzmiVrednost2().equals(par.uzmiVrednost2());
 	}
 	
 	@Override
 	public int hashCode() {
 		int hash = 7;
 	    hash = 31 * hash 
-	    		+ (getVrednost1() == null ? 0 : getVrednost1().hashCode());
+	    		+ (uzmiVrednost1() == null ? 0 : uzmiVrednost1().hashCode());
 	    hash = 31 * hash 
-	    		+ (getVrednost2() == null ? 0 : getVrednost2().hashCode());
+	    		+ (uzmiVrednost2() == null ? 0 : uzmiVrednost2().hashCode());
 	    return hash;
 	}
 

@@ -14,12 +14,12 @@ public class RadSaHesKatalogom {
 			new Osoba("0302000567890", "Јована", "Драшковић", 2000),
 			new Osoba("1504981567890", "Петар", "Марковић", 1981),
 			// исти ЈМБГ - замениће претходни унос (Петар Марковић)
-			new Osoba("1504981567890", "Марко", "Марковић", 1981), 
+			new Osoba("1504981567890", "Марко", "Марковић", 1981),
 		};
 		Map<String, Osoba> osobeKatalog = new HashMap<String, Osoba>();
 		// убацујемо у каталог
 		for(Osoba o : osobe)
-			osobeKatalog.put(o.getJMBG(), o);
+			osobeKatalog.put(o.uzmiJMBG(), o);
 		// редослед при испису није исти као при уносу
 		for(String jmbg: osobeKatalog.keySet())
 			System.out.println(String.format("%s\t->\t%s", 

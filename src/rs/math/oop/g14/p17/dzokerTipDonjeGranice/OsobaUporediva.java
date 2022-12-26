@@ -11,6 +11,6 @@ public class OsobaUporediva extends Osoba implements Comparable<OsobaUporediva>{
 
 	@Override
 	public int compareTo(OsobaUporediva o) {
-		return this.getJMBG().compareTo(o.getJMBG());
+		return this.uzmiJMBG().compareTo(o.uzmiJMBG());
 	}
 }
