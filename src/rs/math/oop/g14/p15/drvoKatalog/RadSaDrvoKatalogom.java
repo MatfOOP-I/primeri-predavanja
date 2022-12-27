@@ -42,8 +42,7 @@ public class RadSaDrvoKatalogom {
 			if (k > 10)
 				break;
 			else {
-				System.out.println(k + ".\t" + r + "\t" 
-									+ reciPojavljivanja.get(r));
+				System.out.println(k + ".\t" + r + "\t" + reciPojavljivanja.get(r));
 				k++;
 			}
 	}

@@ -17,7 +17,11 @@ public class Osoba{
 	public String uzmiJMBG() {
 		return JMBG;
 	}
-	
+
+	public String uzmiPrezime(){
+		return this.prezime;
+	}
+
 	@Override
 	public String toString() {
 		return String.format("%s\t%s\t%s\t%d", JMBG, ime, prezime, godinaRodjenja);

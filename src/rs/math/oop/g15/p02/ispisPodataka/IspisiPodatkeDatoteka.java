@@ -11,21 +11,21 @@ public class IspisiPodatkeDatoteka {
 
 	public static void main(String[] args) throws IOException {
 		// уписујемо у датотеку
-		FileOutputStream fTokIzlaz = null;
-		DataOutputStream tokIzlaz = null;
-		try {
-			fTokIzlaz = new FileOutputStream("izlaz.txt");
-			tokIzlaz = new DataOutputStream(fTokIzlaz);
-			tokIzlaz.write(65);
-			tokIzlaz.writeDouble(3432.3);
-		} catch (FileNotFoundException e) {
-			System.err.println(e.getMessage());
-		} finally {
-			if (tokIzlaz != null)
-				tokIzlaz.close();
-			if (fTokIzlaz != null)
-				fTokIzlaz.close();
-		}
+//		FileOutputStream fTokIzlaz = null;
+//		DataOutputStream tokIzlaz = null;
+//		try {
+//			fTokIzlaz = new FileOutputStream("izlaz.txt");
+//			tokIzlaz = new DataOutputStream(fTokIzlaz);
+//			tokIzlaz.write(65);
+//			tokIzlaz.writeDouble(3432.3);
+//		} catch (FileNotFoundException e) {
+//			System.err.println(e.getMessage());
+//		} finally {
+//			if (tokIzlaz != null)
+//				tokIzlaz.close();
+//			if (fTokIzlaz != null)
+//				fTokIzlaz.close();
+//		}
 		// сада читамо садржај истим редоследом
 		FileInputStream fTokUlaz = null;
 		DataInputStream tokUlaz = null;

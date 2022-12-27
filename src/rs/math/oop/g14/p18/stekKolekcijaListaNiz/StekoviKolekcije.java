@@ -44,6 +44,16 @@ public class StekoviKolekcije {
 		System.out.println(stek);
 		System.out.println("Величина стека: " + stek.size());
 
+		System.out.println("Итератори:");
+		Iterator<String> it1 = stek.iterator();
+		Iterator<String> it2 = stek.iterator();
+		while( it1.hasNext() && it2.hasNext()){
+			System.out.print( it1.next() + " " );
+			System.out.print( it2.next() + " ");
+			if(it2.hasNext())
+				System.out.print( it2.next() + " ");
+		}
+
 		System.out.println("Низовна листа");
 		List<String> lista = new ArrayList<>(stek);
 		lista.addAll(stek);
