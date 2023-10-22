@@ -25,8 +25,7 @@ public class ProcitajDatoteku {
 		} finally {
 			// не заборавити затварање тока
 			// у finally блоку је препоручено
-			if( fin != null )
-				fin.close();
+			fin.close();
 		}
 	}
 }

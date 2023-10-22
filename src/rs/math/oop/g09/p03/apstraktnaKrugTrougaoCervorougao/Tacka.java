@@ -7,8 +7,6 @@ import static java.lang.Math.sqrt;
 
 public class Tacka extends GeometrijskiObjekat {
 
-   public static final Tacka KOORDINATNI_POCETAK = new Tacka("O", 0,0);
-
    private double x;
    private double y;
 
@@ -94,11 +92,6 @@ public class Tacka extends GeometrijskiObjekat {
    @Override
    public double povrsina() {
       return 0;
-   }
-
-   @Override
-   public boolean sadrzi(Tacka t) {
-      return equals(t);
    }
 
 }

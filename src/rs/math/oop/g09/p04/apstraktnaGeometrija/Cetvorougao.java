@@ -11,22 +11,18 @@ public class Cetvorougao extends GeometrijskiObjekat {
    public Cetvorougao(String oznaka, Tacka a, Tacka b,
                       Tacka c, Tacka d) {
       super(oznaka);
+      Tacka o = new Tacka(0,0);
       Tacka[] temena = {a, b, c, d};
-      int ind = indeksNajblizeg(temena);
+      int ind = 0;
+      for(int i=1; i< temena.length; i++)
+         if( temena[ind].rastojanje(o) > temena[i].rastojanje(o)
+                 || (temena[ind].rastojanje(o) == temena[i].rastojanje(o)
+                 && temena[ind].uzmiX()>temena[i].uzmiX()))
+            ind = i;
       this.a = new Tacka(temena[ind]);
       this.b = new Tacka(temena[(ind+1) % temena.length]);
       this.c = new Tacka(temena[(ind+2) % temena.length]);
       this.d = new Tacka(temena[(ind+3) % temena.length]);
-   }
-
-   private static int indeksNajblizeg(Tacka[] temena) {
-      int ind = 0;
-      for(int i = 1; i< temena.length; i++)
-         if( temena[ind].rastojanje(Tacka.KOORDINATNI_POCETAK) > temena[i].rastojanje(Tacka.KOORDINATNI_POCETAK)
-                 || (temena[ind].rastojanje(Tacka.KOORDINATNI_POCETAK) == temena[i].rastojanje(Tacka.KOORDINATNI_POCETAK)
-                 && temena[ind].uzmiX()> temena[i].uzmiX()))
-            ind = i;
-      return ind;
    }
 
    public Cetvorougao(Tacka a, Tacka b, Tacka c, Tacka d) {

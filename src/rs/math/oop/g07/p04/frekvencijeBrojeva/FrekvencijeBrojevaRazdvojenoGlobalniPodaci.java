@@ -23,8 +23,7 @@ public class FrekvencijeBrojevaRazdvojenoGlobalniPodaci {
 
 	static void prikaziFrekfencijeNumericki() {
 		for (int i = 0; i < brojPojava.length; i++)
-			System.out.printf("%d:%d %s", (i + min), brojPojava[i], 
-					((i + 1) % 8 == 0) ? "\n" : "\t");
+			System.out.printf("%d:%d\t", (i + min), brojPojava[i]);
 	}
 
 	static void prikaziFrekfencijeGraficki() {

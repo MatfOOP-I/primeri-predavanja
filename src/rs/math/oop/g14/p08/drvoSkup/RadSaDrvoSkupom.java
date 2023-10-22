@@ -4,8 +4,6 @@ import java.util.Comparator;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import rs.math.oop.g13.p03.genericiUredjeniPar.UredjeniPar;
-
 public class RadSaDrvoSkupom {
 
 	public static void main(String[] args) {
@@ -30,10 +28,10 @@ public class RadSaDrvoSkupom {
 					@Override
 					public int compare(UredjeniPar<String, Integer> o1, UredjeniPar<String, Integer> o2) {
 						// примарно по другом растуће
-						if (o2.drugaKomponenta().compareTo(o1.drugaKomponenta()) != 0)
-							return o2.drugaKomponenta().compareTo(o1.drugaKomponenta());
+						if (o2.uzmiVrednost2().compareTo(o1.uzmiVrednost2()) != 0)
+							return o2.uzmiVrednost2().compareTo(o1.uzmiVrednost2());
 						else // секундарно по првом растуће
-							return o1.prvaKomponenta().compareTo(o2.prvaKomponenta());
+							return o1.uzmiVrednost1().compareTo(o2.uzmiVrednost1());
 					}
 				});
 		uDrvoSkup.add(new UredjeniPar<String, Integer>("Новак", 26));

@@ -2,19 +2,19 @@ package rs.math.oop.g13.p06.genericiMinimalniElementNiza;
 
 public class UredjeniParUporediv<S extends Comparable<S>, T extends Comparable<T>> 
     implements Comparable<UredjeniParUporediv<S, T>>{
-    private T vrednost1;
-    private S vrednost2;
+    private S vrednost1;
+    private T vrednost2;
 
-    public UredjeniParUporediv(T vrednost1, S vrednost2) {
+    public UredjeniParUporediv(S vrednost1, T vrednost2) {
         this.vrednost1 = vrednost1;
         this.vrednost2 = vrednost2;
     }
     
-    public T getVrednost1() {
+    public S uzmiVrednost1() {
         return vrednost1;
     }
     
-    public S getVrednost2() {
+    public T uzmiVrednost2() {
         return vrednost2;
     }
     

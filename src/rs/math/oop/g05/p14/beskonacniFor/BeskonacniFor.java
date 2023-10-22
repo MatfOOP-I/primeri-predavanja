@@ -4,9 +4,9 @@ public class BeskonacniFor {
 
 	public static void main(String[] args) {
 		long n=0;
-		for(;;) {
-		}
-		// System.out.println(n);
+		for(;;)
+			n++;
+		//System.out.println(n); 
 		// наредба исписа изнад се неће никад десити 
 		// па и компајлер указује на грешку, 
 		// стога је наредба коментарисана

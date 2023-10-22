@@ -41,6 +41,10 @@ public class Prava extends GeometrijskiObjekat {
       return a * t.uzmiX() + b * t.uzmiY() + c;
    }
 
+   public boolean sadrzi(Tacka t) {
+      return (uvrstiKoordinate(t) == 0);
+   }
+
    public boolean suSaIsteStranePrave(Tacka t1, Tacka t2) {
       return uvrstiKoordinate(t1) * uvrstiKoordinate(t2) > 0;
    }
@@ -96,10 +100,5 @@ public class Prava extends GeometrijskiObjekat {
    @Override
    public double povrsina() {
       return 0;
-   }
-
-   @Override
-   public boolean sadrzi(Tacka t) {
-      return ( Double.compare( uvrstiKoordinate(t), 0) == 0);
    }
 }

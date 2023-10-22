@@ -1,20 +1,7 @@
-/*
-
-Написати Јава програм који омогућује рад са геометријским објектима у равни.
-
-Подаци о разним врстама геометријских објеката су организовани по класама, 
-које се налазе у одвојеним датотекама. 
-
-*/
-
-// Задатак илуструје коришћење наслеђивања.
-// Задатак илуструје коришћење кључне речи super.
 
 package rs.math.oop.g09.p09.interfejsGeometrija;
 
 import java.util.Scanner;
-import static java.lang.System.in;
-import static java.lang.System.out;
 
 public class MereObliciSadrzavanja {
 
@@ -32,46 +19,46 @@ public class MereObliciSadrzavanja {
 
       double ukupanObim = 0;
       double ukupnaPovrsina = 0;
-      out.println("\nГеометријски објекти:");
+      System.out.println("\nГеометријски објекти:");
       GeometrijskiObjekat[] svi = {a, b, c, d, e, ab, p, bcd, bcde, k1};
       for (GeometrijskiObjekat go : svi) {
-         out.printf("| %s", go);
+         System.out.printf("| %s", go);
          if (go instanceof Oblik) {
             Oblik obl = (Oblik) go;
             if (obl.jeKonveksan())
-               out.print(" конвексан ");
+               System.out.print(" конвексан ");
             else
-               out.print(" неконвексан ");
+               System.out.print(" неконвексан ");
             if (obl.jeOgranicen())
-               out.println(" ограничен ");
+               System.out.println(" ограничен ");
             else
-               out.println(" неограничен");
+               System.out.println(" неограничен");
          }
          else
-            out.println(" не подржава облике");
-         if(go instanceof Mera){
+            System.out.println(" не подржава облике");
+         if( go instanceof Mera){
             Mera m = (Mera) go;
-            out.print(" обим: " + m.obim());
-            out.println(" површина: " + m.povrsina() + "|");
+            System.out.print(" обим: " + m.obim());
+            System.out.println(" површина: " + m.povrsina() + "|");
             ukupanObim += m.obim();
             ukupnaPovrsina += m.povrsina();
          }
          else
-            out.println(" не подржава мерење |");
+            System.out.println(" не подржава мерење |");
       }
-      out.println("Укупан обим:     " + ukupanObim);
-      out.println("Укупна површина: " + ukupnaPovrsina);
+      System.out.println("Укупан обим:     " + ukupanObim);
+      System.out.println("Укупна површина: " + ukupnaPovrsina);
 
-      Scanner sc = new Scanner(in);
-      out.print("Unesite koordinate tacke X: ");
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Унесите координате тачке X: ");
       Tacka x = new Tacka("X", sc.nextDouble(), sc.nextDouble());
       sc.close();
 
       Sadrzavanje[] sviSd = {ab, p, bcd, bcde, k1};
-      out.println("Oбјекти који садрже дату тачку " + x + " су: " );
+      System.out.println("Oбјекти који садрже дату тачку " + x + " су: " );
       for (Sadrzavanje sd : sviSd)
          if( sd.sadrzi(x))
-            out.printf("%s ", sd);
+            System.out.printf("%s ", sd);
     }
 
 }

@@ -19,11 +19,11 @@ class StudentPoslediplomacPokretanje {
 		drugi.stampajPodatke();
 
 		Poslediplomac novi = new Poslediplomac();
-		novi.postaviBrojIspita(n);
+		novi.postavibrojIspita(n);
 		novi.ime = "Петар Перић";
 		novi.brojIndeksa = 4;
 		novi.naBudzetu = true;
 		novi.stampajPodatke();
-		System.out.println(novi.ime + " је положио " + novi.uzmiBrojIspita() + " испита.");
+		System.out.println(novi.ime + " је положио " + novi.uzmibrojIspita() + " испита.");
 	}
 }

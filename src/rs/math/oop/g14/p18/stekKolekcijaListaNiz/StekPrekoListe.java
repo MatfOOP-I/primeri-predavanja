@@ -14,7 +14,7 @@ public class StekPrekoListe<T> extends AbstractCollection<T> implements Stek<T> 
 		}
 
 		public String toString() {
-			return "елеменат листе: " + vrednost;
+			return "елемент листе: " + vrednost;
 		}
 	}
 

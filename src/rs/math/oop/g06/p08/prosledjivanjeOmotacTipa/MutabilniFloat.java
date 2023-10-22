@@ -2,9 +2,9 @@ package rs.math.oop.g06.p08.prosledjivanjeOmotacTipa;
 
 public class MutabilniFloat {
 	
-	float val;
-	public MutabilniFloat(float val) {
-		this.val=val;
+	float v;
+	public MutabilniFloat(float v) {
+		this.v=v;
 	}
 
 	static void kvadrirajPrimitvni(float x) {
@@ -19,7 +19,7 @@ public class MutabilniFloat {
 	}
 	
 	static void kvadrirajMutabilniOmotac(MutabilniFloat x) {
-		x.val*=x.val;
+		x.v*=x.v;
 	}
 	
 	public static void main(String[] args) {
@@ -34,6 +34,6 @@ public class MutabilniFloat {
 		System.out.println(xOmotac);
 		
 		kvadrirajMutabilniOmotac(xMutabilniOmotac);
-		System.out.println(xMutabilniOmotac.val);
+		System.out.println(xMutabilniOmotac.v);
 	}
 }

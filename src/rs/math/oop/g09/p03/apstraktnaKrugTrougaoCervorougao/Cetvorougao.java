@@ -8,22 +8,17 @@ public class Cetvorougao extends GeometrijskiObjekat {
    private Tacka c;
    private Tacka d;
 
-   private static int najblizaPocetku(Tacka o, Tacka[] temena) {
-      int ind = 0;
-      for(int i = 1; i< temena.length; i++)
-         if( temena[ind].rastojanje(o) > temena[i].rastojanje(o)
-                 || (temena[ind].rastojanje(o) == temena[i].rastojanje(o)
-                 && temena[ind].uzmiX()> temena[i].uzmiX()))
-            ind = i;
-      return ind;
-   }
-
    public Cetvorougao(String oznaka, Tacka a, Tacka b,
                       Tacka c, Tacka d) {
       super(oznaka);
-      Tacka o = Tacka.KOORDINATNI_POCETAK;
+      Tacka o = new Tacka(0,0);
       Tacka[] temena = {a, b, c, d};
-      int ind = najblizaPocetku(o, temena);
+      int ind = 0;
+      for(int i=1; i< temena.length; i++)
+         if( temena[ind].rastojanje(o) > temena[i].rastojanje(o)
+                 || (temena[ind].rastojanje(o) == temena[i].rastojanje(o)
+                 && temena[ind].uzmiX()>temena[i].uzmiX()))
+            ind = i;
       this.a = new Tacka(temena[ind]);
       this.b = new Tacka(temena[(ind+1) % temena.length]);
       this.c = new Tacka(temena[(ind+2) % temena.length]);
@@ -39,7 +34,7 @@ public class Cetvorougao extends GeometrijskiObjekat {
             cetv.d);
    }
 
-   @Override
+
    public boolean sadrzi(Tacka t) {
       Prava p = new Prava(a, c);
       if (p.suSaRaznihStranaPrave(b, d)) {

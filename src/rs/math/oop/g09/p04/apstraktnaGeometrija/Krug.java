@@ -2,6 +2,9 @@ package rs.math.oop.g09.p04.apstraktnaGeometrija;
 
 import java.util.Objects;
 
+import static java.lang.Math.PI;
+import static java.lang.Math.pow;
+
 public class Krug extends GeometrijskiObjekat {
    private Tacka o;
    private double r;
@@ -54,12 +57,12 @@ public class Krug extends GeometrijskiObjekat {
 
    @Override
    public double obim() {
-      return 2 * r * Math.PI;
+      return 2 * r * PI;
    }
 
    @Override
    public double povrsina() {
-      return Math.pow(r, 2) * Math.PI;
+      return pow(r, 2) * PI;
    }
 
 }

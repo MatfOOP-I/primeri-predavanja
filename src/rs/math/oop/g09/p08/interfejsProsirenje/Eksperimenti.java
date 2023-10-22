@@ -6,8 +6,7 @@ public class Eksperimenti {
 
       Eksperimentator eksp = new Istrazivac("Петровић", "Молекуларна Биологија");
       eksp.prikaziUpit();
-      System.out.println(eksp.tekstUpita());
-      eksp.razmortiCinjenice();
+      eksp.razmotriCinjenice();
       eksp.definisiHipotezu();
       eksp.realizujeEksperimente();
 
@@ -15,7 +14,7 @@ public class Eksperimenti {
       rdz.prikaziUpit();
 
       Razuman rzm = eksp;
-      rzm.razmortiCinjenice();
+      rzm.razmotriCinjenice();
       rzm.definisiHipotezu();
    }
 

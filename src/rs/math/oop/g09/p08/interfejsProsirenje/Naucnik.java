@@ -22,7 +22,7 @@ public class Naucnik implements Radoznao, Razuman {
    }
 
    @Override
-   public void razmortiCinjenice() {
+   public void razmotriCinjenice() {
       System.out.println( "Научник '"+ ime + "' разматра чињенице");
    }
 

@@ -12,7 +12,7 @@ public class PitanjaRazmisljanja {
         System.out.println(rd.tekstUpita());
 
         Razuman rz = n;
-        rz.razmortiCinjenice();
+        rz.razmotriCinjenice();
         rz.definisiHipotezu();
     }
 }

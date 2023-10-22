@@ -52,10 +52,8 @@ public class Duz extends GeometrijskiObjekat {
 
    @Override
    public boolean equals(Object o) {
-      if (this == o)
-         return true;
-      if (o == null || !(o instanceof Duz))
-         return false;
+      if (this == o) return true;
+      if (o == null || !(o instanceof Duz)) return false;
       Duz duz = (Duz) o;
       return (a.equals(duz.a) &&
             b.equals(duz.b))

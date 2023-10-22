@@ -1,59 +1,59 @@
 package rs.math.oop.g14.p01.kolekcijeRed;
 
 /**
- * Реализујемо генерички ред употребом повезеане листе као унутрашње структуре
+ * Реализујемо генерички ред употребом повезане листе као унутрашње структуре
  * 
  * @param <T> - параметар типа без ограничења
  */
 public class RedPrekoPovezaneListe<T> implements Red<T>{
 
-	// приватна унутрашња класа која се користи само за
-	// потребе изградње повезане листе
-	private class Cvor{
-		T element;
-		Cvor sledeci;
-		
-		private Cvor(T element) {
-			this.element=element;
-		}
-	}
-	
-	private Cvor pocetak;
-	private Cvor kraj;
-	private int velicina;
+	private PovezanaLista<T> elementi = new PovezanaLista();
 
 	@Override
-	public void dodaj(T element) {
-		System.out.println("Додајем " + element);
-		Cvor novi = new Cvor(element);
-		if(pocetak==null) {
-			// листа је била празна
-			pocetak = novi;
-			kraj = novi;
-		}else {
-			// усмеравамо досадашњи крај да показује на нови
-			kraj.sledeci=novi;
-			// па крај постаје новододати
-			kraj = novi;
-		}
-		velicina++;
+	public void dodaj(T elem) {
+		System.out.println("Додајем " + elem);
+		elementi.dodajNaKraj(elem);
 	}
 
 	@Override
 	public T ukloni() {
-		if (velicina == 0) {
-			throw new RuntimeException("Ред је празан па нема смисла уклањање.");
+		T elem = elementi.ukloniSaPocetka();
+		if (elem == null) {
+			System.err.println("Грешка при уклањању: ред је празан!");
+			return null;
 		}
-		T element = pocetak.element;
-		pocetak = pocetak.sledeci;
-		velicina--;
-		System.out.println("Уклањам: "+element);
-		return element;
+		System.out.println("Уклањам: "+elem);
+		return elem;
 	}
 
 	@Override
-	public int velicina() {
-		return velicina;
+	public int brojElemenata() {
+		return elementi.brojCvorova();
 	}
 	
+	public static void main(String[] args) {
+		Red<Integer> red = new RedPrekoPovezaneListe<>();
+		red.dodaj(34);
+		red.dodaj(23);
+		red.dodaj(11);
+		System.out.println("Број ел.: " + red.brojElemenata());
+		red.ukloni();
+		System.out.println("Број ел.: " + red.brojElemenata());
+		red.dodaj(112);
+		System.out.println("Број ел.: " + red.brojElemenata());
+		red.dodaj(-134);
+		System.out.println("Број ел.: " + red.brojElemenata());
+		red.dodaj(111);
+		System.out.println("Број ел.: " + red.brojElemenata());
+		red.dodaj(345);
+		System.out.println("Број ел.: " + red.brojElemenata());
+		red.ukloni();
+		red.ukloni();
+		red.ukloni();
+		red.ukloni();
+		red.ukloni();
+		red.ukloni();
+		red.ukloni();
+		System.out.println("Број ел.: " + red.brojElemenata());
+	}
 }

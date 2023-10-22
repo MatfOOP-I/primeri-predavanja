@@ -6,7 +6,7 @@ import java.util.ListIterator;
 public class RadSaPovezanomListom {
 
 	public static void main(String[] args) {
-		LinkedList<Integer> povezanaLista = new LinkedList<>();
+		LinkedList<Integer> povezanaLista = new LinkedList<Integer>();
 		povezanaLista.addFirst(33); // [33]
 		povezanaLista.addLast(12); // [33, 12]
 		povezanaLista.add(333); // [33, 12, 333] - подразумевано додаје на крај

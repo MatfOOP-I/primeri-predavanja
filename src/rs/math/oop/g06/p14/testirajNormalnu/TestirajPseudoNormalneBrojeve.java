@@ -11,11 +11,10 @@ public class TestirajPseudoNormalneBrojeve {
 		double prosek=0;
 		for(int i=0; i<n; i++) {
 			double sp = gen.nextGaussian();
-			System.out.print( sp + "|");
 			prosek+=sp;
 		}
 		prosek/=n;
-		System.out.printf("%nПросек је %f", prosek);
+		System.out.println("Просек је "+prosek);
 		
 		skener.close();
 	}

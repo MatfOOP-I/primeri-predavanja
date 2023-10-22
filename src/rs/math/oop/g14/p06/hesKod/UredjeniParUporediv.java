@@ -1,9 +1,8 @@
 package rs.math.oop.g14.p06.hesKod;
 
-public class UredjeniParUporediv<T, S> extends UredjeniPar<T, S>{
+public class UredjeniParUporediv<S, T> extends UredjeniPar<S, T>{
 
-	public UredjeniParUporediv(T vrednost1, S vrednost2)
-	{
+	public UredjeniParUporediv(S vrednost1, T vrednost2) {
 		super(vrednost1, vrednost2);
 	}
 	
@@ -16,7 +15,8 @@ public class UredjeniParUporediv<T, S> extends UredjeniPar<T, S>{
 		// ако аргумент није уређени пар онда сигурно нису исти
 		if(!(obj instanceof UredjeniParUporediv))
 			return false;
-		UredjeniParUporediv par = (UredjeniParUporediv) obj;
+		UredjeniParUporediv par = 
+				(UredjeniParUporediv)obj;
 		// исти су само ако им је и свака координата иста
 		return uzmiVrednost1().equals(par.uzmiVrednost1()) &&
 				uzmiVrednost2().equals(par.uzmiVrednost2());

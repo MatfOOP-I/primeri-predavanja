@@ -7,8 +7,6 @@ import static java.lang.Math.sqrt;
 
 public class Tacka extends GeometrijskiObjekat {
 
-   public final static Tacka KOORDINATNI_POCETAK = new Tacka(0,0);
-
    private double x;
    private double y;
 

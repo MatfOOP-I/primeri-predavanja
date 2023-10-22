@@ -10,8 +10,7 @@ public class FrekvencijeBrojevaRazdvojeno {
 
 	static void prikaziFrekfencijeNumericki(int[] frekfencije) {
 		for (int i = 0; i < frekfencije.length; i++)
-			System.out.printf("%d:%d %s", (i + 1), frekfencije[i], 
-					((i + 1) % 8 == 0) ? "\n" : "\t");
+			System.out.printf("%d:%d\t", (i + 1), frekfencije[i]);
 	}
 
 	static void prikaziFrekfencijeGraficki(int[] frekfencije) {

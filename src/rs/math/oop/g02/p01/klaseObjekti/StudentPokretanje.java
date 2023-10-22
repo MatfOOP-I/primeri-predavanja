@@ -4,14 +4,14 @@ class StudentPokretanje {
     // улазна тачка програма
     public static void main(String[] args) {
         Student prvi = new Student();
-        prvi.ime = "Марко Марковић";
-        prvi.brojIndeksa = 243;
+        prvi.ime = "Марко Илић";
+        prvi.brojIndeksa = 0b0011_1000;
         prvi.naBudzetu = false;
 
         Student drugi;
         drugi = new Student();
-        drugi.ime = "Јанко Јанковић";
-        drugi.brojIndeksa = 25;
+        drugi.ime = "Ана Сарић";
+        drugi.brojIndeksa = 2_5;
         drugi.naBudzetu = true;
 
         prvi.stampajPodatke();

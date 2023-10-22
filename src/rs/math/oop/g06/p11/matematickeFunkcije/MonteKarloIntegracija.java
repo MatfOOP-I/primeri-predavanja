@@ -66,7 +66,7 @@ public class MonteKarloIntegracija {
 		}
 		// коначно апроксимирани интеграл заузима површину која одговара
 		// уделу yUnutra/N површине правоугаоника
-		double integral = (b-a) * donja + (b-a) * (gornja-donja) * yUnutra / N;
+		double integral = (b - a) * (gornja - donja) * yUnutra / N;
 		System.out.println("Апроксимација интеграла је " + integral);
 		skener.close();
 	}

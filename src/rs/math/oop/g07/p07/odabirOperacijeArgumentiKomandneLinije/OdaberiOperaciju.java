@@ -27,7 +27,7 @@ public class OdaberiOperaciju {
 			break;
 		case "/":
 			if (op2 == 0) {
-				System.err.println("Није дозвољено дељење нулом.");
+				System.err.println("Дељење нулом.");
 				System.exit(1);
 			}
 			rez = op1 / op2;

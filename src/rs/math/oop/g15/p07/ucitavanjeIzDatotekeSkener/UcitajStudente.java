@@ -2,9 +2,9 @@ package rs.math.oop.g15.p07.ucitavanjeIzDatotekeSkener;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.*;
-
-import rs.math.oop.g14.p17.dzokerTipDonjeGranice.Student;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class UcitajStudente {
 
@@ -26,15 +26,7 @@ public class UcitajStudente {
 			}
 			for (Student student : studenti)
 				System.out.println(student);
-			Collections.sort(studenti, new Comparator<Student>() {
-				@Override
-				public int compare(Student o1, Student o2) {
-					return o1.uzmiPrezime().compareTo(o2.uzmiPrezime());
-				}
-			});
-			Collections.sort(studenti, (o1, o2) -> o1.uzmiPrezime().compareTo(o2.uzmiPrezime()));
-			for (Student student : studenti)
-				System.out.println(student);
+
 		} catch (FileNotFoundException e) {
 			System.err.println(e.getMessage());
 		} finally {

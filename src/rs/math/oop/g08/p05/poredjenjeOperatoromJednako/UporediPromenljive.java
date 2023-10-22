@@ -3,6 +3,8 @@ package rs.math.oop.g08.p05.poredjenjeOperatoromJednako;
 public class UporediPromenljive {
 
     public static void main(String[] args) {
+        int x = 123, y = 123;
+        System.out.println(x == y);
 
         Kutija kutija1 = new Kutija();
         kutija1.dubina = 10;
@@ -13,7 +15,5 @@ public class UporediPromenljive {
         kutija2.sirina = 2;
         kutija2.visina = 4;
         System.out.println(kutija1 == kutija2);
-        System.out.println(kutija1.equals(kutija2));
-        System.out.println(kutija2.equals(kutija1));
     }
 }

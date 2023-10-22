@@ -2,14 +2,13 @@ package rs.math.oop.g14.p11.enumerisaniSkup;
 
 import java.util.EnumSet;
 
-import rs.math.oop.g12.p01.enumiDaniUNedelji.DanUNedelji;
-
 public class RadSaEnumerisanimSkupom {
 
 	public static void main(String[] args) {
 		EnumSet<DanUNedelji> eSkup1 = EnumSet.of(DanUNedelji.CETVRTAK);
 		eSkup1.add(DanUNedelji.CETVRTAK);
 		eSkup1.add(DanUNedelji.PETAK);
+		System.out.println(eSkup1.contains(DanUNedelji.PETAK));
 		System.out.println(eSkup1);
 		
 		EnumSet<DanUNedelji> eSkup2 = EnumSet.of(DanUNedelji.UTORAK, 

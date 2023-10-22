@@ -1,14 +1,3 @@
-/*
-
-Написати Јава програм који омогућује рад са геометријским објектима у равни.
-
-Подаци о разним врстама геометријских објеката су организовани по класама, 
-које се налазе у одвојеним датотекама. 
-
-*/
-
-// Задатак илуструје коришћење наслеђивања.
-// Задатак илуструје коришћење кључне речи super.
 
 package rs.math.oop.g09.p10.interfejsGeometrija;
 
@@ -29,7 +18,7 @@ public class MereObliciSadrzavanja {
       Krug k1 = new Krug("кB18", b, 18);
 
       Scanner sc = new Scanner(System.in);
-      System.out.print("Unesite koordinate tacke X: ");
+      System.out.print("Унесите координате тачке X: ");
       Tacka x = new Tacka("X", sc.nextDouble(), sc.nextDouble());
       sc.close();
 

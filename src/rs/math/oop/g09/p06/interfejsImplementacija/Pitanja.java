@@ -10,7 +10,7 @@ public class Pitanja {
         System.out.println(p1.tekstUpita());
         System.out.println(p1.prikaziUpit2());
 
-        Radoznao p2 = p1;
+        Radoznao p2 = new Strucnjak();
         p2.prikaziUpit();
         System.out.println(p2.tekstUpita());
     }

@@ -13,7 +13,7 @@ public class ProsekUnetihBrojeva {
 			prosek += b;
 		}
 		prosek /= n;
-		System.out.println(String.format("Просек унетих бројева је: %.2f", prosek));
+		System.out.println(String.format("Просек бројева је: %.2f", prosek));
 		skener.close();
 	}
 }

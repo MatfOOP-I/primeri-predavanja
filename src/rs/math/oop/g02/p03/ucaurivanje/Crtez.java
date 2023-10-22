@@ -1,12 +1,12 @@
 package rs.math.oop.g02.p03.ucaurivanje;
 
 class Crtez {
-	Krug krug1;
-	Krug krug2;
+	private Krug krug1;
+	private Krug krug2;
 	
 	public Crtez() {
 		// конструкција објекта са задавањем аргумената
-		krug1 = new Krug(10, 20, 11);
+		krug1 = new Krug(10, 12, 11);
 		krug2 = new Krug(17, 20, 4);
 	}
 	

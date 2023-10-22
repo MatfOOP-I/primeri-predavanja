@@ -4,7 +4,7 @@ import java.io.File;
 
 public class RekurzivniObilazak {
 
-	private static void ObidjiUDubinu(String putanja) {
+	private static void obidjiUDubinu(String putanja) {
 		File fAktivni = new File(putanja);
 		// ако датотека не постоји, нема смисла ићи даље
 		if (!fAktivni.exists())
@@ -20,7 +20,7 @@ public class RekurzivniObilazak {
 		File[] fPotomci = fAktivni.listFiles();
 		if (fPotomci != null)
 			for (File fp : fPotomci)
-				ObidjiUDubinu(fp.getAbsolutePath());
+				obidjiUDubinu(fp.getAbsolutePath());
 	}
 
 	public static void main(String[] args) {
@@ -29,6 +29,6 @@ public class RekurzivniObilazak {
 		+ "мора садржати путању до датотеке.");
 			System.exit(1);
 		}
-		ObidjiUDubinu(args[0]);
+		obidjiUDubinu(args[0]);
 	}
 }

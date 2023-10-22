@@ -6,5 +6,5 @@ package rs.math.oop.g14.p01.kolekcijeRed;
 interface Red<T>{
 	void dodaj(T element);
 	T ukloni();
-	int velicina();
+	int brojElemenata();
 }

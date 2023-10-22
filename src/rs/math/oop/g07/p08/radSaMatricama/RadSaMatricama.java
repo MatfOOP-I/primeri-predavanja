@@ -4,7 +4,7 @@ public class RadSaMatricama {
 	
 	static void prikazi(double[][] a) {
 		if (a == null) {
-			System.err.println("Грешка! Матрица не постоји.");
+			System.out.println("Грешка!");
 			return;
 		}
 		System.out.println("Елементи матрице су:");
@@ -17,26 +17,20 @@ public class RadSaMatricama {
 
 	static void prikazi2(double[][] a) {
 		if (a == null) {
-			System.err.println("Грешка! Матрица не постоји.");
+			System.out.println("Грешка!");
 			return;
 		}
 		System.out.println("Елементи матрице су");
 		for (double[] vrsta : a) {
 			for (double x : vrsta)
 				System.out.printf("%15.4f", x);
-			System.out.printf("%n");
+			System.out.printf("\n");
 		}
 	}
 
 	static double[][] saberi(double[][] a, double[][] b) {
 		if (a.length != b.length)
 			return null;
-		for (int i = 1; i < a.length; i++)
-			if (a[0].length != a[i].length)
-				return null;
-		for (int i = 1; i < b.length; i++)
-			if (b[0].length != b[i].length)
-				return null;
 		for (int i = 0; i < a.length; i++)
 			if (a[i].length != b[i].length)
 				return null;
@@ -50,12 +44,6 @@ public class RadSaMatricama {
 	static double[][] oduzmi(double[][] a, double[][] b) {
 		if (a.length != b.length)
 			return null;
-		for (int i = 1; i < a.length; i++)
-			if (a[0].length != a[i].length)
-				return null;
-		for (int i = 1; i < b.length; i++)
-			if (b[0].length != b[i].length)
-				return null;
 		for (int i = 0; i < a.length; i++)
 			if (a[i].length != b[i].length)
 				return null;
@@ -70,10 +58,7 @@ public class RadSaMatricama {
 		if (a[0].length != b.length)
 			return null;
 		for (int i = 1; i < a.length; i++)
-			if (a[0].length != a[i].length)
-				return null;
-		for (int i = 1; i < b.length; i++)
-			if (b[0].length != b[i].length)
+			if (a[i].length != a[i].length)
 				return null;
 		double[][] c = new double[a.length][b[0].length];
 		for (int i = 0; i < c.length; i++)
@@ -119,8 +104,7 @@ public class RadSaMatricama {
 		double det = 0;
 		double znak = 1;
 		for (int j = 0; j < n; j++) {
-			double[][] x = iskljuci(a, 0, j);
-			det += znak * a[0][j] * determinanta(x);
+			det += znak * a[0][j] * determinanta(iskljuci(a, 0, j));
 			znak = -znak;
 		}
 		return det;
@@ -132,29 +116,23 @@ public class RadSaMatricama {
 		prikazi(a);
 		double[][] b = { { 2, 3, 4 }, { 5, 6.6, 7 } };
 		System.out.println("B je: ");
-		prikazi2(b);
+		prikazi(b);
 		System.out.println("A+B je: ");
 		prikazi2(saberi(a, b));
 		System.out.println("A-B je: ");
 		prikazi2(oduzmi(a, b));
 		System.out.println("A након измене je: ");
-		a[1][1] = 7.5;
+		a[1][0] = 0.5;
 		prikazi2(a);
 		double[][] c = { { 2, 1.5 }, { 3, 0 }, { -1.5, 1 } };
 		System.out.println("C је: ");
 		prikazi(c);
-		System.out.println("C*A је: ");
-		double[][] d = pomnozi(c, a);
+		System.out.println("A*C је: ");
+		double[][] d = pomnozi(a, c);
 		prikazi(d);
 		if (jeKvadratna(d))
-			System.out.println("Детерминанта матрице C*A је: " + determinanta(d));
+			System.out.println("Детерминанта матрице A*C је: " + determinanta(d));
 		else
-			System.out.println("Матрица C*A није квадратна па нема детерминанту.");
-		double[][] e = { { -2, 1.5, -2, 3 }, {-3, 1, -3, 2 }, { 1,2,-1.5, 1 },{1,1,2,2} };
-		System.out.println("E је: ");
-		prikazi(e);
-		System.out.println("Детерминанта матрице E је: " + determinanta(e));
-
-
+			System.out.println("Матрица A*C није квадратна па нема детерминанту.");
 	}
 }

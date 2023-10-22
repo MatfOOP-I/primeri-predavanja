@@ -2,26 +2,23 @@ package rs.math.oop.g09.p03.apstraktnaKrugTrougaoCervorougao;
 
 import java.util.Objects;
 
+import static java.lang.Math.sqrt;
 
 public class Trougao extends GeometrijskiObjekat {
    private Tacka a;
    private Tacka b;
    private Tacka c;
 
-   private static int indikatorNajblizePocetku(Tacka[] temena) {
-      int ind = 0;
-      for(int i = 1; i< temena.length; i++)
-         if( temena[ind].rastojanje(Tacka.KOORDINATNI_POCETAK) > temena[i].rastojanje(Tacka.KOORDINATNI_POCETAK)
-                 || (temena[ind].rastojanje(Tacka.KOORDINATNI_POCETAK) == temena[i].rastojanje(Tacka.KOORDINATNI_POCETAK)
-                 && temena[ind].uzmiX()> temena[i].uzmiX()))
-            ind = i;
-      return ind;
-   }
-
    public Trougao(String oznaka, Tacka a, Tacka b, Tacka c) {
       super(oznaka);
+      Tacka o = new Tacka(0,0);
       Tacka[] temena = {a, b, c};
-      int ind = indikatorNajblizePocetku(temena);
+      int ind = 0;
+      for(int i=1; i< temena.length; i++)
+         if( temena[ind].rastojanje(o) > temena[i].rastojanje(o)
+           || (temena[ind].rastojanje(o) == temena[i].rastojanje(o)
+              && temena[ind].uzmiX()>temena[i].uzmiX()))
+                  ind = i;
       this.a = new Tacka(temena[ind]);
       this.b = new Tacka(temena[(ind+1) % temena.length]);
       this.c = new Tacka(temena[(ind+2) % temena.length]);
@@ -35,7 +32,7 @@ public class Trougao extends GeometrijskiObjekat {
       this(tr.uzmiOznaku(), tr.a, tr.b, tr.c);
    }
 
-   private boolean pripadaIvici(Tacka t) {
+   public boolean sadrzi(Tacka t) {
       Duz ivica = new Duz(a, b);
       if (ivica.sadrzi(t))
          return true;
@@ -45,23 +42,16 @@ public class Trougao extends GeometrijskiObjekat {
       ivica = new Duz(c, a);
       if (ivica.sadrzi(t))
          return true;
-      return false;
-   }
-
-   private boolean pripadaUnutrasnjosti(Tacka t) {
-      Prava pAB = new Prava(a, b);
-      Prava pBC = new Prava(b, c);
-      Prava pCA = new Prava(c, a);
-      return pAB.suSaIsteStranePrave(c, t)
-              && pBC.suSaIsteStranePrave(a, t)
-              && pCA.suSaIsteStranePrave(b, t);
-   }
-
-   @Override
-   public boolean sadrzi(Tacka t) {
-      if (pripadaIvici(t))
-         return true;
-      return pripadaUnutrasnjosti(t);
+      Prava p = new Prava(a, b);
+      if (p.suSaRaznihStranaPrave(c, t))
+         return false;
+      p = new Prava(b, c);
+      if (p.suSaRaznihStranaPrave(a, t))
+         return false;
+      p = new Prava(c, a);
+      if (p.suSaRaznihStranaPrave(b, t))
+         return false;
+      return true;
    }
 
    @Override
@@ -105,7 +95,7 @@ public class Trougao extends GeometrijskiObjekat {
       double bc = b.rastojanje(c);
       double ca = c.rastojanje(a);
       double s = (ab + bc + ca) / 2;
-      return Math.sqrt(s * (s - ab) * (s - bc) * (s - ca));
+      return sqrt(s * (s - ab) * (s - bc) * (s - ca));
    }
 
 }

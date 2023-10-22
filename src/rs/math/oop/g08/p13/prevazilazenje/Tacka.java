@@ -20,10 +20,10 @@ public class Tacka {
 
 	@Override
 	public int hashCode() {
-//		int h = 0;
-//		h = 7 * x + 11 * y;
-//		return h;
-		return java.util.Objects.hash(x, y);
+		int h = x;
+		h = 31 * h + y;
+		return h;
+		// return Objects.hash(x, y); 
 		// алтернативно постоји и услужни метод hash() у класи Objects
 	}
 }

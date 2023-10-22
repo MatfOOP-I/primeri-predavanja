@@ -3,7 +3,7 @@ package rs.math.oop.g07.p10.sortiranjePretragaReci;
 public class SortirajPaTraziRec {
 
 	public static void main(String[] args) {
-		String tekst = "Као што се може видети, један низ brojPojava чува вредности "
+		String tekst = "Као што се може видети, низ brojPojava чува вредности "
                 + "броја појава за сваки од бројева из интервала. "
                 + "Стога је тип компоненте низа целобројни тип, "
                 + "а број елемената низа је иницијално датом одређен "
@@ -35,11 +35,10 @@ public class SortirajPaTraziRec {
         	// у супротном ће понашање претраге бити недефинисано, 
         	// можда се пронађе реч, а можда и не
         	int pozicija = java.util.Arrays.binarySearch(reci, rec);
-        	if(pozicija >= 0)
-        		System.out.println("Пронађена реч на позицији "  + pozicija + ".");
+        	if(pozicija>0)
+        		System.out.println("Пронађена реч на позицији "+pozicija);
         	else
-        		System.out.println("Није пронађена реч. Враћена је вредност "
-						+ pozicija + ".");
+        		System.out.println("Није пронађена реч");
         }
         skener.close();
 	}

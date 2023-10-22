@@ -20,17 +20,12 @@ class ObjektnoNzd {
 
 // одређивање НЗД за два броја
 	static Integer nzd2(Integer prvi, Integer drugi) {
-		if (prvi.compareTo(drugi) == 0) {
-			return prvi;
-		} else {
-			if (prvi.compareTo(drugi) < 0) {
-				Integer novi = new Integer(drugi.intValue() - prvi.intValue());
-				return nzd2(novi, prvi);
-			} else {
-				Integer novi = new Integer(prvi.intValue() - drugi.intValue());
-				return nzd2(novi, drugi);
-			}
+		while (drugi > 0) {
+			int ostatak = prvi % drugi;
+			prvi = drugi;
+			drugi = ostatak;
 		}
+		return prvi;
 	}
 
 	// одређивање НЗД за три броја

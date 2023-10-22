@@ -12,34 +12,16 @@ class ImperativnoNzd {
         System.out.println("Други број је " + drugiBroj);
         System.out.println("Трећи број је " + treciBroj);
         // одређивање НЗД за први и други број
-        nzdPrviDrugi: for (;;) {
-            if (prviBroj == drugiBroj)
-                break nzdPrviDrugi;
-            // размени бројеве тако да други број буде већи од првог
-            if (prviBroj > drugiBroj) {
-                int privremeni = prviBroj;
-                prviBroj = drugiBroj;
-                drugiBroj = privremeni;
-            }
-            // нови пар бројева су дотадашњи мањи и разлика између већег и мањег
-            drugiBroj = drugiBroj - prviBroj;
+        while (drugiBroj > 0) {
+        	int ostatak = prviBroj % drugiBroj;
+        	prviBroj = drugiBroj;
+        	drugiBroj = ostatak;
         }
         // одређивање НЗД за НЗД прва два броја и трећи број
-        nzdNadPrvaDvaTreci: for (;;) {
-            // ако су бројеви исти, НЗД је ма који од њих
-            if (prviBroj == treciBroj)
-                break nzdNadPrvaDvaTreci;
-            // размени бројеве тако да трећи број буде већи од првог
-            if (prviBroj > treciBroj) {
-                int privremeni = prviBroj;
-                prviBroj = treciBroj;
-                treciBroj = privremeni;
-            }
-            // ако мањи број дели већи број, тада је мањи број НЗД
-            if (treciBroj % prviBroj == 0)
-                break nzdNadPrvaDvaTreci;
-            // "преживљавају" мањи од два броја и остатак при дељењу
-            treciBroj = treciBroj % prviBroj;
+        while (treciBroj > 0) {
+        	int ostatak = prviBroj % treciBroj;
+        	prviBroj = treciBroj;
+        	treciBroj = ostatak;
         }
         // приказ резултата
         System.out.println("НЗД ова три броја је " + prviBroj);

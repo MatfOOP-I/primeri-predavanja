@@ -1,15 +1,3 @@
-/*
-
-Написати Јава програм који омогућује рад са геометријским објектима у равни.
-
-Подаци о разним врстама геометријских објеката су организовани по класама, 
-које се налазе у одвојеним датотекама. 
-
-*/
-
-// Задатак илуструје коришћење наслеђивања.
-// Задатак илуструје коришћење кључне речи super.
-
 package rs.math.oop.g09.p04.apstraktnaGeometrija;
 
 public class GeometrijskiObjekti {
@@ -21,13 +9,14 @@ public class GeometrijskiObjekti {
       Tacka d = new Tacka(22.3, 17.5);
       Tacka e = new Tacka("E", 25, 25.5);
       Duz ab = new Duz("AB", a, b);
-      Prava p = new Prava("AD", a, d);
+      Prava p = new Prava("AB", a, d);
       Trougao cdb = new Trougao("CDB", b, c, d);
       Cetvorougao bcde = new Cetvorougao("BCDE", b, c, d, e);
       Krug k1 = new Krug("B_18", b, 18);
 
       System.out.println("Геометријски објекти ");
-      GeometrijskiObjekat[] svi = { a, b, c, d, e, ab, p, cdb, bcde, k1 };
+      GeometrijskiObjekat[] svi =
+      { a, b, c, d, e, ab, p, cdb, bcde, k1 };
       for (GeometrijskiObjekat go : svi) {
          System.out.print("|" + go);
          if (go.jeKonveksan())

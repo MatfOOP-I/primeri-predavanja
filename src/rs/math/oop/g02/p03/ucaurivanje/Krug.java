@@ -2,8 +2,8 @@ package rs.math.oop.g02.p03.ucaurivanje;
 
 class Krug {
 	// природни опис стања круга
-	int cx, cy;
-	int r;
+	private int cx, cy;
+	private int r;
 
 	Krug(int centarX, int centarY, int poluprecnik) {
 		cx = centarX;
@@ -21,6 +21,4 @@ class Krug {
 	void prikazi() {
 		System.out.println("Круг C = (" + cx + ", " + cy + ") и r = " + r);
 	}
-
-
 }

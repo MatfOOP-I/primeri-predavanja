@@ -11,23 +11,23 @@ public class ParsiranjeDatuma {
 		LocalDate datum = null;
 		Scanner skener = null;
 		DateTimeFormatter datumFormat = DateTimeFormatter.ofPattern("dd.MM.yyyy");
-		Boolean unetValidanFormat = false;
+		Boolean unetIspravanFormat = false;
 		try {
 			skener = new Scanner(System.in);
-			while (!unetValidanFormat) {
+			while (!unetIspravanFormat) {
                 try {
                     System.out.println("Датум dd.MM.yyyy:");
                     String datumString = skener.next();
                     datum = LocalDate.parse(datumString, datumFormat);
-                    System.out.println("Валидан датум: " + datum);
-                    unetValidanFormat = true;
+                    System.out.println("Исправан датум: " + datum);
+                    unetIspravanFormat = true;
                 } catch (DateTimeParseException e) {
                     System.out.println("Погрешан формат датума!");
                 }
             }
+
 		} finally {
-			if(skener != null)
-				skener.close();
+			skener.close();
 		}
 	}
 }

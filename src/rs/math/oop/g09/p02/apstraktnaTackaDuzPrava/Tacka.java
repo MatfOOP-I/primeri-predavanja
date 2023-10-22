@@ -2,9 +2,10 @@ package rs.math.oop.g09.p02.apstraktnaTackaDuzPrava;
 
 import java.util.Objects;
 
-public class Tacka extends GeometrijskiObjekat {
+import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
 
-   public static final Tacka KOORDINATNI_POCETAK = new Tacka("O", 0,0);
+public class Tacka extends GeometrijskiObjekat {
 
    private double x;
    private double y;
@@ -24,7 +25,7 @@ public class Tacka extends GeometrijskiObjekat {
    }
 
    public Tacka() {
-      this(Tacka.KOORDINATNI_POCETAK);
+      this("O", 0, 0);
    }
 
    public Tacka(Tacka t) {
@@ -48,8 +49,8 @@ public class Tacka extends GeometrijskiObjekat {
    }
 
    public double rastojanje(Tacka t) {
-      return Math.sqrt(Math.pow(t.uzmiX() - uzmiX(), 2)
-              + Math.pow(t.uzmiY() - uzmiY(), 2));
+
+      return sqrt(pow(t.x - x, 2) + pow(t.y - y, 2));
    }
 
    @Override
@@ -70,7 +71,7 @@ public class Tacka extends GeometrijskiObjekat {
 
    @Override
    public String toString() {
-      return uzmiOznaku() + "(" + uzmiX() + "," + uzmiY() + ")";
+      return uzmiOznaku() + "(" + x + "," + y + ")";
    }
 
    @Override
@@ -91,11 +92,6 @@ public class Tacka extends GeometrijskiObjekat {
    @Override
    public double povrsina() {
       return 0;
-   }
-
-   @Override
-   public boolean sadrzi(Tacka t) {
-      return (x==t.x && y==t.y);
    }
 
 }

@@ -4,16 +4,13 @@ public class RazlicitiIspisi {
 
     public static void main(String[] args) {
         System.out.print("Пример текста");
-        System.out.print(" са конкатенацијом и бројем " + 4);
-        System.out.println(); // испис знака за крај реда
+        System.out.print(" са конкатенацијом и бројем "+4);
+        System.out.println(); // испис празног реда
         System.out.println(67.4);
-
-        System.err.println("Ово је нека чудна грешка!!!");
-
         double x = 26.43462;
-        int y = 0b100_1001_1101;
+        int y = 43243;
         float z = 1645.14f;
-        System.out.printf("x=%9.6g y=%8d z=%.3f", x, y, z);
+        System.out.printf("x=%9.6f y=%8d z=%.3f", x, y, z);
         System.out.println();
         // први број после % представља број места за комплетан запис, 
         // а ако нема броја онда се укупан број места рачуна аутоматски
@@ -21,9 +18,9 @@ public class RazlicitiIspisi {
         String s = "Неки текст";
         char c = 'c';
         // за испис знака % потребно је ставити дупли %%
-        System.out.printf("Стринг се умеће помоћу формата %%s овако %s", s);
+        System.out.printf("Стринг се умеће форматом %%s %s", s);
         // System.lineSeparator() враћа секвенцу за крај реда прилагођену ОС-у
-        System.out.printf(" док се карактер умеће помоћу формата %%%c%s", c,
+        System.out.printf(" док се карактер умеће форматом %%%c%s", c,
                 System.lineSeparator());
         // могу се комбиновати различита писма
         // уместо %s и прослеђивања System.lineSeparator() може се ставити формат %n
