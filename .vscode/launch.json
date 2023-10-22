@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StudentPoslediplomacPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g02.p02a.kasnoVezivanje.StudentPoslediplomacPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+        },
+        {
+            "type": "java",
             "name": "Launch PokretanjeDogadjajiSunce",
             "request": "launch",
             "mainClass": "rs.math.oop.g09.p29.dogadjajiSunce.PokretanjeDogadjajiSunce",
