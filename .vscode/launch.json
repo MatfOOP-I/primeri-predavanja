@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestBlok",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p01.blokovi.TestBlok",
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+        },
+        {
+            "type": "java",
+            "name": "StudentPoslediplomacPokretanje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g02.p02.nasledjivanje.StudentPoslediplomacPokretanje",
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+        },
+        {
+            "type": "java",
             "name": "StudentPoslediplomacPokretanje",
             "request": "launch",
             "mainClass": "rs.math.oop.g02.p02a.kasnoVezivanje.StudentPoslediplomacPokretanje",

@@ -1,6 +1,6 @@
 package rs.math.oop.g06.p03.pozivanjeSakupljacaOtpadaka;
 
-public class PozoviGC {
+public class PozoviSaGCCollect {
 
 	static void stanjeMemorije() {
 		long slobodno = Runtime.getRuntime().freeMemory() / 1024 / 1024;
@@ -9,21 +9,9 @@ public class PozoviGC {
 	}
 
 	public static void main(String[] args) {
-		int n = 10000000;
-		int nIspis = 200000;
+		int n = 10_000_000;
+		int nIspis = 1_000_000;
 		String s;
-		long pocBezGC = System.nanoTime();
-		System.out.println(
-				"Величине слободне меморије без позивања gc() пред испис");
-		for (int i = 0; i < n; i++) {
-			// у свакој итерацији прегазимо референцу из претходне итерације
-			// па претходни објекат постаје отпадак пошто се на њега не реферише
-			s = new String("Текст под редним бројем " + i);
-			if (i % nIspis == 0)
-				stanjeMemorije();
-		}
-		System.out.printf("%nВреме без GC\t%.2f%n", 
-				(System.nanoTime() - pocBezGC) / 1e6);
 
 		long pocSaGC = System.nanoTime();
 		System.out.println(
@@ -33,8 +21,8 @@ public class PozoviGC {
 			if (i % nIspis == 0) {
 				// експлицитно позивање скупљања отпадака
 				// изазива смањење перформанси
-				System.gc();
 				stanjeMemorije();
+				System.gc();
 			}
 		}
 		System.out.printf("%nВреме са GC\t%.2f%n", 

@@ -7,10 +7,12 @@ public class DuzinaBroja {
 		int duzina = 0;
 		System.out.println("Унесите цео број");
 		n = sc.nextInt();
+		int osnova = 76;
 		do {
-			n /= 10;
+			System.out.print("" + (n % osnova) + " " );
+			n /= osnova;
 			duzina++;
 		} while (n != 0);
-		System.out.println("Дужина учитаног броја је: " + duzina);
+		System.out.println("\nДужина учитаног броја је: " + duzina);
 	}
 }

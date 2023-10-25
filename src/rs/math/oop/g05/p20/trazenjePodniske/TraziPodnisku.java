@@ -3,13 +3,15 @@ package rs.math.oop.g05.p20.trazenjePodniske;
 public class TraziPodnisku {
 
     public static void main(String[] args) {
-        String tekst = "Тражимо неку подниску у овој ниски.";
-        String podniska = "под";
-        boolean pronadjen = false;
-        // максимална позиција за поравнавање ниске "под" испод
+        String tekst = "Тражимо неку подниску у овој ниски. Максимална позиција за поравнавање ниске под испод";
+        java.util.Scanner ulaz = new java.util.Scanner(System.in);
+        String podniska = ulaz.next();
+        int pozicija = -1;
+        // максимална позиција за поравнавање подниске  испод
         // веће подниске "Тражимо некз подниску у овој ниски."
         int maks = tekst.length() - podniska.length();
-        test: for (int i = 0; i <= maks; i++) {
+        test:
+        for (int i = 0; i <= maks; i++) {
             /* померамо позицију, нпр. у нултој итерацији је положај
               "Тражимо неку подониску у овој ниски."
               "под"
@@ -35,10 +37,10 @@ public class TraziPodnisku {
             // те излазимо из спољнег циклуса
             // овде није било неопходно break test,
             // јер се овај break већ имплицитно односи на спољни циклус
-            pronadjen = true;
+            pozicija = i;
             break test;
         }
-        System.out.println(pronadjen ? "Пронађена" : "Није пронађена");
+        System.out.println((pozicija>=0) ? "Пронађена " + pozicija : "Није пронађена");
     }
 }
 

@@ -4,9 +4,9 @@ public class UnosBrojevaContinue {
 
 	public static void main(String[] args) {
 		java.util.Scanner sc = new java.util.Scanner(System.in);
-		int x, suma = 0;
+		int suma = 0;
 		while (true) {
-			x = sc.nextInt();
+			int x = sc.nextInt();
 			if (x == 0)
 				break; // прекидамо кад је 0
 			if (x < 0)
