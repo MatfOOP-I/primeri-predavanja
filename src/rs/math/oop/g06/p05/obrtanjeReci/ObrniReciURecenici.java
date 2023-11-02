@@ -3,8 +3,8 @@ package rs.math.oop.g06.p05.obrtanjeReci;
 public class ObrniReciURecenici {
 
 	public static void main(String[] args) {
-		String recenica = "Ниска у Јави је непроменљива (имутабилна) што значи да "
-				+ "измена учауреног низа карактера није дозвољена.";
+		java.util.Scanner ulaz = new java.util.Scanner(System.in);
+		String recenica = ulaz.nextLine();
 		String[] reci = recenica.split(" ");
 		if(reci.length==0)
 		{

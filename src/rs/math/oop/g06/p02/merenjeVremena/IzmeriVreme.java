@@ -10,21 +10,21 @@ public class IzmeriVreme {
 
     public static void main(String args[]) {
    	 for (int n = 10_000_000; n <= 1_000_000_000; n *= 10) {
-   		 long pocetak1 = System.nanoTime();
+   		 long pocetakNs = System.nanoTime();
    		 long suma = sumiraj(n);
+		 long krajNs = System.nanoTime();
    		 System.out.printf("Сума бројева до %d је %d%n", n, suma);
-   		 long kraj1 = System.nanoTime();
    		 System.out.println("Време у ns са nanoTime(): "
-   				 + (kraj1 - pocetak1));
+   				 + (krajNs - pocetakNs));
    		 System.out.printf("Време у ms са nanoTime(): %.5g%s",
-   		(kraj1-pocetak1)/1_000_000.0,System.lineSeparator());
+   		(krajNs-pocetakNs)/1_000_000.0, System.lineSeparator());
 
-   		 long pocetak2 = System.currentTimeMillis();
+   		 long pocetakMs = System.currentTimeMillis();
    		 suma = sumiraj(n);
+		 long krajMs = System.currentTimeMillis();
    		 System.out.printf("Сума бројева до %d је %d%n", n, suma);
-   		 long kraj2 = System.currentTimeMillis();
    		 System.out.println("Време у ms са currentTimeMillis(): "
-   				 + (kraj2 - pocetak2));
+   				 + (krajMs - pocetakMs));
    		System.out.println("-----------------------------------");
    	 }
     }

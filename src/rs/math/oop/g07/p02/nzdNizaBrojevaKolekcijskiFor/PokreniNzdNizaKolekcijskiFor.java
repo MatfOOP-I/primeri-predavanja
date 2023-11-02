@@ -1,11 +1,10 @@
 package rs.math.oop.g07.p02.nzdNizaBrojevaKolekcijskiFor;
 
-import rs.math.oop.g03.p02.strukturnaParadigma.StrukturnoNzd;
 
 public class PokreniNzdNizaKolekcijskiFor {
 	public static void main(String[] argumenti) {
 		// низ чији се НЗД тражи
-		int[] niz = { 24, 48, 96, 192, 36, 72, 144 };
+		int[] niz = { 24, 48, 96, 192, 36, 72, 144, 6 };
 		// приказ низа
 		System.out.print("Низ: ");
 		for (int element : niz)
@@ -14,7 +13,7 @@ public class PokreniNzdNizaKolekcijskiFor {
 		// одређивање НЗД-а
 		int nzd = niz[0];
 		for (int element : niz)
-			nzd = StrukturnoNzd.nzd2(nzd, element);
+			nzd = rs.math.oop.g03.p02.strukturnaParadigma.StrukturnoNzd.nzd2(nzd, element);
 		// приказ резултата
 		System.out.print("НЗД низа: " + nzd);
 	}

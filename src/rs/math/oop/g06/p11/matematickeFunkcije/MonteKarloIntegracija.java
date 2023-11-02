@@ -25,7 +25,7 @@ public class MonteKarloIntegracija {
 		java.util.Scanner skener = new java.util.Scanner(System.in);
 		// учитавање улазних параметара
 		System.out.println("Одаберите функцију sqrt, log или exp:");
-		funkcija = skener.next();
+		funkcija = skener.next().trim();
 		if (!funkcija.equals("sqrt") && !funkcija.equals("log") && !funkcija.equals("exp"))
 			greska("Некоректна функција.");
 		System.out.println("Унесите a:");
@@ -46,6 +46,7 @@ public class MonteKarloIntegracija {
 		N = skener.nextInt();
 		if (N < 1)
 			greska("N треба да буде > 0.");
+		skener.close();
 		// Монте Карло интеграција
 		// најпре одређујемо правоугаоник
 		// са леве и десне стране су a и b
@@ -68,6 +69,5 @@ public class MonteKarloIntegracija {
 		// уделу yUnutra/N површине правоугаоника
 		double integral = (b - a) * (gornja - donja) * yUnutra / N;
 		System.out.println("Апроксимација интеграла је " + integral);
-		skener.close();
 	}
 }

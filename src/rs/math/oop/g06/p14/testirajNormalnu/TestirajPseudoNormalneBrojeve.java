@@ -7,7 +7,7 @@ public class TestirajPseudoNormalneBrojeve {
 		System.out.println("Унесите број бројева ");
 		int n = skener.nextInt();
 		
-		java.util.Random gen = new java.util.Random(12345);
+		java.util.Random gen = new java.util.Random(912345);
 		double prosek=0;
 		for(int i=0; i<n; i++) {
 			double sp = gen.nextGaussian();

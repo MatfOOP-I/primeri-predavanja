@@ -56,7 +56,7 @@ public class ParsirajAutoInformacije {
 
 		if (brojAutomobila > 0) {
 			System.out.println(String.format("Просек година:\t%.2f%n"
-					+ "Просек �?наге:\t%.2f%nПросек запремине:\t%.2f%n",
+					+ "Просек Снаге:\t%.2f%nПросек запремине:\t%.2f%n",
 					prosecnaGodina, prosecnaSnaga, prosecnaZapremina));
 		}
 	}

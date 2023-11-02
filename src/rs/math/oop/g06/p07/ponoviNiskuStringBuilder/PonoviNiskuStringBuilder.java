@@ -4,12 +4,14 @@ public class PonoviNiskuStringBuilder {
 	
 	public static void main(String[] args) {
 		String s = "Тест";
-		int n = 10;
+		int n = 100;
+		long pocetak = System.nanoTime();
 		StringBuilder sb=new StringBuilder();
 		for(int i=0; i<n; i++)
 			sb.append(s);
-		// једнократна конверзија у ниску
 		String sn = sb.toString();
+		long kraj = System.nanoTime();
 		System.out.println(sn);
+		System.out.printf("%f", (kraj-pocetak)/1_000_000.00);
 	}
 }
