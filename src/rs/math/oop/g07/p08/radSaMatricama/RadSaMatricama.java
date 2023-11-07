@@ -104,7 +104,10 @@ public class RadSaMatricama {
 		double det = 0;
 		double znak = 1;
 		for (int j = 0; j < n; j++) {
-			det += znak * a[0][j] * determinanta(iskljuci(a, 0, j));
+			double[][] m = iskljuci(a, 0, j);
+			System.out.println("iskljuceni 0 " + j);
+			prikazi(m);
+			det += znak * a[0][j] * determinanta(m);
 			znak = -znak;
 		}
 		return det;
@@ -116,23 +119,27 @@ public class RadSaMatricama {
 		prikazi(a);
 		double[][] b = { { 2, 3, 4 }, { 5, 6.6, 7 } };
 		System.out.println("B je: ");
-		prikazi(b);
+		prikazi2(b);
 		System.out.println("A+B je: ");
 		prikazi2(saberi(a, b));
 		System.out.println("A-B je: ");
 		prikazi2(oduzmi(a, b));
 		System.out.println("A након измене je: ");
-		a[1][0] = 0.5;
+		a[1][0] = 0.75;
+		a[1][1] = 2;
 		prikazi2(a);
-		double[][] c = { { 2, 1.5 }, { 3, 0 }, { -1.5, 1 } };
+		double[][] c = { { 5, 1.5 }, { 3, 0 }, { -1.5, 1 } };
 		System.out.println("C је: ");
 		prikazi(c);
 		System.out.println("A*C је: ");
 		double[][] d = pomnozi(a, c);
 		prikazi(d);
-		if (jeKvadratna(d))
-			System.out.println("Детерминанта матрице A*C је: " + determinanta(d));
+		System.out.println("C*A је: ");
+		double[][] e = pomnozi(c, a);
+		prikazi(e);
+		if (jeKvadratna(e))
+			System.out.println("Детерминанта матрице C*A је: " + determinanta(e));
 		else
-			System.out.println("Матрица A*C није квадратна па нема детерминанту.");
+			System.out.println("Матрица C*A није квадратна па нема детерминанту.");
 	}
 }
