@@ -12,7 +12,7 @@ public class FrekvencijeBrojevaRazdvojeno2 {
 
 	static void prikaziFrekfencijeNumericki(int[] frekfencije) {
 		for (int i = 0; i < frekfencije.length; i++)
-			System.out.printf("%d:%d\t", (i + 1), frekfencije[i]);
+			System.out.printf("%d:%d  ", (i + 1), frekfencije[i]);
 	}
 
 	static void prikaziFrekfencijeGraficki(int[] frekfencije) {
@@ -25,8 +25,8 @@ public class FrekvencijeBrojevaRazdvojeno2 {
 	}
 
 	public static void main(String[] args) {
-		int[] rezultati = { 7, 3, 4, 9, 7, 6, 3, 10, 5, 6, 4, 3, 3, 3, 2, 5, 7, 9, 1 };
-		int granica = 10;
+		int[] rezultati = { 7, 3, 4, 9, 7, 6, 12, 10, 5, 6, 4, 11, 3, 3, 2, 5, 7, 9, 1 };
+		int granica = 13;
 		int[] brojPojava = izracunajFrekfencije(rezultati, granica);
 		System.out.println();
 		prikaziFrekfencijeNumericki(brojPojava);

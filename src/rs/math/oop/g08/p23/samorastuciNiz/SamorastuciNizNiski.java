@@ -16,8 +16,11 @@ public class SamorastuciNizNiski {
 	private void obezbediKapacitet(int noviKapacitet) {
 		if (noviKapacitet <= trenutniKapacitet())
 			return;
+		elementi = new String[noviKapacitet];
 		String[] pomocni = elementi;
-		elementi = Arrays.copyOf(pomocni, noviKapacitet);
+		for(int i=0; i<pomocni.length; i++)
+			elementi[i] = pomocni[i];
+//		elementi = Arrays.copyOf(pomocni, noviKapacitet);
 	}
 
 	public void postaviNa(int indeks, String vrednost) {

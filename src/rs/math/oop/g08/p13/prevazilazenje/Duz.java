@@ -3,13 +3,12 @@ package rs.math.oop.g08.p13.prevazilazenje;
 import java.util.Objects;
 
 public class Duz {
-
 	Tacka a;
 	Tacka b;
 
 	@Override
 	public String toString() {
-		return "{" + a.toString() + ", " + b + "}";
+		return "{" + a + ", " + b + "}";
 	}
 
 	@Override
@@ -37,23 +36,23 @@ public class Duz {
 
 	public static void main(String[] args) {
 		Tacka t1 = new Tacka();
-		Tacka t2 = new Tacka();
-		Tacka t3 = new Tacka();
 		t1.x = 10;
 		t1.y = 20;
+		Tacka t2 = new Tacka();
 		t2.x = 40;
 		t2.y = 60;
+		Tacka t3 = new Tacka();
 		t3.x = 10;
 		t3.y = 20;
 		System.out.println(t1.equals(t2)); // false
 		System.out.println(t1.equals(t3)); // true
 		Duz d1 = new Duz();
-		Duz d2 = new Duz();
-		Duz d3 = new Duz();
 		d1.a = t1;
 		d1.b = t2;
+		Duz d2 = new Duz();
 		d2.a = t2;
 		d2.b = t1;
+		Duz d3 = new Duz();
 		d3.a = t1;
 		d3.b = t3;
 		System.out.println(t1.equals(d1)); // false

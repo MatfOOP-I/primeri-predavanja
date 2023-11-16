@@ -8,8 +8,8 @@ public class FiltrirajVremena {
 		int n = skener.nextInt();
 		java.time.LocalDateTime sad = java.time.LocalDateTime.now();
 		int tekucaGodina = sad.getYear();
-		java.time.LocalDateTime vreme 
-			= java.time.LocalDateTime.of(tekucaGodina, 1, 1, 0, 0);
+		java.time.LocalDateTime vreme = java.time.LocalDateTime.of(
+				tekucaGodina, 1, 1, 0, 0);
 		while (vreme.getYear() == tekucaGodina) {
 			int suma = vreme.getMonthValue() + vreme.getDayOfMonth() 
 					+ vreme.getHour() + vreme.getMinute();

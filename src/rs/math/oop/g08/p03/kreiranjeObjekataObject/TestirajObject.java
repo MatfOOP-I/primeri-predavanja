@@ -1,5 +1,7 @@
 package rs.math.oop.g08.p03.kreiranjeObjekataObject;
 
+import rs.math.oop.g02.p01.klaseObjekti.Student;
+
 public class TestirajObject {
 
 	public static void main(String[] args) {
@@ -12,5 +14,11 @@ public class TestirajObject {
 		System.out.println(o1);
 		// ово изнад је еквивалентноследећем
 		System.out.println(o1.toString());
+		rs.math.oop.g02.p01.klaseObjekti.Student s = new rs.math.oop.g02.p01.klaseObjekti.Student();
+		System.out.println(s);
+		if(s.equals(o1))
+			System.out.println("jednaki su");
+		else
+			System.out.println("nisu jednaki");
 	}
 }

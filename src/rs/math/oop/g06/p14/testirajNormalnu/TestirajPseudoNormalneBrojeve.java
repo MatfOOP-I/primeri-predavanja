@@ -6,7 +6,8 @@ public class TestirajPseudoNormalneBrojeve {
 		java.util.Scanner skener = new java.util.Scanner(System.in);
 		System.out.println("Унесите број бројева ");
 		int n = skener.nextInt();
-		
+		skener.close();
+
 		java.util.Random gen = new java.util.Random(912345);
 		double prosek=0;
 		for(int i=0; i<n; i++) {
@@ -15,7 +16,5 @@ public class TestirajPseudoNormalneBrojeve {
 		}
 		prosek/=n;
 		System.out.println("Просек је "+prosek);
-		
-		skener.close();
 	}
 }

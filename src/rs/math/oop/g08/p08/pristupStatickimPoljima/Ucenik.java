@@ -4,7 +4,7 @@ public class Ucenik {
 	String imePrezime;
 	int razred;
 	static int brojUcenika = 0;
-	
+
 	public static void main(String[] args) {
 		Ucenik prvi = new Ucenik();
         prvi.imePrezime="Петар Перић";
@@ -14,6 +14,6 @@ public class Ucenik {
         drugi.imePrezime="Милан Микић";
         drugi.razred=6;
         Ucenik.brojUcenika++; // али је преко назива класе природније
-        System.out.println(prvi.brojUcenika);
+        System.out.println(drugi.brojUcenika);
 	}
 }

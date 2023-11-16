@@ -1,7 +1,12 @@
 package rs.math.oop.g03.p02.strukturnaParadigma;
 
 public class StrukturnoNzd {
-    // одређивање НЗД за два броја
+    /** одређивање НЗД за два броја
+     *
+     * @param prvi int - prvi broj
+     * @param drugi int - prvi broj
+     * @return NZD(prvi, drugi)
+     */
     public static int nzd2(int prvi, int drugi) {
         while (drugi > 0) {
         	int ostatak = prvi % drugi;

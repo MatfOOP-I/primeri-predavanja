@@ -1,4 +1,4 @@
-package rs.math.oop.g08.p12.pripadnostKlasi;
+package rs.math.oop.g08.p05b.kutije;
 
 public class Kutija {
 	int visina;

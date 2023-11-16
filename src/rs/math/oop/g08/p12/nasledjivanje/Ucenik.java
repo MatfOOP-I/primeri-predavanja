@@ -1,4 +1,4 @@
-package rs.math.oop.g08.p11.nasledjivanje;
+package rs.math.oop.g08.p12.nasledjivanje;
 
 public class Ucenik {
 	String imePrezime;

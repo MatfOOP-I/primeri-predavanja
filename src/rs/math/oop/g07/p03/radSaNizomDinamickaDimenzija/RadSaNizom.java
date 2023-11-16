@@ -15,7 +15,7 @@ public class RadSaNizom {
 		double[] niz = new double[n];
 		double x = -23.34e1;
 		for (int i = 0; i < niz.length; i++)
-			niz[i] = x;
+			niz[i] = x+i;
 		for (double d : niz)
 			System.out.printf("%8.2f ", d);
 		System.out.println();

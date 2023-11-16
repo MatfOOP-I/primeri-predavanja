@@ -1,7 +1,10 @@
 package rs.math.oop.g08.p13.prevazilazenje;
 
+import java.util.Objects;
+
 public class Tacka {
-	int x, y;
+	int x;
+	int y;
 
 	@Override
 	public String toString() {
@@ -20,10 +23,9 @@ public class Tacka {
 
 	@Override
 	public int hashCode() {
-		int h = x;
-		h = 31 * h + y;
+		int h = 31 * x + y;
 		return h;
-		// return Objects.hash(x, y); 
-		// алтернативно постоји и услужни метод hash() у класи Objects
+//		алтернативно постоји и услужни метод hash() у класи Objects
+//		return Objects.hash(x, y);
 	}
 }

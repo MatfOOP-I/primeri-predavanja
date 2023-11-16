@@ -1,8 +1,8 @@
 package rs.math.oop.g08.p10.preopterecivanjeMetoda;
 
 public class Pravougaonik {
-
-	Tacka gl, dd;
+	Tacka gl;
+	Tacka dd;
 
 	void podesi(int x1, int y1, int x2, int y2) {
 		gl = new Tacka();
@@ -22,7 +22,7 @@ public class Pravougaonik {
 		if(s<=0 || v<=0) {
 			System.err.println(
 					"Грешка, висина и ширина морају бити позитивне.");
-			System.exit(1);
+			System.exit(2);
 		}
 		// this.gl реферише на поље, док gl на локалну променљиву тј. аргумент
 		this.gl = gl;
@@ -48,7 +48,7 @@ public class Pravougaonik {
 		t.y = 30;
 		p2.podesi(t, 40, 10);
 		p2.prikazi();
-		Pravougaonik p3 = new Pravougaonik();
-		p3.podesi(10, 100, 10, 20);
+//		Pravougaonik p3 = new Pravougaonik();
+//		p3.podesi(10, 100, 10, 20);
 	}
 }

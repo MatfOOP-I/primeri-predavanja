@@ -1,4 +1,4 @@
-package rs.math.oop.g08.v01.kutije;
+package rs.math.oop.g08.p05b.kutije;
 
 public class ObojenaKutija extends Kutija{
 	String boja;

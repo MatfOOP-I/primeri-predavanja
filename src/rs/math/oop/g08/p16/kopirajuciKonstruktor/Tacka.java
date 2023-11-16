@@ -1,7 +1,8 @@
 package rs.math.oop.g08.p16.kopirajuciKonstruktor;
 
 public class Tacka {
-    int x, y;
+    int x;
+    int y;
     
     public Tacka(int x, int y) {
         this.x = x;

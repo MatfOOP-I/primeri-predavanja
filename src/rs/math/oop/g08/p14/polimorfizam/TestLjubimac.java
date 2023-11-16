@@ -1,5 +1,7 @@
 package rs.math.oop.g08.p14.polimorfizam;
 
+import java.util.Random;
+
 class Ljubimac{
     public void trci(){
         System.out.println("Неки љубимци не могу да трче!");
@@ -19,11 +21,12 @@ class Pas extends Ljubimac{
 
 class TestLjubimac{
     public static void main(String args[]){
-        Ljubimac zuca = new Pas();
+        Pas zuca = new Pas();
         Ljubimac maca = new Macka();
         Ljubimac kornjaca = new Ljubimac();
-        zuca.trci();
-        maca.trci();
-        kornjaca.trci();
+        Ljubimac[] niz = {zuca, maca, kornjaca};
+        Random generator = new Random();
+        Ljubimac zivuljka = niz[generator.nextInt(3)];
+        zivuljka.trci();
     }
 }

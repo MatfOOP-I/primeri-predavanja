@@ -15,5 +15,9 @@ public class UporediPromenljive {
         kutija2.sirina = 2;
         kutija2.visina = 4;
         System.out.println(kutija1 == kutija2);
+        System.out.println(kutija1.equals(kutija2));
+        Kutija kutija3 = kutija1;
+        System.out.println(kutija1 == kutija3);
+        System.out.println(kutija3.equals(kutija1));
     }
 }

@@ -1,11 +1,12 @@
-package rs.math.oop.g08.p15.konstruktori;
+package rs.math.oop.g08.p15a.konstruktori.konstruktori;
 
 public class Duz {
-    Tacka a, b;
+    Tacka a;
+    Tacka b;
 
     public Duz() {
-        a = new Tacka(0, 0);
-        b = new Tacka(0, 0);
+        a = new Tacka();
+        b = new Tacka();
     }
 
     public Duz(Tacka a, Tacka b) {
@@ -28,5 +29,15 @@ public class Duz {
         System.out.println(d1);
         System.out.println(d2);
         System.out.println(Tacka.brojKreiranihTacaka);
+        Tacka t = new Tacka(10,10);
+        System.out.println(t);
+        d1 = new Duz(t, new Tacka(5, 4));
+        System.out.println(d1);
+        t.x = -10;
+        System.out.println(t);
+        System.out.println(d1);
+        d1.a.y = -10;
+        System.out.println(t);
+        System.out.println(d1);
     }
 }

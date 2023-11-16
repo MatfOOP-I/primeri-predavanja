@@ -31,7 +31,7 @@ public class RadSaStekom {
 	}
 
 	public static void main(String[] args) {
-		double[] niz = { 13.4, 7.4, 6.3, 3.2, 4, 51, 6.2, 4.7, 3, 14.5, -7.6, 0, 25 };
+		double[] niz = { 13.4d, -7.4e1d, 6.3, 3.2, 4, 51, 6.2, 4.7, 3, 14.5, -7.6, 0, 25 };
 		inicijalizujStek(100);
 		int i = 0;
 		while (i < niz.length) {
@@ -40,6 +40,6 @@ public class RadSaStekom {
 			i++;
 		}
 		while (brojElemenata() > 0)
-			System.out.print(ukloni() + "\t");
+			System.out.printf("%8.2f", ukloni());
 	}
 }

@@ -1,5 +1,7 @@
 package rs.math.oop.g08.p22.zastitaPolja;
 
+import java.util.StringTokenizer;
+
 public class TestirajKrugove {
 
 	public static void main(String[] args) {
@@ -13,3 +15,4 @@ public class TestirajKrugove {
 		System.out.println(kz);
 	}
 }
+
