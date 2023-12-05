@@ -11,6 +11,10 @@ public class Trougao extends GeometrijskiObjekat {
 
    public Trougao(String oznaka, Tacka a, Tacka b, Tacka c) {
       super(oznaka);
+      if( (new Prava(a,b)).sadrzi(c) ) {
+         System.err.println("Temena trougla ne mogu biti kolinearna");
+         System.exit(-1);
+      }
       Tacka o = new Tacka(0,0);
       Tacka[] temena = {a, b, c};
       int ind = 0;
@@ -25,10 +29,12 @@ public class Trougao extends GeometrijskiObjekat {
    }
 
    public Trougao(Tacka a, Tacka b, Tacka c) {
+
       this("", a, b, c);
    }
 
    public Trougao(Trougao tr) {
+
       this(tr.uzmiOznaku(), tr.a, tr.b, tr.c);
    }
 
@@ -71,21 +77,25 @@ public class Trougao extends GeometrijskiObjekat {
 
    @Override
    public String toString() {
+
       return uzmiOznaku() + ":[" + a + ";" + b + ";" + c + "]";
    }
 
    @Override
    public boolean jeKonveksan() {
+
       return true;
    }
 
    @Override
    public boolean jeOgranicen() {
+
       return true;
    }
 
    @Override
    public double obim() {
+
       return a.rastojanje(b) + b.rastojanje(c) + c.rastojanje(a);
    }
 

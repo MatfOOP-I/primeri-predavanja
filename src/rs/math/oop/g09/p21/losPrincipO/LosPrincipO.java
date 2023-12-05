@@ -8,10 +8,12 @@ import static java.lang.System.*;
 public class LosPrincipO {
 
    public static double povrsinaPravougaonika(Pravougaonik p){
+
       return p.uzmiSirinu() * p.uzmiVisinu();
    }
 
    public static double povrsinaKruga(Krug k) {
+
       return PI * k.uzmiPoluprecnik() * k.uzmiPoluprecnik();
    }
 

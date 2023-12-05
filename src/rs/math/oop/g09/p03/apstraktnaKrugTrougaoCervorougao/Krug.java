@@ -11,57 +11,73 @@ public class Krug extends GeometrijskiObjekat {
 
    public Krug(String oznaka, Tacka o, double r) {
       super(oznaka);
+      if( r<=0 || r==Double.POSITIVE_INFINITY || r==Double.NEGATIVE_INFINITY
+            || r== Double.NaN) {
+         System.err.println("Nekorektan poluprecnik kruga");
+         System.exit(-1);
+      }
       this.o = new Tacka(o);
       this.r = r;
    }
 
    public Krug(Tacka o, double r) {
+
       this("", o, r);
    }
 
    public Krug(Krug kr) {
+
       this(kr.uzmiOznaku(), kr.o, kr.r);
    }
 
    public boolean sadrzi(Tacka t) {
+
       return t.rastojanje(o) <= r;
    }
 
    @Override
    public boolean equals(Object o1) {
-      if (this == o1) return true;
-      if (o1 == null || getClass() != o1.getClass()) return false;
+      if (this == o1)
+         return true;
+      if (o1 == null || getClass() != o1.getClass())
+         return false;
       Krug krug = (Krug) o1;
       return o.equals(krug.o) && Double.compare(krug.r, r) == 0;
    }
 
    @Override
    public int hashCode() {
+
       return Objects.hash(o, r);
    }
 
    @Override
    public String toString() {
+
       return uzmiOznaku() + ":[" + o + ";" + r + "]";
    }
 
    @Override
    public boolean jeKonveksan() {
+
       return true;
    }
 
    @Override
    public boolean jeOgranicen() {
+
       return true;
    }
 
    @Override
    public double obim() {
+
       return 2 * r * PI;
    }
 
    @Override
    public double povrsina() {
+
       return pow(r, 2) * PI;
    }
 

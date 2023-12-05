@@ -19,6 +19,7 @@ public class Prava extends GeometrijskiObjekat {
    }
 
    public Prava(double a, double b, double c) {
+
       this("", a, b, c);
    }
 
@@ -30,26 +31,32 @@ public class Prava extends GeometrijskiObjekat {
    }
 
    public Prava(Tacka t1, Tacka t2) {
+
       this("", t1, t2);
    }
 
    public Prava(Prava p) {
+
       this(p.uzmiOznaku(), p.a, p.b, p.c );
    }
 
    private double uvrstiKoordinate(Tacka t) {
+
       return a * t.uzmiX() + b * t.uzmiY() + c;
    }
 
    public boolean sadrzi(Tacka t) {
-      return (uvrstiKoordinate(t) == 0);
+
+      return (Double.compare(uvrstiKoordinate(t), 0) ==0);
    }
 
    public boolean suSaIsteStranePrave(Tacka t1, Tacka t2) {
+
       return uvrstiKoordinate(t1) * uvrstiKoordinate(t2) > 0;
    }
 
    public boolean suSaRaznihStranaPrave(Tacka t1, Tacka t2) {
+
       return !suSaIsteStranePrave(t1, t2);
    }
 
@@ -79,26 +86,31 @@ public class Prava extends GeometrijskiObjekat {
 
    @Override
    public String toString() {
+
       return uzmiOznaku() + ":[a=" + a + ";b=" + b + ";c=" + c + "]";
    }
 
    @Override
    public boolean jeKonveksan() {
+
       return true;
    }
 
    @Override
    public boolean jeOgranicen() {
+
       return false;
    }
 
    @Override
    public double obim() {
+
       return Double.POSITIVE_INFINITY;
    }
 
    @Override
    public double povrsina() {
+
       return 0;
    }
 }

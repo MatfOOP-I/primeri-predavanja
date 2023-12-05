@@ -11,7 +11,7 @@ class ParNeparComparator implements Comparator {
         if (!(o2 instanceof Integer))
             return -1;
         int i1 = ((Integer) o1).intValue();
-        int i2 = ((Integer) o2);
+        int i2 = (Integer) o2;
         if (i1 % 2 == 0) {
             if (i2 % 2 == 0)
                 return i1 - i2;

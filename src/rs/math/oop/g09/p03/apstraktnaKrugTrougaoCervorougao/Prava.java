@@ -13,6 +13,10 @@ public class Prava extends GeometrijskiObjekat {
    public Prava(String oznaka, double a, double b,
                 double c) {
       super(oznaka);
+      if( Double.compare(a, 0)==0 && Double.compare(b,0)==0) {
+         System.err.println("Pogresni koeficijenti prave");
+         System.exit(-1);
+      }
       this.a = a;
       this.b = b;
       this.c = c;
@@ -24,9 +28,16 @@ public class Prava extends GeometrijskiObjekat {
 
    public Prava(String oznaka, Tacka t1, Tacka t2) {
       super(oznaka);
-      a = t2.uzmiY() - t1.uzmiY();
-      b = t1.uzmiX() - t2.uzmiX();
-      c = t1.uzmiY() * (t2.uzmiX() - t1.uzmiX()) - t1.uzmiX() * (t2.uzmiY() - t1.uzmiY());
+      double a = t2.uzmiY() - t1.uzmiY();
+      double b = t1.uzmiX() - t2.uzmiX();
+      double c = t1.uzmiY() * (t2.uzmiX() - t1.uzmiX()) - t1.uzmiX() * (t2.uzmiY() - t1.uzmiY());
+      if( Double.compare(a, 0)==0 && Double.compare(b,0)==0) {
+         System.err.println("Pogresni koeficijenti prave");
+         System.exit(-1);
+      }
+      this.a = a;
+      this.b = b;
+      this.c = c;
    }
 
    public Prava(Tacka t1, Tacka t2) {

@@ -3,7 +3,7 @@ package rs.math.oop.g09.p09.interfejsGeometrija;
 import java.util.Objects;
 import static java.lang.Math.*;
 
-public class Tacka extends GeometrijskiObjekat implements Oblik {
+public class Tacka extends GeometrijskiObjekat {
 
    private double x;
    private double y;
@@ -72,13 +72,5 @@ public class Tacka extends GeometrijskiObjekat implements Oblik {
       return uzmiOznaku() + "(" + x + "," + y + ")";
    }
 
-   @Override
-   public boolean jeKonveksan() {
-      return true;
-   }
 
-   @Override
-   public boolean jeOgranicen() {
-      return true;
-   }
 }

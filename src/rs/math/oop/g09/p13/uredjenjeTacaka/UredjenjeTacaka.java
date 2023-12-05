@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class UredjenjeTacaka {
 
-   private static void prikaziTacke(Tacka[] sve) {
+   private static void prikazi(Tacka[] sve) {
       for (Tacka t: sve)
          System.out.printf("%s ", t);
       System.out.println();
@@ -18,13 +18,12 @@ public class UredjenjeTacaka {
       Tacka e = new Tacka("E", 25, 25.5);
       Tacka f = new Tacka("F", 11.5, 10);
 
-      Tacka[] sve = {a, b, c, d, e, f};
+      Tacka[] sve = {a, b, d, e, f, c};
       System.out.println("Пре сортирања");
-      prikaziTacke(sve);
-
+      prikazi(sve);
       Arrays.sort(sve);
       System.out.println("Пoсле сортирања");
-      prikaziTacke(sve);
+      prikazi(sve);
     }
 
 }

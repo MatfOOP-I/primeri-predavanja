@@ -17,11 +17,13 @@ public class TelefonskiKlijentOpsluzivanje implements Restoran {
 
    @Override
    public void platiOnLajn() {
+
       err.println("Немогуће реализовати он-лајн плаћање за телефонског клијента!");
    }
 
    @Override
    public void staniURedZaLicnuPorudzbinu() {
+
       err.println("Немогуће стати у ред за телефонског клијента!");
    }
 

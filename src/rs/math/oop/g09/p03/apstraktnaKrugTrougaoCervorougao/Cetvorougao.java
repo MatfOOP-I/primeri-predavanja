@@ -11,6 +11,13 @@ public class Cetvorougao extends GeometrijskiObjekat {
    public Cetvorougao(String oznaka, Tacka a, Tacka b,
                       Tacka c, Tacka d) {
       super(oznaka);
+      if( (new Prava(a,b)).sadrzi(c) || (new Prava(b,c)).sadrzi(d)
+              || (new Prava(c,d)).sadrzi(a) || (new Prava(d,a)).sadrzi(b)
+      )
+      {
+         System.err.println("Tri susedna temena cetvorougla ne mogu biti kolinearna");
+         System.exit(-1);
+      }
       Tacka o = new Tacka(0,0);
       Tacka[] temena = {a, b, c, d};
       int ind = 0;
@@ -26,6 +33,7 @@ public class Cetvorougao extends GeometrijskiObjekat {
    }
 
    public Cetvorougao(Tacka a, Tacka b, Tacka c, Tacka d) {
+
       this("", a, b, c, d);
    }
 
@@ -33,7 +41,6 @@ public class Cetvorougao extends GeometrijskiObjekat {
       this(cetv.uzmiOznaku(), cetv.a, cetv.b, cetv.c,
             cetv.d);
    }
-
 
    public boolean sadrzi(Tacka t) {
       Prava p = new Prava(a, c);
@@ -85,11 +92,13 @@ public class Cetvorougao extends GeometrijskiObjekat {
 
    @Override
    public boolean jeOgranicen() {
+
       return true;
    }
 
    @Override
    public double obim() {
+
       return a.rastojanje(b) + b.rastojanje(c) + c.rastojanje(d) + d.rastojanje(a);
    }
 

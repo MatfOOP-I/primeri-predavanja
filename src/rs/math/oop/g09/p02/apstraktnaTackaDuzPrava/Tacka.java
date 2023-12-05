@@ -17,34 +17,42 @@ public class Tacka extends GeometrijskiObjekat {
    }
 
    public Tacka(double x, double y) {
+
       this("", x, y);
    }
 
    public Tacka(String oznaka) {
+
       this(oznaka, 0, 0);
    }
 
    public Tacka() {
+
       this("O", 0, 0);
    }
 
    public Tacka(Tacka t) {
+
       this(t.uzmiOznaku(), t.x, t.y);
    }
 
    public double uzmiX() {
+
       return x;
    }
 
    public void postaviX(double x) {
+
       this.x = x;
    }
 
    public double uzmiY() {
+
       return y;
    }
 
    public void postaviY(double y) {
+
       this.y = y;
    }
 
@@ -66,6 +74,7 @@ public class Tacka extends GeometrijskiObjekat {
 
    @Override
    public int hashCode() {
+
       return Objects.hash(x, y);
    }
 
@@ -76,21 +85,25 @@ public class Tacka extends GeometrijskiObjekat {
 
    @Override
    public boolean jeKonveksan() {
+
       return true;
    }
 
    @Override
    public boolean jeOgranicen() {
+
       return true;
    }
 
    @Override
    public double obim() {
+
       return 0;
    }
 
    @Override
    public double povrsina() {
+
       return 0;
    }
 

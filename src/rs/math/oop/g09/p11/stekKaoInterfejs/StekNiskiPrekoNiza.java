@@ -13,6 +13,7 @@ public class StekNiskiPrekoNiza implements StekNiski {
 
 	@Override
 	public void dodaj(String elem) {
+
 		elementi.postaviNa(++vrhSteka, elem);
 	}
 

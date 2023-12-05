@@ -88,7 +88,7 @@ public class PovezanaListaNiski {
 	}
 
 	public String uzmiSledeci() {
-		if (!stigaoDoKraja())
+		if (tekuci!=null)
 			tekuci = tekuci.uzmiSledeci();
 		return (tekuci == null) ? null : tekuci.uzmiSadrzaj();
 	}

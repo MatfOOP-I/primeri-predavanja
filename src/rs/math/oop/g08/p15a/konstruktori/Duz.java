@@ -1,4 +1,4 @@
-package rs.math.oop.g08.p15a.konstruktori.konstruktori;
+package rs.math.oop.g08.p15a.konstruktori;
 
 public class Duz {
     Tacka a;
@@ -33,11 +33,11 @@ public class Duz {
         System.out.println(t);
         d1 = new Duz(t, new Tacka(5, 4));
         System.out.println(d1);
-        t.x = -10;
-        System.out.println(t);
-        System.out.println(d1);
-        d1.a.y = -10;
-        System.out.println(t);
-        System.out.println(d1);
+//        t.x = -7;
+//        System.out.println(t);
+//        System.out.println(d1);
+//        d1.a.y = -10;
+//        System.out.println(t);
+//        System.out.println(d1);
     }
 }

@@ -14,7 +14,7 @@ public class TackaOznakaComparator implements Comparator
 			return -1;
 		Tacka t1 = (Tacka) o1;
 		Tacka t2 = (Tacka) o2;
-		return t1.uzmiOznaku().compareTo( t2.uzmiOznaku() );
+		return -t1.uzmiOznaku().compareTo( t2.uzmiOznaku() );
 	}
 	
 }

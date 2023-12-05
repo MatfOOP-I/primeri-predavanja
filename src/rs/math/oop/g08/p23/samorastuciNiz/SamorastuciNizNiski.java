@@ -16,16 +16,16 @@ public class SamorastuciNizNiski {
 	private void obezbediKapacitet(int noviKapacitet) {
 		if (noviKapacitet <= trenutniKapacitet())
 			return;
-		elementi = new String[noviKapacitet];
 		String[] pomocni = elementi;
+		elementi = new String[noviKapacitet];
 		for(int i=0; i<pomocni.length; i++)
 			elementi[i] = pomocni[i];
-//		elementi = Arrays.copyOf(pomocni, noviKapacitet);
+		//elementi = Arrays.copyOf(pomocni, noviKapacitet);
 	}
 
 	public void postaviNa(int indeks, String vrednost) {
 		if (indeks >= trenutniKapacitet()) {
-			int noviKapacitet = Integer.max(indeks, 2 * elementi.length);
+			int noviKapacitet = Integer.max(indeks+1, 2 * trenutniKapacitet());
 			obezbediKapacitet(noviKapacitet);
 		}
 		elementi[indeks] = vrednost;
@@ -38,7 +38,7 @@ public class SamorastuciNizNiski {
 			System.err.println("Грешка: индекс је негативан!");
 			return null;
 		}
-		if (indeks >= elementi.length) {
+		if (indeks >= brojElemenata()) {
 			System.err.println("Грешка: индекс је већи од величине низа!");
 			return null;
 		}

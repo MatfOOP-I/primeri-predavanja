@@ -1,4 +1,4 @@
-package rs.math.oop.g08.p16.kopirajuciKonstruktor;
+package rs.math.oop.g08.p15c.kopirajuciKonstruktor;
 
 public class Poligon {
     Tacka[] tacke = new Tacka[10];

@@ -13,7 +13,7 @@ public class Tacka {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (obj == null || !(obj instanceof Tacka))
+		if (!(obj instanceof Tacka))
 			return false;
 		Tacka tObj = (Tacka) obj;
 		if(this == tObj)

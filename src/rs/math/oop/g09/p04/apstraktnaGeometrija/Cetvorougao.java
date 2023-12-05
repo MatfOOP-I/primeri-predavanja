@@ -90,6 +90,7 @@ public class Cetvorougao extends GeometrijskiObjekat {
 
    @Override
    public double obim() {
+
       return a.rastojanje(b) + b.rastojanje(c) + c.rastojanje(d) + d.rastojanje(a);
    }
 

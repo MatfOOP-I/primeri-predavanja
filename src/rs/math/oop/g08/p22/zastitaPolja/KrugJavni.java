@@ -2,7 +2,7 @@ package rs.math.oop.g08.p22.zastitaPolja;
 
 public class KrugJavni {
 
-	double cx, cy, r, p, o;
+	public double cx, cy, r, p, o;
 	
 	public KrugJavni(double cx, double cy, double r) {
 		this.cx = cx;

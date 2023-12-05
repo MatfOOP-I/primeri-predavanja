@@ -5,7 +5,7 @@ import java.util.Objects;
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
-public class Tacka extends GeometrijskiObjekat implements Oblik {
+public class Tacka extends GeometrijskiObjekat  {
 
    private double x;
    private double y;
@@ -74,15 +74,7 @@ public class Tacka extends GeometrijskiObjekat implements Oblik {
       return uzmiOznaku() + "(" + x + "," + y + ")";
    }
 
-   @Override
-   public boolean jeKonveksan() {
-      return true;
+   public boolean sadrziSeU(Sadrzavanje objekat){
+      return objekat.sadrzi(this);
    }
-
-   @Override
-   public boolean jeOgranicen() {
-      return true;
-   }
-
-   public boolean sadrziSeU(Sadrzavanje objekat){ return objekat.sadrzi(this);}
 }

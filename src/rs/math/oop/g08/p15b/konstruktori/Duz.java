@@ -17,7 +17,11 @@ public class Duz {
     public Duz(int ax, int ay, int bx, int by) {
         this(new Tacka(ax, ay), new Tacka(bx, by)); // позив конструктора изнад
     }
-    
+
+    public Duz(Duz d) {
+        this(d.a, d.b);
+    }
+
     @Override
     public String toString() {
         return "{"+a+", "+b+"}";

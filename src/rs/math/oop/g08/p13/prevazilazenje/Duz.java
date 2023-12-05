@@ -39,7 +39,7 @@ public class Duz {
 		t1.x = 10;
 		t1.y = 20;
 		Tacka t2 = new Tacka();
-		t2.x = 40;
+		t2.x = -40;
 		t2.y = 60;
 		Tacka t3 = new Tacka();
 		t3.x = 10;

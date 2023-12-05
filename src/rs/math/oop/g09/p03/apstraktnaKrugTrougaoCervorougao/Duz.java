@@ -8,6 +8,10 @@ public class Duz extends GeometrijskiObjekat {
 
    public Duz(String oznaka, Tacka a, Tacka b) {
       super(oznaka);
+      if( a.equals(b) ) {
+         System.err.println("Krajevi duzi se poklapaju");
+         System.exit(-1);
+      }
       this.a = new Tacka(a);
       this.b = new Tacka(b);
    }

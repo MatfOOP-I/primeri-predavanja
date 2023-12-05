@@ -13,13 +13,12 @@ public class CitajOkreni {
 			if (rec.equals("КРАЈ"))
 				break;
 			stek.dodaj(rec);
-			int x = -0XABC;
 		}
 	}
 
 	private static void prikazi(StekNiski stek) {
 		while (stek.brojElemenata() > 0)
-			System.out.printf("%s\t", stek.ukloni());
+			System.out.printf("%s\t", stek.ukloni().toUpperCase());
 		System.out.println();
 	}
 
@@ -36,7 +35,7 @@ public class CitajOkreni {
 		}
 		case 'л':
 		case 'l': {
-			stek = new StekNiskiPrekoNiza();
+			stek = new StekNiskiPrekoListe();
 			break;
 		}
 		default: {

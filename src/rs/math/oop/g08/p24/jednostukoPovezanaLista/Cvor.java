@@ -27,7 +27,7 @@ public class Cvor {
 
 	@Override
 	public String toString() {
-		return "Елемент листе: " + sadrzaj;
+		return "Чвор: " + sadrzaj;
 	}
 
 }

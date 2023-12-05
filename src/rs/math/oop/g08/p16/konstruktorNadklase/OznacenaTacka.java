@@ -1,7 +1,6 @@
-package rs.math.oop.g08.p17.konstruktorNadklase;
+package rs.math.oop.g08.p16.konstruktorNadklase;
 
 public class OznacenaTacka extends Tacka{
-
 	String oznaka;
 	
 	public OznacenaTacka() {
@@ -16,7 +15,7 @@ public class OznacenaTacka extends Tacka{
 	
 	@Override
 	public String toString() {
-		return oznaka+super.toString();
+		return oznaka + super.toString();
 	}
 	
 	public static void main(String[] args) {

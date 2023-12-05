@@ -8,15 +8,14 @@ public class GeometrijskiObjekti {
       Tacka c = new Tacka(10.45, 22);
       Tacka d = new Tacka(22.3, 17.5);
       Tacka e = new Tacka("E", 25, 25.5);
-      Duz ab = new Duz("AB", a, b);
-      Prava p = new Prava("AB", a, d);
-      Trougao cdb = new Trougao("CDB", b, c, d);
-      Cetvorougao bcde = new Cetvorougao("BCDE", b, c, d, e);
-      Krug k1 = new Krug("B_18", b, 18);
+      Duz ab = new Duz("дAB", a, b);
+      Prava p = new Prava("пAB", a, d);
+      Trougao cdb = new Trougao("тBCD", b, c, d);
+      Cetvorougao bcde = new Cetvorougao("чBCDE", b, c, d, e);
+      Krug k1 = new Krug("кB_18", b, 18);
 
       System.out.println("Геометријски објекти ");
-      GeometrijskiObjekat[] svi =
-      { a, b, c, d, e, ab, p, cdb, bcde, k1 };
+      GeometrijskiObjekat[] svi = { a, b, c, d, e, ab, p, cdb, bcde, k1 };
       for (GeometrijskiObjekat go : svi) {
          System.out.print("|" + go);
          if (go.jeKonveksan())

@@ -13,22 +13,24 @@ public class Duz extends GeometrijskiObjekat {
    }
 
    public Duz(Tacka a, Tacka b) {
+
       this("", a, b);
    }
 
    public Duz(Duz d) {
+
       this(d.uzmiOznaku(), d.a, d.b);
    }
 
    public double duzina() {
+
       return a.rastojanje(b);
    }
 
    public boolean sadrzi(Tacka t) {
-      boolean kolinearne = ((t.uzmiY() - a.uzmiY())
-               * (b.uzmiX() - a.uzmiX()) == (b.uzmiY()
-                        - a.uzmiY())
-                        * (t.uzmiX() - a.uzmiX()));
+      boolean kolinearne = Double.compare (
+              (t.uzmiY() - a.uzmiY()) * (b.uzmiX() - a.uzmiX()),
+              (b.uzmiY() - a.uzmiY()) * (t.uzmiX() - a.uzmiX())) == 0 ;
       if( !kolinearne )
          return false;
       if(a.uzmiX() < b.uzmiX()) {
@@ -52,13 +54,13 @@ public class Duz extends GeometrijskiObjekat {
 
    @Override
    public boolean equals(Object o) {
-      if (this == o) return true;
-      if (o == null || !(o instanceof Duz)) return false;
+      if (this == o)
+         return true;
+      if (o == null || !(o instanceof Duz))
+         return false;
       Duz duz = (Duz) o;
-      return (a.equals(duz.a) &&
-            b.equals(duz.b))
-            || (a.equals(duz.b) &&
-            b.equals(duz.a));
+      return (a.equals(duz.a) && b.equals(duz.b))
+            || (a.equals(duz.b) && b.equals(duz.a));
    }
 
    @Override
@@ -70,26 +72,31 @@ public class Duz extends GeometrijskiObjekat {
 
    @Override
    public String toString() {
-     return uzmiOznaku() + ":[" + a + ";" + b + "]";
+
+      return uzmiOznaku() + ":[" + a + ";" + b + "]";
    }
 
    @Override
    public boolean jeKonveksan() {
+
       return true;
    }
 
    @Override
    public boolean jeOgranicen() {
+
       return true;
    }
 
    @Override
    public double obim() {
+
       return a.rastojanje(b);
    }
 
    @Override
    public double povrsina() {
+
       return 0;
    }
 

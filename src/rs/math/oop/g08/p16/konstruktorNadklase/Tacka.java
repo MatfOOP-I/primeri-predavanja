@@ -1,8 +1,8 @@
-package rs.math.oop.g08.p15a.konstruktori.konstruktori;
+package rs.math.oop.g08.p16.konstruktorNadklase;
 
 public class Tacka {
-	int x, y;
-	static int brojKreiranihTacaka = 0;
+	int x;
+	int y;
 	
 	public Tacka() {
 		this(0,0);
@@ -11,7 +11,6 @@ public class Tacka {
 	public Tacka(int x, int y) {
 		this.x = x;
 		this.y = y;
-		brojKreiranihTacaka++;
 	}
 	
 	@Override

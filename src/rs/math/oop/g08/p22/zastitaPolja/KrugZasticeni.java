@@ -1,5 +1,7 @@
 package rs.math.oop.g08.p22.zastitaPolja;
 
+import static java.lang.Math.PI;
+
 public class KrugZasticeni {
     
     private double cx, cy, r, p, o;
@@ -12,8 +14,8 @@ public class KrugZasticeni {
     }
     
     private void preracunaj() {
-        p = r*r*Math.PI;
-        o = 2*r*Math.PI;
+        p = r*r*PI;
+        o = 2*r*PI;
     }
     
     public double uzmiCx() { return cx; }

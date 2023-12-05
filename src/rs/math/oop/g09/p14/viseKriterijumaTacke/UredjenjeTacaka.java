@@ -14,7 +14,7 @@ public class UredjenjeTacaka {
       Tacka a = new Tacka("A", 14.5, 15);
       Tacka b = new Tacka("B", 10, 11.5);
       Tacka c = new Tacka("C", 10.45, 22);
-      Tacka d = new Tacka("D", 22.3, 17.5);
+      Tacka d = new Tacka("D", 11.5, 10);
       Tacka e = new Tacka("E", 25, 25.5);
 
       Tacka[] sve = {a, b, c, d, e};

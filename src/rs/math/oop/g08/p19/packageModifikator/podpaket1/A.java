@@ -5,7 +5,6 @@ class A {
 	int polje;
 	
 	A() {
-		
 	}
 	
 	void metod() {
