@@ -1,4 +1,4 @@
-package rs.math.oop.g09.p31.dogadjajiIzvor;
+package rs.math.oop.g09.pd02.dogadjajiIzvor;
 
 public class NocnaFrajla implements SunceKretanjeDogadjajOsluskivac {
     @Override

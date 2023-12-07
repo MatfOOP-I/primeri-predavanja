@@ -1,4 +1,4 @@
-package rs.math.oop.g09.p31.dogadjajiIzvor;
+package rs.math.oop.g09.pd02.dogadjajiIzvor;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

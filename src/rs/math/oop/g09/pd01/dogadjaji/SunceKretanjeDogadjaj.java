@@ -1,4 +1,4 @@
-package rs.math.oop.g09.p30.dogadjaji;
+package rs.math.oop.g09.pd01.dogadjaji;
 
 import java.time.LocalDateTime;
 import java.util.EventObject;

@@ -1,14 +1,15 @@
-package rs.math.oop.g09.p30.dogadjaji;
+package rs.math.oop.g09.pd02.dogadjajiIzvor;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
 
 /**
- * Primer za izvor dogadjaja - primerak ove klase ispaljuje
- * SunceKretanjeDogadjaj svima koji osmataju kretanje sunca. Ona omogucava i
- * registraciju i deregistraciju slusalaca dogadjaja.
+ * Primer za kontrolu registracije slusaoca, deregistracije slusaoca i
+ * ispaljivanja dogadjaja.
+ * Primerak ove klase ispaljuje
+ * SunceKretanjeDogadjaj svima koji osmataju kretanje sunca.
  */
-public class SunceKretanjeDogadjajIzvor {
+public class SunceKretanjeDogadjajCentrala {
    private SunceKretanjeDogadjajOsluskivac[] osluskivaci = new SunceKretanjeDogadjajOsluskivac[1000];
    private int brojOsluskivaca = 0;
 
@@ -43,7 +44,7 @@ public class SunceKretanjeDogadjajIzvor {
       if (brojOsluskivaca == 0)
          return;
       // kreiraj objekat za dogadjaj koji se salje
-      SunceKretanjeDogadjaj dogadjaj = new SunceKretanjeDogadjaj(this, izaslo, vremeIzlaska);
+      SunceKretanjeDogadjaj dogadjaj = new SunceKretanjeDogadjaj(new Sunce(), izaslo, vremeIzlaska);
 
       // napravi kopiju liste osluskivaca,
       // za slucaj da neko doda/ukloni osluskivace
@@ -60,6 +61,7 @@ public class SunceKretanjeDogadjajIzvor {
    }
 
    protected void ispaliDogadjaj(boolean izaslo) {
+
       ispaliDogadjaj(izaslo, LocalDateTime.now());
    }
 }
