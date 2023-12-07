@@ -34,7 +34,7 @@ public class Zaposleni implements Cloneable {
    }
 
    @Override
-   public Zaposleni clone() throws CloneNotSupportedException {
+   public Zaposleni  clone()throws CloneNotSupportedException {
       Zaposleni klonirani = (Zaposleni) super.clone();
       return klonirani;
    }

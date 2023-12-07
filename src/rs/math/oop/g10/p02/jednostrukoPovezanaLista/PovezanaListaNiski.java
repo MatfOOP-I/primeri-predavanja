@@ -2,7 +2,7 @@ package rs.math.oop.g10.p02.jednostrukoPovezanaLista;
 
 public class PovezanaListaNiski {
 	
-	public class Cvor {
+	private class Cvor {
 		private String sadrzaj;
 		private Cvor sledeci;
 

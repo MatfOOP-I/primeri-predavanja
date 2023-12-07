@@ -4,6 +4,6 @@ public class ServisD implements Servis {
 
    @Override
    public String uzmiInfo() {
-      return "Информације о сервису ServisD";
+      return "ЏЏЏ";
    }
 }

@@ -17,16 +17,19 @@ public class LicnoDosaoKlijentOpsluzivanje implements Restoran {
 
    @Override
    public void platiOnLajn() {
+
       err.println("Немогуће платити он-лајн за клијента који је лично дошао!");
    }
 
    @Override
    public void staniURedZaLicnuPorudzbinu() {
+
       out.println("Реализује се стајање у ред клијента који је лично дошао!");
    }
 
    @Override
    public void platiLicno() {
+
       out.println("Реализује се плаћање за клијента који је лично дошао!");
    }
 }

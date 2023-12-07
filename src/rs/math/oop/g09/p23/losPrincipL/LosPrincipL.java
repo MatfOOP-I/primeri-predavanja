@@ -5,13 +5,16 @@ import static java.lang.System.*;
 public class LosPrincipL {
 
    public static void povrsinaProvera(Pravougaonik p) {
-      p.postaviSirinu(3);
-      p.postaviVisinu(2);
+      double s = 3;
+      p.postaviSirinu(s);
+      double v = 4;
+      p.postaviVisinu(v);
       double povrsina = p.povrsina();
-      if(Double.compare(povrsina, 6.0) == 0)
+      if(Double.compare(povrsina, s*v) == 0)
          out.printf(p.getClass().getSimpleName() + ": Све ОК! Израчуната површина је %f%n", povrsina);
       else
-         err.printf(p.getClass().getSimpleName() + ": Проблем! Израчуната површина је %f, треба да буде %f%n", povrsina, 6.0);
+         err.printf(p.getClass().getSimpleName()
+                 + ": Проблем! Израчуната површина је %f, треба да буде %f%n", povrsina, (s*v));
    }
 
    public static void main(String[] argumenti){

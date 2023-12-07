@@ -11,15 +11,15 @@ public class Kvadrat extends Pravougaonik {
    }
 
    @Override
-   public void postaviSirinu(double sirina) {
-      super.postaviSirinu(sirina);
-      super.postaviVisinu(sirina);
+   public void postaviSirinu(double ivica) {
+      super.postaviSirinu(ivica);
+      super.postaviVisinu(ivica);
    }
 
    @Override
-   public void postaviVisinu(double visina) {
-      super.postaviVisinu(visina);
-      super.postaviSirinu(visina);
+   public void postaviVisinu(double ivica) {
+      super.postaviVisinu(ivica);
+      super.postaviSirinu(ivica);
    }
 
 }

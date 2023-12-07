@@ -10,7 +10,7 @@ public class Pravougaonik {
    }
 
    public Pravougaonik() {
-      this(2,2);
+      this(4,3);
    }
 
    public double uzmiSirinu() {

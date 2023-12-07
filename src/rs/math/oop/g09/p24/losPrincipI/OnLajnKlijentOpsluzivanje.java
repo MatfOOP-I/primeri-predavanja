@@ -5,6 +5,7 @@ import static java.lang.System.*;
 public class OnLajnKlijentOpsluzivanje implements Restoran {
    @Override
    public void prihvatiOnLajnPorudzbinu() {
+
       out.println("Реализује се постављање он-лајн поруџбине!");
    }
 
@@ -15,6 +16,7 @@ public class OnLajnKlijentOpsluzivanje implements Restoran {
 
    @Override
    public void platiOnLajn() {
+
       out.println("Реализује се он-лајн плаћање за он-лајн клијента!");
    }
 
@@ -25,6 +27,7 @@ public class OnLajnKlijentOpsluzivanje implements Restoran {
 
    @Override
    public void platiLicno() {
+
       err.println("Немогуће лично платити за он-лајн клијента!");
    }
 }

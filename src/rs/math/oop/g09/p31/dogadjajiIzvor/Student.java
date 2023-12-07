@@ -1,4 +1,4 @@
-package rs.math.oop.g09.p30.dogadjaji;
+package rs.math.oop.g09.p31.dogadjajiIzvor;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -29,8 +29,8 @@ public class Student implements SunceKretanjeDogadjajOsluskivac {
       LocalDateTime datumVreme = e.uzmiDatumVreme();
       DateTimeFormatter formatDatum = DateTimeFormatter.ofPattern("dd.MM.YYYY.");
       DateTimeFormatter formatVreme = DateTimeFormatter.ofPattern("HH:mm:ss");
-      System.out.printf("%s kaže: Sunce je dana %s %s u vreme %s. ",
-            this, datumVreme.format(formatDatum),
+      System.out.printf("%s kaže: %s je dana %s %s u vreme %s. ",
+            this, e.getSource(),  datumVreme.format(formatDatum),
             e.jesteIzaslo() ? "izaslo" : "zaslo", datumVreme.format(formatVreme));
       if( naRaspustu ) {
          if (e.jesteIzaslo())

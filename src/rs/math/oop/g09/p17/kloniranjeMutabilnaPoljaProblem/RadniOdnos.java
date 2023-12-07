@@ -14,10 +14,12 @@ public class RadniOdnos {
    }
 
    public RadniOdnos(String opisPosla, double plata) {
+
       this(opisPosla, plata, LocalDate.of(2000, 1, 1));
    }
 
    public RadniOdnos(String opisPosla) {
+
       this(opisPosla, 300);
    }
 
@@ -42,6 +44,7 @@ public class RadniOdnos {
    }
 
    public void postaviDatumZaposlenja(LocalDate datumZaposlenja) {
+
       this.datumZaposlenja = datumZaposlenja;
    }
 }

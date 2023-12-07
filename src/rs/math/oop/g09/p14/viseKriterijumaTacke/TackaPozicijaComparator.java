@@ -4,7 +4,6 @@ import java.util.Comparator;
 
 public class TackaPozicijaComparator implements Comparator
 {
-	
 	@Override
 	public int compare( Object o1, Object o2 )
 	{
@@ -15,12 +14,12 @@ public class TackaPozicijaComparator implements Comparator
 		Tacka t1 = (Tacka) o1;
 		Tacka t2 = (Tacka) o2;
 		Tacka o = new Tacka( 0, 0 );
-		double d = o.rastojanje( t2 ) - o.rastojanje( t1 );
+		double d = o.rastojanje( t1 ) - o.rastojanje( t2 );
 		if (d > 0)
 			return 1;
 		if (d < 0)
 			return -1;
-		return (int)(t2.uzmiX() - t1.uzmiX());
+		return (int)(t1.uzmiX() - t2.uzmiX());
 	}
 	
 }

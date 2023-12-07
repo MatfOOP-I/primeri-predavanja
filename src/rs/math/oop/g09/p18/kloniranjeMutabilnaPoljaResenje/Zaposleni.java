@@ -35,13 +35,13 @@ public class Zaposleni implements Cloneable {
 
    @Override
    public Zaposleni clone() throws CloneNotSupportedException {
-      Generalije klonZaGeneralije = generalije.clone();
-      RadniOdnos klonZaRadniOdnos = radniOdnos.clone();
+      Generalije klonOdGeneralija = generalije.clone();
+      RadniOdnos klonOdRadnogOdnosa = radniOdnos.clone();
 
       Zaposleni klonirano = (Zaposleni) super.clone();
 
-      klonirano.generalije = klonZaGeneralije;
-      klonirano.radniOdnos = klonZaRadniOdnos;
+      klonirano.generalije = klonOdGeneralija;
+      klonirano.radniOdnos = klonOdRadnogOdnosa;
 
       return klonirano;
    }

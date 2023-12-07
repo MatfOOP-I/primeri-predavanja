@@ -17,6 +17,7 @@ public class Generalije {
    }
 
    public Generalije(String ime, String prezime) {
+
       this(ime, prezime, "", LocalDate.of(1970, 1, 1));
    }
 

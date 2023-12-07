@@ -18,17 +18,18 @@ public class UredjenjePredefinisani {
 
     private static void prikazi(String[] niske) {
         for (String x : niske)
-            System.out.printf("%s ", x);
+            System.out.print(x + " ");
         System.out.println();
     }
+
     private static void prikazi(Integer[] brojevi) {
         for (int x : brojevi)
-            System.out.printf("%5d", x);
+            System.out.print(x + " ");
         System.out.println();
     }
 
     public static void main(String[] args) {
-        Integer[] celi = {12, 4, -3, 0, 17, 5};
+        int[] celi = {12, 4, -3, 0, 17, 5};
         System.out.println("Пре сортирања");
         prikazi(celi);
         Arrays.sort(celi);
@@ -48,5 +49,13 @@ public class UredjenjePredefinisani {
         Arrays.sort(niske);
         System.out.println("Пoсле сортирања");
         prikazi(niske);
+
+        Integer[] celiObj = {12, 4, -3, 0, 17, 5};
+        System.out.println("Пре сортирања");
+        prikazi(celiObj);
+        Arrays.sort(celiObj);
+        System.out.println("Пoсле сортирања");
+        prikazi(celiObj);
+
     }
 }

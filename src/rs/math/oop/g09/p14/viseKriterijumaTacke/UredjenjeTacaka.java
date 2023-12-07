@@ -32,5 +32,6 @@ public class UredjenjeTacaka {
       Arrays.sort(sve, new TackaPozicijaComparator());
       System.out.println("Пoсле сортирања по позицији тачке");
       prikaziTacke(sve);
+
    }
 }

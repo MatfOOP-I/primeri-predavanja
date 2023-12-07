@@ -8,7 +8,7 @@ public class ObracunPlata {
 	public ObracunPlata(int cenaSata) {
 		if(cenaSata>maksimalnaCenaSata) {
 			// овде cмо могли и да завршимо извршавање са грешком
-			System.out.println("Редукујемо цену на износ "+maksimalnaCenaSata);
+			System.err.println("Редукујемо цену на износ "+maksimalnaCenaSata);
 			cenaSata = maksimalnaCenaSata;
 		}
 		if(cenaSata<=0) {

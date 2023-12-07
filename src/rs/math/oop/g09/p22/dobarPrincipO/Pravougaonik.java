@@ -19,6 +19,7 @@ public class Pravougaonik implements Mera{
 
    @Override
    public double povrsina() {
+
       return sirina * visina;
    }
 }
