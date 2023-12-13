@@ -17,6 +17,6 @@ public class ObracunPlataTest {
 		// ако бисмо желели да рачунамо прековремени рад и ван тела класе ObracunPlata
 		// по�ставили бисмо другачији модификатор видљивости
 		//ObracunPlata.PrekovremeniRad pr=new ObracunPlata.PrekovremeniRad(1000, 23);
-		// System.out.println(pr.izracunajCenuPrekovremenog());
+		//System.out.println(pr.izracunajCenuPrekovremenog());
 	}
 }

@@ -1,5 +1,7 @@
 package rs.math.oop.g12.p05.enumiDaniUNedeljiKlasa;
 
+import rs.math.oop.g14.p11.enumerisaniSkup.DanUNedelji;
+
 public final class DanUNedeljiKlasa {
 	// статичка поља типа ове класе које симулирају вредности набројивог типа
 	public static final DanUNedeljiKlasa PONEDELJAK = new DanUNedeljiKlasa("PONEDELJAK");

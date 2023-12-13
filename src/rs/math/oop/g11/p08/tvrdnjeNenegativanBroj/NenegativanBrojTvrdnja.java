@@ -6,5 +6,6 @@ public class NenegativanBrojTvrdnja {
        {
           int x = -1;
           assert x >= 0;
+          System.out.println("Готово");
        }
 }

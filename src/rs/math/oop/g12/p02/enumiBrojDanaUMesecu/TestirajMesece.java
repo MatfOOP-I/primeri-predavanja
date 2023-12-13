@@ -22,8 +22,8 @@ public class TestirajMesece {
                     brojDana=31;
                     break;
             case FEBRUAR:
-                if ((godina % 4 == 0 && godina % 100 != 0) 
-                        || (godina % 400 == 0))
+                if (((godina % 4 == 0 && godina % 100 != 0)
+                        || (godina % 400 == 0)) && godina > 1582)
                     brojDana = 29;
                 else
                     brojDana = 28;

@@ -2,7 +2,7 @@ package rs.math.oop.g11.p02.izuzeciPrekoracenjeStekMemorije;
 
 public class FaktorijelBezUslovaIzlaska {
 
-	static int faktorijelBezUslovaIzlaska(int n) {
+	static int faktorijelBezUslovaIzlaska(int n){
 		return n * faktorijelBezUslovaIzlaska(n - 1);
 	}
 

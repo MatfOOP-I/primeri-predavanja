@@ -25,7 +25,7 @@ public class ObracunPlata {
 		}
 		double plata = minimalnoSati*cenaSata;
 		if(brojSati>minimalnoSati) {
-			PrekovremeniRad prekovremeni = new PrekovremeniRad(cenaSata, 
+			PrekovremeniRad prekovremeni = new PrekovremeniRad(cenaSata,
 					brojSati-minimalnoSati);
 			plata+=prekovremeni.izracunajCenuPrekovremenog();
 		}

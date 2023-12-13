@@ -27,7 +27,8 @@ public class ParsiranjeDatuma {
             }
 
 		} finally {
-			skener.close();
+			if(skener != null)
+				skener.close();
 		}
 	}
 }

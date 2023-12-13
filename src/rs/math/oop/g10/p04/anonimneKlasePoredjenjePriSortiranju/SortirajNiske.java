@@ -19,8 +19,10 @@ public class SortirajNiske {
 				"истовремено", "и", "дефинише и", "инстанцира.", 
 				"Јасно је да се", "инстанцирање", "не може извршити", 
 				"више пута,","јер не постоји назив", 
-				"класе па самим тим ни конструктора."}; 
-		
+				"класе па самим тим ни конструктора."};
+
+		for(String niska : niske)
+			System.out.print(niska + "|");
 		// овде би требало користити генеричке типове, али то тек од поглавља 13
 		Arrays.sort(niske, new Comparator() {
 			@Override
@@ -38,7 +40,17 @@ public class SortirajNiske {
 					return razlikaAscii;
 			}
 		});
+		System.out.println();
 		for(String niska : niske)
-			System.out.println(niska);
+			System.out.print(niska + "|");
+		Arrays.sort(niske, new Comparator() {
+			@Override
+			public int compare(Object o1, Object o2) {
+				return o2.toString().length()-o1.toString().length();
+			}
+		});
+		System.out.println();
+		for(String niska : niske)
+			System.out.print(niska + "|");
 	}
 }

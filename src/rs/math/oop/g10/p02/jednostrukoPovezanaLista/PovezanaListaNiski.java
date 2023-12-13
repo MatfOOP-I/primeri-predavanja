@@ -12,18 +12,22 @@ public class PovezanaListaNiski {
 		}
 
 		public String uzmiSadrzaj() {
+
 			return sadrzaj;
 		}
 
 		public void postaviSadrzaj(String sadrzaj) {
+
 			this.sadrzaj = sadrzaj;
 		}
 
 		public Cvor uzmiSledeci() {
+
 			return sledeci;
 		}
 
 		public void postaviSledeci(Cvor sledeci) {
+
 			this.sledeci = sledeci;
 		}
 
@@ -124,10 +128,10 @@ public class PovezanaListaNiski {
 	}
 
 	public int brojCvorova() {
+		if (pocetak == null)
+			return 0;
 		int n = 1;
 		Cvor tek = pocetak;
-		if (tek == null)
-			return 0;
 		while (tek != kraj) {
 			tek = tek.uzmiSledeci();
 			n++;
