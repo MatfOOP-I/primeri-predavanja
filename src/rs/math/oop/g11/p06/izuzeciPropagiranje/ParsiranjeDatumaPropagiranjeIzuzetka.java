@@ -30,7 +30,7 @@ public class ParsiranjeDatumaPropagiranjeIzuzetka {
 					System.out.println("Валидан датум: " + datum);
 					unetValidanFormat = true;
 				} catch (DateTimeParseException e) {
-					System.out.println("Погрешан формат датума!");
+					System.out.println("Погрешан формат датума!" + e.getMessage());
 				}
 			}
 		} finally {

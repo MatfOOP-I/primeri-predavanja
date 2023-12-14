@@ -7,12 +7,14 @@ public class KutijaNegenericka {
 	// било који објектни тип се прихвата
 	// и имплицитно конвертује у Object
 	void postaviVrednost(Object vrednost) {
+
 		this.vrednost = vrednost;
 	}
 
 	// изгубили смо информацију о правој природи објектног типа
 	// тако да једино што можемо да вратимо је тип Object
 	Object uzmiVrednost() {
+
 		return this.vrednost;
 	}
 

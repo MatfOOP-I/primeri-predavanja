@@ -2,7 +2,7 @@ package rs.math.oop.g13.p04.generickiInterfejsStek;
 
 public class PovezanaLista<T> {
 
-	public class Cvor<E> {
+	private class Cvor<E> {
 		private E sadrzaj;
 		private Cvor<E> sledeci;
 
@@ -29,7 +29,7 @@ public class PovezanaLista<T> {
 
 		@Override
 		public String toString() {
-			return "Листа: " + sadrzaj;
+			return "Чвор: " + sadrzaj;
 		}
 
 	}
@@ -105,6 +105,7 @@ public class PovezanaLista<T> {
 	}
 
 	public boolean stigaoDoKraja() {
+
 		return (tekuci == kraj) || (tekuci == null);
 	}
 

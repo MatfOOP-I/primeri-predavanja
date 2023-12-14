@@ -4,8 +4,9 @@ public class NenegativanBrojTvrdnja {
        // покренути програм са аргументом -еа виртуелне машине (VM)
        public static void main(String[] args)
        {
-          int x = -1;
-          assert x >= 0;
-          System.out.println("Готово");
+           System.out.println("Почетак");
+           int x = -1;
+           assert x >= 0;
+           System.out.println("Готово");
        }
 }

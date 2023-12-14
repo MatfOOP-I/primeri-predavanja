@@ -4,8 +4,8 @@ public class IndeksVanGranica {
 
 	public static void main(String[] args) {
 		System.out.println("Почетак");
-		int a[] = new int[2];
-		System.out.println("Приступам елементу:" + a[3]);
+		int a[] = new int[22];
+		System.out.println("Приступам елементу:" + a[-3]);
 		System.out.println("Готово");
 	}
 }

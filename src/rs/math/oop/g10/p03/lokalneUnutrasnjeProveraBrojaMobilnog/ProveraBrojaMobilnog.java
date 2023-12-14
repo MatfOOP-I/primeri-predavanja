@@ -56,7 +56,7 @@ public class ProveraBrojaMobilnog {
 	}
 
 	public static void main(String[] args) {
-		String[] brojevi = { "069/434233","065   /32 -3321-2",
+		String[] brojevi = { "069/434237","065   /32 -3321-2",
 				"033 1223 555","067 332 - 2221"};
 		for(String b : brojevi) {
 			System.out.println(b);

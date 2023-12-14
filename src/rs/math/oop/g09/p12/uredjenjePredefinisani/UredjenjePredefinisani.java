@@ -16,17 +16,23 @@ public class UredjenjePredefinisani {
         System.out.println();
     }
 
-    private static void prikazi(String[] niske) {
-        for (String x : niske)
+    private static void prikazi(String[] niz) {
+        for (String x : niz)
             System.out.print(x + " ");
         System.out.println();
     }
 
-    private static void prikazi(Integer[] brojevi) {
-        for (int x : brojevi)
+    private static void prikazi(Integer[] niz) {
+        for (Integer x : niz)
             System.out.print(x + " ");
         System.out.println();
     }
+
+//    private static<T> void prikazi2(T[] niz) {
+//        for (T x : niz)
+//            System.out.print(x + " ");
+//        System.out.println();
+//    }
 
     public static void main(String[] args) {
         int[] celi = {12, 4, -3, 0, 17, 5};

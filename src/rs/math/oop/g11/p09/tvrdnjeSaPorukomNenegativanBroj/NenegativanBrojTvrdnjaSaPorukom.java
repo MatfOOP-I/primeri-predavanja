@@ -4,7 +4,9 @@ public class NenegativanBrojTvrdnjaSaPorukom {
       // покренути програм са аргументом -еа виртуелне машине (VM)
        public static void main(String[] args)
        {
+          System.out.println("Почетак");
           int x = -1;
-          assert x >= 0 : "x < 0";
+          assert x >= 0 : "Вредност променљиве x је негативна";
+          System.out.println("Готово");
        }
 }

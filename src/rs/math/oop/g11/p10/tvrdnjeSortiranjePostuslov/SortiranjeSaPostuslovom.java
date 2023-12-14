@@ -5,7 +5,13 @@ public class SortiranjeSaPostuslovom {
 	// покренути програм са аргументом -еа виртуелне машине (VM)
 	public static void main(String[] args) {
 		int[] niz = { 20, 91, -6, 16, 0, 7, 51, 42, 3, 1 };
+		for (int e : niz)
+			System.out.printf("%d ", e);
+		System.out.println();
 		//sortiraj(niz);
+		for (int e : niz)
+			System.out.printf("%d ", e);
+		System.out.println();
 		assert jeSortiran(niz) : "низ није сортиран";
 		for (int e : niz)
 			System.out.printf("%d ", e);

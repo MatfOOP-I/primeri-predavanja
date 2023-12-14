@@ -7,12 +7,14 @@ public class KutijaGenericka<T> {
 	// прихвата се онај објектни тип за кога је направљена кутија
 	// одлука о типу се доноси приликом инстанцирања кутије
 	public void postaviVrednost(T vrednost) {
-		this.vrednost=vrednost; 
+
+		this.vrednost=vrednost;
 	}
 	
 	// нисмо изгубили информацију о правој природи објектног типа
 	// тако да враћамо прецизан тип, а не његово уопштење
 	public T uzmiVrednost() {
+
 		return this.vrednost;
 	}
 	

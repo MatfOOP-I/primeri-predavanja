@@ -16,6 +16,6 @@ public class TestirajPlanete {
                 +"Тежина тела масе %.2f на различитим планетама су%n",masaTela);
         for (PlanetaSuncevogSistema p : PlanetaSuncevogSistema.values())
            System.out.printf("%s %.2f N%n",
-                             p.name(), p.tezinaTelaNaPovrsini(masaTela));
+                   p.name(), p.tezinaTelaNaPovrsini(masaTela));
     }
 }

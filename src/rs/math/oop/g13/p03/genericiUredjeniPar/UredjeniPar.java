@@ -23,8 +23,7 @@ public class UredjeniPar<S, T>{
     }
     
     public static void main(String[] args) {
-        UredjeniPar<Integer, Integer> par1 = 
-                new UredjeniPar<Integer, Integer>(10, 20);
+        UredjeniPar<Integer, Integer> par1 = new UredjeniPar<Integer, Integer>(10, 20);
         UredjeniPar<Integer, String> par2 = new UredjeniPar<>(30, "Пример текст");
         // не пролази компилацију због неслагања очекиваног и прослеђеног типа
         //UredjeniPar<Integer, Integer> par3 = new UredjeniPar<>(30, 14.0); 

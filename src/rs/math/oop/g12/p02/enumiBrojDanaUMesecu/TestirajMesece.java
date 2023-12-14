@@ -14,11 +14,11 @@ public class TestirajMesece {
             int godina = Integer.valueOf(args[1]);
             int brojDana = 0;
             switch (mesec) {
-            case APRIL:case JUN:case SEPTEMBAR:case NOVEMBAR:
+            case APRIL: case JUN: case SEPTEMBAR: case NOVEMBAR:
                 brojDana = 30;
                 break;
-            case JANUAR:case MART: case MAJ: case JUL: 
-                case AVGUST:case OKTOBAR: case DECEMBAR:
+            case JANUAR:case MART: case MAJ: case JUL:
+                case AVGUST: case OKTOBAR: case DECEMBAR:
                     brojDana=31;
                     break;
             case FEBRUAR:
@@ -32,8 +32,8 @@ public class TestirajMesece {
             System.out.printf("Број дана у месецу %s године %d је %d.", 
                     mesec, godina, brojDana);
         } catch (IllegalArgumentException ex) {
-            System.err.printf("Грешка при парсирању месеца са називом %s.", 
-                    args[1]);
+            System.err.printf("Грешка при парсирању месеца са називом '%s'.",
+                    args[0]);
             System.err.println(ex.getMessage());
         }
     }

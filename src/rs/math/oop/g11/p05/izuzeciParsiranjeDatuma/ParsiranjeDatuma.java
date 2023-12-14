@@ -22,10 +22,9 @@ public class ParsiranjeDatuma {
                     System.out.println("Исправан датум: " + datum);
                     unetIspravanFormat = true;
                 } catch (DateTimeParseException e) {
-                    System.out.println("Погрешан формат датума!");
+                    System.out.println("Погрешан формат датума!" + e.toString());
                 }
             }
-
 		} finally {
 			if(skener != null)
 				skener.close();
