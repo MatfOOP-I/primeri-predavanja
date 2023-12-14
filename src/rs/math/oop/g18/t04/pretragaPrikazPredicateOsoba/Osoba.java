@@ -1,4 +1,4 @@
-package rs.math.oop.g18.t12.pretragaPrikazCustomInterfaceAnonimnoOsoba;
+package rs.math.oop.g18.t04.pretragaPrikazPredicateOsoba;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

@@ -1,4 +1,4 @@
-package rs.math.oop.g18.t13.pretragaPrikazCustomInterfaceLambdaOsoba;
+package rs.math.oop.g18.t03.pretragaPrikazCustomInterfejsOsoba;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

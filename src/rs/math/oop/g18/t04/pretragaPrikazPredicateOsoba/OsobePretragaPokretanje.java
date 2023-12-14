@@ -1,8 +1,8 @@
-package rs.math.oop.g18.t12.pretragaPrikazCustomInterfaceAnonimnoOsoba;
+package rs.math.oop.g18.t04.pretragaPrikazPredicateOsoba;
 
 import java.util.function.Predicate;
 
-public class OsobePretraga02AnonimnaPredicatePokretanje {
+public class OsobePretragaPokretanje {
 
     public static <T>  void prikazi(Iterable<T> prolazna, Predicate<T> kriterijum) {
         for (T elem : prolazna) {

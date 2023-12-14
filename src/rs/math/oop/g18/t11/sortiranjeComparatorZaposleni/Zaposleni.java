@@ -1,4 +1,4 @@
-package rs.math.oop.g18.t11.sortiranjeZaposleni;
+package rs.math.oop.g18.t11.sortiranjeComparatorZaposleni;
 
 public class Zaposleni
 {

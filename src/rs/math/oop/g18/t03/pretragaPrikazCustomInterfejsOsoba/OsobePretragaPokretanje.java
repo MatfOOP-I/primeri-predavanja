@@ -1,6 +1,6 @@
-package rs.math.oop.g18.t12.pretragaPrikazCustomInterfaceAnonimnoOsoba;
+package rs.math.oop.g18.t03.pretragaPrikazCustomInterfejsOsoba;
 
-public class OsobePretraga01AnonimnaGenerckaPokretanje {
+public class OsobePretragaPokretanje {
 
     public static <T>  void prikazi(Iterable<T> prolazna, KriterijumPretrage<T> kriterijum) {
         for (T elem : prolazna) {

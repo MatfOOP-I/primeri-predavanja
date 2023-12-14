@@ -6,7 +6,7 @@
  * We make no guarantees that this code is fit for any purpose. 
  * Visit http://www.pragmaticprogrammer.com/titles/vsjava8 for more book information.
  ***/
-package rs.math.oop.g18.t02.funkcionalniInterfejsPodrazumenvano;
+package rs.math.oop.g18.t02.funkcionalniInterfejsCustomDefaultMethod;
 
 public class FunkcionalniInterfejs {
     public interface Sample1 {

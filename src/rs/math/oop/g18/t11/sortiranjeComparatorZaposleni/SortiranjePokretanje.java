@@ -1,8 +1,8 @@
-package rs.math.oop.g18.t11.sortiranjeZaposleni;
+package rs.math.oop.g18.t11.sortiranjeComparatorZaposleni;
 
 import java.util.*;
 
-public class SortiranjeFuncIntPokretanje {
+public class SortiranjePokretanje {
     public static void main(String[] args) {
         Zaposleni[] osoblje = new Zaposleni[4];
 
