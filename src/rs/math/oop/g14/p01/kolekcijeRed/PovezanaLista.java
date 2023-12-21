@@ -105,6 +105,7 @@ public class PovezanaLista<T> {
 	}
 
 	public boolean stigaoDoKraja() {
+
 		return (tekuci == kraj) || (tekuci == null);
 	}
 

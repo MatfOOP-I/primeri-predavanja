@@ -19,8 +19,7 @@ public class RedPrekoPovezaneListe<T> implements Red<T>{
 	public T ukloni() {
 		T elem = elementi.ukloniSaPocetka();
 		if (elem == null) {
-			System.err.println("Грешка при уклањању: ред је празан!");
-			return null;
+			throw new NullPointerException();
 		}
 		System.out.println("Уклањам: "+elem);
 		return elem;
@@ -30,30 +29,34 @@ public class RedPrekoPovezaneListe<T> implements Red<T>{
 	public int brojElemenata() {
 		return elementi.brojCvorova();
 	}
+
+	@Override
+	public String toString(){
+		StringBuilder sb = new StringBuilder("[");
+		sb.append( elementi.uzmiPrvi() + " ");
+		while(!elementi.stigaoDoKraja())
+			sb.append( elementi.uzmiSledeci() + " ");
+		sb.append("]");
+		return sb.toString();
+	}
 	
 	public static void main(String[] args) {
 		Red<Integer> red = new RedPrekoPovezaneListe<>();
 		red.dodaj(34);
 		red.dodaj(23);
 		red.dodaj(11);
-		System.out.println("Број ел.: " + red.brojElemenata());
+		System.out.println(red);
 		red.ukloni();
-		System.out.println("Број ел.: " + red.brojElemenata());
+		System.out.println(red);
 		red.dodaj(112);
-		System.out.println("Број ел.: " + red.brojElemenata());
 		red.dodaj(-134);
-		System.out.println("Број ел.: " + red.brojElemenata());
 		red.dodaj(111);
-		System.out.println("Број ел.: " + red.brojElemenata());
 		red.dodaj(345);
-		System.out.println("Број ел.: " + red.brojElemenata());
+		System.out.println(red);
 		red.ukloni();
 		red.ukloni();
 		red.ukloni();
 		red.ukloni();
-		red.ukloni();
-		red.ukloni();
-		red.ukloni();
-		System.out.println("Број ел.: " + red.brojElemenata());
+		System.out.println(red);
 	}
 }

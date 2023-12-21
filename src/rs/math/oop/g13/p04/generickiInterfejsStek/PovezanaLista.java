@@ -31,7 +31,6 @@ public class PovezanaLista<T> {
 		public String toString() {
 			return "Чвор: " + sadrzaj;
 		}
-
 	}
 
 	private Cvor<T> pocetak = null;

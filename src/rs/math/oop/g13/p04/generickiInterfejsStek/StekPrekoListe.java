@@ -6,6 +6,7 @@ public class StekPrekoListe<T> implements Stek<T> {
 
 	@Override
 	public void dodaj(T elem) {
+
 		elementi.dodajNaPocetak(elem);
 	}
 
@@ -13,14 +14,14 @@ public class StekPrekoListe<T> implements Stek<T> {
 	public T ukloni() {
 		T elem = elementi.ukloniSaPocetka();
 		if (elem == null) {
-			System.err.println("Грешка при уклањању: стек је празан!");
-			return null;
+			throw new NullPointerException();
 		}
 		return elem;
 	}
 
 	@Override
 	public int brojElemenata() {
+
 		return elementi.brojCvorova();
 	}
 }

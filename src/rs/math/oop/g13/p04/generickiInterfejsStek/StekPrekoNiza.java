@@ -13,20 +13,21 @@ public class StekPrekoNiza<T> implements Stek<T> {
 
 	@Override
 	public void dodaj(T elem) {
+
 		elementi.postaviNa(++vrhSteka, elem);
 	}
 
 	@Override
 	public T ukloni() {
 		if (vrhSteka == -1) {
-			System.err.println("Грешка при уклањању: стек је празан!");
-			return null;
+			throw new ArrayIndexOutOfBoundsException(-1);
 		}
 		return elementi.uzmiSa(vrhSteka--);
 	}
 
 	@Override
 	public int brojElemenata() {
+
 		return (vrhSteka + 1);
 	}
 }

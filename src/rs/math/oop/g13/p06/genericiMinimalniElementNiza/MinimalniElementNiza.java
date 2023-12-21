@@ -2,9 +2,11 @@ package rs.math.oop.g13.p06.genericiMinimalniElementNiza;
 
 public class MinimalniElementNiza {
 
-	public static <T extends Comparable<T>> T nadjiMinimum(T[] niz) throws Exception {
+	public static <T extends Comparable<T>> T nadjiMinimum(T[] niz) {
+		if( niz == null)
+			throw new NullPointerException();
 		if (niz.length == 0)
-			throw new Exception("Низ је празан - минимум нема смисла.");
+			throw new RuntimeException("Низ је празан - минимум нема смисла.");
 		T minimum = niz[0];
 		for (T element : niz)
 			if (element.compareTo(minimum) < 0)
@@ -14,25 +16,17 @@ public class MinimalniElementNiza {
 
 	public static void main(String[] args) {
 		String[] stringovi = new String[] { "Паја", "Ана", "Мика", "Марија", "Пера" };
-		UredjeniParUporediv<Integer, Integer>[] parovi = 
-				(UredjeniParUporediv<Integer, Integer>[]) new UredjeniParUporediv[] {
-				new UredjeniParUporediv<Integer, Integer>(46, 21), 
-				new UredjeniParUporediv<Integer, Integer>(10, 21),
-				new UredjeniParUporediv<Integer, Integer>(10, 19), 
-				new UredjeniParUporediv<Integer, Integer>(15, 21), 
+		String minString = nadjiMinimum(stringovi);
+		System.out.println(minString);
+		UredjeniPar<Integer, Integer>[] parovi =
+				(UredjeniPar<Integer, Integer>[]) new UredjeniPar[] {
+						new UredjeniPar<>(46, 21),
+						new UredjeniPar<>(10, 21),
+						new UredjeniPar<>(10, 19),
+						new UredjeniPar<>(15, 21),
 				};
-		// уређени пар чија координата није упоредива
-		// се не може креирати због ограничења на тип по обе координате
-		// у дефиницији упоредивог уређеног пара
-		// UredjeniParUporediv<Color, Integer> par; // не компајлира се
-		try {
-			String minString = nadjiMinimum(stringovi);
-			System.out.println(minString);
-			UredjeniParUporediv<Integer, Integer> minPar = nadjiMinimum(parovi);
-			System.out.println(minPar);
-		} catch (Exception e) {
-			System.err.println(e.getMessage());
-		}
+		UredjeniPar<Integer, Integer> minPar = nadjiMinimum(parovi);
+		System.out.println(minPar);
 	}
 
 }

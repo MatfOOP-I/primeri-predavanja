@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class CitanjeSumiranje {
 
 	private static Stek<Double> kreiraj(Scanner sc) {
-		Stek stek = null;
+		Stek<Double> stek = null;
 		System.out.print("Унеси л (за листу) или н (за низ): ");
 		char ulaz = sc.nextLine().trim().toLowerCase().charAt(0);
 		switch (ulaz) {
 		case 'л':
 		case 'l':
-			stek = new StekPrekoListe();
+			stek = new StekPrekoListe<Double>();
 			break;
 		case 'н':
 		case 'n':
-			stek = new StekPrekoNiza();
+			stek = new StekPrekoNiza<Double>();
 		}
 		return stek;
 	}

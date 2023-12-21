@@ -9,13 +9,14 @@ public class RedPrekoKruznogNiza<T> implements Red<T> {
 	private T[] redNiz;
 	private int kapacitet;
 	private int brojElemenata;
+
 	// индекси за почетак реда и наредни елемент реда,
 	// иницијално оба на вредности 0
 	private int pocetakIndeks;
 	private int naredniIndeks;
 
 	public RedPrekoKruznogNiza() {
-		kapacitet = 5;
+		kapacitet = 2;
 		redNiz = alocirajRedNiz();
 	}
 
@@ -52,12 +53,8 @@ public class RedPrekoKruznogNiza<T> implements Red<T> {
 
 	@Override
 	public T ukloni() {
-		if (brojElemenata == 0) {
-			// овде ћемо уместо изузетка вратити null,
-			// али има смисла и да се избаци изузетак
-			System.out.println("Ред је празан па нема смисла уклањање.");
-			return null;
-		}
+		if (brojElemenata == 0)
+			throw new RuntimeException("Не може се избацити елеменат из празног реда.");
 		T element = redNiz[pocetakIndeks];
 		redNiz[pocetakIndeks] = null;
 		// померамо почетак удесно,
@@ -70,32 +67,37 @@ public class RedPrekoKruznogNiza<T> implements Red<T> {
 
 	@Override
 	public int brojElemenata() {
+
 		return brojElemenata;
 	}
+	@Override
+	public String toString(){
+		StringBuilder sb = new StringBuilder("[");
+		for(int i=0; i<brojElemenata; i++)
+			sb.append( redNiz[(pocetakIndeks+i)%kapacitet] + " " );
+		sb.append("]");
+		return sb.toString();
+	}
+
 
 	public static void main(String[] args) {
 		Red<Integer> red = new RedPrekoKruznogNiza<>();
 		red.dodaj(34);
 		red.dodaj(23);
 		red.dodaj(11);
-		System.out.println("Број ел.: " + red.brojElemenata());
+		System.out.println(red);
 		red.ukloni();
-		System.out.println("Број ел.: " + red.brojElemenata());
+		System.out.println(red);
 		red.dodaj(112);
-		System.out.println("Број ел.: " + red.brojElemenata());
 		red.dodaj(-134);
-		System.out.println("Број ел.: " + red.brojElemenata());
 		red.dodaj(111);
-		System.out.println("Број ел.: " + red.brojElemenata());
 		red.dodaj(345);
-		System.out.println("Број ел.: " + red.brojElemenata());
+		System.out.println(red);
 		red.ukloni();
 		red.ukloni();
 		red.ukloni();
 		red.ukloni();
 		red.ukloni();
-		red.ukloni();
-		red.ukloni();
-		System.out.println("Број ел.: " + red.brojElemenata());
+		System.out.println(red);
 	}
 }

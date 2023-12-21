@@ -26,12 +26,10 @@ public class SamorastuciNiz<T> {
 
 	public T uzmiSa(int indeks) {
 		if (indeks < 0) {
-			System.err.println("Грешка: индекс је негативан!");
-			return null;
+			throw new ArrayIndexOutOfBoundsException(indeks);
 		}
 		if (indeks >= elementi.length) {
-			System.err.println("Грешка: индекс је већи од величине низа!");
-			return null;
+			throw new ArrayIndexOutOfBoundsException(indeks);
 		}
 		return elementi[indeks];
 	}
@@ -41,6 +39,7 @@ public class SamorastuciNiz<T> {
 	}
 
 	public int trenutniKapacitet() {
+
 		return elementi.length;
 	}
 }
