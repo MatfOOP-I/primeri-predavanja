@@ -1,4 +1,4 @@
-package rs.math.oop.g16.p05.ispitivanjeTipaPolje;
+package rs.math.oop.g16.p04.ispitivanjeTipaPoljaMetodi;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -70,7 +70,7 @@ public class PokretanjeRefleksija {
          ime = args[0];
       else {
          Scanner in = new Scanner(System.in);
-         System.out.println("Enter class ime (e.g. java.util.Date): ");
+         System.out.println("Enter class ime (e.g. java.lang.String): ");
          ime = in.next();
          in.close();
       }

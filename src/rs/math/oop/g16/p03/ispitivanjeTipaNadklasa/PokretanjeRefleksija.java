@@ -1,4 +1,4 @@
-package rs.math.oop.g16.p01.ispitivanjeTipaKlasa;
+package rs.math.oop.g16.p03.ispitivanjeTipaNadklasa;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -46,49 +46,60 @@ public class PokretanjeRefleksija
 	
 	public static void main( String[] args )
 	{
-		Class<?> k1 = null;
+		Class<?> k = null;
 		// Klasa1 p1 = new Klasa2();
-		//k1 = p1.getClass();
-		//k1 = Klasa1.class;
+		//k = p1.getClass();
+		//k = Klasa1.class;
 		try
 		{
-			k1 = Class.forName("rs.math.oop1.z140200.ispitivanjeTipa.z01.klasaPolje.Klasa2");
+			String imeKlase = "rs.math.oop.g16.p01.ispitivanjeTipaKlasa.Klasa1";
+			if(args.length>0){
+				imeKlase = args[0];
+			}
+			k = Class.forName(imeKlase);
 		}
 		catch (ClassNotFoundException e)
 		{
 			e.printStackTrace();
 			return;
 		}
-		System.out.println( k1.getName() );
-		Class<?>[] implementira1 = k1.getInterfaces();
-		for( Class<?> i: implementira1)
+		System.out.println( "Назив класе:" + k.getName() );
+		Class<?>[] implementira = k.getInterfaces();
+		System.out.print("Имплементирани интерфејси: ");
+		for( Class<?> i: implementira)
 			System.out.print( i.getName() + " " );
 		System.out.println();
 	
-		Field[] polja1 =  k1.getFields();
-		for( Field f: polja1)
+		Field[] polja =  k.getFields();
+		System.out.print("Поља: ");
+		for( Field f: polja)
 			System.out.print( f.getName() + " " );
 		System.out.println();
-		Method[] metodi1 =  k1.getMethods();
-		for( Method m: metodi1)
+		Method[] metodi =  k.getMethods();
+		System.out.print("Методи: ");
+		for( Method m: metodi)
 			System.out.print( m.getName() + " " );
 		System.out.println();
 		
 		System.out.println();
-		Class<?> k0 = k1.getSuperclass();
-		System.out.println( k0.getName() );
+		Class<?> k0 = k.getSuperclass();
+		System.out.println( "Надкласа:" + k0.getName() );
 		Class<?>[] implementira0 = k0.getInterfaces();
+		System.out.print("Имплементирани интерфејси надкласе: ");
 		for( Class<?> i: implementira0)
 			System.out.print( i.getName() + " " );
-		Field[] polja0 =  k0.getDeclaredFields();
 		System.out.println();
+
+		Field[] polja0 =  k0.getDeclaredFields();
+		System.out.print("Декларисана поља надкласе: ");
 		for( Field f: polja0)
 			System.out.print( f.getName() + " " );
 		System.out.println();
+
 		Method[] metodi0 =  k0.getDeclaredMethods();
+		System.out.print("Декларисани меотоди надкласе: ");
 		for( Method m: metodi0)
 			System.out.print( m.getName() + " " );
 		System.out.println();
-		
 	}
 }

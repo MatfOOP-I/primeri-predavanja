@@ -1,4 +1,4 @@
-package rs.math.oop.g16.p02.ispitivanjeTipaEnum;
+package rs.math.oop.g16.p01.ispitivanjeTipa;
 
 enum Miki
 {
