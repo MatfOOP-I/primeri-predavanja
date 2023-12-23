@@ -1,11 +1,11 @@
-package rs.math.oop.g16.p06.ispitivanjeTipaAnalizaPrikaz;
+package rs.math.oop.g16.p08.metodPoziv;
 
 public class Zaposleni
 {
 	private String ime;
 	private double plata;
 	
-	public Zaposleni( String n, double s )
+	public Zaposleni(String n, double s )
 	{
 		ime = n;
 		plata = s;

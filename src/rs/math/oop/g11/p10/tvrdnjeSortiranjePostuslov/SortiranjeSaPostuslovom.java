@@ -1,8 +1,9 @@
 package rs.math.oop.g11.p10.tvrdnjeSortiranjePostuslov;
 
+// покренути програм са аргументом виртуелне машине (VM):
+// -еа
 public class SortiranjeSaPostuslovom {
 
-	// покренути програм са аргументом -еа виртуелне машине (VM)
 	public static void main(String[] args) {
 		int[] niz = { 20, 91, -6, 16, 0, 7, 51, 42, 3, 1 };
 		for (int e : niz)

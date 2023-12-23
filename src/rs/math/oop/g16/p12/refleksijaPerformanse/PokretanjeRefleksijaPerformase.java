@@ -12,9 +12,9 @@ public class PokretanjeRefleksijaPerformase {
 		int dim = 100;
 
 		long poc = System.nanoTime();
-		Object arr = Array.newInstance(cls, dim);
-		Array.set(arr, 5, "this is a test");
-		String s = (String) Array.get(arr, 5);
+		Object niz = Array.newInstance(cls, dim);
+		Array.set(niz, 5, "this is a test");
+		String s = (String) Array.get(niz, 5);
 		System.out.println(s);
 		System.out.println("Preko refleksije trajalo " + (System.nanoTime() - poc) / 10e6 + "msec.");
 		System.out.println("---");

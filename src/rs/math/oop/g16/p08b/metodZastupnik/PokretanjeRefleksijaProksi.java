@@ -1,4 +1,4 @@
-package rs.math.oop.g16.p08.metodPoziv.z03.zastupnik;
+package rs.math.oop.g16.p08b.metodZastupnik;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

@@ -1,7 +1,9 @@
 package rs.math.oop.g11.p09.tvrdnjeSaPorukomNenegativanBroj;
 
+// покренути програм са аргументом виртуелне машине (VM):
+// -еа
 public class NenegativanBrojTvrdnjaSaPorukom {
-      // покренути програм са аргументом -еа виртуелне машине (VM)
+
        public static void main(String[] args)
        {
           System.out.println("Почетак");

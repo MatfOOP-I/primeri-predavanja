@@ -2,7 +2,7 @@ package rs.math.oop.g16.p07.poljePristup;
 
 import java.lang.reflect.Field;
 
-public class PokretanjeRefleksijaPostavljanjeCItanjePolja
+public class PokretanjeCitanjePostavljanjePolja
 {
 	public static void main( String[] argumenti )
 	{

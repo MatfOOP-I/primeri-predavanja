@@ -2,21 +2,9 @@ package rs.math.oop.g16.p11.rastNiz;
 
 import java.lang.reflect.Array;
 
-/**
- * This program demonstrates the use of reflection for manipulating arrays.
- *
- * @author Cay Horstmann
- * @version 1.01 2004-02-21
- */
+
 public class PokretanjeRefleksijaRastNiza {
-   /**
-    * This method attempts to grow an array by allocating a new array and copying
-    * all elements.
-    *
-    * @param a the array to grow
-    * @return a larger array that contains all elements of a. However, the
-    * returned array has type Object[], not the same type as a
-    */
+
    static Object[] badArrayGrow(Object[] a) {
       int newLength = a.length * 11 / 10 + 10;
       Object[] newArray = new Object[newLength];
@@ -24,14 +12,6 @@ public class PokretanjeRefleksijaRastNiza {
       return newArray;
    }
 
-   /**
-    * This method grows an array by allocating a new array of the same type and
-    * copying all elements.
-    *
-    * @param a the array to grow. This can be an object array or a primitive type
-    *          array
-    * @return a larger array that contains all elements of a.
-    */
    static Object goodArrayGrow(Object a) {
       Class<?> cl = a.getClass();
       if (!cl.isArray())
@@ -45,12 +25,6 @@ public class PokretanjeRefleksijaRastNiza {
       return newArray;
    }
 
-   /**
-    * A convenience method to print all elements in an array
-    *
-    * @param a the array to print. It can be an object array or a primitive type
-    *          array
-    */
    static void arrayPrint(Object a) {
       Class<?> cl = a.getClass();
       if (!cl.isArray())
@@ -68,13 +42,11 @@ public class PokretanjeRefleksijaRastNiza {
       int[] a = {1, 2, 3};
       String[] b = {"Tom", "Dick", "Harry"};
 
-
       a = (int[]) goodArrayGrow(a);
       arrayPrint(a);
 
       b = (String[]) goodArrayGrow(b);
       arrayPrint(b);
-
 
       System.out.println("The following call will generate an exception.");
       b = (String[]) badArrayGrow(b);

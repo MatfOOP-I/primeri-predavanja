@@ -1,4 +1,4 @@
-package rs.math.oop.g16.p06.ispitivanjeTipaAnalizaPrikaz;
+package rs.math.oop.g16.p06.ispitivanjeTipaAnalizaObjekta;
 
 public class Pair<T>
 {

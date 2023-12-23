@@ -1,22 +1,22 @@
-package rs.math.oop.g16.p08.metodPoziv.z01.poziv;
+package rs.math.oop.g16.p06.ispitivanjeTipaAnalizaObjekta;
 
 public class Zaposleni
 {
 	private String ime;
 	private double plata;
 	
-	public Zaposleni(String n, double s )
+	public Zaposleni( String n, double s )
 	{
 		ime = n;
 		plata = s;
 	}
 	
-	public String getIme()
+	public String uzmiIme()
 	{
 		return ime;
 	}
 	
-	public double getPlata()
+	public double uzmiPlatu()
 	{
 		return plata;
 	}

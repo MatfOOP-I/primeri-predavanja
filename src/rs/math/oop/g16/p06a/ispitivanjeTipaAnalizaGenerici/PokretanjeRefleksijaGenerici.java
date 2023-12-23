@@ -1,13 +1,10 @@
-package rs.math.oop.g16.p08.metodPoziv.z04.generici;
+package rs.math.oop.g16.p06a.ispitivanjeTipaAnalizaGenerici;
 
 import java.lang.reflect.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * @author Cay Horstmann
- * @version 1.10 2007-05-15
- */
+
 public class PokretanjeRefleksijaGenerici {
    public static void main(String[] args) {
       // read class ime from command line args or user input

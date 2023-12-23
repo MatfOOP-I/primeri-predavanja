@@ -1,8 +1,8 @@
-package rs.math.oop.g16.p08.metodPoziv.z02.pokazivacNaMetod;
+package rs.math.oop.g16.p08a.pokazivacNaMetod;
 
 import java.lang.reflect.*;
 
-public class PokretanjeRefleksijaPozivMetoda {
+public class PokretanjePokazivacNaMetod {
 
     public static double kvadrat(double x) {
         return x * x;
@@ -13,7 +13,6 @@ public class PokretanjeRefleksijaPozivMetoda {
     }
 
     public static void printTable(double from, double to, int n, Method f) {
-        // print out the method as table header
         System.out.println(f);
         double dx = (to - from) / (n - 1);
         for (double x = from; x <= to; x += dx) {
@@ -27,7 +26,7 @@ public class PokretanjeRefleksijaPozivMetoda {
     }
 
     public static void main(String[] args) throws Exception {
-        Method square = PokretanjeRefleksijaPozivMetoda.class.getMethod("kvadrat",
+        Method square = PokretanjePokazivacNaMetod.class.getMethod("kvadrat",
                 double.class);
         System.out.println("------------------------------");
         printTable(-5, 5, 50, square);
@@ -37,7 +36,7 @@ public class PokretanjeRefleksijaPozivMetoda {
         Method sin = Math.class.getMethod("sin", double.class);
         System.out.println("------------------------------");
         printTable(1, 10, 50, sin);
-        Method nesto = PokretanjeRefleksijaPozivMetoda.class.getMethod("eNaXminus3",
+        Method nesto = PokretanjePokazivacNaMetod.class.getMethod("eNaXminus3",
                 double.class);
         System.out.println("------------------------------");
         printTable(-5, 5, 50, nesto);

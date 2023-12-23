@@ -12,12 +12,12 @@ public class Zaposleni
 	}
 
 
-	public String getIme()
+	public String uzmiIme()
 	{
 		return ime;
 	}
 	
-	public double getPlata()
+	public double uzmiPlata()
 	{
 		return plata;
 	}

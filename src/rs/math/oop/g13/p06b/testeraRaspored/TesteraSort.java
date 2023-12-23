@@ -1,4 +1,4 @@
-package rs.math.oop.g13.p06a.testera;
+package rs.math.oop.g13.p06b.testeraRaspored;
 
 import java.util.Arrays;
 

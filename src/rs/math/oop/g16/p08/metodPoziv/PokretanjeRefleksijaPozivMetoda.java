@@ -1,4 +1,4 @@
-package rs.math.oop.g16.p08.metodPoziv.z01.poziv;
+package rs.math.oop.g16.p08.metodPoziv;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
