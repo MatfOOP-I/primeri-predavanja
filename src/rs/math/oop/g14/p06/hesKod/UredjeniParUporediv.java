@@ -15,8 +15,7 @@ public class UredjeniParUporediv<S, T> extends UredjeniPar<S, T>{
 		// ако аргумент није уређени пар онда сигурно нису исти
 		if(!(obj instanceof UredjeniParUporediv))
 			return false;
-		UredjeniParUporediv par = 
-				(UredjeniParUporediv)obj;
+		UredjeniParUporediv par = (UredjeniParUporediv)obj;
 		// исти су само ако им је и свака координата иста
 		return uzmiVrednost1().equals(par.uzmiVrednost1()) &&
 				uzmiVrednost2().equals(par.uzmiVrednost2());
@@ -24,7 +23,7 @@ public class UredjeniParUporediv<S, T> extends UredjeniPar<S, T>{
 	
 	@Override
 	public int hashCode() {
-		int hash = 7;
+		int hash = 1;
 	    hash = 31 * hash 
 	    		+ (uzmiVrednost1() == null ? 0 : uzmiVrednost1().hashCode());
 	    hash = 31 * hash 

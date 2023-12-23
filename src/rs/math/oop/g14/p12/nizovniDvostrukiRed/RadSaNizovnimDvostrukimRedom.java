@@ -2,6 +2,7 @@ package rs.math.oop.g14.p12.nizovniDvostrukiRed;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.LinkedList;
 
 public class RadSaNizovnimDvostrukimRedom {
 

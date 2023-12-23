@@ -117,4 +117,18 @@ public class StekPrekoListe<T> extends AbstractCollection<T> implements Stek<T> 
 			return vrednost;
 		}
 	}
+
+	public static void main(String... argumenti){
+		String[] niz = {"Miki", "Paja", "Silja", "Petar Pan"};
+		List<String> l = Arrays.asList(niz);
+		Stek<String> st = new StekPrekoListe<>(l);
+		System.out.println(st);
+		st.dodaj("Pluton");
+		System.out.println(st);
+		String s = st.ukloni();
+		System.out.println(s);
+		System.out.println(st);
+
+	}
+
 }

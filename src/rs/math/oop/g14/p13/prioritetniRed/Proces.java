@@ -11,6 +11,7 @@ public class Proces implements Comparable<Proces>{
 	
 	@Override
 	public int compareTo(Proces o) {
+
 		return this.prioritet-o.prioritet;
 	}
 	

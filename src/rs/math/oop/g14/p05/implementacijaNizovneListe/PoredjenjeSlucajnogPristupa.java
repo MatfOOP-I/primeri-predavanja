@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class PoredjenjeSlucajnogPristupa {
 	public static void main(String[] args) {
-		int n = 10000000;
+		int n = 10_000_000;
 		int m = 1000;
 		List<Integer> povezana = new LinkedList<>();
 		List<Integer> nizovna = new ArrayList<>();

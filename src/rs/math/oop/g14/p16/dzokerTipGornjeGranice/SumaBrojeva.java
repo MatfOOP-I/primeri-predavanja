@@ -8,10 +8,10 @@ class SumaBrojeva {
 		// погодан метод који креира листу
 		// на основу листе аргумената променљиве дужине
 		List<Integer> lista1 = Arrays.asList(24, 56, 61, 7);
-		System.out.println("Сума целих бројева је: " + suma(lista1));
+		System.out.printf("Сума целих бројева %s је: %f%n", lista1, suma(lista1));
 		// слично, само са листом реалних бројева
 		List<Double> lista2 = Arrays.asList(14.1, 52.1, 6.121);
-		System.out.print("Сума реалних бројева је: " + suma(lista2));
+		System.out.printf("Сума реалних бројева %s је: %f", lista2, suma(lista2));
 	}
 
 	// апстрактна класа Number је надкласа од Integer, Float, Double, ...

@@ -1,8 +1,6 @@
 package rs.math.oop.g14.p18.stekKolekcijaListaNiz;
 
-import java.util.AbstractCollection;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 public class StekPrekoNiza<T> extends AbstractCollection<T> implements Stek<T> {
 
@@ -15,6 +13,13 @@ public class StekPrekoNiza<T> extends AbstractCollection<T> implements Stek<T> {
 		vrhSteka = -1;
 	}
 
+	public StekPrekoNiza(){
+	}
+
+	public StekPrekoNiza(Collection<T> col){
+		for(T el: col)
+			add(el);
+	}
 	@Override
 	public boolean add(T elem) {
 		elementi.postaviNa(++vrhSteka, elem);
@@ -23,14 +28,14 @@ public class StekPrekoNiza<T> extends AbstractCollection<T> implements Stek<T> {
 
 	@Override
 	public void dodaj(T elem) {
+
 		elementi.postaviNa(++vrhSteka, elem);
 	}
 
 	@Override
 	public T ukloni() {
 		if (vrhSteka == -1) {
-			System.err.println("Грешка при уклањању: стек је празан!");
-			return null;
+			throw new NullPointerException();
 		}
 		return elementi.uzmiSa(vrhSteka--);
 	}
@@ -70,12 +75,27 @@ public class StekPrekoNiza<T> extends AbstractCollection<T> implements Stek<T> {
 		}
 
 		public boolean hasNext() {
+
 			return pozicija >= 0;
 		}
 
 		public void remove() {
+
 			throw new UnsupportedOperationException();
 		}
+
+	}
+
+	public static void main(String... argumenti){
+		String[] niz = {"Miki", "Paja", "Silja", "Petar Pan"};
+		List<String> l = Arrays.asList(niz);
+		Stek<String> st = new StekPrekoNiza<>(l);
+		System.out.println(st);
+		st.dodaj("Pluton");
+		System.out.println(st);
+		String s = st.ukloni();
+		System.out.println(s);
+		System.out.println(st);
 
 	}
 }

@@ -36,7 +36,7 @@ public class RadSaDrvoRecnikom {
 		// испис првих 10 лексикографски по речима
 		int k = 1;
 		for (String r : reciPojavljivanja.keySet())
-			if (k > 10)
+			if (k > 20)
 				break;
 			else {
 				System.out.println(k + ".\t" + r + "\t" 

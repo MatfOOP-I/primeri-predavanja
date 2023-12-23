@@ -1,6 +1,7 @@
 package rs.math.oop.g14.p07.hesSkup;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class RadSaHesSkupom {
 
@@ -32,7 +33,7 @@ public class RadSaHesSkupom {
 		// слично се помоћу метода removeAll и addAll
 		// могу формирати разлике и уније скупова
 
-		HashSet<String> sHesSkup = new HashSet<>();
+		Set<String> sHesSkup = new HashSet<>();
 		sHesSkup.add("Скуп");
 		sHesSkup.add("ниски");
 		sHesSkup.add("елемент");
@@ -41,7 +42,7 @@ public class RadSaHesSkupom {
 		for (String s : sHesSkup)
 			System.out.println(String.format("%s\t%d", s, s.hashCode()));
 
-		HashSet<UredjeniPar<String, Integer>> u1HesSkup 
+		Set<UredjeniPar<String, Integer>> u1HesSkup
 			= new HashSet<UredjeniPar<String, Integer>>();
 		u1HesSkup.add(new UredjeniPar<String, Integer>("Новак", 26));
 		u1HesSkup.add(new UredjeniPar<String, Integer>("Рафаел", 23));
@@ -50,7 +51,7 @@ public class RadSaHesSkupom {
 		System.out.println("Први скуп уређених парова:");
 		System.out.println(u1HesSkup); // дупликат није елиминисан
 
-		HashSet<UredjeniParUporediv<String, Integer>> u2HesSkup 
+		Set<UredjeniParUporediv<String, Integer>> u2HesSkup
 			= new HashSet<UredjeniParUporediv<String, Integer>>();
 		u2HesSkup.add(new UredjeniParUporediv<String, Integer>("Новак", 26));
 		u2HesSkup.add(new UredjeniParUporediv<String, Integer>("Рафаел", 23));

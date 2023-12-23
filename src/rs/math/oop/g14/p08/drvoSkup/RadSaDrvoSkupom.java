@@ -1,6 +1,7 @@
 package rs.math.oop.g14.p08.drvoSkup;
 
 import java.util.Comparator;
+import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -17,9 +18,24 @@ public class RadSaDrvoSkupom {
 		SortedSet<String> sDrvoSkup = new TreeSet<>();
 		sDrvoSkup.add("Скуп");
 		sDrvoSkup.add("ниски");
-		sDrvoSkup.add("елемент");
-		sDrvoSkup.add("елемент");
+		sDrvoSkup.add("Eлемент");
+		sDrvoSkup.add("Eлемент");
 		System.out.println("Скуп ниски: " + sDrvoSkup);
+
+		SortedSet<String> sDrvoSkup2 = new TreeSet<>(
+				new Comparator<String>() {
+					@Override
+					public int compare(String o1, String o2) {
+						return o1.length() - o2.length();
+					}
+				}
+		);
+//		SortedSet<String> sDrvoSkup2 = new TreeSet<>((s1,s2) -> s2.length() - s1.length());
+		sDrvoSkup2.add("Скуп");
+		sDrvoSkup2.add("ниски");
+		sDrvoSkup2.add("Eлемент");
+		sDrvoSkup2.add("Eлемент");
+		System.out.println("Скуп ниски: " + sDrvoSkup2);
 
 		// варијанта са експлицитним уређењем
 		// кроз анонимну класу која имплементира Comparator
