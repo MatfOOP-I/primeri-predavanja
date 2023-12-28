@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class DobijanjeInformacijaOPoljimaMetodama {
 
-   public static void printFields(Class<?> cl) {
+   public static void prikaziPolja(Class<?> cl) {
       Field[] fields = cl.getDeclaredFields();
       for (Field f : fields) {
          Class<?> type = f.getType();
@@ -21,7 +21,7 @@ public class DobijanjeInformacijaOPoljimaMetodama {
       }
    }
 
-   public static void printConstructors(Class<?> cl) {
+   public static void prikaziKonstruktore(Class<?> cl) {
       Constructor<?>[] constructors = cl.getDeclaredConstructors();
       for (Constructor<?> c : constructors) {
          String ime = c.getName();
@@ -41,7 +41,7 @@ public class DobijanjeInformacijaOPoljimaMetodama {
       }
    }
 
-   public static void printMethods(Class<?> cl) {
+   public static void prikaziMetode(Class<?> cl) {
       Method[] methods = cl.getDeclaredMethods();
       for (Method m : methods) {
          Class<?> retType = m.getReturnType();
@@ -90,11 +90,11 @@ public class DobijanjeInformacijaOPoljimaMetodama {
             System.out.println(interfaces[i].getName() + ((i != interfaces.length - 1) ? ", " : ""));
          }
          System.out.print("\n{\n");
-         printFields(klasa);
+         prikaziPolja(klasa);
          System.out.println();
-         printConstructors(klasa);
+         prikaziKonstruktore(klasa);
          System.out.println();
-         printMethods(klasa);
+         prikaziMetode(klasa);
          System.out.println("}");
       } catch (ClassNotFoundException e) {
          e.printStackTrace();

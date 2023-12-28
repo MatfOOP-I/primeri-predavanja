@@ -32,6 +32,10 @@ public class DobijanjeInformacijaOKlasi
 		System.out.println( c5 );
 		System.out.println("---");		
 
+		Miki[] mikiji = {Miki.A, Miki.B, Miki.A};
+		Class<?> c6 = mikiji.getClass();
+		System.out.println( c6 );
+		System.out.println("---");
 	}
 	
 }

@@ -37,16 +37,17 @@ public final class DanUNedelji {
 	public String toString() {
 		return naziv;
 	}
+
 	public static DanUNedelji[] values() {
-		List<DanUNedelji> result = new ArrayList<DanUNedelji>();
+		List<DanUNedelji> result = new ArrayList<>();
 		try{
 			Class<?> cl = DanUNedelji.class;
 			Field[] polja = cl.getDeclaredFields();
 			for(Field polje: polja) {
 				Class<?> poljeTip = polje.getType();
-				String poljeIme = polje.getName();
 				int poljeModifikatori = polje.getModifiers();
-				if (Modifier.isStatic(poljeModifikatori)  && poljeTip == DanUNedelji.class)
+				if (Modifier.isStatic(poljeModifikatori) && Modifier.isFinal(poljeModifikatori)
+						&& Modifier.isPublic(poljeModifikatori)  && poljeTip == DanUNedelji.class)
 					result.add( (DanUNedelji)polje.get(null) );
 			}
 		}

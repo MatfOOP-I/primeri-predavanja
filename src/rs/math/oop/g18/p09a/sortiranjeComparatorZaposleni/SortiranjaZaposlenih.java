@@ -35,8 +35,8 @@ public class SortiranjaZaposlenih {
         Arrays.sort(osoblje, PO_PLATI.thenComparing(PO_IMENU));
         for (Zaposleni e : osoblje)
             System.out.println("ime=" + e.getIme() + ",plata=" + e.getPlata());
-        System.out.println("-Po plati, pa po imenu (obrnuto)-");
-        Arrays.sort(osoblje, PO_PLATI.thenComparing(PO_IMENU.reversed()));
+        System.out.println("-Po plati, pa po imenu-");
+        Arrays.sort(osoblje, PO_PLATI.reversed().thenComparing(PO_IMENU));
         for (Zaposleni e : osoblje)
             System.out.println("ime=" + e.getIme() + ",plata=" + e.getPlata());
 

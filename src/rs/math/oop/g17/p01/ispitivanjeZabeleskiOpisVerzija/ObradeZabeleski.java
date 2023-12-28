@@ -3,13 +3,13 @@ package rs.math.oop.g17.p01.ispitivanjeZabeleskiOpisVerzija;
 import java.lang.reflect.Method;
 
 //Applying annotation to the class
-@Description( author = "Mitar", date = "1.4.2016" )
-@Version( minorVersion = 6 )
+@Opis( autor = "Mitar", datum = "1.4.2016" )
+@Verzija( minor = 6 )
 public class ObradeZabeleski
 {
 	// Applying annotation to the method
-	@Description( date = "aprli li li li" )
-	@Version( majorVersion = 112, minorVersion = -7 )
+	@Opis( datum = "15.4.2023" )
+	@Verzija( major = 12, minor = 7 )
 	public static void testMethod()
 	{
 		System.out.println( "Welcome to Java" );
@@ -30,21 +30,21 @@ public class ObradeZabeleski
 		{
 			Class<?> c = test.getClass();
 			System.out.println( "Name of the class: " + c.getName() );
-			Description annotDesCl = c.getAnnotation( Description.class );
-			System.out.println( "Author of the class: " + annotDesCl.author() );
-			System.out.println( "Date of Writing the class: " + annotDesCl.date() );
-			Version anotVerCl = c.getAnnotation( Version.class );
-			System.out.println( "Version of the class: " + anotVerCl.majorVersion()
-					+ "." + anotVerCl.minorVersion() );
+			Opis annotDesCl = c.getAnnotation( Opis.class );
+			System.out.println( "Author of the class: " + annotDesCl.autor() );
+			System.out.println( "Date of Writing the class: " + annotDesCl.datum() );
+			Verzija anotVerCl = c.getAnnotation( Verzija.class );
+			System.out.println( "Version of the class: " + anotVerCl.major()
+					+ "." + anotVerCl.minor() );
 			
 			Method m = c.getMethod( "testMethod" );
 			System.out.println( "Name of the method: " + m.getName() );
-			Description anotDescMet = m.getAnnotation( Description.class );
-			System.out.println( "Author of the method: " + anotDescMet.author() );
-			System.out.println( "Date of Writing the method: " + anotDescMet.date() );
-			Version anotVerMet = m.getAnnotation( Version.class );
-			System.out.println( "Version of the method: " + anotVerMet.majorVersion()
-					+ "." + anotVerMet.minorVersion() );
+			Opis anotDescMet = m.getAnnotation( Opis.class );
+			System.out.println( "Author of the method: " + anotDescMet.autor() );
+			System.out.println( "Date of Writing the method: " + anotDescMet.datum() );
+			Verzija anotVerMet = m.getAnnotation( Verzija.class );
+			System.out.println( "Version of the method: " + anotVerMet.major()
+					+ "." + anotVerMet.minor() );
 		}
 		catch (NoSuchMethodException ex)
 		{

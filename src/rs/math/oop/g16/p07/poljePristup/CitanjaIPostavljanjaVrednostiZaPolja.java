@@ -8,18 +8,17 @@ public class CitanjaIPostavljanjaVrednostiZaPolja
 	{
 		Zaposleni prvi = new Zaposleni( "Miki Maus", 15 );
 		Zaposleni drugi = new Zaposleni( "Paja Patak", 16 );
-		
+		System.out.println( prvi + ",\r\n" + drugi );
+
 		Class<?> klasa = prvi.getClass();
 		Field prvoDeklarisanoPolje = klasa.getDeclaredFields()[0];
 		System.out.println( prvoDeklarisanoPolje.getType() );
 		prvoDeklarisanoPolje.setAccessible( true );
 		try
 		{
-			System.out.println( prvi + ",\r\n" + drugi );
 			System.out.println( prvoDeklarisanoPolje.get( prvi ) );
 			System.out.println( prvoDeklarisanoPolje.get( drugi ) );
 			prvoDeklarisanoPolje.set( prvi, "Mini Maus" );
-			System.out.println( prvi + ",\r\n" + drugi );
 			prvoDeklarisanoPolje.set(drugi, "Pata Patak");
 			System.out.println(prvi + ",\r\n" + drugi);
 		}

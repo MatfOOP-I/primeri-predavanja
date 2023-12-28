@@ -26,11 +26,13 @@ public class LambdaTest01 {
                 System.out.println(sumaGodina);
 
                 System.out.println(System.lineSeparator() + "5.---");
-                long sumaGodina2 = Person.LIKOVI_CRTANI.stream().filter(p -> {
+                long sumaGodina2 = Person.LIKOVI_CRTANI.stream()
+                        .filter(p -> {
                         return p.gender == Person.Sex.MALE && p.emailAddress.indexOf("wb") >= 0;
-                }).map(p -> p.getAge()).reduce(0L, (x, y) -> {
-                        return x + y;
-                });
+                        })
+                        .map(p -> p.getAge())
+                        .reduce(0L,
+                                (x, y) -> {return x + y;});
                 System.out.println(sumaGodina2);
 
                 System.out.println(System.lineSeparator() + "6.---");

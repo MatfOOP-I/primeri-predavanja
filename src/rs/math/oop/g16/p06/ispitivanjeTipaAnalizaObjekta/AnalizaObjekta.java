@@ -6,9 +6,9 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
 class AnalizaObjekta {
-    private static PovezanaLista<Object> obuhvaceni = new PovezanaLista<>();
+    private PovezanaLista<Object> obuhvaceni = new PovezanaLista<>();
 
-    public static String prikaz(Object obj) {
+    public String prikaz(Object obj) {
         if (obj == null)
             return "null";
         if (obuhvaceni.sadrzi(obj))
@@ -18,7 +18,7 @@ class AnalizaObjekta {
         if (cl.isPrimitive())
             return obj.toString();
         if (cl == String.class)
-            return (String) obj;
+            return "\"" + (String) obj + "\"";
         if (cl.isArray()) {
             StringBuilder r = new StringBuilder();
             r.append(cl.getComponentType() + "[]{");

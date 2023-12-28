@@ -1,4 +1,4 @@
-package rs.math.oop.g18.p01.tokFilterForEachString;
+package rs.math.oop.g18.p10a.tokFilterForEachString;
 
 public class IterateString
 {

@@ -1,6 +1,6 @@
 package rs.math.oop.g18.p03.pretragaPrikazCustomInterfejsOsoba;
 
-public class PretrazivanjaOsoba {
+public class PretrazivanjaOsoba2 {
 
     public static <T>  void filtirajPrikazi(Iterable<T> prolazna, KriterijumPretrage<T> kriterijum) {
         for (T elem : prolazna) {
@@ -14,24 +14,11 @@ public class PretrazivanjaOsoba {
         for (Osoba o : Osoba.LIKOVI_CRTANI)
             o.prikazi();
         System.out.println("---");
-        filtirajPrikazi(Osoba.LIKOVI_CRTANI, new KriterijumPretrage<Osoba>() {
-            public boolean proveri(Osoba o) {
-                return o.getBrojGodina() >= 50;
-            }
-        });
+        filtirajPrikazi(Osoba.LIKOVI_CRTANI, o -> o.getBrojGodina() >= 50);
         System.out.println("---");
-        filtirajPrikazi(Osoba.LIKOVI_CRTANI, new KriterijumPretrage<Osoba>() {
-            public boolean proveri(Osoba o) {
-                return o.getBrojGodina() >= 80;
-            }
-        });
+        filtirajPrikazi(Osoba.LIKOVI_CRTANI, lik -> lik.getBrojGodina() >= 80);
         System.out.println("---");
-        filtirajPrikazi(Osoba.LIKOVI_CRTANI, new KriterijumPretrage<Osoba>() {
-            public boolean proveri(Osoba o) {
-
-                return o.getBrojGodina() >= 80 && o.getBrojGodina() <= 85;
-            }
-        });
+        filtirajPrikazi(Osoba.LIKOVI_CRTANI, o ->o.getBrojGodina() >= 80 && o.getBrojGodina() <= 85);
         System.out.println("---");
         filtirajPrikazi(Osoba.LIKOVI_CRTANI, new KriterijumPretrage<Osoba>() {
 

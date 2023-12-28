@@ -7,10 +7,11 @@ import java.lang.annotation.Target;
 
 //Specifying runtime retention policy
 @Retention( RetentionPolicy.RUNTIME )
-//Specifying target
-@Target( {ElementType.METHOD, ElementType.TYPE } )
-@interface Version
+// Specifying target
+@Target( { ElementType.METHOD, ElementType.TYPE } )
+@interface Opis
 {
-	int majorVersion() default 10; 	
-	int minorVersion(); 
+	String autor() default "Vlado";
+	
+	String datum();
 }

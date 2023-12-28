@@ -2,7 +2,7 @@ package rs.math.oop.g18.p03a.pretragaPrikazPredicateOsoba;
 
 import java.util.function.Predicate;
 
-public class PretrazivanjaOsoba {
+public class PretrazivanjaOsoba2 {
 
     public static <T>  void filtrirajPrikazi(Iterable<T> prolazna, Predicate<T> kriterijum) {
         for (T elem : prolazna) {
@@ -16,11 +16,7 @@ public class PretrazivanjaOsoba {
         for (Osoba o : Osoba.LIKOVI_CRTANI)
             o.prikazi();
         System.out.println("---");
-        filtrirajPrikazi(Osoba.LIKOVI_CRTANI, new Predicate<Osoba>() {
-            public boolean test(Osoba o) {
-                return o.getBrojGodina() >= 50;
-            }
-        });
+        filtrirajPrikazi(Osoba.LIKOVI_CRTANI, o -> o.getBrojGodina() >= 50);
         System.out.println("---");
         filtrirajPrikazi(Osoba.LIKOVI_CRTANI, new Predicate<Osoba>() {
             public boolean test(Osoba o) {

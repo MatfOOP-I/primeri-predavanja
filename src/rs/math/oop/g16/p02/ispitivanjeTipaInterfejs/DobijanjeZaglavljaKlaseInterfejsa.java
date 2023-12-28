@@ -1,5 +1,7 @@
 package rs.math.oop.g16.p02.ispitivanjeTipaInterfejs;
 
+import java.util.Scanner;
+
 public class DobijanjeZaglavljaKlaseInterfejsa {
 
    public static void zaglavlje(String imeKlase) throws ClassNotFoundException {
@@ -22,13 +24,17 @@ public class DobijanjeZaglavljaKlaseInterfejsa {
    }
 
    public static void main(String[] args) {
-      try
-      {
-         String punoImeKlase = "java.lang.String";
-         if(args.length>0){
-            punoImeKlase = args[0];
-         }
-         zaglavlje(punoImeKlase);
+      String ime;
+      if (args.length > 0)
+         ime = args[0];
+      else {
+         Scanner in = new Scanner(System.in);
+         System.out.println("Enter class or interface ime (e.g. java.lang.String): ");
+         ime = in.next();
+         in.close();
+      }
+      try{
+         zaglavlje(ime);
       }
       catch (ClassNotFoundException e)
       {

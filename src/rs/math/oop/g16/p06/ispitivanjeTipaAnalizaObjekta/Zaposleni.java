@@ -1,10 +1,13 @@
 package rs.math.oop.g16.p06.ispitivanjeTipaAnalizaObjekta;
 
+import java.time.LocalDate;
+import java.util.Date;
+
 public class Zaposleni
 {
 	private String ime;
 	private double plata;
-	
+
 	public Zaposleni( String n, double s )
 	{
 		ime = n;

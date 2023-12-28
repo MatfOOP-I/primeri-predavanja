@@ -7,6 +7,7 @@ public class PickDifferentNames
 {
 	public static Predicate<String> checkIfStartsWith( final String letter )
 	{
+
 		return ime -> ime.startsWith( letter );
 	}
 	

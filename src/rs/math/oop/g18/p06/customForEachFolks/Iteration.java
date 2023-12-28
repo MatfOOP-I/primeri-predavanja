@@ -32,7 +32,7 @@ public class Iteration
 		Folks.friends.forEach( (final String ime ) -> System.out.println( ime ) );
 		System.out.println( "//" + "END:INTERNAL_OUTPUT" );
 		
-		Folks.friends.forEach( (ime ) -> System.out.println( ime ) );
+		Folks.friends.forEach( (ime) -> System.out.println( ime ) );
 		
 		Folks.friends.forEach(ime -> System.out.println( ime ) );
 		

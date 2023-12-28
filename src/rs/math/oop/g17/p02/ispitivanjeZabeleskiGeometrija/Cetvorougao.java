@@ -2,9 +2,10 @@ package rs.math.oop.g17.p02.ispitivanjeZabeleskiGeometrija;
 
 import java.awt.Graphics;
 
-@PreambulaKlase(author = "Vladimir Filipovic", date = "3/17/2002", currentRevision = 1, lastModified = "4/12/2014", lastModifiedBy = "Marija Milanovic",
+@PreambulaKlase(author = "Vladimir Filipovic", date = "3/17/2002", currentRevision = 1,
+		lastModified = "4/12/2014", lastModifiedBy = "Marija Milanovic",
 		// Note array notation
-		reviewers = { "Marko Markovic", "Janko Jankovic", "Janko Jankovic" })
+		reviewers = { "Marko Markovic", "Janko Jankovic", "Petar Petrovic" })
 public class Cetvorougao extends GeometrijskiObjekat implements Prikaz, Mera {
 	private Tacka a;
 	private Tacka b;

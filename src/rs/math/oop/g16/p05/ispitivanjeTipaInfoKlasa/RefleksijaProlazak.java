@@ -16,9 +16,9 @@ public class RefleksijaProlazak {
     public static void main(String[] args)
     {
         prolazak( "Miki Maus");
-        System.out.println("---");
-        prolazak(new Scanner(System.in));
-        System.out.println("---");
+//        System.out.println("---");
+//        prolazak(new Scanner(System.in));
+//        System.out.println("---");
     }
 
 }

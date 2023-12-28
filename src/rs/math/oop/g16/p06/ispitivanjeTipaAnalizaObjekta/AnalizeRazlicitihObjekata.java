@@ -6,11 +6,11 @@ package rs.math.oop.g16.p06.ispitivanjeTipaAnalizaObjekta;
 // --add-opens java.base/java.lang=ALL-UNNAMED
 public class AnalizeRazlicitihObjekata {
    public static void main(String[] args) {
-      int x = 5;
+      Integer x = 5;
       System.out.println(new AnalizaObjekta().prikaz(x));
       System.out.println("---");
 
-      double x1 = 5.6;
+      Double x1 = 5.6;
       System.out.println(new AnalizaObjekta().prikaz(x1));
       System.out.println("---");
 

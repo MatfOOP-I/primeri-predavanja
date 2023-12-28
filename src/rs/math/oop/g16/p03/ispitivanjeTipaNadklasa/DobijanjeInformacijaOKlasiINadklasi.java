@@ -35,6 +35,7 @@ class Klasa2 extends Klasa1 implements Cloneable
 		return "Miki";
 	}
 
+	@Override
 	public Klasa2 clone() throws CloneNotSupportedException
 	{
 		return (Klasa2) super.clone();
@@ -52,7 +53,7 @@ public class DobijanjeInformacijaOKlasiINadklasi
 		//k = Klasa1.class;
 		try
 		{
-			String imeKlase = "rs.math.oop.g16.p01.ispitivanjeTipaKlasa.Klasa1";
+			String imeKlase = "rs.math.oop.g16.p03.ispitivanjeTipaNadklasa.Klasa2";
 			if(args.length>0){
 				imeKlase = args[0];
 			}
@@ -97,7 +98,7 @@ public class DobijanjeInformacijaOKlasiINadklasi
 		System.out.println();
 
 		Method[] metodi0 =  k0.getDeclaredMethods();
-		System.out.print("Декларисани меотоди надкласе: ");
+		System.out.print("Декларисани методи надкласе: ");
 		for( Method m: metodi0)
 			System.out.print( m.getName() + " " );
 		System.out.println();
