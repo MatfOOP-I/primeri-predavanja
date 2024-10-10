@@ -1,1 +1,1 @@
-# primeri-predavanja-2022-23
+# primeri-predavanja-2024-25
