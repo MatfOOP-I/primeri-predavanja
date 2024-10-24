@@ -1,4 +1,6 @@
-package rs.math.oop.g02.p01a.klaseObjekti;
+package rs.math.oop.g02.p01b.klaseKoriscenje;
+
+import rs.math.oop.g02.p01a.klaseDefinicija.Student;
 
 class Studenti {
     // улазна тачка програма

@@ -1,6 +1,6 @@
 package rs.math.oop.g08.p03.kreiranjeObjekataObject;
 
-import rs.math.oop.g02.p01a.klaseObjekti.Student;
+import rs.math.oop.g02.p01.klaseObjekti.Student;
 
 public class JednakostObjekata {
 
