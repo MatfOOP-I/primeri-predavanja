@@ -12,9 +12,8 @@ class Poslediplomac extends Student {
 		return brojIspita;
 	}
 
-	@Override
 	void stampajPodatke() {
-		System.out.println("Име последипломца је: " + ime
+		System.out.println("Име последипломца је: " + imePrezime
 				+ ", број индекса је: " + brojIndeksa
 				+ "/ На буџету: " + naBudzetu
 				+ "/ Запослен: " + zaposlen + ".");

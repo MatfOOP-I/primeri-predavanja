@@ -3,9 +3,13 @@ package rs.math.oop.g03.p04.logickaParadigma;
 class LogickoNzd {
     // одређивање НЗД за два броја
     static int nzd2(int prvi, int drugi) {
-        if (drugi == 0)
+        if (prvi % drugi == 0)
+            return drugi;
+        if (drugi % prvi == 0)
             return prvi;
-        return nzd2(drugi, prvi % drugi);
+        if (prvi > drugi)
+            return nzd2(drugi, prvi % drugi);
+        return  nzd2(prvi, drugi % prvi);
     }
     // одређивање НЗД за три броја
     static int nzd3(int prvi, int drugi, int treci) {

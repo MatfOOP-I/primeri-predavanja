@@ -3,13 +3,13 @@ package rs.math.oop.g06.p02.merenjeVremena;
 public class IzmeriVreme {
     public static long sumiraj(int n) {
    	 long suma = 0;
-   	 for (int i = 0; i < n; i++)
+   	 for (int i = 1; i <= n; i++)
    		 suma += i;
    	 return suma;
     }
 
     public static void main(String args[]) {
-   	 for (int n = 10_000_000; n <= 1_000_000_000; n *= 10) {
+   	 for (int n = 1_000_000; n <= 1_000_000_000; n *= 10) {
    		 long pocetakNs = System.nanoTime();
    		 long suma = sumiraj(n);
 		 long krajNs = System.nanoTime();

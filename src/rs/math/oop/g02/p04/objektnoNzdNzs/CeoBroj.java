@@ -2,7 +2,7 @@ package rs.math.oop.g02.p04.objektnoNzdNzs;
 
 class CeoBroj {
     // вредноcт датог целог броја
-    int vrednost;
+    private int vrednost;
 
     // конcтруктор
     CeoBroj(int vrednostBroja) {
@@ -26,6 +26,7 @@ class CeoBroj {
         }
         return new CeoBroj(prvaVrednost);
     }
+
     // одређивање НЗС датог броја и другог целог броја
     CeoBroj NZS(CeoBroj drugi) {
         CeoBroj nzd = this.NZD(drugi);

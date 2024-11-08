@@ -6,10 +6,10 @@ public class Sgn2 {
 		int sgn;
 		if (x < 0)
 			sgn = -1;
-		else if (x == 0)
-			sgn = 0;
-		else
+		else if (x > 0)
 			sgn = 1;
+		else
+			sgn = 0;
 		System.out.println("x=" + x + "  sgnx=" + sgn);
 	}
 }

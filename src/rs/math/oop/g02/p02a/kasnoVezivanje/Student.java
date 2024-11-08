@@ -5,7 +5,7 @@ class Student extends Covek {
     boolean naBudzetu;
 
     void stampajPodatke() {
-        System.out.println("Име студента је: " + ime
+        System.out.println("Име студента је: " + imePrezime
                 + ", број индекса је: " + brojIndeksa
                 + "/ На буџету: " + naBudzetu + ".");
     }

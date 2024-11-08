@@ -3,14 +3,15 @@ package rs.math.oop.g05.p05.daniUMesecu;
 public class BrojDanaUMesecu {
 
 	public static void main(String[] args) {
-		int g, m;
 		java.util.Scanner sc = new java.util.Scanner(System.in);
 		System.out.println("Унеcи годину");
-		g = sc.nextInt();
-		if (g < 1)
+		int g = sc.nextInt();
+		if (g < 1583) {
 			System.out.println("Неисправан унос " + g);
+			System.exit(-2);
+		}
 		System.out.println("Унеcи редни број месеца [1-12]");
-		m = sc.nextInt();
+		int m = sc.nextInt();
 		switch (m) {
 		case 2:
 			if (g % 400 == 0 || (g % 4 == 0 && g % 100 != 0))
