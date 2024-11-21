@@ -8,7 +8,7 @@ public class PonoviNisku {
 		String sn = "";
 		long pocetak = System.nanoTime();
 		for(int i=0; i<n; i++)
-			sn+=s;
+			sn += s;
 		long kraj = System.nanoTime();
 		System.out.println(sn);
 		System.out.printf("%f", (kraj-pocetak)/1_000_000.00);

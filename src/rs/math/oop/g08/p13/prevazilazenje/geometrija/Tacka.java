@@ -1,6 +1,4 @@
-package rs.math.oop.g08.p13.prevazilazenje;
-
-import java.util.Objects;
+package rs.math.oop.g08.p13.prevazilazenje.geometrija;
 
 public class Tacka {
 	int x;
@@ -13,6 +11,8 @@ public class Tacka {
 
 	@Override
 	public boolean equals(Object obj) {
+		if(obj == null)
+			return false;
 		if (!(obj instanceof Tacka))
 			return false;
 		Tacka tObj = (Tacka) obj;
@@ -26,6 +26,6 @@ public class Tacka {
 		int h = 31 * x + y;
 		return h;
 //		алтернативно постоји и услужни метод hash() у класи Objects
-//		return Objects.hash(x, y);
+//		return java.util.Objects.hash(x, y);
 	}
 }

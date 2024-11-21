@@ -34,7 +34,7 @@ public class RadSaMatricama {
         if (a.length != b.length)
             return null;
         if (a[0].length != b[0].length)
-                return null;
+            return null;
         double[][] c = new double[a.length][a[0].length];
         for (int i = 0; i < c.length; i++)
             for (int j = 0; j < c[0].length; j++)
@@ -84,13 +84,23 @@ public class RadSaMatricama {
     static boolean jeKvadratna(double[][] a) {
         if (!jeMatrica(a))
             return false;
-        for (int i = 0; i < a.length; i++)
-            if (a.length != a[i].length)
-                return false;
-        return true;
+        return a.length == a[0].length;
     }
 
     static double[][] iskljuci(double[][] a, int vrsta, int kolona) {
+        int n = a.length;
+        int m = a[0].length;
+        double[][] mat = new double[n - 1][m - 1];
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < m; j++) {
+                if(i == vrsta || j == kolona)
+                    continue;
+                mat[i-((i<vrsta)?0:1)][j-((j<kolona)?0:1)] = a[i][j];
+            }
+        return mat;
+    }
+
+    static double[][] iskljuci1(double[][] a, int vrsta, int kolona) {
         int n = a.length;
         int m = a[0].length;
         double[][] mat = new double[n - 1][m - 1];
@@ -169,6 +179,8 @@ public class RadSaMatricama {
         e[1][0] = 0.75;
         e[1][1] = 2;
         prikazi2(e);
+        System.out.println("C*A sa iskljucenom drugom vrstom i drugom kolonom је: ");
+        prikazi(iskljuci(e,0,1));
         if (jeKvadratna(e))
             System.out.println("Детерминанта матрице C*A је: " + determinanta(e));
         else

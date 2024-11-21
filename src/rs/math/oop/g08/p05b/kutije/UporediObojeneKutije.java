@@ -17,7 +17,7 @@ public class UporediObojeneKutije {
 
         Object o = new ObojenaKutija();
         ispitajInformisi(o);
-        // int ii = o.sirina;
+        //int ii = o.sirina;
         ObojenaKutija ok = (ObojenaKutija) o; // ово је у реду
         ispitajInformisi(ok);
         int i = ok.sirina;
@@ -27,7 +27,7 @@ public class UporediObojeneKutije {
         ispitajInformisi(o2);
         Kutija k2 = (Kutija) o2;
         ispitajInformisi(k2);
-        ObojenaKutija ok2 = (ObojenaKutija) o2; // грешка приликом извршавања
+        //ObojenaKutija ok2 = (ObojenaKutija) o2; // грешка приликом извршавања
 
         //Kutija k3 = (Kutija) "miki maus";
         ispitajInformisi("miki maus");

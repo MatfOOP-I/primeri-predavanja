@@ -36,8 +36,8 @@ public class Duz {
 //        t.x = -7;
 //        System.out.println(t);
 //        System.out.println(d1);
-//        d1.a.y = -10;
-//        System.out.println(t);
-//        System.out.println(d1);
+        d1.a.y = -10;
+        System.out.println(t);
+        System.out.println(d1);
     }
 }

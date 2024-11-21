@@ -29,7 +29,7 @@ public class BinarnaPretraga {
 			System.out.printf("Тражени број %d се не налази у низу.\n", traziSe);
 			System.out.printf("Да би се сачувала уређеност низа, " 
 			+ "треба га убацити на (нула базирани) индекс %d.",
-					-(pozicija + 1));
+					-pozicija-1);
 		}
 	}
 

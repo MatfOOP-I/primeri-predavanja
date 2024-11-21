@@ -28,7 +28,7 @@ public class PrikaziMesec {
             danUNedeljiRbr = dan.getDayOfWeek().getValue();
             if (danUNedeljiRbr == 1) // идемо у наредни ред
                 System.out.println();
-        //} while (dan.getMonth().getValue() == mesec);
-        } while (dan.getDayOfMonth() != 1);
+        } while (dan.getMonth().getValue() == mesec);
+        //} while (dan.getDayOfMonth() != 1);
     }
 }

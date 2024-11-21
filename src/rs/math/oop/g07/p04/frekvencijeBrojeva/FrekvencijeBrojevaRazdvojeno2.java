@@ -25,8 +25,8 @@ public class FrekvencijeBrojevaRazdvojeno2 {
 	}
 
 	public static void main(String[] args) {
-		int[] rezultati = { 7, 3, 4, 9, 7, 6, 12, 10, 5, 6, 4, 11, 3, 3, 2, 5, 7, 9, 1 };
-		int granica = 13;
+		int[] rezultati = { 7, 3, 4, 9, 7, 6, 2, 10, 5, 6, 4, 1, 3, 3, 2, 5, 7, 9, 1 };
+		int granica = 10;
 		int[] brojPojava = izracunajFrekfencije(rezultati, granica);
 		System.out.println();
 		prikaziFrekfencijeNumericki(brojPojava);

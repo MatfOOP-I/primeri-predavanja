@@ -13,26 +13,26 @@ public class PrebrojKaraktere {
 		// запис сепаратора је у форми регуларног израза
 		String[] recenice = tekst.split("\\.");
 		// спољна петља је по реченицама
-		char[][][] karakteri = new char[recenice.length][][];
+		char[][][] znaciRecRecenica = new char[recenice.length][][];
 		for (int i = 0; i < recenice.length; i++) {
 			// са trim() уклањамо евентуални празан простор на крајевима реченица
 			String[] reci = recenice[i].trim().split(" ");
-			karakteri[i] = new char[reci.length][];
+			znaciRecRecenica[i] = new char[reci.length][];
 			for (int j = 0; j < reci.length; j++) {
 				// уклањамо зарезе који су потенцијално остали на крају речи
 				String rec = reci[j].replace(",", "");
-				karakteri[i][j] = new char[rec.length()];
+				znaciRecRecenica[i][j] = new char[rec.length()];
 				for (int k = 0; k < rec.length(); k++)
-					karakteri[i][j][k] = rec.charAt(k);
+					znaciRecRecenica[i][j][k] = rec.charAt(k);
 			}
 		}
 		// исписујемо све карактере (једино је изгубљена информација о зарезима)
-		for (int i = 0; i < karakteri.length; i++) {
-			for (int j = 0; j < karakteri[i].length; j++) {
-				for (int k = 0; k < karakteri[i][j].length; k++)
+		for (int i = 0; i < znaciRecRecenica.length; i++) {
+			for (int j = 0; j < znaciRecRecenica[i].length; j++) {
+				for (int k = 0; k < znaciRecRecenica[i][j].length; k++)
 					System.out.println(
 							String.format("(%d,%d,%d)=%c", 
-									i, j, k, karakteri[i][j][k]));
+									i, j, k, znaciRecRecenica[i][j][k]));
 			}
 		}
 	}

@@ -21,8 +21,16 @@ public class SortirajPaTraziRec {
         System.out.println("Сортирани низ речи:"
                 + System.lineSeparator() + "--------------------");
         for (String rec : reci)
-            System.out.println(rec);
-        System.out.println("--------------------");
+            System.out.printf("|%s|",rec);
+        System.out.println("\n--------------------");
+
+        Integer[] duzine = new Integer[reci.length];
+        for(int i=0; i<duzine.length; i++)
+            duzine[i] = reci[i].length();
+        java.util.Arrays.sort(duzine);
+        for (int d : duzine)
+            System.out.printf("%d ",d);
+        System.out.println();
 
         // сада петља са уносом и претрагом унете речи
         java.util.Scanner skener = new java.util.Scanner(System.in);
@@ -38,7 +46,7 @@ public class SortirajPaTraziRec {
             if (pozicija >= 0)
                 System.out.println("Пронађена реч на позицији " + pozicija);
             else
-                System.out.println("Није пронађена реч");
+                System.out.println("Није пронађена реч, функција вратила " + pozicija);
         }
         skener.close();
     }

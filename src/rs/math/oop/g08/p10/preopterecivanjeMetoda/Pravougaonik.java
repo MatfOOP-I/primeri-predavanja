@@ -40,7 +40,7 @@ public class Pravougaonik {
 
 	public static void main(String[] args) {
 		Pravougaonik p1 = new Pravougaonik();
-		p1.podesi(10,  20,  50, 30);
+		p1.podesi(10,  20,  51, 31);
 		p1.prikazi();
 		Pravougaonik p2 = new Pravougaonik();
 		Tacka t = new Tacka();
@@ -48,7 +48,10 @@ public class Pravougaonik {
 		t.y = 30;
 		p2.podesi(t, 40, 10);
 		p2.prikazi();
+		t.x = 100;
+		p2.prikazi();
 //		Pravougaonik p3 = new Pravougaonik();
 //		p3.podesi(10, 100, 10, 20);
+
 	}
 }

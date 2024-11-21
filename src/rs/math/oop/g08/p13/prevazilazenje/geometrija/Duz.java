@@ -1,4 +1,4 @@
-package rs.math.oop.g08.p13.prevazilazenje;
+package rs.math.oop.g08.p13.prevazilazenje.geometrija;
 
 import java.util.Objects;
 
