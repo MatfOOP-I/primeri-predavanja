@@ -11,7 +11,7 @@ public class TeorijskiNaucnik extends Naucnik {
     @Override
     public void definisiHipotezu() {
 
-        System.out.println( "Научник '"+ uzmiIme() + "' дефинише хипотезу у домену '"
+        System.out.println( "Научник    '"+ uzmiIme() + "' дефинише хипотезу у домену '"
                 + teorijskiDomen + "'");
     }
 }
