@@ -29,7 +29,6 @@ public class Trougao extends GeometrijskiObjekat {
    }
 
    public Trougao(Tacka a, Tacka b, Tacka c) {
-
       this("", a, b, c);
    }
 
@@ -83,19 +82,16 @@ public class Trougao extends GeometrijskiObjekat {
 
    @Override
    public boolean jeKonveksan() {
-
       return true;
    }
 
    @Override
    public boolean jeOgranicen() {
-
       return true;
    }
 
    @Override
    public double obim() {
-
       return a.rastojanje(b) + b.rastojanje(c) + c.rastojanje(a);
    }
 

@@ -2,6 +2,7 @@
 package rs.math.oop.g08.p24.jednostukoPovezanaLista;
 
 import java.util.Scanner;
+import static java.lang.System.out;
 
 public class CitajPrikaziNeparPar {
 
@@ -15,24 +16,24 @@ public class CitajPrikaziNeparPar {
 	}
 
 	private static void prikaziNeparniParni(PovezanaListaNiski lista) {
-		System.out.printf("%s\t", lista.uzmiPrvi());
+		out.printf("%s\t", lista.uzmiPrvi());
 		while (!lista.stigaoDoKraja()) {
 			lista.uzmiSledeci();
 			if (lista.stigaoDoKraja())
 				break;
-			System.out.printf("%s\t", lista.uzmiSledeci());
+			out.printf("%s\t", lista.uzmiSledeci());
 		}
-		System.out.println();
+		out.println();
 		lista.uzmiPrvi();
 		if (!lista.stigaoDoKraja())
-			System.out.printf("%s\t", lista.uzmiSledeci());
+			out.printf("%s\t", lista.uzmiSledeci());
 		while (!lista.stigaoDoKraja()) {
 			lista.uzmiSledeci();
 			if (lista.stigaoDoKraja())
 				break;
-			System.out.printf("%s\t", lista.uzmiSledeci());
+			out.printf("%s\t", lista.uzmiSledeci());
 		}
-		System.out.println();
+		out.println();
 	}
 
 	public static void main(String[] args) {
@@ -40,6 +41,7 @@ public class CitajPrikaziNeparPar {
 		PovezanaListaNiski lista = new PovezanaListaNiski();
 		System.out.println("Унеси текст (или реч КРАЈ ћирилицом за крај уноса):");
 		napuni(sc, lista);
+		System.out.println("Lista: " + lista);
 		sc.close();
 		System.out.println("Број речи: " + lista.brojCvorova());
 		prikaziNeparniParni(lista);

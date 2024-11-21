@@ -11,11 +11,11 @@ public class Crtez {
     
     public Crtez(Crtez crtez) {
         this(); // иницијализујемо празан цртеж најпре
-        for(Poligon p: crtez.poligoni)
-            if(p==null)
+        for(Poligon p: crtez.poligoni) {
+            if (p == null)
                 break;
-            else
-                dodajPoligon(p); // додајемо исте полигоне прављењем копија
+            dodajPoligon(p); // додајемо исте полигоне прављењем копија
+        }
     }
     
     void dodajPoligon(Poligon p) {
@@ -29,11 +29,11 @@ public class Crtez {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for(Poligon p:poligoni)
-            if(p==null)
+        for(Poligon p:poligoni) {
+            if (p == null)
                 break;
-            else
-                sb.append(p+System.lineSeparator());
+            sb.append(p + System.lineSeparator());
+        }
         return sb.toString();
     }
     

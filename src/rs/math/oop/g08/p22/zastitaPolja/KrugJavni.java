@@ -1,5 +1,8 @@
 package rs.math.oop.g08.p22.zastitaPolja;
 
+import static java.lang.Math.PI;
+import static java.lang.Math.pow;
+
 public class KrugJavni {
 
 	public double cx, cy, r, p, o;
@@ -8,8 +11,8 @@ public class KrugJavni {
 		this.cx = cx;
 		this.cy = cy;
 		this.r = r;
-		p = r*r*Math.PI;
-		o = 2*r*Math.PI;
+		p = pow(r,2)*PI;
+		o = 2*r*PI;
 	}
 	
 	@Override

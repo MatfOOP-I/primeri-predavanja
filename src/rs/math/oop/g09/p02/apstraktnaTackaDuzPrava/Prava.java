@@ -92,25 +92,21 @@ public class Prava extends GeometrijskiObjekat {
 
    @Override
    public boolean jeKonveksan() {
-
       return true;
    }
 
    @Override
    public boolean jeOgranicen() {
-
       return false;
    }
 
    @Override
    public double obim() {
-
       return Double.POSITIVE_INFINITY;
    }
 
    @Override
    public double povrsina() {
-
       return 0;
    }
 }

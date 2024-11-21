@@ -5,7 +5,6 @@ public class A {
 	protected int polje;
 	
 	protected A() {
-		
 	}
 	
 	protected void metod() {

@@ -29,8 +29,7 @@ public class SamorastuciNizNiski {
 			obezbediKapacitet(noviKapacitet);
 		}
 		elementi[indeks] = vrednost;
-		if (indeks + 1 > brojElemenata)
-			brojElemenata = indeks + 1;
+		brojElemenata = Math.max(brojElemenata, indeks + 1);
 	}
 
 	public String uzmiSa(int indeks) {

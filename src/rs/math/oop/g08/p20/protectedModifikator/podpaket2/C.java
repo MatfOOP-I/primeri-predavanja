@@ -5,7 +5,6 @@ import rs.math.oop.g08.p20.protectedModifikator.podpaket1.A;
 public class C extends A {
 
 	C (){
-
 		super();
 	}
 

@@ -14,5 +14,10 @@ public class PitanjaRazmisljanja {
         Razuman rz = n;
         rz.razmotriCinjenice();
         rz.definisiHipotezu();
+
+        TeorijskiNaucnik tn = new TeorijskiNaucnik("Петровић", "алгебра");
+        Razuman rz2 = tn;
+        rz2.razmotriCinjenice();
+        rz2.definisiHipotezu();
     }
 }

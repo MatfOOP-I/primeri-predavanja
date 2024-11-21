@@ -9,7 +9,7 @@ public class Pokreni {
         for(int i=0; i<=100; i++){
             snn.postaviNa(i, "br."+ i);
         }
-        snn.postaviNa(120, "Miki Maus");
+        snn.postaviNa(2, "Miki Maus");
         for(int i=snn.brojElemenata()-1; i>=0; i--)
             out.print(snn.uzmiSa(i)+ "|");
 

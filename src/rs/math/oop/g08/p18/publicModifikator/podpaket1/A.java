@@ -5,7 +5,6 @@ public class A {
 	public int polje;
 	
 	public A() {
-		
 	}
 	
 	public void metod() {

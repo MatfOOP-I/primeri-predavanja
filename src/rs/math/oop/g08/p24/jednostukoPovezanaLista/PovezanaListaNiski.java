@@ -104,4 +104,20 @@ public class PovezanaListaNiski {
 		}
 		return n;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder("[");
+		Cvor tek = pocetak;
+		if (tek == null) {
+			sb.append("]");
+			return sb.toString();
+		}
+		while (tek != null) {
+			sb.append( " " + tek.uzmiSadrzaj());
+			tek = tek.uzmiSledeci();
+		}
+		sb.append("]");
+		return sb.toString();
+	}
 }

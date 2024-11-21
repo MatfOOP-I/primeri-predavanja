@@ -78,25 +78,21 @@ public class Duz extends GeometrijskiObjekat {
 
    @Override
    public boolean jeKonveksan() {
-
       return true;
    }
 
    @Override
    public boolean jeOgranicen() {
-
       return true;
    }
 
    @Override
    public double obim() {
-
-      return a.rastojanje(b);
+      return duzina();
    }
 
    @Override
    public double povrsina() {
-
       return 0;
    }
 

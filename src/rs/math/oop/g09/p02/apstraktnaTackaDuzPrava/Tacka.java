@@ -85,25 +85,21 @@ public class Tacka extends GeometrijskiObjekat {
 
    @Override
    public boolean jeKonveksan() {
-
       return true;
    }
 
    @Override
    public boolean jeOgranicen() {
-
       return true;
    }
 
    @Override
    public double obim() {
-
       return 0;
    }
 
    @Override
    public double povrsina() {
-
       return 0;
    }
 

@@ -27,7 +27,7 @@ public class Cvor {
 
 	@Override
 	public String toString() {
-		return "Чвор: " + sadrzaj;
+		return "|" + sadrzaj + "| ";
 	}
 
 }

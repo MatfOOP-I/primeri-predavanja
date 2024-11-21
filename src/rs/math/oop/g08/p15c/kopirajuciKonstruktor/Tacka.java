@@ -8,6 +8,7 @@ public class Tacka {
         this.x = x;
         this.y = y;
     }
+
     // копирајући конструктор
     public Tacka(Tacka t) {
         this.x = t.x;

@@ -92,13 +92,11 @@ public class Cetvorougao extends GeometrijskiObjekat {
 
    @Override
    public boolean jeOgranicen() {
-
       return true;
    }
 
    @Override
    public double obim() {
-
       return a.rastojanje(b) + b.rastojanje(c) + c.rastojanje(d) + d.rastojanje(a);
    }
 

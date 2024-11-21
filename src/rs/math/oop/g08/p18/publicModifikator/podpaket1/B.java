@@ -12,5 +12,6 @@ public class B {
 		A a = new A();
 		a.polje = 20;
 		a.metod();
+		a.testiraj();
 	}
 }

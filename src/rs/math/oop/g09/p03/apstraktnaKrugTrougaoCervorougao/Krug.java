@@ -47,37 +47,31 @@ public class Krug extends GeometrijskiObjekat {
 
    @Override
    public int hashCode() {
-
       return Objects.hash(o, r);
    }
 
    @Override
    public String toString() {
-
       return uzmiOznaku() + ":[" + o + ";" + r + "]";
    }
 
    @Override
    public boolean jeKonveksan() {
-
       return true;
    }
 
    @Override
    public boolean jeOgranicen() {
-
       return true;
    }
 
    @Override
    public double obim() {
-
       return 2 * r * PI;
    }
 
    @Override
    public double povrsina() {
-
       return pow(r, 2) * PI;
    }
 

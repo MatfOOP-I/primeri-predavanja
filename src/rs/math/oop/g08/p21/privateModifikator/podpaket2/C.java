@@ -11,7 +11,7 @@ public class C {
 	}
 	
 	public static void main(String[] args) {
-		// A a = new A();
+		//A a = new A();
 		// a.polje = 20;
 		// a.metod();	
 	}
