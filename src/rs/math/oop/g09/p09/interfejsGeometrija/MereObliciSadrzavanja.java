@@ -22,7 +22,7 @@ public class MereObliciSadrzavanja {
       System.out.println("\nГеометријски објекти:");
       GeometrijskiObjekat[] svi = {a, b, c, d, e, ab, p, bcd, bcde, k1};
       for (GeometrijskiObjekat go : svi) {
-         System.out.printf("| %s", go);
+         System.out.printf(">>> %s", go);
          if (go instanceof Oblik) {
             Oblik obl = (Oblik) go;
             if (obl.jeKonveksan())

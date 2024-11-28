@@ -4,7 +4,7 @@ import java.util.Objects;
 
 import static java.lang.Math.sqrt;
 
-public class Trougao extends GeometrijskiObjekat implements MeraOblikSadrzavanje {
+public class Trougao extends GeometrijskiObjekat implements Mera, Oblik, Sadrzavanje {
    private Tacka a;
    private Tacka b;
    private Tacka c;

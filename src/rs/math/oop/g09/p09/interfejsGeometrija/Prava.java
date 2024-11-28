@@ -88,7 +88,7 @@ public class Prava extends GeometrijskiObjekat implements Oblik, Sadrzavanje {
 
    @Override
    public boolean sadrzi(Tacka t) {
-      return (uvrstiKoordinate(t) == 0);
+      return Double.compare(uvrstiKoordinate(t), 0)==0;
    }
 
 }

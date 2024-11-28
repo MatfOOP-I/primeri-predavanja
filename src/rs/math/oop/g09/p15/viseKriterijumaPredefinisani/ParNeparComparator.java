@@ -21,7 +21,7 @@ class ParNeparComparator implements Comparator {
             if (i2 % 2 == 0)
                 return 1;
             else
-                return i1 - i2;
+                return i2 - i1;
         }
     }
 

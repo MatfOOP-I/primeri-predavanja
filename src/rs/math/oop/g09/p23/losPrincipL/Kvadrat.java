@@ -7,7 +7,7 @@ public class Kvadrat extends Pravougaonik {
    }
 
    public Kvadrat() {
-      this(2);
+      this(3);
    }
 
    @Override

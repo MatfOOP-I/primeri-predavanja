@@ -19,7 +19,7 @@ public class VisekriterijumskoSortiranje
 
 	public static void main( String[] args )
 	{
-		Integer[] celiBrojevi = {-3, 24, -2, 1, 2, 0, 3, 4, -40};
+		Integer[] celiBrojevi = {-3, 24, -2, 1, 2, 0, 3, 4, -40, -7, -17, 23};
 		System.out.println("Пре сортирања:");
 		prikazi(celiBrojevi);
 		Arrays.sort(celiBrojevi);

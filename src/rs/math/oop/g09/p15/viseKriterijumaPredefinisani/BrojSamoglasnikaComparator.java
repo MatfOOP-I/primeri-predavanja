@@ -17,9 +17,14 @@ public class BrojSamoglasnikaComparator implements Comparator {
 			return 1;
 		if (!(o2 instanceof String))
 			return -1;
-		int razlika = brojSamoglasnika((String) o2) - brojSamoglasnika((String) o1);
+		String s1 = (String) o1;
+		String s2 = (String) o2;
+		int razlika = brojSamoglasnika(s2) - brojSamoglasnika(s1);
 		if (razlika != 0)
 			return razlika;
-		return ((String) o1).length() - ((String) o2).length();
+		razlika = s1.length() - s2.length();
+		if (razlika != 0)
+			return razlika;
+		return s1.compareTo(s2);
 	}
 }

@@ -26,6 +26,7 @@ public class UredjenjeTacaka {
       prikaziTacke(sve);
 
       Arrays.sort(sve, new TackaOznakaComparator());
+      //Arrays.sort(sve, (t1,t2) -> t2.uzmiOznaku().compareTo(t1.uzmiOznaku()) );
       System.out.println("Пoсле сортирања по ознаци тачке");
       prikaziTacke(sve);
 

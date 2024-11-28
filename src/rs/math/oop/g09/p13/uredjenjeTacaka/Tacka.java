@@ -4,7 +4,7 @@ import java.util.Objects;
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
-public class Tacka extends GeometrijskiObjekat implements Comparable{
+public class Tacka extends GeometrijskiObjekat implements Comparable {
 
    private double x;
    private double y;
@@ -83,6 +83,9 @@ public class Tacka extends GeometrijskiObjekat implements Comparable{
         double razlika = rastojanje(o) - t.rastojanje(o);
         if (razlika < 0) return -1;
         if (razlika > 0) return 1;
-        return (int)(y - t.y);
+        razlika = Math.abs(y) - Math.abs(t.y);
+        if (razlika < 0) return -1;
+        if (razlika > 0) return 1;
+        return (int)(Math.signum(y)- Math.signum(t.y));
    }
 }

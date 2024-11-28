@@ -77,7 +77,7 @@ public class Tacka extends GeometrijskiObjekat implements Comparable{
    @Override
    public int compareTo(Object obj) {
         if (!(obj instanceof Tacka))
-            return -1; // Тачка је увек и�?пред нечег што није тачка
+            return -1; // Тачка је увек испред нечег што није тачка
         Tacka t = (Tacka) obj;
         Tacka o = new Tacka(0, 0);
         double razlika = rastojanje(o) - t.rastojanje(o);
