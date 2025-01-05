@@ -22,7 +22,7 @@ public class ProveraBrojaMobilnog {
 			void standardizuj() {
 				// замењује се у складу са регуларним изразом
 				// свако појављивање "/", "-" или празан простор се брише
-				mobTekstStd = mobTekst.replaceAll("[/|\\-|\s+]", "");
+				mobTekstStd = mobTekst.replace("/", "").replace("-","").replace(" ", "");
 				if (mobTekstStd.length() >= duzinaPozivnog)
 					mobTekstStd = mobTekstStd.substring(0, duzinaPozivnog)
 					+ mobTekstStd.substring(duzinaPozivnog);

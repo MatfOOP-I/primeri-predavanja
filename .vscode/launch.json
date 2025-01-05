@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MikiMaus",
+            "request": "launch",
+            "mainClass": "MikiMaus",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6",
+             "vmArgs": "-Dfile.encoding=UTF-8"
+        },
+        {
+            "type": "java",
             "name": "Studenti",
             "request": "launch",
             "mainClass": "rs.math.oop.g02.p01b.klaseKoriscenje.Studenti",

@@ -26,7 +26,7 @@ public class RadSaDrvoRecnikom {
 		char[] interpunkcija = new char[] { '.', ',', ';', ':', '?', '!' };
 		for (char c : interpunkcija)
 			tekst = tekst.replace(c, ' ');
-		String[] reciNeprecisceno = tekst.toLowerCase().split("\s+");
+		String[] reciNeprecisceno = tekst.toLowerCase().split(" ");
 		Map<String, Integer> reciPojavljivanja = new TreeMap<>();
 		for (String r : reciNeprecisceno)
 			if (reciPojavljivanja.containsKey(r))
