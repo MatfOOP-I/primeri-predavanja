@@ -6,121 +6,146 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Studenti",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g02.p01b.klaseKoriscenje.Studenti",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6",
+            "vmArgs": "-Dfile.encoding=UTF-8"
+        },
+        {
+            "type": "java",
             "name": "TestBlok",
             "request": "launch",
             "mainClass": "rs.math.oop.g05.p01.blokovi.TestBlok",
-            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "StudentPoslediplomacPokretanje",
             "request": "launch",
             "mainClass": "rs.math.oop.g02.p02.nasledjivanje.StudentPoslediplomacPokretanje",
-            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "StudentPoslediplomacPokretanje",
             "request": "launch",
             "mainClass": "rs.math.oop.g02.p02a.kasnoVezivanje.StudentPoslediplomacPokretanje",
-            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch PokretanjeDogadjajiSunce",
             "request": "launch",
             "mainClass": "rs.math.oop.g09.p29.dogadjajiSunce.PokretanjeDogadjajiSunce",
-            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch DobarPrincipDMetodPostavi",
             "request": "launch",
             "mainClass": "rs.math.oop.g09.p27.dobarPrincipDMetodPostavi.DobarPrincipDMetodPostavi",
-            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch DobarPrincipDKonstruktor",
             "request": "launch",
             "mainClass": "rs.math.oop.g09.p26.dobarPrincipDKonstruktor.DobarPrincipDKonstruktor",
-            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch LosPrincipD",
             "request": "launch",
             "mainClass": "rs.math.oop.g09.p25.losPrincipD.LosPrincipD",
-            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch LosPrincipL",
             "request": "launch",
             "mainClass": "rs.math.oop.g09.p22.losPrincipL.LosPrincipL",
-            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch DobarPrincipO",
             "request": "launch",
             "mainClass": "rs.math.oop.g09.p21.dobarPrincipO.DobarPrincipO",
-            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch Kloniranje",
             "request": "launch",
             "mainClass": "rs.math.oop.g09.p17.kloniranjeMutabilnaPoljaResenje.Kloniranje",
-            "projectName": "MatfOOP-I----primeri-predavanja_9855716"
+            "projectName": "MatfOOP-I----primeri-predavanja_9855716",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch Duz",
             "request": "launch",
             "mainClass": "rs.math.oop.g08.p14.konstruktori2.Duz",
-            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch Current File",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "${file}",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "rs.math.oop.Main",
-            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch StudentPokretanje",
             "request": "launch",
             "mainClass": "rs.math.oop.g02.p01.klaseObjekti.StudentPokretanje",
-            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch StudentPoslediplomacPokretanje",
             "request": "launch",
             "mainClass": "rs.math.oop.g02.p02.nasledjivanje.StudentPoslediplomacPokretanje",
-            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch CrtezPokretanje",
             "request": "launch",
             "mainClass": "rs.math.oop.g02.p03.ucaurivanje.CrtezPokretanje",
-            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
             "name": "Launch ObjektnoNzdNzsPokretanje",
             "request": "launch",
             "mainClass": "rs.math.oop.g02.p04.objektnoNzdNzs.ObjektnoNzdNzsPokretanje",
-            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
+            "projectName": "MatfOOP-I----primeri-predavanja_96c00897",
+            "vmArgs": "-Dfile.encoding=UTF-8"
         },
         {
             "type": "java",
