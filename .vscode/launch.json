@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Studenti",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g02.p01.klaseObjekti.Studenti",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
             "name": "ProveraBrojaMobilnog",
             "request": "launch",
             "mainClass": "rs.math.oop.g10.p03.lokalneUnutrasnjeProveraBrojaMobilnog.ProveraBrojaMobilnog",
