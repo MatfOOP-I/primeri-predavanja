@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StudentiPoslediplomci",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g02.p02.nasledjivanje.StudentiPoslediplomci",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
             "name": "Studenti",
             "request": "launch",
             "mainClass": "rs.math.oop.g02.p01.klaseObjekti.Studenti",
