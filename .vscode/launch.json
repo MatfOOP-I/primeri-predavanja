@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NzdNzsObjektno",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g02.p04.objektnoNzdNzs.NzdNzsObjektno",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Crtezi",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g02.p03.ucaurivanje.Crtezi",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "StudentiPoslediplomci",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g02.p02a.kasnoVezivanje.StudentiPoslediplomci",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
             "name": "StudentiPoslediplomci",
             "request": "launch",
             "mainClass": "rs.math.oop.g02.p02.nasledjivanje.StudentiPoslediplomci",

@@ -3,7 +3,9 @@ package rs.math.oop.g02.p02.nasledjivanje;
 class Student {
 
     String imePrezime;
+
     int brojIndeksa;
+    
     boolean naBudzetu;
     
     /**

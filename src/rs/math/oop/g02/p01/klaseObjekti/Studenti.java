@@ -14,7 +14,7 @@ class Studenti {
         drugi.brojIndeksa = 125;
         drugi.naBudzetu = true;
 
-        prvi.stampajPodatke();
-        drugi.stampajPodatke();
+        prvi.prikaziSe();
+        drugi.prikaziSe();
     }
 }
