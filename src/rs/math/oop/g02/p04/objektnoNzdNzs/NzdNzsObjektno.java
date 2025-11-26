@@ -21,7 +21,7 @@ class NzdNzsObjektno {
         CeoBroj nzd = prvi.NZD(drugi).NZD(treci).NZD(cetvrti);
         // одређивање НЗС за ова четири броја
         CeoBroj nzs = prvi.NZS(drugi).NZS(treci).NZS(cetvrti);
-        // приказ резултата
+        // приказ резултата 
         System.out.print("НЗД ова четири броја је ");
         nzd.prikazi();
         System.out.print("НЗС ова четири броја је ");
