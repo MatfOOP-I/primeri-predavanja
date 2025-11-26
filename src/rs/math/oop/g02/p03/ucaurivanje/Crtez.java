@@ -44,4 +44,6 @@ class Crtez {
 		krug2.prikazi();
 		kvadrat1.prikazi();
 	}
+
+
 }

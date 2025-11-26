@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FunkcionalnoNzd",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g03.p05.funkcionalnaParadigma.FunkcionalnoNzd",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
             "name": "NzdNzsObjektno",
             "request": "launch",
             "mainClass": "rs.math.oop.g02.p04.objektnoNzdNzs.NzdNzsObjektno",

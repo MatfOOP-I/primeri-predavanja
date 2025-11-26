@@ -7,7 +7,7 @@ class Crtezi {
 		Crtez crtez = new Crtez();
 		System.out.println("Пре транслације:");
 		crtez.prikazi();
-		crtez.translirajSve(11, -3);
+		crtez.translirajSve(2, -3);
 		System.out.println("После транслације:");
 		crtez.prikazi();
 	}
