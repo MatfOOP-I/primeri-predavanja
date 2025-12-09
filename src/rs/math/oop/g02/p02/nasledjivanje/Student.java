@@ -1,5 +1,6 @@
 package rs.math.oop.g02.p02.nasledjivanje;
 
+/** Klasa koja predstavlja studenta. */
 class Student {
 
     String imePrezime;

@@ -4,7 +4,7 @@ public class PonoviNiskuStringBuilder {
 	
 	public static void main(String[] args) {
 		String s = "Тест";
-		int n = 100;
+		int n = 1000;
 		long pocetak = System.nanoTime();
 		StringBuilder sb=new StringBuilder();
 		for(int i=0; i<n; i++)

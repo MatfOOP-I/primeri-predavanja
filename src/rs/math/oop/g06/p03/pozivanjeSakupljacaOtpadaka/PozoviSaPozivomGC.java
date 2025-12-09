@@ -13,7 +13,7 @@ public class PozoviSaPozivomGC {
 		int n = 10_000_000;
 		int nIspis = 300_000;
 		String s;
-
+	
 		long pocSaGC = System.nanoTime();
 		System.out.println(
 				"Величине слободне меморије са позивањем gc() пред испис");

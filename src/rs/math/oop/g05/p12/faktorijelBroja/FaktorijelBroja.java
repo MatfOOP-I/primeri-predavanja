@@ -5,7 +5,7 @@ public class FaktorijelBroja {
 	public static void main(String[] args) {
 		long f = 1;
 		int n;
-		java.util.Scanner sc = new java.util.Scanner(System.in);
+		java.util.Scanner sc = new java.util.Scanner(System.in);		
 		System.out.println("Унеcите ненегативан цео број");
 		n = sc.nextInt();
 		if (n < 0)
@@ -15,5 +15,6 @@ public class FaktorijelBroja {
 				f *= k;
 			System.out.println("Факторијел је " + f);
 		}
+		
 	}
 }

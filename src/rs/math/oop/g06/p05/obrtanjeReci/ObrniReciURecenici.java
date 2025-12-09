@@ -3,6 +3,7 @@ package rs.math.oop.g06.p05.obrtanjeReci;
 public class ObrniReciURecenici {
 
 	public static void main(String[] args) {
+	
 		java.util.Scanner ulaz = new java.util.Scanner(System.in);
 		String recenica = ulaz.nextLine();
 		String[] reci = recenica.split(" ");

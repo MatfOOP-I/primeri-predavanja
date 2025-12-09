@@ -9,7 +9,7 @@ public class RazlicitiIspisi {
         double x = 26.43462;
         int y = 43243;
         float z = 1645.14f +y;
-        System.out.printf("x=%19.6f y=%8d z=%.4f", x, y, z);
+        System.out.printf("x=%19.6f y=%8d z=%.8f", x, y, z);
         System.out.println();
         // први број после % представља број места за комплетан запис,
         // а ако нема броја онда се укупан број места рачуна аутоматски

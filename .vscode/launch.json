@@ -6,6 +6,118 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ObrniReciURecenici",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p05.obrtanjeReci.ObrniReciURecenici",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "FaktorijelBroja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p12.faktorijelBroja.FaktorijelBroja",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "ProsekUnetihBrojeva",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p10.parsiranjeStandardniUlaz.ProsekUnetihBrojeva",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "ParsirajAutoInformacije",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p09.parsiranjeNiske.ParsirajAutoInformacije",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Kvadriranja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p08.prosledjivanjeOmotacTipa.Kvadriranja",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Sumiranja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p08.prosledjivanjeOmotacTipa.Sumiranja",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "PonoviNiskuStringBuilder",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p07.ponoviNiskuStringBuilder.PonoviNiskuStringBuilder",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "PonoviNisku",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p06.ponoviNisku.PonoviNisku",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "DuzinaBroja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p09.duzinaBroja.DuzinaBroja",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "PozoviSaPozivomGC",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p03.pozivanjeSakupljacaOtpadaka.PozoviSaPozivomGC",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "PozoviBezPozivaGC",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p03.pozivanjeSakupljacaOtpadaka.PozoviBezPozivaGC",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "IzmeriVreme",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p02.merenjeVremena.IzmeriVreme",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "RazlicitiIspisi",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p01.standardniIspis.RazlicitiIspisi",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "UnosBrojevaContinue",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p19.unosBrojevaContinue.UnosBrojevaContinue",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "UnosBrojevaBreak",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p18.unosBrojevaBreak.UnosBrojevaBreak",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "IspisBrojeva",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g05.p06.ispisBrojeva.IspisBrojeva",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
             "name": "FunkcionalnoNzd",
             "request": "launch",
             "mainClass": "rs.math.oop.g03.p05.funkcionalnaParadigma.FunkcionalnoNzd",

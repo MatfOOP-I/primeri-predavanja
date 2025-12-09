@@ -4,7 +4,7 @@ public class PonoviNisku {
 
 	public static void main(String[] args) {
 		String s = "Тест";
-		int n = 100;
+		int n = 1000;
 		String sn = "";
 		long pocetak = System.nanoTime();
 		for(int i=0; i<n; i++)

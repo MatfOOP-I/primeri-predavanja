@@ -13,22 +13,21 @@ public class Kvadriranja {
 	}
 	
 	static void kvadrirajMutabilniOmotac(MutabilniFloat x) {
-		//x.v*=x.v;
-		x = new MutabilniFloat(x.v*x.v);
+		x.v*=x.v;
+		//x = new MutabilniFloat(x.v*x.v);
 	}
 	
 	public static void main(String[] args) {
 		float x = 11;
-		Float xOmotac = x;
-		MutabilniFloat xMutabilniOmotac = new MutabilniFloat(x);
-		
 		kvadrirajPrimitivni(x);
 		System.out.println(x);
-		
-		kvadrirajUgradjeniOmotac(xOmotac);
+	
+		Float xOmotac = x;
+		kvadrirajUgradjeniOmotac(4.2f);
 		System.out.println(xOmotac);
-		
+	
+		MutabilniFloat xMutabilniOmotac = new MutabilniFloat(x);
 		kvadrirajMutabilniOmotac(xMutabilniOmotac);
-		System.out.println(xMutabilniOmotac.v);
+		System.out.println(xMutabilniOmotac.getValue());
 	}
 }
