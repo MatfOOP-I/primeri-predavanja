@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PrikaziMesec",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p12.grafickiPrikazMeseca.PrikaziMesec",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "MonteKarloIntegracija",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p11.matematickeFunkcije.MonteKarloIntegracija",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "ProsekUnetihBrojeva2",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p10.parsiranjeStandardniUlaz.ProsekUnetihBrojeva2",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
             "name": "ObrniReciURecenici",
             "request": "launch",
             "mainClass": "rs.math.oop.g06.p05.obrtanjeReci.ObrniReciURecenici",
