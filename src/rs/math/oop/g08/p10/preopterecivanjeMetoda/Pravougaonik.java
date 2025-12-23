@@ -6,11 +6,11 @@ public class Pravougaonik {
 
 	void podesi(int x1, int y1, int x2, int y2) {
 		gl = new Tacka();
-		dd = new Tacka();
 		gl.x = x1 <= x2 ? x1 : x2;
+		gl.y = y1 >= y2 ? y1 : y2;
+		dd = new Tacka();
 		dd.x = x1 >= x2 ? x1 : x2;
 		dd.y = y1 <= y2 ? y1 : y2;
-		gl.y = y1 >= y2 ? y1 : y2;
 		if(gl.x==dd.x || gl.y==dd.y) {
 			System.err.println(
 					"Грешка, висина и ширина морају бити позитивне.");
@@ -40,7 +40,7 @@ public class Pravougaonik {
 
 	public static void main(String[] args) {
 		Pravougaonik p1 = new Pravougaonik();
-		p1.podesi(10,  20,  51, 31);
+		p1.podesi(10,  20,  50, 30);
 		p1.prikazi();
 		Pravougaonik p2 = new Pravougaonik();
 		Tacka t = new Tacka();
@@ -52,6 +52,6 @@ public class Pravougaonik {
 		p2.prikazi();
 //		Pravougaonik p3 = new Pravougaonik();
 //		p3.podesi(10, 100, 10, 20);
-
+//		p3.prikazi();
 	}
 }

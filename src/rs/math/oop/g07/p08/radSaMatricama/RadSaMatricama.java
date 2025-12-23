@@ -100,46 +100,6 @@ public class RadSaMatricama {
         return mat;
     }
 
-    static double[][] iskljuci1(double[][] a, int vrsta, int kolona) {
-        int n = a.length;
-        int m = a[0].length;
-        double[][] mat = new double[n - 1][m - 1];
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < m; j++) {
-                if (i < vrsta) {
-                    if (j < kolona)
-                        mat[i][j] = a[i][j];
-                    else if (j > kolona)
-                        mat[i][j-1] = a[i][j];
-                } else if (i > vrsta) {
-                    if (j < kolona)
-                        mat[i-1][j] = a[i][j];
-                    else if (j > kolona)
-                        mat[i-1][j-1] = a[i][j];
-                }
-            }
-        return mat;
-    }
-
-    static double[][] iskljuci2(double[][] a, int vrsta, int kolona) {
-        int n = a.length;
-        int m = a[0].length;
-        double[][] mat = new double[n - 1][m - 1];
-        for (int i = 0; i < vrsta; i++)
-            for (int j = 0; j < kolona; j++)
-                mat[i][j] = a[i][j];
-        for (int i = vrsta; i < n - 1; i++)
-            for (int j = 0; j < kolona; j++)
-                mat[i][j] = a[i + 1][j];
-        for (int i = 0; i < vrsta; i++)
-            for (int j = kolona; j < m - 1; j++)
-                mat[i][j] = a[i][j + 1];
-        for (int i = vrsta; i < n - 1; i++)
-            for (int j = kolona; j < m - 1; j++)
-                mat[i][j] = a[i + 1][j + 1];
-        return mat;
-    }
-
     static double determinanta(double[][] a) {
         int n = a.length;
         if (n == 1)
@@ -149,14 +109,14 @@ public class RadSaMatricama {
         double det = 0;
         double znak = 1;
         for (int j = 0; j < n; j++) {
-            det += znak * a[n-1][j] * determinanta(iskljuci(a, n-1, j));
+            det += znak * a[0][j] * determinanta(iskljuci(a, 0, j));
             znak = -znak;
         }
         return det;
     }
 
     public static void main(String[] args) {
-        double[][] a = {{1.5, 2, 3}, {4, 5, 7}};
+        double[][] a = {{1.5, 2, 4}, {4, 5, 7}};
         System.out.println("A je: ");
         prikazi(a);
         double[][] b = {{2, 3, 4}, {-5, 6.6, 7}};
@@ -179,7 +139,7 @@ public class RadSaMatricama {
         e[1][0] = 0.75;
         e[1][1] = 2;
         prikazi2(e);
-        System.out.println("C*A sa iskljucenom drugom vrstom i drugom kolonom је: ");
+        System.out.println("C*A  након измене са искљученом првом врстом и другом колоном је: ");
         prikazi(iskljuci(e,0,1));
         if (jeKvadratna(e))
             System.out.println("Детерминанта матрице C*A је: " + determinanta(e));

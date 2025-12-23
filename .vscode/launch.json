@@ -6,6 +6,254 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CitajPrikaziParNepar",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p23.samorastuciNiz.CitajPrikaziParNepar",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Pokreni",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p23.samorastuciNiz.Pokreni",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "PrikazKrugova",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p22.zastitaPolja.PrikazKrugova",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Crtez",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p15c.kopirajuciKonstruktor.Crtez",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Duz",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p15a.konstruktori.Duz",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Ucenik",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p14a.incBlokovi.Ucenik",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Duz",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p13.prevazilazenje.geometrija.Duz",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Srednjeskolac",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p13.prevazilazenje.ucenik.Srednjeskolac",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Pravougaonik",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p10.preopterecivanjeMetoda.Pravougaonik",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "PrikazInformacijaUcenici",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p09.pozivanjeMetoda.PrikazInformacijaUcenici",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Ucenik",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p08.pristupStatickimPoljima.Ucenik",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "UporediPromenljive",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p05.poredjenjeOperatoromJednako.UporediPromenljive",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Kutija",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p04.kreiranjeObjekataIspis.Kutija",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "KreiranjeObjekata",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p02.kreiranjeObjekata.KreiranjeObjekata",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "FrekvencijeBrojevaRazdvojeno2",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p04.frekvencijeBrojeva.FrekvencijeBrojevaRazdvojeno2",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "FrekvencijeBrojevaRazdvojeno",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p04.frekvencijeBrojeva.FrekvencijeBrojevaRazdvojeno",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "JednakostObjekata",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p03.kreiranjeObjekataObject.JednakostObjekata",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "IspisiArgumente",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p12.promenljiviBrojArgumenata.IspisiArgumente",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "BinarnaPretraga",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p11.binarnaPretraga.BinarnaPretraga",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "SortirajPaTraziRec",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p10.sortiranjePretragaReci.SortirajPaTraziRec",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "PrebrojKaraktere",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p09.pojavljivanjaKaraktera.PrebrojKaraktere",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "RadSaMatricama",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p08.radSaMatricama.RadSaMatricama",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "OdaberiOperaciju",
+            "request": "launch",
+            "args": [
+                "*",
+                "23.4",
+                "7.8"
+            ],
+            "mainClass": "rs.math.oop.g07.p07.odabirOperacijeArgumentiKomandneLinije.OdaberiOperaciju",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "ArgumeniObrat",
+            "request": "launch",
+            "args": [
+                "Miki",
+                "Paja",
+                "Šilja",
+                "Mini"
+            ],
+            "mainClass": "rs.math.oop.g07.p06.sumaArgumenataKomandneLinije.ArgumeniObrat",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "SumirajArgumente",
+            "request": "launch",
+            "args": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "mainClass": "rs.math.oop.g07.p06.sumaArgumenataKomandneLinije.SumirajArgumente",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "RadSaStekom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p05.stekPrekoNiza.RadSaStekom",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "FrekvencijeBrojevaMonolitno",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p04.frekvencijeBrojeva.FrekvencijeBrojevaMonolitno",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "RadSaNizom",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p03.radSaNizomDinamickaDimenzija.RadSaNizom",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "PokreniNzdNizaKolekcijskiFor",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p02.nzdNizaBrojevaKolekcijskiFor.PokreniNzdNizaKolekcijskiFor",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "PokreniNzdNiza",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g07.p01.nzdNizaBrojeva.PokreniNzdNiza",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "GenerisiPredlogeSifara",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p15.generisiPredlogeSifara.GenerisiPredlogeSifara",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "PseudoNormalniBrojevi",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p14.testirajNormalnu.PseudoNormalniBrojevi",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "FiltrirajVremena",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g06.p13.filtrirajVremena.FiltrirajVremena",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
             "name": "PrikaziMesec",
             "request": "launch",
             "mainClass": "rs.math.oop.g06.p12.grafickiPrikazMeseca.PrikaziMesec",
@@ -685,13 +933,6 @@
             "name": "Launch SumirajArgumente",
             "request": "launch",
             "mainClass": "rs.math.oop.g07.p06.sumaArgumenataKomandneLinije.SumirajArgumente",
-            "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
-        },
-        {
-            "type": "java",
-            "name": "Launch OdaberiOperaciju",
-            "request": "launch",
-            "mainClass": "rs.math.oop.g07.p07.odabirOperacijeArgumentiKomandneLinije.OdaberiOperaciju",
             "projectName": "MatfOOP-I----primeri-predavanja_96c00897"
         },
         {

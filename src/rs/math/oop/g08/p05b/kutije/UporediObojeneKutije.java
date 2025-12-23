@@ -14,7 +14,7 @@ public class UporediObojeneKutije {
     }
 
     public static void main(String[] args) {
-
+ 
         Object o = new ObojenaKutija();
         ispitajInformisi(o);
         //int ii = o.sirina;
