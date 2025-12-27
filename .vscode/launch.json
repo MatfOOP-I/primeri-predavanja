@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OznacenaTacka",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p16.konstruktorNadklase.OznacenaTacka",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Ucenik",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p07.pristupPoljima.Ucenik",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "IspisiPseudoslucajneCele",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p06.uvozKlase.IspisiPseudoslucajneCele",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "UporediObojeneKutije",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g08.p05b.kutije.UporediObojeneKutije",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
             "name": "CitajPrikaziParNepar",
             "request": "launch",
             "mainClass": "rs.math.oop.g08.p23.samorastuciNiz.CitajPrikaziParNepar",

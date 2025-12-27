@@ -1,7 +1,9 @@
 package rs.math.oop.g08.p22.zastitaPolja;
 
-import static java.lang.Math.PI;
-import static java.lang.Math.pow;
+import static java.lang.Math.*;
+
+//import static java.lang.Math.PI;
+//import static java.lang.Math.pow;
 
 public class KrugJavni {
 

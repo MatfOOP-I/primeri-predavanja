@@ -1,9 +1,9 @@
 package rs.math.oop.g08.p06.uvozKlase;
 
-//import java.util.*;
+import java.util.*;
 
-import java.util.Random;
-import java.util.Scanner;
+// import java.util.Random;
+// import java.util.Scanner;
 
 public class IspisiPseudoslucajneCele {
 

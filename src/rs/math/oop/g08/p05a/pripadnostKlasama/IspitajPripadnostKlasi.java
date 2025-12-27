@@ -23,6 +23,6 @@ public class IspitajPripadnostKlasi {
 		o = "miki maus";
 		System.out.println(o instanceof Kutija);
 		System.out.println(o);
-		// k = "miki maus";
+		//k = "miki maus";
 	}
 }
