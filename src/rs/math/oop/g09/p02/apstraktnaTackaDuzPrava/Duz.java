@@ -41,6 +41,8 @@ public class Duz extends GeometrijskiObjekat {
          if (t.uzmiX() < b.uzmiX() || t.uzmiX() > a.uzmiX())
             return false;
       }
+      // provera po y koordinati nije potrebna za kolinearne tacke, 
+      // ali je ukljucena radi kompletosti
       if(a.uzmiY() < b.uzmiY()) {
          if (t.uzmiY() < a.uzmiY() || t.uzmiY() > b.uzmiY())
             return false;

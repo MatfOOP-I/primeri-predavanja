@@ -6,6 +6,111 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PracenjeKretanjaSunca",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p30.dogadjaji.PracenjeKretanjaSunca",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "DobarPrincipDMetodPostavi",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p28.dobarPrincipDMetodPostavi.DobarPrincipDMetodPostavi",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "DobarPrincipDKonstruktor",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p27.dobarPrincipDKonstruktor.DobarPrincipDKonstruktor",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "LosPrincipD",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p26.losPrincipD.LosPrincipD",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "LosPrincipL",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p23.losPrincipL.LosPrincipL",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "DobarPrincipS",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p20.dobarPrincipS.DobarPrincipS",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Kloniranje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p17.kloniranjeMutabilnaPoljaProblem.Kloniranje",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "Kloniranje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p16.kloniranje.Kloniranje",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "VisekriterijumskoSortiranje",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p15.viseKriterijumaPredefinisani.VisekriterijumskoSortiranje",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "UredjenjeTacaka",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p14.viseKriterijumaTacke.UredjenjeTacaka",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "UredjenjeTacaka",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p13.uredjenjeTacaka.UredjenjeTacaka",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "UredjenjePredefinisani",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p12.uredjenjePredefinisani.UredjenjePredefinisani",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "MereObliciSadrzavanja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p09.interfejsGeometrija.MereObliciSadrzavanja",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "PitanjaRazmisljanja",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p07.interfejsVise.PitanjaRazmisljanja",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "GeometrijskiObjekti",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g09.p04.apstraktnaGeometrija.GeometrijskiObjekti",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
             "name": "OznacenaTacka",
             "request": "launch",
             "mainClass": "rs.math.oop.g08.p16.konstruktorNadklase.OznacenaTacka",

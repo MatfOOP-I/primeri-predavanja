@@ -59,6 +59,6 @@ public class MereObliciSadrzavanja {
       for (Sadrzavanje sd : sviSd)
          if( sd.sadrzi(x))
             System.out.printf("%s ", sd);
-    }
+   }
 
 }
