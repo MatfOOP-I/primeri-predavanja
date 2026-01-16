@@ -6,6 +6,7 @@ public class IndeksVanGranica {
 		System.out.println("Почетак");
 		try{
 			int a[] = new int[22];
+			//a = null;
 			System.out.println("Приступам елементу:" + a[25]);
 		}
 		catch (ArrayIndexOutOfBoundsException exp){

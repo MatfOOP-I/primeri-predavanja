@@ -27,7 +27,7 @@ public enum PlanetaSuncevogSistema {
     double gravitacijaNaPovrsini() {
         return G * masa / (precnik * precnik);
     }
-    
+     
     double tezinaTelaNaPovrsini(double masaTela) {
         return masaTela * gravitacijaNaPovrsini();
     }

@@ -27,10 +27,9 @@ public class OperacijeSaStekom {
       stek.dodaj("paja patak");
       stek.dodaj("dusko dugousko");
       try {
-         for (int i = 0; i < 5; i++)
+         for (int i = 0; i < 7; i++)
             System.out.println(stek.ukloni());
-      }
-      catch(Exception e){
+      } catch (Exception e) {
          System.err.println(e);
       }
    }

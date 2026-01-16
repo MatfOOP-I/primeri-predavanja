@@ -9,6 +9,6 @@ public class FaktorijelBezUslovaIzlaska {
 
 	public static void main(String[] args) {
 
-		System.out.println(faktorijelBezUslovaIzlaska(10));
+		System.out.println(faktorijelBezUslovaIzlaska(5));
 	}
 }

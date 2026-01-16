@@ -20,7 +20,7 @@ public class SortirajNiske {
 				"Јасно је да се", "инстанцирање", "не може извршити", 
 				"више пута,","јер не постоји назив", 
 				"класе па самим тим ни конструктора."};
-
+		System.out.println(">>>");
 		for(String niska : niske)
 			System.out.print(niska + "|");
 		// овде би требало користити генеричке типове, али то тек од поглавља 13
@@ -41,7 +41,7 @@ public class SortirajNiske {
 			}
 		};
 		Arrays.sort(niske, c);
-		System.out.println();
+		System.out.println(">>>");
 		for(String niska : niske)
 			System.out.print(niska + "|");
 		Arrays.sort(niske, new Comparator() {
@@ -51,12 +51,12 @@ public class SortirajNiske {
 				return o2.toString().length()-o1.toString().length();
 			}
 		});
-		System.out.println();
+		System.out.println(">>>");
 		for(String niska : niske)
 			System.out.print(niska + "|");
-//		Arrays.sort(niske, (o1, o2) -> o1.toString().length()-o2.toString().length());
-//		System.out.println();
-//		for(String niska : niske)
-//			System.out.print(niska + "|");
+		// Arrays.sort(niske, (o1, o2) -> o1.toString().length()-o2.toString().length());
+		// System.out.println(">>>");
+		// for(String niska : niske)
+		// 	System.out.print(niska + "|");
 	}
 }

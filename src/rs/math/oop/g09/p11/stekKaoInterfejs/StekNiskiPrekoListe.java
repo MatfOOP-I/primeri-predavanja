@@ -27,14 +27,6 @@ public class StekNiskiPrekoListe implements StekNiski {
 
 	@Override
 	public int brojElemenata() {
-		String elem = elementi.uzmiPrvi();
-		if (elem == null)
-			return 0;
-		int n = 0;
-		while (elem != null) {
-			n++;
-			elem = elementi.uzmiSledeci();
-		}
-		return n;
+		return elementi.brojCvorova();
 	}
 }

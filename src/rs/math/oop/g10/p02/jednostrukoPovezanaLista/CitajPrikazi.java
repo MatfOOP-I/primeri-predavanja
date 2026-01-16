@@ -22,6 +22,6 @@ public class CitajPrikazi {
 		sc.close();
 		System.out.println("Број речи: " + lista.brojCvorova());
 		System.out.println("Листа:\n" + lista);
-		// Cvor c = new Cvor("пример");
+		//Cvor c = new Cvor("пример");
 	}
 }

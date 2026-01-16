@@ -8,7 +8,7 @@ public class Nizovid2D {
 		double[][] c = new double[a.length][];
 		for (int i = 0; i < a.length; i++) {
 			if (a[i].length != b[i].length)
-				throw new Niz2DIzuzetak("Лоше унутрашње димензије.");
+				throw new Niz2DIzuzetak("Лоше унутрашње димензије.", i);
 			c[i] = new double[a[i].length];
 			for (int j = 0; j < c[i].length; j++)
 				c[i][j] = a[i][j] + b[i][j];
@@ -17,9 +17,9 @@ public class Nizovid2D {
 	}
 
 	public static void main(String[] args) {
-		double[][] m1 = new double[][] { { 1, 2, 3 }, { 4, 5, 6 } };
-		double[][] m2 = new double[][] { { 1, 2 ,3 }, { 3, 4 } };
-		double[][] m3 = new double[][] { { 1, 1, 1 }, { 1, 1, 1 } };
+		double[][] m1 = new double[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		double[][] m2 = new double[][] { { 1, 2 ,3 }, { 3, 4 ,5}, { 5, 6 ,7, 8} };
+		double[][] m3 = new double[][] { { 1, 1, 1 }, { 1, 1, 4 }, { 1, 1, 1 } };
 		try {
 			double[][] m4 = saberi(m1, m3);
 			System.out.println("Прво сабирање успело.");
