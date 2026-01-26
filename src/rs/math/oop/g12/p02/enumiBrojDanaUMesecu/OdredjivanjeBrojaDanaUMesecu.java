@@ -17,7 +17,7 @@ public class OdredjivanjeBrojaDanaUMesecu {
             case APRIL: case JUN: case SEPTEMBAR: case NOVEMBAR:
                 brojDana = 30;
                 break;
-            case JANUAR:case MART: case MAJ: case JUL:
+            case JANUAR: case MART: case MAJ: case JUL:
                 case AVGUST: case OKTOBAR: case DECEMBAR:
                     brojDana=31;
                     break;
@@ -29,10 +29,14 @@ public class OdredjivanjeBrojaDanaUMesecu {
                     brojDana = 28;
                 break;
             }
-            System.out.printf("Број дана у месецу %s године %d је %d.", 
+            System.out.printf("Број дана у месецу '%s' године %d је %d.", 
                     mesec, godina, brojDana);
+        } catch (NumberFormatException ex) {
+            System.err.printf("Грешка при парсирању године %s.",
+                    args[1]);
+            System.err.println(ex.getMessage());
         } catch (IllegalArgumentException ex) {
-            System.err.printf("Грешка при парсирању месеца са називом '%s'.",
+            System.err.printf("Грешка при парсирању месеца са називом %s.",
                     args[0]);
             System.err.println(ex.getMessage());
         }

@@ -20,6 +20,11 @@ public class KutijaGenericka<T> {
 		return this.vrednost;
 	}
 	
+	@Override
+	public String toString(){
+		return "[" + uzmiVrednost().toString() + "]";
+	}
+
 	public static void main(String[] args) {
 		KutijaGenericka<String> kutija1 = new KutijaGenericka<>("Текст");
 		// не треба експлицитна конверзија
@@ -29,10 +34,5 @@ public class KutijaGenericka<T> {
 		// компајлер не допушта да у кутију убацимо нешто што није String
 		// па нам тиме помаже у провери семантичке коректности програма
 		//kutija1.postaviVrednost(45);
-	}
-
-	@Override
-	public String toString(){
-		return "[" + uzmiVrednost().toString() + "]";
 	}
 }

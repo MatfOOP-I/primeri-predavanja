@@ -18,11 +18,12 @@ public class StekPrekoNiza<T> extends AbstractCollection<T> implements Stek<T> {
 
 	public StekPrekoNiza(Collection<T> col){
 		for(T el: col)
-			add(el);
+			dodaj(el);
 	}
+
 	@Override
 	public boolean add(T elem) {
-		elementi.postaviNa(++vrhSteka, elem);
+		dodaj(elem);
 		return true;
 	}
 

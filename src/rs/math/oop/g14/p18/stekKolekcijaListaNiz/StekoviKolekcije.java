@@ -46,7 +46,7 @@ public class StekoviKolekcije {
 
 		System.out.println("Низовна листа");
 		List<String> lista = new ArrayList<>(stek);
-		lista.addAll(stek);
+		//lista.addAll(stek);
 		System.out.println(lista);
 
 	}

@@ -12,7 +12,7 @@ public class UcitajStudente {
 		Scanner skener = null;
 		try {
 			List<Student> studenti = new ArrayList<>();
-			skener = new Scanner(new File("ostalo/studenti.txt"), "UTF-8");
+			skener = new Scanner(new File("c:/tmp/studenti.txt"), "UTF-8");
 			while (skener.hasNext()) {
 				String JMBG = skener.next();
 				String ime = skener.next();

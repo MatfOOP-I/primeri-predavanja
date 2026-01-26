@@ -24,7 +24,7 @@ public class KutijaGenericka<T> {
 
 	@Override
 	public String toString(){
-		return "[" + uzmiVrednost().toString() + "]";
+		return "[" + uzmiVrednost() + "]";
 	}
 
 }

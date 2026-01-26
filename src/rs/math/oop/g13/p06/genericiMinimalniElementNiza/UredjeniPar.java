@@ -20,7 +20,7 @@ public class UredjeniPar<S extends Comparable<S>, T extends Comparable<T>>
     
     @Override
     public String toString() {
-        return "("+vrednost1+", "+vrednost2+")";
+        return "(" + vrednost1 + ", " + vrednost2 + ")";
     }
 
     @Override

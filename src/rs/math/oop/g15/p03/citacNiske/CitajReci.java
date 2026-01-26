@@ -10,7 +10,6 @@ public class CitajReci {
 		String niska = "Пример неког кратког текста.";
 		int N = 3;
 		Reader citac = new StringReader(niska);
-
 		try {
 			while (true) {
 				int c = citac.read();

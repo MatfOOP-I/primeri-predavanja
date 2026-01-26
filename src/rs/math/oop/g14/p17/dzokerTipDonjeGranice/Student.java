@@ -32,5 +32,8 @@ public class Student extends OsobaUporediva{
 		Collections.sort(studenti);
 		for(Student s: studenti)
 			System.out.println(s);
+		Collections.shuffle(studenti);
+		for(Student s: studenti)
+			System.out.println(s);
 	}
 }
