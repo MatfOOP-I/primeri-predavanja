@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DobijanjeInformacijaOKlasiGenerici",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g16.p11a.ispitivanjeTipaAnalizaGenerici.DobijanjeInformacijaOKlasiGenerici",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
+            "name": "AnalizeRazlicitihObjekata",
+            "request": "launch",
+            "mainClass": "rs.math.oop.g16.p11.ispitivanjeTipaAnalizaObjekta.AnalizeRazlicitihObjekata",
+            "projectName": "MatfOOP-I--primeri-predavanja_ad0176b6"
+        },
+        {
+            "type": "java",
             "name": "DinamickaPozivanjaMetoda",
             "request": "launch",
             "mainClass": "rs.math.oop.g16.p08.metodPoziv.DinamickaPozivanjaMetoda",

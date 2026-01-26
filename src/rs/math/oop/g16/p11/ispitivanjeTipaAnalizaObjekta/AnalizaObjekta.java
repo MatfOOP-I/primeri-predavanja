@@ -19,6 +19,16 @@ class AnalizaObjekta {
             return obj.toString();
         if (cl == String.class)
             return "\"" + (String) obj + "\"";
+        if(cl == Character.class)
+            return "'" + obj.toString() + "'";
+        if( cl == Boolean.class ||
+            cl == Byte.class ||
+            cl == Short.class ||
+            cl == Integer.class ||
+            cl == Long.class ||
+            cl == Float.class ||
+            cl == Double.class )
+            return cl.getSimpleName() + "(" + obj.toString() + ")";
         if (cl.isArray()) {
             StringBuilder r = new StringBuilder();
             r.append(cl.getComponentType() + "[]{");

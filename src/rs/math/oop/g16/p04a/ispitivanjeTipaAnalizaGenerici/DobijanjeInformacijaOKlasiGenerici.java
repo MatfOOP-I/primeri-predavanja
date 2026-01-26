@@ -1,4 +1,4 @@
-package rs.math.oop.g16.p11a.ispitivanjeTipaAnalizaGenerici;
+package rs.math.oop.g16.p04a.ispitivanjeTipaAnalizaGenerici;
 
 import java.lang.reflect.*;
 import java.util.Arrays;
