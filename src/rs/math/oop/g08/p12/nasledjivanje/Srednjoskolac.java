@@ -20,7 +20,7 @@ public class Srednjoskolac extends Ucenik {
         sred.razred=2;
         sred.vrstaSkole="Техничка школа";
         sred.prikaziInformacije();
-        System.out.println(sred.vrstaSkole);
+        //System.out.println(sred.vrstaSkole);
         System.out.println(sred.uzmiVrstuSkole());
         sred.proveriRazred();
         sred.razred=5;

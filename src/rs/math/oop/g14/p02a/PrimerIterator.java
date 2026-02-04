@@ -17,20 +17,23 @@ public class PrimerIterator {
 		// било шта што је колекција има могућност да врати итератор
 		Iterator<String> prolazak1 = kolekcija.iterator();
 		Iterator<String> prolazak2 = kolekcija.iterator();
-		while(prolazak1.hasNext() || prolazak2.hasNext()) {
-			if(prolazak1.hasNext()) {
-				String element = prolazak1.next();
-				System.out.println("1:" + element);
-			}
-			if(prolazak1.hasNext()) {
-				String element = prolazak1.next();
-				System.out.println("1:" + element);
-			}
-			if(prolazak2.hasNext()) {
-				String element = prolazak2.next();
-				System.out.println("2:" + element);
-			}
+		if(prolazak1.hasNext()) {
+			String element = prolazak1.next();
+			System.out.println("1:" + element);
+		}
+		if(prolazak2.hasNext()) {
+			String element = prolazak2.next();
+			System.out.println("2:" + element);
+		}
+		if(prolazak1.hasNext()) {
+			String element = prolazak1.next();
+			System.out.println("1:" + element);
+			prolazak1.remove();
+			System.out.println(kolekcija);
+		}
+		if(prolazak2.hasNext()) {
+			String element = prolazak2.next();
+			System.out.println("2:" + element);
 		}
 	}
-
 }

@@ -17,11 +17,11 @@ class NzdNzsObjektno {
         treci.prikazi();
         System.out.print("Четврти број је ");
         cetvrti.prikazi();
-        // одређивање НЗД за ова три броја
+        // одређивање НЗД за ова четири броја
         CeoBroj nzd = prvi.NZD(drugi).NZD(treci).NZD(cetvrti);
-        // одређивање НЗС за ова три броја
+        // одређивање НЗС за ова четири броја
         CeoBroj nzs = prvi.NZS(drugi).NZS(treci).NZS(cetvrti);
-        // приказ резултата
+        // приказ резултата 
         System.out.print("НЗД ова четири броја је ");
         nzd.prikazi();
         System.out.print("НЗС ова четири броја је ");

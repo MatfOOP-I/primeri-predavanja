@@ -22,7 +22,7 @@ public class UredjeniPar<S, T>{
     @Override
     public String toString() {
 
-        return "("+vrednost1+", "+vrednost2+")";
+        return "(" + vrednost1 + ", " + vrednost2 + ")";
     }
     
     public static void main(String[] args) {

@@ -16,11 +16,12 @@ public class MereObliciSadrzavanja {
       Trougao bcd = new Trougao("тBCD", b, c, d);
       Cetvorougao bcde = new Cetvorougao("чBCDE", b, c, d, e);
       Krug k1 = new Krug("кB18", b, 18);
+      MikiMaus miki = new MikiMaus();
 
       double ukupanObim = 0;
       double ukupnaPovrsina = 0;
       System.out.println("\nГеометријски објекти:");
-      GeometrijskiObjekat[] svi = {a, b, c, d, e, ab, p, bcd, bcde, k1};
+      GeometrijskiObjekat[] svi = {a, b, c, d, e, ab, p, bcd, bcde, k1, miki};
       for (GeometrijskiObjekat go : svi) {
          System.out.printf(">>> %s", go);
          if (go instanceof Oblik) {
@@ -53,12 +54,11 @@ public class MereObliciSadrzavanja {
       System.out.print("Унесите координате тачке X: ");
       Tacka x = new Tacka("X", sc.nextDouble(), sc.nextDouble());
       sc.close();
-
       Sadrzavanje[] sviSd = {ab, p, bcd, bcde, k1};
       System.out.println("Oбјекти који садрже дату тачку " + x + " су: " );
       for (Sadrzavanje sd : sviSd)
          if( sd.sadrzi(x))
             System.out.printf("%s ", sd);
-    }
+   }
 
 }

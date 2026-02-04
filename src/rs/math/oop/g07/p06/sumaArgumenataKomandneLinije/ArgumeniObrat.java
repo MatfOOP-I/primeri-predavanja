@@ -29,7 +29,7 @@ public class ArgumeniObrat {
         return (vrhSteka + 1);
     }
     public static void main(String[] args) {
-        inicijalizujStek(args.length + 10);
+        inicijalizujStek(args.length + 1);
         for (String a : args)
             dodaj(a);
         int n = brojElemenata();

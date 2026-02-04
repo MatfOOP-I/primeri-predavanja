@@ -11,10 +11,10 @@ class Studenti {
         Student drugi;
         drugi = new Student();
         drugi.ime = "Ана Сарић";
-        drugi.brojIndeksa = 25;
+        drugi.brojIndeksa = 125;
         drugi.naBudzetu = true;
 
-        prvi.stampajPodatke();
-        drugi.stampajPodatke();
+        prvi.prikaziSe();
+        drugi.prikaziSe();
     }
 }

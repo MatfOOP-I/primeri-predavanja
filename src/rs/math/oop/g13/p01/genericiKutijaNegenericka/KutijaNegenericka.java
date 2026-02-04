@@ -11,20 +11,18 @@ public class KutijaNegenericka {
 	// било који објектни тип се прихвата
 	// и имплицитно конвертује у Object
 	void postaviVrednost(Object vrednost) {
-
 		this.vrednost = vrednost;
 	}
 
 	// изгубили смо информацију о правој природи објектног типа
 	// тако да једино што можемо да вратимо је тип Object
 	Object uzmiVrednost() {
-
 		return this.vrednost;
 	}
 
 	public static void main(String[] args) {
 		KutijaNegenericka kutija1 = new KutijaNegenericka("Текст");
-		// мора експлицитна конверзија
+		// мора експлицитна конверзија		
 		String tekst1 = (String) kutija1.uzmiVrednost();
 		System.out.println(tekst1);
 		kutija1.postaviVrednost(23.4);

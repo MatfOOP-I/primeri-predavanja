@@ -49,7 +49,7 @@ public class UredjenjePredefinisani {
         System.out.println("Пoсле сортирања");
         prikazi(realni);
 
-        String[] niske = {"12.5", "мики", "-3.2e1", "0", "+1.7e-1", "5", "паја"};
+        String[] niske = {"шиља", "paja", "12.5", "мики", "-3.2e1", "0", "+1.7e-1", "5", "паја"};
         System.out.println("Пре сортирања");
         prikazi(niske);
         Arrays.sort(niske);

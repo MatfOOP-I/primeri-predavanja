@@ -33,7 +33,7 @@ public class PredicateLambdaPretragaOsobe {
         System.out.println("---");
         filtrirajObradi(Osoba.LIKOVI_CRTANI,
                 o -> o.getPol() == Osoba.Pol.ZENA && o.getEmailAdresa().indexOf("disney") >= 0,
-                o -> o.prikazi());
+                o -> out.println(o.getEmailAdresa()));
         System.out.println("---");
     }
 

@@ -8,8 +8,7 @@ public class ParsirajAutoInformacije {
 	}
 
 	public static void main(String[] args) {
-		String automobili = "Peugeot 3008 2017 120 KS 1560 cm3. " 
-				+ "Suzuki Vitara 2018 120 KS 1600 cm3. "
+		String automobili = "Peugeot 3008 2017 120 KS 1560 cm3. Suzuki Vitara 2018 120 KS 1600 cm3. "
 				+ "Toyota RAV4 2021 175 KS 1998 cm3.";
 		double prosecnaSnaga = 0, prosecnaZapremina = 0, prosecnaGodina = 0;
 		int brojAutomobila = 0;

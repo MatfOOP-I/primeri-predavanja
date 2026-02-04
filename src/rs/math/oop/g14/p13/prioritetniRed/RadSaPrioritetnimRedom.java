@@ -6,7 +6,7 @@ import java.util.Queue;
 public class RadSaPrioritetnimRedom {
 
 	public static void main(String[] args) {
-		Queue<Proces> procesi =new PriorityQueue<>();
+		Queue<Proces> procesi = new PriorityQueue<>();
 		procesi.add(new Proces("chrome", 10));
 		procesi.add(new Proces("cmd", 4));
 		procesi.add(new Proces("taskmgr", 1));

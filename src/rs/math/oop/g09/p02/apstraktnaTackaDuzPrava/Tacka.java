@@ -27,12 +27,10 @@ public class Tacka extends GeometrijskiObjekat {
    }
 
    public Tacka() {
-
       this("O", 0, 0);
    }
 
    public Tacka(Tacka t) {
-
       this(t.uzmiOznaku(), t.x, t.y);
    }
 
@@ -74,7 +72,6 @@ public class Tacka extends GeometrijskiObjekat {
 
    @Override
    public int hashCode() {
-
       return Objects.hash(x, y);
    }
 

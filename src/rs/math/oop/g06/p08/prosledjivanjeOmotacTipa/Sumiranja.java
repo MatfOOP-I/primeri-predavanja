@@ -3,6 +3,12 @@ package rs.math.oop.g06.p08.prosledjivanjeOmotacTipa;
 public class Sumiranja {
 
 	public static void main(String[] args) {
+		
+		// MutabilniFloat mf = new MutabilniFloat(10.5f);
+		// System.out.println("Почетна вредност: " + mf.getValue());
+		// mf.saberiSeSa(5.5f);
+		// System.out.println("Вредност након сабирања: " + mf.getValue());
+		
 		int x = 11;
 
 		Integer x1 = new Integer(x+1);

@@ -9,13 +9,13 @@ public class FiltrirajVremena {
 		java.time.LocalDateTime sad = java.time.LocalDateTime.now();
 		int tekucaGodina = sad.getYear();
 		java.time.LocalDateTime vreme = java.time.LocalDateTime.of(
-				tekucaGodina, 1, 1, 0, 0);
+				tekucaGodina, 12, 31, 23, 59);
 		while (vreme.getYear() == tekucaGodina) {
 			int suma = vreme.getMonthValue() + vreme.getDayOfMonth() 
 					+ vreme.getHour() + vreme.getMinute();
 			if (suma == n)
 				System.out.println(vreme);
-			vreme = vreme.plusMinutes(1);
+			vreme = vreme.minusMinutes(1);
 		}
 		skener.close();
 	}

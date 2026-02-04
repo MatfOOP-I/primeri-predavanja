@@ -1,14 +1,19 @@
 package rs.math.oop.g02.p02.nasledjivanje;
 
+/** Klasa која представља последипломца. */
 class Poslediplomac extends Student {
+
 	boolean zaposlen;
+	
 	private int brojIspita;
 
-	public void postavibrojIspita(int b) {
+	/** Штампа податке. */
+	public void postaviBrojIspita(int b) {
 		brojIspita = b;
 	}
 
-	public int uzmibrojIspita() {
+	/** Uzmi broj ispita. */
+	public int uzmiBrojIspita() {
 		return brojIspita;
 	}
 }

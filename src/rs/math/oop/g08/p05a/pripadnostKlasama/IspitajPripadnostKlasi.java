@@ -21,6 +21,7 @@ public class IspitajPripadnostKlasi {
 		o = k;
 		System.out.println(o instanceof Kutija);
 		o = "miki maus";
+		System.out.println(o instanceof Kutija);
 		System.out.println(o);
 		//k = "miki maus";
 	}

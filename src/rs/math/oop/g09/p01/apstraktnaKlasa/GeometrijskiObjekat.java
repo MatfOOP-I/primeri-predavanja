@@ -4,7 +4,6 @@ public abstract class GeometrijskiObjekat {
    private String oznaka;
 
    public GeometrijskiObjekat(String oznaka) {
-
       this.oznaka = oznaka;
    }
 

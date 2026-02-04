@@ -1,12 +1,14 @@
 package rs.math.oop.g13.p05.genericiPretragaNiza;
 
 public class PretragaNiza {
+    
     public static <T> void prikazi(T[] niz){
         for( T x: niz){
             System.out.print(x+ " ");
         }
         System.out.println();
     }
+    
     public static <T> int pretrazi(T[] niz, T element) {
         for(int i=0; i<niz.length; i++)
             if(niz[i].equals(element))

@@ -3,6 +3,7 @@ package rs.math.oop.g09.p15.viseKriterijumaPredefinisani;
 import java.util.Comparator;
 
 public class BrojSamoglasnikaComparator implements Comparator {
+	
 	private int brojSamoglasnika(String s) {
 		int ret = 0;
 		for (char ch : s.toCharArray())

@@ -26,7 +26,7 @@ public class IspisiArgumente {
 		ispisiSve(11, 22, 34, -1);
 		//ispisiSve2();
 		ispisiSve();
-		ispisiSve(11, 22, 34, -1, 11, 22, 34, -1, 10);
+		ispisiSve(11, 22, 34, -1, 11, 22, 34, -1, 10, 11, 22, 34, -1, 11, 22, 34, -1, 10);
 
 	}
 }

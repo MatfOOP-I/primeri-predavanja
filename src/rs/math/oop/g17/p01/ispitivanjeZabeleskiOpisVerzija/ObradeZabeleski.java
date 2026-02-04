@@ -30,12 +30,12 @@ public class ObradeZabeleski
 		{
 			Class<?> c = test.getClass();
 			System.out.println( "Name of the class: " + c.getName() );
-			Opis annotDesCl = c.getAnnotation( Opis.class );
-			System.out.println( "Author of the class: " + annotDesCl.autor() );
-			System.out.println( "Date of Writing the class: " + annotDesCl.datum() );
-			Verzija anotVerCl = c.getAnnotation( Verzija.class );
-			System.out.println( "Version of the class: " + anotVerCl.major()
-					+ "." + anotVerCl.minor() );
+			Opis annotOpis = c.getAnnotation( Opis.class );
+			System.out.println( "Author of the class: " + annotOpis.autor() );
+			System.out.println( "Date of Writing the class: " + annotOpis.datum() );
+			Verzija anotVerzija = c.getAnnotation( Verzija.class );
+			System.out.println( "Version of the class: " + anotVerzija.major()
+					+ "." + anotVerzija.minor() );
 			
 			Method m = c.getMethod( "testMethod" );
 			System.out.println( "Name of the method: " + m.getName() );

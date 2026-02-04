@@ -23,6 +23,8 @@ public class OznacenaTacka extends Tacka{
 		System.out.println(ot);
 		Tacka t = new OznacenaTacka(30, 40, "B");
 		System.out.println(t);
+		t = new Tacka(50, 60);
+		System.out.println(t);
 	}
 
 }

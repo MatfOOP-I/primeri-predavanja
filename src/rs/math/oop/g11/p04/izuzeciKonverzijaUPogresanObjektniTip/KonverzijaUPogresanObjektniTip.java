@@ -7,7 +7,7 @@ public class KonverzijaUPogresanObjektniTip {
 		Integer broj = 5;
 		//Boolean iskaz = (Boolean) broj;
 		Object objekat = broj; //имплицитна конверзија ка општијем типу
-		Boolean logickoSlovo = (Boolean) objekat;
-		System.out.println("Готово");
+		Boolean logickaVrednost = (Boolean) objekat;
+		System.out.println("Готово" + logickaVrednost);
 	}
 }

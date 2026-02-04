@@ -1,7 +1,7 @@
 package rs.math.oop.g02.p03.ucaurivanje;
 
 /**
- * Klasa Krug opisuje jedan rug.
+ * Klasa Krug opisuje jedan krug.
  *
  */
 class Krug {

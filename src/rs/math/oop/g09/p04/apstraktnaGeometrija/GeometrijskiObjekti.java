@@ -4,9 +4,9 @@ public class GeometrijskiObjekti {
 
    public static void main(String[] args) {
       Tacka a = new Tacka("A", 14.5, 15);
-      Tacka b = new Tacka(11, 11.5);
-      Tacka c = new Tacka(10.45, 22);
-      Tacka d = new Tacka(22.3, 17.5);
+      Tacka b = new Tacka("B", 11, 11.5);
+      Tacka c = new Tacka("C", 10.45, 22);
+      Tacka d = new Tacka("D", 22.3, 17.5);
       Tacka e = new Tacka("E", 25, 25.5);
       Duz ab = new Duz("дAB", a, b);
       Prava p = new Prava("пAB", a, d);

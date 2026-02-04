@@ -26,7 +26,7 @@ class StudentiPoslediplomci {
 		Covek najnoviji = new Covek();
 		najnoviji.imePrezime = "Митар Мирић";
 
-		Covek[] niz = {novi, prvi, drugi, najnoviji};
+		Covek[] niz = {prvi, drugi, novi, najnoviji};
 		for(int i=0; i <niz.length; i++)
 			niz[i].stampajPodatke();
 	}

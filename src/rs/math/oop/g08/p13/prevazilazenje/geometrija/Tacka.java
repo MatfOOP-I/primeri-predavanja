@@ -23,9 +23,9 @@ public class Tacka {
 
 	@Override
 	public int hashCode() {
-		int h = 31 * x + y;
+		int h = 31 * x + 17 * y;
 		return h;
-//		алтернативно постоји и услужни метод hash() у класи Objects
-//		return java.util.Objects.hash(x, y);
+		//алтернативно постоји и услужни метод hash() у класи Objects
+		//return java.util.Objects.hash(x, y);
 	}
 }

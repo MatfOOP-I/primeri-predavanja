@@ -1,7 +1,8 @@
 package rs.math.oop.g06.p02.merenjeVremena;
 
 public class IzmeriVreme {
-    public static long sumiraj(int n) {
+   
+	public static long sumiraj(int n) {
    	 long suma = 0;
    	 for (int i = 1; i <= n; i++)
    		 suma += i;

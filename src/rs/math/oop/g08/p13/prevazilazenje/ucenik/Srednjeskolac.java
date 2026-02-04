@@ -16,7 +16,11 @@ public class Srednjeskolac extends Ucenik{
         s.imePrezime = "Janko";
         s.razred = 1;
         s.vrstaSkole = "gradj.";
-        Ucenik[] svi = {u,s};
+        Srednjeskolac p = new Srednjeskolac();
+        p.imePrezime = "Petar";
+        p.razred = 2; 
+        p.vrstaSkole = "gimn.";
+        Ucenik[] svi = {u,s,p};
         for( Ucenik uc: svi)
             System.out.println(uc);
     }

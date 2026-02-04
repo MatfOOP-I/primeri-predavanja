@@ -47,7 +47,7 @@ public class Prava extends GeometrijskiObjekat {
 
    public boolean sadrzi(Tacka t) {
 
-      return (Double.compare(uvrstiKoordinate(t), 0) ==0);
+      return (Double.compare(uvrstiKoordinate(t), 0) == 0);
    }
 
    public boolean suSaIsteStranePrave(Tacka t1, Tacka t2) {
@@ -56,8 +56,7 @@ public class Prava extends GeometrijskiObjekat {
    }
 
    public boolean suSaRaznihStranaPrave(Tacka t1, Tacka t2) {
-
-      return !suSaIsteStranePrave(t1, t2);
+      return uvrstiKoordinate(t1) * uvrstiKoordinate(t2) < 0;
    }
 
    @Override

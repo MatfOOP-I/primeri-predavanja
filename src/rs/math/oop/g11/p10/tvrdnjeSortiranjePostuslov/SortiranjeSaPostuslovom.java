@@ -10,9 +10,9 @@ public class SortiranjeSaPostuslovom {
 			System.out.printf("%d ", e);
 		System.out.println();
 		//sortiraj(niz);
-		for (int e : niz)
-			System.out.printf("%d ", e);
-		System.out.println();
+		//for (int e : niz)
+		//	System.out.printf("%d ", e);
+		//System.out.println();
 		assert jeSortiran(niz) : "низ није сортиран";
 		for (int e : niz)
 			System.out.printf("%d ", e);

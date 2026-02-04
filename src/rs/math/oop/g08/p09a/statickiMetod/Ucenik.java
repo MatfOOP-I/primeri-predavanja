@@ -3,7 +3,8 @@ package rs.math.oop.g08.p09a.statickiMetod;
 public class Ucenik {
 	String imePrezime;
 	int razred;
-	static int brojKreiranihUcenika = 0;
+	
+    static int brojKreiranihUcenika = 0;
 
     static void kreiranNovi(){
         brojKreiranihUcenika ++;

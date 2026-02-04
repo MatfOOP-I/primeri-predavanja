@@ -14,7 +14,7 @@ public class UporediObojeneKutije {
     }
 
     public static void main(String[] args) {
-
+ 
         Object o = new ObojenaKutija();
         ispitajInformisi(o);
         //int ii = o.sirina;
@@ -27,7 +27,8 @@ public class UporediObojeneKutije {
         ispitajInformisi(o2);
         Kutija k2 = (Kutija) o2;
         ispitajInformisi(k2);
-        //ObojenaKutija ok2 = (ObojenaKutija) o2; // грешка приликом извршавања
+        ObojenaKutija ok2 = (ObojenaKutija) o2; // грешка приликом извршавања 
+        ok2.boja = "црвена"; 
 
         //Kutija k3 = (Kutija) "miki maus";
         ispitajInformisi("miki maus");

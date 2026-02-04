@@ -4,13 +4,13 @@ public class Crtez {
     Poligon[] poligoni;
     int brojPoligona;
     
-    public Crtez() {
-        poligoni = new Poligon[10];
+    public Crtez(int n) {
+        poligoni = new Poligon[n];
         brojPoligona = 0;
     }
     
     public Crtez(Crtez crtez) {
-        this(); // иницијализујемо празан цртеж најпре
+        this(crtez.poligoni.length); // иницијализујемо празан цртеж најпре
         for(Poligon p: crtez.poligoni) {
             if (p == null)
                 break;
@@ -41,7 +41,7 @@ public class Crtez {
         Tacka t1 = new Tacka(10, 20);
         Poligon p1 = new Poligon(t1, new Tacka(20, 30), new Tacka(100, 200));
         Poligon p2 = new Poligon(new Tacka(100, 50), t1, new Tacka(50, 50));
-        Crtez c1 = new Crtez();
+        Crtez c1 = new Crtez(200);
         c1.dodajPoligon(p1);
         c1.dodajPoligon(p2);
         System.out.println("c1 пре измене спољашње тачке.");

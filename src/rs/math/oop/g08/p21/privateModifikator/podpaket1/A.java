@@ -4,7 +4,7 @@ class A {
 
 	private int polje;
 	
-	private A() {
+	A() {
 		
 	}
 	

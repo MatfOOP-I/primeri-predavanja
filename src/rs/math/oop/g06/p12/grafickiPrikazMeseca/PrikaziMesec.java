@@ -3,6 +3,7 @@ package rs.math.oop.g06.p12.grafickiPrikazMeseca;
 public class PrikaziMesec {
 
     public static void main(String[] args) {
+       
         java.util.Scanner skener = new java.util.Scanner(System.in);
         System.out.println("Унесите годину ");
         int godina = skener.nextInt();

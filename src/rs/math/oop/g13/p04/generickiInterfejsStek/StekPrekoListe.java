@@ -2,7 +2,7 @@ package rs.math.oop.g13.p04.generickiInterfejsStek;
 
 public class StekPrekoListe<T> implements Stek<T> {
 
-	private PovezanaLista<T> elementi = new PovezanaLista();
+	private PovezanaLista<T> elementi = new PovezanaLista<>();
 
 	@Override
 	public void dodaj(T elem) {

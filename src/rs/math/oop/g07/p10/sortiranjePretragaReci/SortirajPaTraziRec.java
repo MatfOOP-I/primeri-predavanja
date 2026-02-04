@@ -15,6 +15,11 @@ public class SortirajPaTraziRec {
             // и уклањамо заостале зарезе и тачке
             reci[i] = reci[i].toLowerCase().trim().replace(",", "").replace(".", "");
         }
+        System.out.println("Несортирани низ речи:"
+                + System.lineSeparator() + "--------------------");
+        for (String rec : reci)
+            System.out.printf("|%s|",rec);
+        System.out.println("\n--------------------");
         // сортирамо уграђеним сорт алгоритмом (користи се merge-sort)
         // пошто има гарантовану O(n*logn) сложеност и притом је стабилан
         java.util.Arrays.sort(reci);
@@ -27,7 +32,10 @@ public class SortirajPaTraziRec {
         Integer[] duzine = new Integer[reci.length];
         for(int i=0; i<duzine.length; i++)
             duzine[i] = reci[i].length();
+        for (int d : duzine)
+            System.out.printf("%d ",d);
         java.util.Arrays.sort(duzine);
+        System.out.println();
         for (int d : duzine)
             System.out.printf("%d ",d);
         System.out.println();

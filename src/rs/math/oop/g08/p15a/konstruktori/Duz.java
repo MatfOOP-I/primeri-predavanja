@@ -25,7 +25,7 @@ public class Duz {
 
     public static void main(String[] args) {
         Duz d1 = new Duz(new Tacka(2, 3), new Tacka(5, 4));
-        Duz d2 = new Duz(2, 3, 5, 4);
+        Duz d2 = new Duz(5, 4, 2, 3);
         System.out.println(d1);
         System.out.println(d2);
         System.out.println(Tacka.brojKreiranihTacaka);
@@ -33,11 +33,11 @@ public class Duz {
         System.out.println(t);
         d1 = new Duz(t, new Tacka(5, 4));
         System.out.println(d1);
-//        t.x = -7;
-//        System.out.println(t);
-//        System.out.println(d1);
-        d1.a.y = -10;
+        t.x = -7;
         System.out.println(t);
         System.out.println(d1);
+        // d1.a.y = -10;
+        // System.out.println(t);
+        // System.out.println(d1);
     }
 }

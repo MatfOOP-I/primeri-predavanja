@@ -7,7 +7,7 @@ public class StekPrekoNiza<T> implements Stek<T> {
 
 	// иницијализациони блок
 	{
-		elementi = new SamorastuciNiz();
+		elementi = new SamorastuciNiz<>();
 		vrhSteka = -1;
 	}
 

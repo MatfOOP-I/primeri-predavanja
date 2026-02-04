@@ -40,8 +40,12 @@ public enum AritmetickaOperacija {
     public static void main(String[] args) {
         double x = Double.parseDouble(args[0]);
         double y = Double.parseDouble(args[1]);
-        for (AritmetickaOperacija op : AritmetickaOperacija.values())
-            System.out.printf("%f %s %f = %f%n", x, op, y, 
-                         op.izracunaj(x, y));
+        String op = args[2];
+        AritmetickaOperacija operacija = AritmetickaOperacija.valueOf(op);
+        System.out.printf("%f %s %f = %f%n", x, operacija, y,
+                          operacija.izracunaj(x, y));
+        // for (AritmetickaOperacija op : AritmetickaOperacija.values())
+        //     System.out.printf("%f %s %f = %f%n", x, op, y, 
+        //                  op.izracunaj(x, y));
     }
 }

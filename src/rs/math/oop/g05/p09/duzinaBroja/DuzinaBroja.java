@@ -5,7 +5,7 @@ public class DuzinaBroja {
 		java.util.Scanner sc = new java.util.Scanner(System.in);
 		System.out.println("Унесите цео број");
 		long n = sc.nextLong();
-		int osnova = 76;
+		int osnova = 21;
 		int duzina = 0;
 		do {
 			System.out.print("" + (n % osnova) + " " );

@@ -30,7 +30,7 @@ public class RadSaDrvoSkupom {
 					}
 				}
 		);
-//		SortedSet<String> sDrvoSkup2 = new TreeSet<>((s1,s2) -> s2.length() - s1.length());
+		// SortedSet<String> sDrvoSkup2 = new TreeSet<>((s1,s2) -> s2.length() - s1.length());
 		sDrvoSkup2.add("Скуп");
 		sDrvoSkup2.add("ниски");
 		sDrvoSkup2.add("Eлемент");

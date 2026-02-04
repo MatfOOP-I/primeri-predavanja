@@ -54,7 +54,7 @@ public class PovezanaLista<T> {
 	}
 
 	public void dodajNaKraj(T elem) {
-		Cvor<T> noviKraj = new Cvor(elem);
+		Cvor<T> noviKraj = new Cvor<>(elem);
 		if (pocetak == null)
 			pocetak = kraj = noviKraj;
 		else {
@@ -81,7 +81,7 @@ public class PovezanaLista<T> {
 	}
 
 	public void dodajNaPocetak(T elem) {
-		Cvor<T> noviPocetak = new Cvor(elem);
+		Cvor<T> noviPocetak = new Cvor<>(elem);
 		if (kraj == null)
 			pocetak = kraj = noviPocetak;
 		else {
@@ -121,7 +121,7 @@ public class PovezanaLista<T> {
 
 	public int brojCvorova() {
 		int n = 1;
-		Cvor tek = pocetak;
+		Cvor<T> tek = pocetak;
 		if (tek == null)
 			return 0;
 		while (tek != kraj) {

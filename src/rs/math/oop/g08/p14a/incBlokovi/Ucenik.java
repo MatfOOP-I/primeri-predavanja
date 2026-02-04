@@ -1,9 +1,11 @@
 package rs.math.oop.g08.p14a.incBlokovi;
 
 public class Ucenik {
+
 	String imePrezime;
 	int razred;
-	static int brojKreiranihUcenika = 10;
+	
+    static int brojKreiranihUcenika = 10;
 
     static {
         brojKreiranihUcenika = 42;
@@ -12,9 +14,11 @@ public class Ucenik {
     {
         brojKreiranihUcenika++;
     }
+
     {
         razred = brojKreiranihUcenika % 4 +1;
     }
+    
     static int vratiBrojKreiranih(){
         return brojKreiranihUcenika;
     }

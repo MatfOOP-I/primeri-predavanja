@@ -11,7 +11,7 @@ class Crtez {
 
 	private Kvadrat kvadrat1;
 	
-	public Crtez() {
+	Crtez() {
 		// конструкција објекта са задавањем аргумената
 		krug1 = new Krug(10, 13, 11);
 		krug2 = new Krug(17, 20, 4);
@@ -44,4 +44,6 @@ class Crtez {
 		krug2.prikazi();
 		kvadrat1.prikazi();
 	}
+
+
 }

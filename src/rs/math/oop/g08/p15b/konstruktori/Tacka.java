@@ -13,6 +13,7 @@ public class Tacka {
 		this.y = y;
 		brojKreiranihTacaka++;
 	}
+	
 	public Tacka(Tacka t){
 		this(t.x, t.y);
 	}

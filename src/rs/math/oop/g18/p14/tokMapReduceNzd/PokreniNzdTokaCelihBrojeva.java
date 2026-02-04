@@ -38,6 +38,7 @@ public class PokreniNzdTokaCelihBrojeva {
         System.out.println();
         // одреди НЗД за ток одговарајућих позитивних
         final int nzd = brojevi.stream()
+                .filter(x -> x <= 1000000)
                 .map(x -> (x >= 0) ? x : -x)
                 .reduce(brojevi.get(0), (x, y) -> NZD(x, y));
         // прикажи израчунати НЗД
