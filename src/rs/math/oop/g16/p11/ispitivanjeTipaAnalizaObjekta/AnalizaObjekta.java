@@ -6,14 +6,14 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
 class AnalizaObjekta {
-    private PovezanaLista<Object> obuhvaceni = new PovezanaLista<>();
+    private PovezanaLista<Object> prikazani = new PovezanaLista<>();
 
     public String prikaz(Object obj) {
         if (obj == null)
             return "null";
-        if (obuhvaceni.sadrzi(obj))
+        if (prikazani.sadrzi(obj))
             return "...";
-        obuhvaceni.dodajElement(obj);
+        prikazani.dodajElement(obj);
         Class<?> cl = obj.getClass();
         if (cl.isPrimitive())
             return obj.toString();
@@ -31,7 +31,7 @@ class AnalizaObjekta {
             return cl.getSimpleName() + "(" + obj.toString() + ")";
         if (cl.isArray()) {
             StringBuilder r = new StringBuilder();
-            r.append(cl.getComponentType() + "[]{");
+            r.append(cl.getComponentType() + "[" + Array.getLength(obj) + "]{ ");
             for (int i = 0; i < Array.getLength(obj); i++) {
                 if (i > 0)
                     r.append(",");

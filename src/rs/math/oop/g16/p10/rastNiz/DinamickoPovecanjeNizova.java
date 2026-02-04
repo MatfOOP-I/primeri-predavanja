@@ -40,16 +40,19 @@ public class DinamickoPovecanjeNizova {
    public static void main(String[] args) {
 
       int[] a = {1, 2, 3};
+      arrayPrint(a);
       String[] b = {"Tom", "Dick", "Harry"};
+      arrayPrint(b);
 
+      System.out.println("Using goodArrayGrow:");
       a = (int[]) goodArrayGrow(a);
       arrayPrint(a);
-
       b = (String[]) goodArrayGrow(b);
       arrayPrint(b);
 
       System.out.println("The following call will generate an exception.");
       b = (String[]) badArrayGrow(b);
+      arrayPrint(b);
    }
 
 

@@ -18,20 +18,11 @@ public class PretrazivanjaOsoba2 {
         System.out.println("---");
         filtirajPrikazi(Osoba.LIKOVI_CRTANI, lik -> lik.getBrojGodina() >= 80);
         System.out.println("---");
-        filtirajPrikazi(Osoba.LIKOVI_CRTANI, o ->o.getBrojGodina() >= 80 && o.getBrojGodina() <= 85);
+        filtirajPrikazi(Osoba.LIKOVI_CRTANI, o -> o.getBrojGodina() >= 80 && o.getBrojGodina() <= 85);
         System.out.println("---");
-        filtirajPrikazi(Osoba.LIKOVI_CRTANI, new KriterijumPretrage<Osoba>() {
-
-            public boolean proveri(Osoba o) {
-                return o.getEmailAdresa().indexOf("disney") >= 0;
-            }
-        });
+        filtirajPrikazi(Osoba.LIKOVI_CRTANI, o -> o.getEmailAdresa().indexOf("disney") >= 0);   
         System.out.println("---");
-        filtirajPrikazi(Osoba.LIKOVI_CRTANI, new KriterijumPretrage<Osoba>() {
-            public boolean proveri(Osoba o) {
-                return o.getPol() == Osoba.Pol.ZENA && o.getEmailAdresa().indexOf("disney") >= 0;
-            }
-        });
+        filtirajPrikazi(Osoba.LIKOVI_CRTANI, o -> o.getPol() == Osoba.Pol.ZENA && o.getEmailAdresa().indexOf("disney") >= 0);
         System.out.println("---");
     }
 

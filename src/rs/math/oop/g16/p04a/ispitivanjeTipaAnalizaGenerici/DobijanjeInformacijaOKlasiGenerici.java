@@ -6,27 +6,6 @@ import java.util.Scanner;
 
 
 public class DobijanjeInformacijaOKlasiGenerici {
-   public static void main(String[] args) {
-      // read class ime from command line args or user input
-      String ime;
-      if (args.length > 0)
-         ime = args[0];
-      else {
-         Scanner in = new Scanner(System.in);
-         System.out.println("Enter class ime (e.g. java.util.Collections): ");
-         ime = in.next();
-      }
-
-      try {
-         // print generic info for class and public methods
-         Class<?> cl = Class.forName(ime);
-         printClass(cl);
-         for (Method m : cl.getDeclaredMethods())
-            printMethod(m);
-      } catch (ClassNotFoundException e) {
-         e.printStackTrace();
-      }
-   }
 
    public static void printClass(Class<?> cl) {
       System.out.print(cl);
@@ -99,6 +78,29 @@ public class DobijanjeInformacijaOKlasiGenerici {
          printType(t.getGenericComponentType(), isDefinition);
          System.out.print("[]");
       }
-
    }
+
+      public static void main(String[] args) {
+      // read class ime from command line args or user input
+      String ime;
+      if (args.length > 0)
+         ime = args[0];
+      else {
+         Scanner in = new Scanner(System.in);
+         System.out.println("Enter class ime (e.g. java.util.Collections): ");
+         ime = in.next();
+      }
+
+      try {
+         // print generic info for class and public methods
+         Class<?> cl = Class.forName(ime);
+         printClass(cl);
+         for (Method m : cl.getDeclaredMethods())
+            printMethod(m);
+      } catch (ClassNotFoundException e) {
+         e.printStackTrace();
+      }
+   }
+
+
 }

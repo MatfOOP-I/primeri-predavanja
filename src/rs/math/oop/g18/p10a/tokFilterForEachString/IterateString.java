@@ -14,7 +14,7 @@ public class IterateString
 	
 	public static void main( String[] args )
 	{
-		final String str = "w00t";
+		final String str = "w00t1abc";
 
 		System.out.println( "//" + "START:ITERATE_OUTPUT" );
 		str.chars().forEach( ch -> System.out.println( ch ) );
@@ -37,9 +37,9 @@ public class IterateString
 		System.out.println( "" );
 		System.out.println( "//" + "END:FILTER_OUTPUT" );
 		
-		str.chars().filter( ch -> Character.isDigit( ch ) );
+		// str.chars().filter( ch -> Character.isDigit( ch ) );
 		
-		str.chars().filter( Character::isDigit );
+		// str.chars().filter( Character::isDigit );
 
 		System.out.println( "//" + "START:FILTER_OUTPUT_2" );
 		str.chars().filter( IterateString::isNotDigit )

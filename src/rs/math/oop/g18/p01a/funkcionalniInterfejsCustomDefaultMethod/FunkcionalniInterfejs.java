@@ -34,7 +34,7 @@ public class FunkcionalniInterfejs {
         Primer1 primer1 = input -> true;
         System.out.println(primer1.test(42));
 
-        Primer2 primer2 = x -> (x < 10);
+        Primer2 primer2 = x -> x < 10;
         System.out.println(primer2.test(42));
 
         Primer3 primer3 = input -> (input > 10);

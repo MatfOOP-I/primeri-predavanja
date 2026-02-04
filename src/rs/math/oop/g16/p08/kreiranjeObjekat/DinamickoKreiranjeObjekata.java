@@ -12,7 +12,7 @@ public class DinamickoKreiranjeObjekata
 		try
 		{
 			Constructor<?> c = klasa.getDeclaredConstructors()[0];
-			Object dule = c.newInstance( "Dusko Dugousko", 100 );
+			Object dule = c.newInstance( "Dusko Dugousko", 1000 );
 			System.out.println( dule );
 			Field ime = klasa.getDeclaredField( "ime" );
 			ime.setAccessible( true );
